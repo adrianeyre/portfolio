@@ -1,15 +1,28 @@
+// body html {
+//   height: 100%;
+//   margin: 0;
+//   font: 400 15px/1.8 "Lato", sans-serif;
+// }
+
 body html {
   height: 100%;
   margin: 0;
   font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  font: 400 15px/1.8 "Lato", sans-serif; }
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
 
 .container {
   font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  display: inline; }
-  .container .menu {
+  display: inline;
+
+  .menu {
     position: absolute;
     left: 0;
-    height: 300px; }
-  .container .content {
-    display: block; }
+    height: 300px;
+  }
+
+  .content {
+    display: block;
+  }
+}
+

@@ -1,0 +1,36 @@
+// .cards-container {
+//   display: flex;
+//   margin: 10px;
+//   //   overflow: auto;
+//   //   white-space: nowrap;
+
+//   .card {
+//     // min-width: 500px;
+//     margin: 10px;
+//   }
+// }
+
+.cards-container {
+  .card-item {
+    margin-bottom: 20px;
+
+    .card {
+      margin: 20px;
+      height: 100%;
+
+      .card-img-top {
+        margin: 0px;
+      }
+
+      .card-button {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
+
+      // .card-body {
+      //   height: 100%;
+      // }
+    }
+  }
+}
