@@ -28,10 +28,10 @@ class Text extends Component<ITextProps, ITextState> {
     }
 
     public render() {
-        return <div>
-                { this.state && this.state.data && this.state.data.map((item: IData, i: number) => <div key="i">
-                    { item.title && <h1>{ item.title }</h1> }
-                    { item.body && <h4>{ item.body }</h4> }
+        return <div className="text-container">
+                { this.state && this.state.data && this.state.data.map((item: IData, i: number) => <div key={i}>
+                    { item.title && <h2>{ item.title }</h2> }
+                    { item.body && <span dangerouslySetInnerHTML={{__html: item.body }} /> }
                 </div>) }
             </div>
     }

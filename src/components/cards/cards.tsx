@@ -37,7 +37,7 @@ class Cards extends Component<ICardsProps, ICardsState> {
             {this.props.title && <h1>{this.props.title}</h1>}
             {this.props.body && <h4>{this.props.body}</h4>}
             <div className="row">
-                {this.state && this.state.data && this.state.data.map((item: IData, i: number) => <div key={i} className="card-item col-md-4">
+                {this.state && this.state.data && this.state.data.map((item: IData, i: number) => <div key={i} className="card-item col-md-3">
                     <Card>
                         <Card.Img variant="top" src={item.image.filename} />
                         <Card.Body>

@@ -11,26 +11,27 @@
 // }
 
 .cards-container {
-  .card-item {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
+	.card-item {
+		margin-bottom: 20px;
 
-    .card {
-      margin: 20px;
-      height: 100%;
+		.card {
+			margin: 20px;
+			height: 100%;
 
-      .card-img-top {
-        margin: 0px;
-      }
+			.card-img-top {
+				margin: 0px;
+			}
 
-      .card-button {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-      }
+			.card-button {
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+			}
 
-      // .card-body {
-      //   height: 100%;
-      // }
-    }
-  }
+			// .card-body {
+			//   height: 100%;
+			// }
+		}
+	}
 }
