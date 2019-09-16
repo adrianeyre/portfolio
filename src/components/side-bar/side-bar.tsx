@@ -2,21 +2,31 @@ import * as React from 'react';
 import { Component } from 'react';
 import { Image } from 'react-bootstrap';
 
+import IDataService from '../../services/data-interface'
+
 import Links from '../links/links';
 
 import './side-bar.css';
 
 interface ISideBarProps {
+	data: IDataService[];
+	linksData: IDataService[];
 	scrollToAnchor(anchor: string): void;
 }
 
 interface ISideBarState {
-	style?: any;
+	data: IDataService[];
+	linksData: IDataService[];
 }
 
 class SideBar extends Component<ISideBarProps, ISideBarState> {
 	constructor(props: ISideBarProps) {
 		super(props);
+
+		this.state = {
+			data: this.props.data,
+			linksData: this.props.linksData,
+		}
 	}
 
 	public render() {
@@ -27,13 +37,9 @@ class SideBar extends Component<ISideBarProps, ISideBarState> {
 				<Image src="/images/photo.jpeg" roundedCircle={true} />
 			</div>
 
-			<a className="link" onClick={ this.props.scrollToAnchor.bind(this, 'about') }>About</a>
-			<a className="link" onClick={ this.props.scrollToAnchor.bind(this, 'skills') }>Skills</a>
-			<a className="link" onClick={ this.props.scrollToAnchor.bind(this, 'projects') }>Projects</a>
-			<a className="link" onClick={ this.props.scrollToAnchor.bind(this, 'education') }>Education</a>
-			<a className="link" onClick={ this.props.scrollToAnchor.bind(this, 'experience') }>Experience</a>
+			{ this.state.data && this.state.data.map((item: IDataService, i: number) => <a key={i} className="link" onClick={ this.props.scrollToAnchor.bind(this, item.link) }>{ item.title }</a>) }
 
-			<Links filename="links.json"/>
+			<Links data={ this.state.linksData }/>
 		</div>
 	}
 }

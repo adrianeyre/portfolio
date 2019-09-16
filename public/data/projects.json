@@ -1,40 +1,38 @@
 [
-    {
-        "title": "Pacman",
-        "body": "Pacman written in C#",
-        "image": {
-            "filename": "https://raw.githubusercontent.com/adrianeyre/pacman/master/images/screenshot1.png",
-            "link": "https://github.com/adrianeyre/pacman"
+	{
+		"title": "Pacman",
+		"body": "Pacman written in C#",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/pacman/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/pacman"
 		},
 		"link": "https://github.com/adrianeyre/pacman"
 	},
 	{
-        "title": "Chitter Challenge",
-        "body": "Written in Ruby",
-        "image": {
-            "filename": "https://raw.githubusercontent.com/adrianeyre/chitter-challenge/master/images/screenshot1.png",
-            "link": "https://github.com/adrianeyre/chitter-challenge"
+		"title": "Chitter Challenge",
+		"body": "Written in Ruby",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/chitter-challenge/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/chitter-challenge"
 		},
 		"link": "https://github.com/adrianeyre/chitter-challenge"
 	},
 	{
-        "title": "Treasure Hunt",
-        "body": "Written in",
-        "image": {
-            "filename": "https://raw.githubusercontent.com/adrianeyre/treasure-hunt/master/images/GameFlow.png",
-            "link": "https://github.com/adrianeyre/treasure-hunt"
+		"title": "Treasure Hunt",
+		"body": "Written in",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/treasure-hunt/master/images/GameFlow.png",
+			"link": "https://github.com/adrianeyre/treasure-hunt"
 		},
 		"link": "https://github.com/adrianeyre/treasure-hunt"
 	},
 	{
-        "title": "Bowling Challenge",
-        "body": "Written in",
-        "image": {
-            "filename": "https://raw.githubusercontent.com/adrianeyre/bowling-challenge/master/images/screenshot2.png",
-            "link": "https://github.com/adrianeyre/bowling-challenge"
+		"title": "Bowling Challenge",
+		"body": "Written in",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/bowling-challenge/master/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/bowling-challenge"
 		},
 		"link": "https://github.com/adrianeyre/bowling-challenge"
 	}
-
-	
 ]
