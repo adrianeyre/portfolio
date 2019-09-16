@@ -1,0 +1,35 @@
+[
+	{
+		"title": "Makers Academy (January 2017 - March 2017)",
+		"points": [
+			"Curiosity and hungry passion for code",
+			"Independent learner and problem-solver",
+			"OOP, TDD, SOLID, MVC",
+			"AWS and Facebook integration with omniauth",
+			"Software Craftsmanship",
+			"Ruby, Rails, Python, Javascript, Node.js",
+			"Rspec, Capybara, Jasmine",
+			"RESTful API with JSON objects",
+			"Postgres SQL, CRUD"
+		]
+	},
+	{
+		"title": "University of Derby (October 1998 to June 2001)",
+		"points": [
+			"HND Computer Studies",
+			"Passed all modules apart from common skills"
+		]
+	},
+	{
+		"title": "Other Qualifications",
+		"points": [
+			"Oracle Database 11g Administrator Certified Associate",
+			"Full First Aid certificate",
+			"Duke of Edinburgh Bronze to Gold Award",
+			"Qualified Duke of Edinburgh Bronze and Silver Instructor",
+			"Full Clean driving license including D1 minibus",
+			"SSI Open water scuba diver",
+			"RYA Powerboat Driver"
+		]
+	}
+]

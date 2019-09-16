@@ -1,5 +1,5 @@
 .sidebar {
-  width: 25%;
+  width: 200px;
   height: 60vh;
   min-height: 200px;
   overflow: auto;
@@ -8,7 +8,7 @@
   top: 5%; }
 
 .main {
-  width: 70%;
+  width: calc(100% - 220px);
   height: 100%;
   min-height: 1000px;
   display: flex;
@@ -19,9 +19,6 @@
   border: 1px solid #222;
   background-color: white;
   border-radius: 10px; }
-
-.sidebar {
-  padding: 10px; }
 
 .wrapper {
   display: flex;

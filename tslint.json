@@ -1,24 +1,24 @@
 {
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
-  "linterOptions": {
-    "exclude": [
-      "config/**/*.js",
-      "node_modules/**/*.ts",
-      "coverage/lcov-report/*.js"
-    ]
-  },
-  "rules": {
-    "object-literal-sort-keys": false,
-    "curly": false,
-    "no-console": false,
-    "ordered-imports": false,
-    "jsx-no-lambda": {
-      "severity": "warning"
-    }
-  },
-  "jsRules": {
-    "object-literal-sort-keys": false,
-    "curly": false,
-    "no-console": false
-  }
+	"extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+	"linterOptions": {
+		"exclude": [
+		"config/**/*.js",
+		"node_modules/**/*.ts",
+		"coverage/lcov-report/*.js"
+		]
+	},
+	"rules": {
+		"object-literal-sort-keys": false,
+		"curly": false,
+		"no-console": false,
+		"ordered-imports": false,
+		"jsx-no-lambda": {
+		"severity": "warning"
+		}
+	},
+	"jsRules": {
+		"object-literal-sort-keys": false,
+		"curly": false,
+		"no-console": false
+	}
 }

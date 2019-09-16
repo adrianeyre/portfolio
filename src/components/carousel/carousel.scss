@@ -1,34 +1,34 @@
 .carousel-container {
-    height: 300px;
-    width: 100%;
-    background-color: #2967cc;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #2967cc);
-    -moz-box-shadow: 1px 2px 3px rgba(1,1,0,.5);
-    -webkit-box-shadow: 1px 2px 3px rgba(1,1,0,.5);
-    box-shadow: 1px 2px 3px rgba(1,1,0,.5);
-    display: inline-flex;
-    overflow-x: hidden;
+	height: 300px;
+	width: 100%;
+	background-color: #2967cc;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #2967cc);
+	-moz-box-shadow: 1px 2px 3px rgba(1,1,0,.5);
+	-webkit-box-shadow: 1px 2px 3px rgba(1,1,0,.5);
+	box-shadow: 1px 2px 3px rgba(1,1,0,.5);
+	display: inline-flex;
+	overflow-x: hidden;
 
-    .carousel-left-arrow {
-        background-color: red;
-        position: absolute;
-        left: 0px;
-        top: 120px;
-    }
+	.carousel-left-arrow {
+		background-color: red;
+		position: absolute;
+		left: 0px;
+		top: 120px;
+	}
 
-    .carousel-right-arrow {
-        background-color: red;
-        position: absolute;
-        right: 0px;
-        top: 120px;
-    }
+	.carousel-right-arrow {
+		background-color: red;
+		position: absolute;
+		right: 0px;
+		top: 120px;
+	}
 
-    .carousel-container-items {
-        transition-timing-function: linear;
-        display: inline-flex;
+	.carousel-container-items {
+		transition-timing-function: linear;
+		display: inline-flex;
 
-        .carousel-item {
-            width: 400px; 
-        }
-    }
+		.carousel-item {
+			width: 400px; 
+		}
+	}
 }
