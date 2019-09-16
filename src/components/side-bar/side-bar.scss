@@ -26,4 +26,16 @@
 			border: 5px solid #2a2aeb;
 		}
 	}
+
+	.links-container {
+		position: absolute;
+		bottom: 20px;
+		width: 90%;
+
+		img {
+			width: 30px;
+			height: 30px;
+			margin: 5px;
+		}
+	}
 }

@@ -1,0 +1,26 @@
+[
+	{
+		"image": {
+			"filename": "/images/links/github.jpg",
+			"link": "https://github.com/adrianeyre"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/links/linkedin.png",
+			"link": "https://www.linkedin.com/in/adrian-eyre-92b78390/"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/links/codewars.png",
+			"link": "https://www.codewars.com/users/adrian.eyre"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/links/email.png",
+			"link": ""
+		}
+	}
+]

@@ -3,3 +3,40 @@
 .nav-link active {
 	color: red;
 }
+
+.navigation-container {
+	.links-container {
+		position: absolute;
+		right: 20px;
+
+		img {
+			width: 30px;
+			height: 30px;
+			margin: 5px;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.navigation-container {
+		.links-container {
+			right: 80px;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.navigation-container {
+		.links-container {
+			right: 80px;
+		}
+	}
+}
+
+@media (max-width: 470px) {
+	.navigation-container {
+		.links-container {
+			display: none;
+		}
+	}
+}

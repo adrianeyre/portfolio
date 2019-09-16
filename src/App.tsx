@@ -9,6 +9,7 @@ import Navigation from './components/navigation/navigation';
 import Cards from './components/cards/cards';
 import SideBar from './components/side-bar/side-bar';
 import Bottom from './components/bottom/bottom';
+import Links from './components/links/links';
 
 import './App.css';
 
@@ -33,6 +34,7 @@ class App extends Component<any, any> {
 				<Element name="about">
 					<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
 					<Text filename="about.json" />
+					<Links filename="links.json"/>
 				</Element>
 				<Element name="skills">
 					<Image imageName="image2.jpg" title="SKILLS" />
