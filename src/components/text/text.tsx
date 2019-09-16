@@ -1,42 +1,41 @@
 import * as React from 'react';
 import { Component } from 'react';
 
+import DataService from '../../services/data-service'
+import IDataService, { IPoints } from '../../services/data-interface'
+
 import './text.css';
 
 interface ITextProps {
 	filename: string;
 }
 
-interface IData {
-	title?: string;
-	subTitle?: string;
-	body?: string;
-	points?: any;
-}
-
 interface ITextState {
-	data: IData[];
+	data: IDataService[];
 }
 
 class Text extends Component<ITextProps, ITextState> {
+	private dataService: DataService;
+
 	constructor(props: ITextProps) {
 		super(props);
+
+		this.dataService = new DataService;
 	}
 
 	public async componentDidMount() {
-		fetch(`./data/${ this.props.filename }`)
-			.then(response => response.json())
-			.then(data => this.setState(prev => ({ data })))
+		const data = await this.dataService.getData(this.props.filename);
+		this.setState(prev => ({ data }));
 	}
 
 	public render() {
 		return <div className="text-container">
-			{ this.state && this.state.data && this.state.data.map((item: IData, i: number) => <div key={i} className="text-item">
+			{ this.state && this.state.data && this.state.data.map((item: IDataService, i: number) => <div key={i} className="text-item">
 				{ item.title && <h2>{ item.title }</h2> }
 				{ item.subTitle && <h4>{ item.subTitle }</h4> }
 				{ item.body && <span dangerouslySetInnerHTML={{__html: item.body }} /> }
 				{ item.points && <ul>
-					{ item.points.map((point: string) => <li key={ point }>{ point }</li>) }
+					{ item.points.map((point: IPoints) => <li key={ point.name }>{ point }</li>) }
 				</ul> }
 			</div>) }
 		</div>
