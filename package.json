@@ -1,17 +1,12 @@
 {
 	"name": "website",
+	"author": {
+		"name": "Adrian Eyre",
+		"url": "http://adrianeyre.co.uk"
+	},
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"@babel/polyfill": "^7.6.0",
-		"@fortawesome/fontawesome-svg-core": "^1.2.22",
-		"@fortawesome/free-solid-svg-icons": "^5.10.2",
-		"@fortawesome/react-fontawesome": "^0.1.4",
-		"@types/jest": "24.0.18",
-		"@types/node": "12.7.4",
-		"@types/react": "16.9.2",
-		"@types/react-dom": "16.9.0",
-		"@types/react-scroll": "^1.5.4",
 		"bootstrap": "^4.3.1",
 		"fs": "0.0.1-security",
 		"ftp": "^0.3.10",
@@ -24,7 +19,8 @@
 		"react-scripts": "3.1.1",
 		"react-scripts-ts": "^3.1.0",
 		"react-scroll": "^1.7.14",
-		"typescript": "3.6.2"
+		"react-slick": "^0.25.2",
+		"slick-carousel": "^1.8.1"
 	},
 	"scripts": {
 		"build-css": "node-sass-chokidar src/ -o src/",
@@ -41,7 +37,18 @@
 		"extends": "react-app"
 	},
 	"devDependencies": {
+		"@babel/polyfill": "^7.6.0",
+		"@fortawesome/fontawesome-svg-core": "^1.2.22",
+		"@fortawesome/free-solid-svg-icons": "^5.10.2",
+		"@fortawesome/react-fontawesome": "^0.1.4",
+		"@types/jest": "24.0.18",
+		"@types/node": "12.7.4",
+		"@types/react": "16.9.2",
+		"@types/react-dom": "16.9.0",
+		"@types/react-scroll": "^1.5.4",
+		"@types/react-slick": "^0.23.4",
 		"extract-text-webpack-plugin": "^4.0.0-beta.0",
+		"typescript": "3.6.2",
 		"webpack": "^4.40.2"
 	}
 }

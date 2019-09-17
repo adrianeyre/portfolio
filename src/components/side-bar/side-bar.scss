@@ -5,17 +5,17 @@
 	text-align: center;
 	display: grid;
 
-	&.active {
-		color: #2a2aeb;
-	}
+	// &.active {
+	// 	color: #2a2aeb;
+	// }
 
 	.link {
 		padding: 10px;
 		cursor: pointer;
 
-		a:hover {
-			background-color: yellow;
-		}
+		// a:hover {
+		// 	background-color: yellow;
+		// }
 	}
 
 	.image {
@@ -23,7 +23,7 @@
 
 		img {
 			width: 100px;
-			border: 5px solid #2a2aeb;
+			border: 5px solid $avatar-colour-background;
 		}
 	}
 

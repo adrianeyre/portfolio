@@ -8,7 +8,8 @@ import IDataService from './services/data-interface'
 import Image from './components/image/image';
 import Text from './components/text/text';
 import Navigation from './components/navigation/navigation';
-import Cards from './components/cards/cards';
+// import Cards from './components/cards/cards';
+import Carousel from './components/carousel/carousel';
 import SideBar from './components/side-bar/side-bar';
 import Bottom from './components/bottom/bottom';
 import Links from './components/links/links';
@@ -69,7 +70,8 @@ class App extends Component<any, IAppState> {
 				</Element>
 				<Element name="projects">
 					<Image imageName="image3.jpg" title="PROJECTS" />
-					<Cards data={ this.state.data.projects }/>
+					{/* <Cards data={ this.state.data.projects }/> */}
+					<Carousel data={ this.state.data.projects }/>
 				</Element>
 				<Element name="education">
 					<Image imageName="image4.jpg" title="EDUCATION" />

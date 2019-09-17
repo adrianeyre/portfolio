@@ -1,7 +1,4 @@
-$colour-dark: #222;
-$colour-body: #ccc;
-$colour-background: white;
-$colour-font: grey;
+@import './styles/colour-palette.scss';
 
 .sidebar {
 	width: 200px;
@@ -23,22 +20,14 @@ $colour-font: grey;
 
 .main,
 .sidebar {
-	border: 1px solid $colour-dark;
-	background-color: $colour-background;
+	border: 1px solid $sidebar-colour-dark;
+	background-color: $sidebar-colour-background;
 	border-radius: 10px;
 }
 
 .wrapper {
 	display: flex;
 	justify-content: space-between;
-}
-
-body {
-	padding: 3%;
-	color: $colour-font;
-	background-color: $colour-body;
-	box-sizing: border-box;
-	font-family: Lato, sans-serif;
 }
 
 .bottom {

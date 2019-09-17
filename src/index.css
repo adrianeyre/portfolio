@@ -1,2 +1,7 @@
 body {
-  margin: 0px; }
+  margin: 0px;
+  padding: 3%;
+  color: grey;
+  background-color: #659DBD;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif; }

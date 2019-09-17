@@ -24,13 +24,6 @@
   display: flex;
   justify-content: space-between; }
 
-body {
-  padding: 3%;
-  color: grey;
-  background-color: #ccc;
-  box-sizing: border-box;
-  font-family: Lato, sans-serif; }
-
 .bottom {
   justify-self: bottom; }
 
