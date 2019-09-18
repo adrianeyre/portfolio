@@ -37,7 +37,9 @@ class SideBar extends Component<ISideBarProps, ISideBarState> {
 				<Image src="/images/photo.jpeg" roundedCircle={true} />
 			</div>
 
-			{ this.state.data && this.state.data.map((item: IDataService, i: number) => <a key={i} className="link" onClick={ this.props.scrollToAnchor.bind(this, item.link) }>{ item.title }</a>) }
+			{ this.state.data && this.state.data.map((item: IDataService, i: number) => <div key={i} className="link-container">
+				<a className="link" onClick={ this.props.scrollToAnchor.bind(this, item.link) }>{ item.title }</a>
+			</div>) }
 
 			<Links data={ this.state.linksData }/>
 		</div>

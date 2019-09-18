@@ -5,17 +5,39 @@
 	text-align: center;
 	display: grid;
 
-	// &.active {
-	// 	color: #2a2aeb;
-	// }
-
-	.link {
+	.link-container {
 		padding: 10px;
 		cursor: pointer;
+		position: relative;
+		display: inline-block;
+		color: #007bff !important;
+		text-decoration: none;
 
-		// a:hover {
-		// 	background-color: yellow;
-		// }
+		a {
+			&:after {
+				content: "";
+				height: 1px;
+				width: 0;
+				background: #999;
+				margin: 0 auto;
+				margin-top: -1px;
+				display: block;
+				opacity: 0;
+				text-decoration: none !important;
+				-webkit-transition: all .25s ease-in-out;
+				-moz-transition: all .25s ease-in-out;
+				-o-transition: all .25s ease-in-out;
+				-ms-transition: all .25s ease-in-out;
+				transition: all .25s ease-in-out;
+			}
+	
+			&:hover {
+				&:after {
+					width: 100%;
+					opacity: 1;
+				}
+			}
+		}
 	}
 
 	.image {
