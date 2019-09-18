@@ -8,3 +8,9 @@ body {
 	box-sizing: border-box;
 	font-family: Lato, sans-serif;
 }
+
+@media (max-width: 1000px) {
+	body {
+	  padding: 0px;
+	}
+}
