@@ -12,12 +12,15 @@ import Carousel from './components/carousel/carousel';
 import SideBar from './components/side-bar/side-bar';
 import Bottom from './components/bottom/bottom';
 import Links from './components/links/links';
+import Modal from './components/modal/modal';
 
 import './App.css';
 
 interface IAppState {
 	data: any;
 	height: number;
+	showModal: boolean;
+	modalData?: IDataService;
 }
 
 class App extends Component<any, IAppState> {
@@ -35,6 +38,7 @@ class App extends Component<any, IAppState> {
 		this.state = {
 			data: {},
 			height: 0,
+			showModal: false
 		};
 	}
 
@@ -56,48 +60,61 @@ class App extends Component<any, IAppState> {
 	public render() {
 		if (Object.keys(this.state.data).length !== this.dataFiles.length) return <div>Loading</div>
 
-		return <div className="wrapper">
-			<div className="menu">
-				<Navigation data={ this.state.data.menu } linksData={ this.state.data.links } scrollToAnchor={ this.scrollToAnchor }/>
-			</div>
-
-			<div className="sidebar">
-				<SideBar data={ this.state.data.menu } linksData={ this.state.data.links } scrollToAnchor={ this.scrollToAnchor }/>
-			</div>
-
-			<div className="main">
-				<Element name="about">
-					<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
-					<Text data={ this.state.data.about } />
-					<Links data={ this.state.data.links }/>
-				</Element>
-				<Element name="skills">
-					<Image imageName="image2.jpg" title="SKILLS" />
-					<Text data={ this.state.data.skills } />
-				</Element>
-				<Element name="projects">
-					<Image imageName="image3.jpg" title="PROJECTS" />
-					<Carousel data={ this.state.data.projects }/>
-				</Element>
-				<Element name="education">
-					<Image imageName="image4.jpg" title="EDUCATION" />
-					<Text data={ this.state.data.education } />
-				</Element>
-				<Element name="experience">
-					<Image imageName="image5.jpg" title="EXPERIENCE" />
-					<Text data={ this.state.data.experience } />
-				</Element>
-				<Element name="codewars">
-					<Image imageName="image6.jpg" title="AUTHORED CODEWARS KATAS" />
-					<Carousel data={ this.state.data.codewars }/>
-				</Element>
-			</div>
-
-			{ this.state.height > 0.01 && <div className="bottom">
-				<Bottom scrollToTop={ this.scrollToTop }/>
+		return <div>
+			{ this.state.showModal  && <div className="modal">
+				<Modal data={ this.state.modalData } closeModal={ this.closeModal }/>
 			</div> }
+
+			<div className="wrapper">
+				<div className="menu">
+					<Navigation data={ this.state.data.menu } linksData={ this.state.data.links } scrollToAnchor={ this.scrollToAnchor }/>
+				</div>
+
+				<div className="sidebar">
+					<SideBar data={ this.state.data.menu } linksData={ this.state.data.links } scrollToAnchor={ this.scrollToAnchor }/>
+				</div>
+
+				<div className="main">
+					<Element name="about">
+						<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
+						<Text data={ this.state.data.about } />
+						<Links data={ this.state.data.links }/>
+					</Element>
+					<Element name="skills">
+						<Image imageName="image2.jpg" title="SKILLS" />
+						<Text data={ this.state.data.skills } />
+					</Element>
+					<Element name="projects">
+						<Image imageName="image3.jpg" title="PROJECTS" />
+						<Carousel data={ this.state.data.projects } showModal={ this.showModal } />
+					</Element>
+					<Element name="education">
+						<Image imageName="image4.jpg" title="EDUCATION" />
+						<Text data={ this.state.data.education } />
+					</Element>
+					<Element name="experience">
+						<Image imageName="image5.jpg" title="EXPERIENCE" />
+						<Text data={ this.state.data.experience } />
+					</Element>
+					<Element name="codewars">
+						<Image imageName="image6.jpg" title="AUTHORED CODEWARS KATAS" />
+						<Carousel data={ this.state.data.codewars } showModal={ this.showModal } />
+					</Element>
+				</div>
+
+				{ this.state.height > 0.01 && <div className="bottom">
+					<Bottom scrollToTop={ this.scrollToTop }/>
+				</div> }
+			</div>
 		</div>
 	}
+
+	private showModal = (modalData: IDataService) => {
+		console.log('APP SHOW MODAL')
+		this.setState({ showModal: true, modalData });
+	}
+
+	private closeModal = () => this.setState({ showModal: false });
 
 	private listenToScroll = () => {
 		const winScroll = document.body.scrollTop || document.documentElement.scrollTop

@@ -29,7 +29,7 @@ class Image extends Component<IImageProps, IImageState> {
 			<div className="image" style={ this.state.style }>
 				{ (this.props.title || this.props.subTitle) && <div className="text-row">
 					<div className="text-container">
-						{ this.props.title && <span className="primary-text">{ this.props.title }</span> }
+						{ this.props.title && <h1 className="primary-text">{ this.props.title }</h1> }
 						{ this.props.subTitle && <span className="secondary-text">{ this.props.subTitle }</span> }
 					</div>
 				</div> }

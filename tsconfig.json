@@ -16,7 +16,12 @@
 		"noImplicitAny": true,
 		"strictNullChecks": true,
 		"suppressImplicitAnyIndexErrors": true,
-		"noUnusedLocals": true
+		"noUnusedLocals": true,
+		"paths": {
+			"@fortawesome/fontawesome-common-types": [
+				"./node_modules/@fortawesome/fontawesome-common-types/index"
+			]
+		}
 	},
 	"exclude": [
 		"node_modules",

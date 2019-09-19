@@ -4,16 +4,31 @@
 	padding: 10px;
 	text-align: center;
 	display: grid;
+	background-color: $body-colour-background;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+	h3 {
+		margin: 30px;
+	}
 
 	.link-container {
 		padding: 10px;
 		cursor: pointer;
 		position: relative;
 		display: inline-block;
-		color: #007bff !important;
+		color: $sidebar-colour-link !important;
 		text-decoration: none;
 
 		a {
+			font-weight: 800;
+			letter-spacing: .05rem;
+			text-transform: uppercase;
+	
 			&:after {
 				content: "";
 				height: 1px;
@@ -41,16 +56,16 @@
 	}
 
 	.image {
-		margin-bottom: 20px;
+		margin: 30px 0px;
 
 		img {
-			width: 100px;
+			width: 150px;
 			border: 5px solid $avatar-colour-background;
 		}
 	}
 
 	.links-container {
-		position: absolute;
+		margin-top: 20px;
 		bottom: 20px;
 		width: 90%;
 

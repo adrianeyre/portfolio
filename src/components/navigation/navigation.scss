@@ -5,6 +5,17 @@
 }
 
 .navigation-container {
+	.navbar {
+		background-color: $body-colour-background !important;
+
+		a {
+			color: $sidebar-colour-link !important;
+			font-weight: 800;
+			letter-spacing: .05rem;
+			text-transform: uppercase;
+		}
+	}
+
 	.links-container {
 		position: absolute;
 		right: 20px;

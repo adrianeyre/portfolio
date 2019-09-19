@@ -1,53 +1,48 @@
 @import './styles/colour-palette.scss';
 
-.sidebar {
-	width: 200px;
-	height: 60vh;
-	min-height: 200px;
-	overflow: auto;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 5%;
-}
-
-.main {
-	width: calc(100% - 220px);
-	height: 100%;
-	min-height: 1000px;
-	display: flex;
-	flex-direction: column;
-}
-
-.main,
-.sidebar {
-	border: 1px solid $sidebar-colour-dark;
-	background-color: $sidebar-colour-background;
-	border-radius: 10px;
+.modal {
+	z-index: 100;
+	display: block;
 }
 
 .wrapper {
 	display: flex;
-	justify-content: space-between;
-}
 
-.bottom {
-	justify-self: bottom;
-}
-
-.menu {
-	display: none;
-}
-
-@media (max-width: 1000px) {
-	.sidebar {
+	.menu {
 		display: none;
 	}
 
-	.main {
-		width: 100%;
+	.sidebar {
+		width: 17rem;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		position: -webkit-sticky;
+		position: sticky;
+		background-color: $body-colour-background;
 	}
+	
+	.main {
+		width: calc(100% - 17rem);
+	}
+	
+	.bottom {
+		justify-self: bottom;
+	}
+}
 
-	.menu {
-		display: flex
+@media (max-width: 1000px) {
+	.wrapper {
+		.sidebar {
+			display: none;
+		}
+
+		.main {
+			width: 100%;
+		}
+
+		.menu {
+			display: flex
+		}
 	}
 }

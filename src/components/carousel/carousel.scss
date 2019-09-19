@@ -31,7 +31,7 @@
 
 			.card-body {
 				.card-text {
-					font-size: 10px;
+					font-size: 1rem;
 				}
 
 				.card-tags {
@@ -46,7 +46,14 @@
 			.card-button {
 				position: absolute;
 				bottom: 10px;
-				left: 10px;
+				// left: 10px;
+				margin: auto;
+				width: 60%;
+				// border: 3px solid #73AD21;
+				// padding: 10px;
+				a {
+					margin-right: 10px;
+				}
 			}
 		}
 	}

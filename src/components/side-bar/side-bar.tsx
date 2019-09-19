@@ -31,8 +31,6 @@ class SideBar extends Component<ISideBarProps, ISideBarState> {
 
 	public render() {
 		return <div className="side-bar-container">
-			<h3>Adrian Eyre</h3>
-
 			<div className="image">
 				<Image src="/images/photo.jpeg" roundedCircle={true} />
 			</div>

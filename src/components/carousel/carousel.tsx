@@ -2,8 +2,9 @@ import * as React from 'react';
 import { Component } from 'react';
 import { Card, Badge } from 'react-bootstrap';
 import Slider from "react-slick";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTags } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTags, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import IDataService, { ITags } from '../../services/data-interface';
 
@@ -15,6 +16,7 @@ interface ICarouselProps {
 	title?: string;
 	body?: string;
 	data: IDataService[];
+	showModal(data: IDataService): void;
 }
 
 interface ICarouselState {
@@ -74,9 +76,11 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 									{ tag }
 								</Badge>) }
 							</div> }
+
 							<Card.Text>{item.body}</Card.Text>
 							{ item.link && <div className="card-button">
-								<a href={ item.link } target="_blank" className="btn btn-primary">Link</a>
+								<a href={ item.link } target="_blank" className="btn btn-primary"><FontAwesomeIcon icon={ faGithub } /> Code</a>
+								<a onClick={ this.props.showModal.bind(this, item) } className="btn btn-primary"><FontAwesomeIcon icon={ faInfoCircle } /> Info</a>
 							</div> }
 						</Card.Body>
 					</Card>
