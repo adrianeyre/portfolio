@@ -34,8 +34,6 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 		const settings = {
 			dots: true,
 			infinite: true,
-			// speed: 500,
-			// slidesToScroll: 3,
 			centerMode: true,
  			centerPadding: '60px',
 			slidesToShow: 3,
@@ -63,7 +61,7 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 
 		return <div className="carousel-container">
 			<Slider {...settings}>
-				{ this.state.data && this.state.data.map((item: IDataService, i: number) => <div key={i} className="card-item">
+				{ this.state.data && this.state.data.map((item: IDataService, cardIndex: number) => <div key={ `card-item-${ cardIndex }` } className="card-item">
 					<Card>
 						{ item.image && <a href={ item.image.link } target="_blank">
 							<Card.Img variant="top" src={ item.image.filename } />
@@ -72,7 +70,7 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 							<Card.Title>{item.title}</Card.Title>
 							{ item.tags && <div className="card-tags">
 								<FontAwesomeIcon icon={ faTags } />
-								{ item.tags.map((tag: ITags, x: number) => <Badge className="card-tag" key={ i } pill={ true } variant="primary">
+								{ item.tags.map((tag: ITags, tagInbdex: number) => <Badge className="card-tag" key={ `card-item-${ cardIndex }-card-tag-${ tagInbdex }` } pill={ true } variant="primary">
 									{ tag }
 								</Badge>) }
 							</div> }
@@ -86,12 +84,6 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 			</Slider>
 		</div>
 	}
-
-	// private handleLink = () => console.log('on change');
-
-	// private onClickItem = () => console.log('on click item');
-
-	// private onClickThumb = () => console.log('on click thumb');
 }
 
 export default Carousel;

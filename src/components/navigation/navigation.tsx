@@ -37,7 +37,7 @@ class Navigation extends Component<INavigationProps, INavigationState> {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="mr-auto">
-						{ this.state.data && this.state.data.map((item: IDataService, i: number) => <Nav.Link key={i}>
+						{ this.state.data && this.state.data.map((item: IDataService, navIndex: number) => <Nav.Link key={ `navigation-${ navIndex }` }>
 							<a onClick={ this.props.scrollToAnchor.bind(this, item.link) }>{ item.title }</a>
 						</Nav.Link>) }
 					</Nav>

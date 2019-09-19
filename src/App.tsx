@@ -8,7 +8,6 @@ import IDataService from './services/data-interface'
 import Image from './components/image/image';
 import Text from './components/text/text';
 import Navigation from './components/navigation/navigation';
-// import Cards from './components/cards/cards';
 import Carousel from './components/carousel/carousel';
 import SideBar from './components/side-bar/side-bar';
 import Bottom from './components/bottom/bottom';
@@ -18,11 +17,12 @@ import './App.css';
 
 interface IAppState {
 	data: any;
+	height: number;
 }
 
 class App extends Component<any, IAppState> {
 	private dataService: DataService;
-	private dataFiles = ['menu', 'about', 'links', 'skills', 'projects', 'education', 'experience'];
+	private dataFiles = ['menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars'];
 
 	constructor(props: any) {
 		super(props);
@@ -33,7 +33,8 @@ class App extends Component<any, IAppState> {
 		this.scrollToTop = this.scrollToTop.bind(this);
 
 		this.state = {
-			data: {}
+			data: {},
+			height: 0,
 		};
 	}
 
@@ -44,6 +45,12 @@ class App extends Component<any, IAppState> {
 			data[filename] = await this.dataService.getData(`${ filename }.json`) as IDataService[]
 			this.setState(({ data }));
 		})
+
+		window.addEventListener('scroll', this.listenToScroll)
+	}
+
+	public componentWillUnmount() {
+		window.removeEventListener('scroll', this.listenToScroll)
 	}
 
 	public render() {
@@ -70,7 +77,6 @@ class App extends Component<any, IAppState> {
 				</Element>
 				<Element name="projects">
 					<Image imageName="image3.jpg" title="PROJECTS" />
-					{/* <Cards data={ this.state.data.projects }/> */}
 					<Carousel data={ this.state.data.projects }/>
 				</Element>
 				<Element name="education">
@@ -81,12 +87,22 @@ class App extends Component<any, IAppState> {
 					<Image imageName="image5.jpg" title="EXPERIENCE" />
 					<Text data={ this.state.data.experience } />
 				</Element>
+				<Element name="codewars">
+					<Image imageName="image6.jpg" title="AUTHORED CODEWARS KATAS" />
+					<Carousel data={ this.state.data.codewars }/>
+				</Element>
 			</div>
 
-			<div className="bottom">
+			{ this.state.height > 0.01 && <div className="bottom">
 				<Bottom scrollToTop={ this.scrollToTop }/>
-			</div>
+			</div> }
 		</div>
+	}
+
+	private listenToScroll = () => {
+		const winScroll = document.body.scrollTop || document.documentElement.scrollTop
+		const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+		this.setState({ height: winScroll / height })
 	}
 
 	private scrollToTop = () => scroll.scrollToTop();

@@ -1,0 +1,276 @@
+[
+	{
+		"title": "Maze Runner",
+		"body": "You will be given a 2D array of the maze and an array of directions. Your task is to follow the directions given. If you reach the end point before all your moves have gone, you should return Finish. If you hit any walls or go outside the maze border, you should return Dead. If you find yourself still in the maze after using all the moves, you should return Lost.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/mazerunner.jpg",
+			"link": "https://www.codewars.com/kata/maze-runner"
+		},
+		"tags": [
+			"C#",
+			"Haskell",
+			"JavaScript",
+			"PHP",
+			"Python",
+			"Ruby",
+			"TypeScript"
+		],
+		"link": "https://www.codewars.com/kata/maze-runner"
+	},
+	{
+		"title": "Scooby Doo Puzzle",
+		"body": "Good one Shaggy! We all love to watch Scooby Doo, Shaggy Rogers, Fred Jones, Daphne Blake and Velma Dinkley solve the clues and figure out who was the villain. The story plot rarely differed from one episode to the next. Scooby and his team followed the clue then unmasked the villain at the end.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/scoobydoopuzzle.jpg",
+			"link": "https://www.codewars.com/kata/scooby-doo-puzzle"
+		},
+		"tags": [
+			"JavaScript",
+			"Python",
+			"Ruby"
+		],
+		"link": "https://www.codewars.com/kata/scooby-doo-puzzle"
+	},
+	{
+		"title": "Driving Licence",
+		"body": "In the United Kingdom, the driving licence is the official document which authorises its holder to operate various types of motor vehicle on highways and some other roads to which the public have access. In England, Scotland and Wales they are administered by the Driver and Vehicle Licensing Agency (DVLA) and in Northern Ireland by the Driver & Vehicle Agency (DVA). A driving licence is required in the UK by any person driving a vehicle on any highway or other road defined in s.192 Road Traffic Act 1988[1] irrespective of ownership of the land over which the road passes, thus including many which allow the public to pass over private land; similar requirements apply in Northern Ireland under the Road Traffic (Northern Ireland) Order 1981. (Source Wikipedia)",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/drivinglicense.jpg",
+			"link": "https://www.codewars.com/kata/driving-licence"
+		},
+		"tags": [
+			"C",
+			"CoffeeScript",
+			"C++",
+			"Crystal",
+			"C#",
+			"Java",
+			"JavaScript",
+			"PHP",
+			"Python",
+			"Ruby",
+			"TypeScript"
+		],
+		"link": "https://www.codewars.com/kata/driving-licence"
+	},
+	{
+		"title": "Connect 4",
+		"body": "We all love to play games especially as children. I have fond memories playing Connect 4 with my brother so decided to create this Kata based on the classic game. Connect 4 is known as several names such as 'Four in a Row' and 'Captain’s Mistress' but was made popular by Hasbro MB Games",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/connect4.jpg",
+			"link": "https://www.codewars.com/kata/connect4"
+		},
+		"tags": [
+			"C#",
+			"JavaScript",
+			"PHP",
+			"Python",
+			"Ruby",
+			"TypeScript",
+			"VB"
+		],
+		"link": "https://www.codewars.com/kata/connect4"
+	},
+	{
+		"title": "Vending Machine",
+		"body": "A vending machine is a machine that dispenses items such as snacks and beverages to customers automatically, after the customer inserts currency or credit into the machine. The first modern vending machines were developed in England in the early 19th century and dispensed postcards.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/vendingmachine.jpg",
+			"link": "https://www.codewars.com/kata/586e6d4cb98de09e3800014f"
+		},
+		"tags": [
+			"JavaScript",
+			"Python",
+			"Ruby"
+		],
+		"link": "https://www.codewars.com/kata/586e6d4cb98de09e3800014f"
+	},
+	{
+		"title": "Snakes and Ladders",
+		"body": "Snakes and Ladders is an ancient Indian board game regarded today as a worldwide classic. It is played between two or more players on a gameboard having numbered, gridded squares. A number of 'ladders' and 'snakes' are pictured on the board, each connecting two specific board squares.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/snakesandladders.jpg",
+			"link": "https://www.codewars.com/kata/587136ba2eefcb92a9000027"
+		},
+		"tags": [
+			"C++",
+			"C#",
+			"Java",
+			"JavaScript",
+			"PHP",
+			"Python",
+			"Ruby",
+			"TypeScript",
+			"VB"
+		],
+		"link": "https://www.codewars.com/kata/587136ba2eefcb92a9000027"
+	},
+	{
+		"title": "Mastermind",
+		"body": "Mastermind or Master Mind is a code-breaking game for two players. The modern game with pegs was invented in 1970 by Mordecai Meirowitz, an Israeli postmaster and telecommunications expert. It resembles an earlier pencil and paper game called Bulls and Cows that may date back a century or more.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/mastermind.jpg",
+			"link": "https://www.codewars.com/kata/58a848258a6909dd35000003"
+		},
+		"tags": [
+			"JavaScript",
+			"Python",
+			"Ruby"
+		],
+		"link": "https://www.codewars.com/kata/58a848258a6909dd35000003"
+	},
+	{
+		"title": "Guess Who?",
+		"body": "Guess Who? is a two-player guessing game created by Ora and Theo Coster, also known as Theora Design, that was first manufactured by Milton Bradley in 1979. It was first brought to the UK by Jack Barr Sr in 1982",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/guesswho_banner.jpg",
+			"link": "https://www.codewars.com/kata/58b2c5de4cf8b90723000051"
+		},
+		"tags": [
+			"JavaScript",
+			"Python",
+			"Ruby"
+		],
+		"link": "https://www.codewars.com/kata/58b2c5de4cf8b90723000051"
+	},
+	{
+		"title": "Am I safe to drive?",
+		"body": "If you've been out drinking you may still be affected by alcohol the next day. You may feel OK, but you may still be unfit to drive or over the legal alcohol limit. It's impossible to get rid of alcohol any faster. A shower, a cup of coffee or other ways of 'sobering up' will not help. It just takes time.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/drunk.png",
+			"link": "https://www.codewars.com/kata/58ce88427e6c3f41c2000087"
+		},
+		"tags": [
+			"C#",
+			"JavaScript",
+			"Python",
+			"Ruby"
+		],
+		"link": "https://www.codewars.com/kata/58ce88427e6c3f41c2000087"
+	},
+	{
+		"title": "Mexican Wave",
+		"body": "The wave (known as the Mexican wave in the English-speaking world outside North America) is an example of metachronal rhythm achieved in a packed stadium when successive groups of spectators briefly stand, yell, and raise their arms. Immediately upon stretching to full height, the spectator returns to the usual seated position.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/Wave.png",
+			"link": "https://www.codewars.com/kata/58f5c63f1e26ecda7e000029"
+		},
+		"tags": [
+			"C",
+			"Clojure",
+			"CoffeeScript",
+			"C++",
+			"Crystal",
+			"C#",
+			"Dart",
+			"Go",
+			"Haskell",
+			"Java",
+			"JavaScript",
+			"PHP",
+			"Python",
+			"Racket",
+			"Reason",
+			"Ruby",
+			"TypeScript",
+			"VB"
+		],
+		"link": "https://www.codewars.com/kata/58f5c63f1e26ecda7e000029"
+	},
+	{
+		"title": "Pigs in a Pen",
+		"body": "Dots and Boxes is a pencil-and-paper game for two players (sometimes more). It was first published in the 19th century by Édouard Lucas, who called it la pipopipette. It has gone by many other names, including the game of dots, boxes, dot to dot grid, and pigs in a pen.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/squares_banner.jpg",
+			"link": "https://www.codewars.com/kata/58fdcc51b4f81a0b1e00003e"
+		},
+		"tags": [
+			"C#",
+			"JavaScript",
+			"PHP",
+			"Python",
+			"Ruby",
+			"TypeScript"
+		],
+		"link": "https://www.codewars.com/kata/58fdcc51b4f81a0b1e00003e"
+	},
+	{
+		"title": "Hungry Hippos",
+		"body": "Hungry Hungry Hippos is a tabletop game made for 2–4 players, produced by Hasbro, under the brand of its subsidiary, Milton Bradley. The idea for the game was published in 1967 by toy inventor Fred Kroll and it was introduced in 1978. The objective of the game is for each player to collect as many marbles as possible with their 'hippo' (a toy hippo model).",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/hippo.jpg",
+			"link": "https://www.codewars.com/kata/590300eb378a9282ba000095"
+		},
+		"tags": [
+			"C#",
+			"JavaScript",
+			"PHP",
+			"Python",
+			"Ruby",
+			"TypeScript"
+		],
+		"link": "https://www.codewars.com/kata/590300eb378a9282ba000095"
+	},
+	{
+		"title": "Plenty of Fish in the Pond",
+		"body": "Fish are an integral part of any ecosystem. Unfortunately, fish are often seen as high maintenance. Contrary to popular belief, fish actually reduce pond maintenance as they graze on string algae and bottom feed from the pond floor. They also make very enjoyable pets, providing hours of natural entertainment.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/fish.jpg",
+			"link": "https://www.codewars.com/kata/5904be220881cb68be00007d"
+		},
+		"tags": [
+			"C",
+			"C++",
+			"C#",
+			"Haskell",
+			"JavaScript",
+			"PHP",
+			"Python",
+			"Ruby",
+			"TypeScript",
+			"VB"
+		],
+		"link": "https://www.codewars.com/kata/5904be220881cb68be00007d"
+	},
+	{
+		"title": "Fruit Machine",
+		"body": "Slot machine (American English), informally fruit machine (British English), puggy (Scottish English slang), the slots (Canadian and American English), poker machine (or pokies in slang) (Australian English and New Zealand English) or simply slot (American English), is a casino gambling machine with three or more reels which spin when a button is pushed.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/fruit.jpg",
+			"link": "https://www.codewars.com/kata/590adadea658017d90000039"
+		},
+		"tags": [
+			"C",
+			"C++",
+			"Crystal",
+			"C#",
+			"Haskell",
+			"Java",
+			"JavaScript",
+			"PHP",
+			"Python",
+			"Ruby",
+			"TypeScript"
+		],
+		"link": "https://www.codewars.com/kata/590adadea658017d90000039"
+	},
+	{
+		"title": "Car Park Escape",
+		"body": "A multi-storey car park (also called a parking garage, parking structure, parking ramp, parkade, parking building, parking deck or indoor parking) is a building designed for car parking and where there are a number of floors or levels on which parking takes place. It is essentially an indoor, stacked car park. Parking structures may be heated if they are enclosed.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/carpark.jpg",
+			"link": "https://www.codewars.com/kata/591eab1d192fe0435e000014"
+		},
+		"tags": [
+			"C++",
+			"C#",
+			"F#",
+			"JavaScript",
+			"PHP",
+			"Python",
+			"Ruby",
+			"TypeScript"
+		],
+		"link": "https://www.codewars.com/kata/591eab1d192fe0435e000014"
+	}
+]

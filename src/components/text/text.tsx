@@ -25,7 +25,7 @@ class Text extends Component<ITextProps, ITextState> {
 
 	public render() {
 		return <div className="text-container">
-			{ this.state.data && this.state.data.map((item: IDataService, i: number) => <div key={i} className="text-item">
+			{ this.state.data && this.state.data.map((item: IDataService, textIndex: number) => <div key={ `text-item-${ textIndex }` } className="text-item">
 				{ item.title && <h2>{ item.title }</h2> }
 				{ item.subTitle && <h4>{ item.subTitle }</h4> }
 				{ item.body && <span dangerouslySetInnerHTML={{__html: item.body }} /> }

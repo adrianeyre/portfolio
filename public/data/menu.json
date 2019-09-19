@@ -18,5 +18,9 @@
 	{
 		"title": "Experience",
 		"link": "experience"
+	},
+	{
+		"title": "Codewars",
+		"link": "codewars"
 	}
 ]
