@@ -2,7 +2,8 @@
 
 .carousel-container {
 	padding: 10px;
-	overflow-y: hidden;
+	overflow-y: hidden !important;
+	overflow-x: hidden !important;
 
 	button.slick-arrow.slick-next:before {
 		color: black;
@@ -40,6 +41,7 @@
 			}
 
 			.card-body {
+				max-height: 350px;
 				padding: 0.5rem;
 
 				.card-text {
