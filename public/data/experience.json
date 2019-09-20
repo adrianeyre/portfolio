@@ -9,7 +9,10 @@
 			"HTML5",
 			"MVC architecture",
 			"Azure (AD, Functions, Virtual Machines, ARM Templates)",
-			"SQL Server"
+			"SQL Server",
+			"Team City",
+			"Octopus Deployments",
+			"NUnit and XUnit testing"
 		]
 	},
 	{
