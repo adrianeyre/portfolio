@@ -25,7 +25,7 @@ class Links extends Component<ILinksProps, ILinksState> {
 	public render() {
 		return <div className="links-container">
 			{ this.state.data && this.state.data.map((item: IDataService, linkIndex: number) => <span key={ `link-${ linkIndex }` }>
-				{ item.image && <a href={ item.image.link }><img src={ item.image.filename } /></a> }
+				{ item.image && <a href={ item.image.link } target="_blank"><img src={ item.image.filename } /></a> }
 			</span>)}
 		</div>
 	}
