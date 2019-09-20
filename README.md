@@ -1,5 +1,5 @@
-# Website
-#### Technologies: TypeScript, React, SCSS, CSS, HTML
+# Website - [http://adrianeyre.co.uk](http://adrianeyre.co.uk)
+#### Technologies: TypeScript, React, CircleCI, SCSS, CSS, HTML
 
 ## Index
 * [Installation](#Install)
