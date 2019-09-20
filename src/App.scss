@@ -5,7 +5,7 @@
 	display: block;
 }
 
-.wrapper {
+.container {
 	display: flex;
 
 	.menu {
@@ -32,7 +32,7 @@
 }
 
 @media (max-width: 1000px) {
-	.wrapper {
+	.container {
 		.sidebar {
 			display: none;
 		}

@@ -65,7 +65,7 @@ class App extends Component<any, IAppState> {
 				<Modal data={ this.state.modalData } closeModal={ this.closeModal }/>
 			</div> }
 
-			<div className="wrapper">
+			<div className="container">
 				<div className="menu">
 					<Navigation data={ this.state.data.menu } linksData={ this.state.data.links } scrollToAnchor={ this.scrollToAnchor }/>
 				</div>

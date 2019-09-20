@@ -7,3 +7,12 @@
 		margin-bottom: 20px;
 	}
 }
+
+@media (max-width: 1000px) {
+	.text-container {
+		h2 {
+			font-size: 1.6rem;
+			line-height: 1.6rem;
+		}
+	}
+}

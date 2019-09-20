@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-import { Card, Badge } from 'react-bootstrap';
+import { Card, Badge, ListGroup } from 'react-bootstrap';
 import Slider from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTags, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
@@ -38,7 +38,7 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 			infinite: true,
 			centerMode: true,
  			centerPadding: '60px',
-			slidesToShow: 3,
+			slidesToShow: 2,
 			responsive: [
 				{
 					breakpoint: 768,
@@ -70,6 +70,7 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 						</a> }
 						<Card.Body>
 							<Card.Title>{item.title}</Card.Title>
+
 							{ item.tags && <div className="card-tags">
 								<FontAwesomeIcon icon={ faTags } />
 								{ item.tags.map((tag: ITags, tagInbdex: number) => <Badge className="card-tag" key={ `card-item-${ cardIndex }-card-tag-${ tagInbdex }` } pill={ true } variant="primary">
@@ -77,12 +78,16 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 								</Badge>) }
 							</div> }
 
-							<Card.Text>{item.body}</Card.Text>
-							{ item.link && <div className="card-button">
-								<a href={ item.link } target="_blank" className="btn btn-primary"><FontAwesomeIcon icon={ faGithub } /> Code</a>
-								<a onClick={ this.props.showModal.bind(this, item) } className="btn btn-primary"><FontAwesomeIcon icon={ faInfoCircle } /> Info</a>
-							</div> }
+							<Card.Text className="card-text-body">{item.body}</Card.Text>
 						</Card.Body>
+						<ListGroup variant="flush">
+							<ListGroup.Item>
+								{ item.link && <div className="card-button">
+									<a href={ item.link } target="_blank" className="btn btn-primary"><FontAwesomeIcon icon={ faGithub } /> Code</a>
+									<a onClick={ this.props.showModal.bind(this, item) } className="btn btn-primary"><FontAwesomeIcon icon={ faInfoCircle } /> Info</a>
+								</div> }
+							</ListGroup.Item>
+						</ListGroup>
 					</Card>
 				</div>)}
 			</Slider>
