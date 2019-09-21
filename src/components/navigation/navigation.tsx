@@ -32,7 +32,7 @@ class Navigation extends Component<INavigationProps, INavigationState> {
 	public render() {
 		return <div className="navigation-container">
 			<Navbar bg="light" expand="lg" fixed="top">
-				<Navbar.Brand href="#home">ADRIAN EYRE</Navbar.Brand>
+				<Navbar.Brand href="/">ADRIAN EYRE</Navbar.Brand>
 				<Links data={ this.state.linksData }/>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">

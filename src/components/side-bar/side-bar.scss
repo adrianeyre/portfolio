@@ -28,29 +28,11 @@
 			font-weight: 800;
 			letter-spacing: .05rem;
 			text-transform: uppercase;
-	
-			&:after {
-				content: "";
-				height: 1px;
-				width: 0;
-				background: #999;
-				margin: 0 auto;
-				margin-top: -1px;
-				display: block;
-				opacity: 0;
-				text-decoration: none !important;
-				-webkit-transition: all .25s ease-in-out;
-				-moz-transition: all .25s ease-in-out;
-				-o-transition: all .25s ease-in-out;
-				-ms-transition: all .25s ease-in-out;
-				transition: all .25s ease-in-out;
-			}
+			transition: all 500ms;
 	
 			&:hover {
-				&:after {
-					width: 100%;
-					opacity: 1;
-				}
+				font-size: 1.2em;
+				font-size-adjust: 20px;
 			}
 		}
 	}

@@ -13,7 +13,7 @@ const config = {
 const ftpClient = new FtpClient();
 
 function createDirectory(destination) {
-	return ftpClient.mkdir(destination, true, (error) => {
+	return ftpClient.mkdir(destination, true, error => {
 		if (error) throw error;
 
 		ftpClient.end();
@@ -21,17 +21,17 @@ function createDirectory(destination) {
 }
 
 function uploadFile(file, destination) {
-	ftpClient.put(file, destination, (error) => {
+	ftpClient.put(file, destination, error => {
 		if (error) throw error;
 
-		console.log(`${file} => ${destination}`);
+		console.log(`${ file } => ${ destination }`);
 		ftpClient.end();
 	});
 }
 
 function handlePath(path) {
-	const relativeFile = path.replace(`${basePath}/`, '');
-	const destination = `${destinationPath}/${relativeFile}`;
+	const relativeFile = path.replace(`${ basePath }/`, '');
+	const destination = `${ destinationPath }/${ relativeFile }`;
 
 	if (fs.lstatSync(path).isDirectory()) {
 		return createDirectory(destination);
@@ -41,7 +41,7 @@ function handlePath(path) {
 }
 
 ftpClient.on('ready', () => {
-	glob.sync(`${basePath}/**/*`).forEach(handlePath);
+	glob.sync(`${ basePath }/**/*`).forEach(handlePath);
 });
 
 ftpClient.connect(config);
