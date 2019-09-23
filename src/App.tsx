@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Component } from 'react';
 import { Element, animateScroll as scroll, scroller } from 'react-scroll'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 import DataService from './services/data-service'
 import IDataService from './services/data-interface'
@@ -58,10 +60,14 @@ class App extends Component<any, IAppState> {
 	}
 
 	public render() {
-		if (Object.keys(this.state.data).length !== this.dataFiles.length) return <div>Loading</div>
+		if (Object.keys(this.state.data).length !== this.dataFiles.length) return <div className="loading-container">
+			<div className="loading-box">
+				<div className="loading-text">Loading <FontAwesomeIcon icon={ faSpinner } spin={ true } /></div>
+			</div>
+		</div>
 
 		return <div>
-			{ this.state.showModal  && <div className="modal">
+			{ this.state.showModal && <div className="modal">
 				<Modal data={ this.state.modalData } closeModal={ this.closeModal }/>
 			</div> }
 

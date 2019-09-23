@@ -5,6 +5,29 @@
 	display: block;
 }
 
+.loading-container {
+	width: 100%;
+
+	.loading-box {
+		margin: auto;
+		width: 50%;
+		background-color: $main-colour-background;
+		margin-top: 100px;
+		padding: 50px;
+		border-radius: 2%;
+		border: 2px solid $primary-colour-text;
+
+		.loading-text {
+			color: $primary-colour-text;
+			text-align: center;
+			vertical-align: middle;
+			font-size: 4em;
+			line-height: 5.5rem;
+			font-weight: 700;
+		}
+	}
+}
+
 .container {
 	display: flex;
 
@@ -59,5 +82,15 @@
 		max-width: 100% !important;
 		padding: 0px !important;
 		margin: 0px !important;
+	}
+
+	.loading-container {
+		.loading-box {
+			width: 70%;
+	
+			.loading-text {
+				font-size: 2em;
+			}
+		}
 	}
 }
