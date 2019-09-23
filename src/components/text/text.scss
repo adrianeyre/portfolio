@@ -5,14 +5,44 @@
 
 	.text-item {
 		margin-bottom: 20px;
+
+		.title {
+			a {
+				margin-right: 10px;
+
+				img {
+					vertical-align: middle;
+					height: 50px;
+					width: 50px;
+				}
+			}
+
+			h2 {
+				vertical-align: middle;
+				display: inline;
+			}
+		}
 	}
 }
 
 @media (max-width: 1000px) {
 	.text-container {
-		h2 {
-			font-size: 1.6rem;
-			line-height: 1.6rem;
+		.text-item {
+			.title {
+				a {
+					margin-right: 4px;
+
+					img {
+						height: 40px;
+						width: 40px;
+					}
+				}
+	
+				h2 {
+					font-size: 2rem;
+					line-height: 1.6rem;
+				}
+			}
 		}
 	}
 }

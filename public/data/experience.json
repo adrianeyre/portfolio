@@ -1,7 +1,14 @@
 [
 	{
-		"title": "Slimming World (June 2019 to Present)",
-		"subTitle": "Position: Software Developer",
+		"title": "Slimming World",
+		"image": {
+			"filename": "/images/logos/slimming-world.png",
+			"link": "https://www.slimmingworld.co.uk"
+		},
+		"subTitle": [
+			"Dates: June 2019 to Present",
+			"Position: Software Developer"
+		],
 		"body": "Full stack software developer writing internal applications to support Head Office",
 		"points": [
 			"Frameworks – ASP.NET, ASP.NET Core and React",
@@ -16,8 +23,15 @@
 		]
 	},
 	{
-		"title": "Solutions for Retail Brands (S4RB) (June 2017 to June 2019)",
-		"subTitle": "Position: Software Developer",
+		"title": "Solutions for Retail Brands (S4RB)",
+		"image": {
+			"filename": "/images/logos/s4rb.png",
+			"link": "https://www.s4rb.com"
+		},
+		"subTitle": [
+			"Dates: June 2017 to June 2019",
+			"Position: Software Developer"
+		],
 		"body": "Full stack software development engaging worldwide supermarkets such as Walmart, Asda, Waitrose, Woolworths (Australia), Walgreens Boots Alliance, Co-Op, Musgrave, Sams Club, Albertsons (Safeway) with their suppliers.",
 		"points": [
 			"Frameworks – AngularJS, Node Express and Laravel",
@@ -46,8 +60,15 @@
 		]
 	},
 	{
-		"title": "All Saints Catholic Academy  (July 2011 to December 2016)",
-		"subTitle": "Position: IT Manager",
+		"title": "All Saints Catholic Academy",
+		"image": {
+			"filename": "/images/logos/all-saints.jpg",
+			"link": "https://www.allsaints.notts.sch.uk"
+		},
+		"subTitle": [
+			"Dates: July 2011 to December 2016",
+			"Position: IT Manager"
+		],
 		"body": "I am a fully integrated member of staff within the school and enjoy the fast pace and challenges it brings on a daily basis. I am involved in a lot of voluntary aspects such as helping instruct the Duke of Edinburgh awards, assistant tutor, school radio, helping with the sound and light for school productions and a programming club. I am always looking for new trends and initiatives in IT so that I can bring them into the classroom. Budgets are tight for training so I keep up to date by researching and self-teaching to broaden my technical expertise. My main role consists of the below daily tasks.",
 		"points": [
 			"Developing Web and Windows based applications in ASP VB Script and VB6.",
@@ -69,16 +90,37 @@
 		]
 	},
 	{
-		"title": "Nottinghamshire Police (February 2009 to June 2019)",
-		"subTitle": "Position: Special Police Inspector",
+		"title": "Nottinghamshire Police",
+		"image": {
+			"filename": "/images/logos/notts-police.jpg",
+			"link": "https://www.nottinghamshire.police.uk"
+		},
+		"subTitle": [
+			"Dates: February 2009 to June 2019",
+			"Position: Special Police Inspector"
+		],
 		"body": "I perform a wide variety of duties such as enforcement of laws and the prevention of crimes, controls traffic flow and enforces state and local traffic regulations, participate in and conducts a variety of criminal investigations, arrests, support and assistance to special crime prevention and law enforcement programs and a variety of technical and administrative tasks in support of law enforcement services and activities."
 	},
 	{
-		"title": "The Carlton Academy (January 2002 to July 2011)",
-		"subTitle": "Position: Network Manager"
+		"title": "The Carlton Academy",
+		"image": {
+			"filename": "/images/logos/carlton-academy.png",
+			"link": "http://www.theacademycarlton.org.uk"
+		},
+		"subTitle": [
+			"Dates: January 2002 to July 2011",
+			"Position: Network Manager"
+		]
 	},
 	{
-		"title": "PC Service Call - Dixons Group (October 2001 to January 2002)",
-		"subTitle": "Position: Technical Support"
+		"title": "PC Service Call - Dixons Group",
+		"image": {
+			"filename": "/images/logos/pc-world.jpg",
+			"link": "https://www.currys.co.uk"
+		},
+		"subTitle": [
+			"Dates: October 2001 to January 2002",
+			"Position: Technical Support"
+		]
 	}
 ]

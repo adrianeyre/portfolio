@@ -6,6 +6,10 @@ interface IPoints {
 	name: string;
 }
 
+interface ISubTitle {
+	name: string
+}
+
 interface IImage {
 	filename: string;
 	link?: string;
@@ -13,7 +17,7 @@ interface IImage {
 
 export default interface IDataService {
 	title?: string;
-	subTitle?: string;
+	subTitle?: ISubTitle[];
 	body?: string;
 	image?: IImage;
 	tags?: ITags[];
@@ -21,4 +25,4 @@ export default interface IDataService {
 	link?: string;
 }
 
-export { ITags, IPoints };
+export { ITags, ISubTitle, IPoints };

@@ -1,6 +1,13 @@
 [
 	{
-		"title": "Makers Academy (January 2017 - March 2017)",
+		"title": "Makers Academy",
+		"image": {
+			"filename": "/images/logos/makers-acadey.png",
+			"link": "https://makers.tech"
+		},
+		"subTitle": [
+			"Dates: January 2017 - March 2017"
+		],
 		"points": [
 			"Curiosity and hungry passion for code",
 			"Independent learner and problem-solver",
@@ -14,7 +21,14 @@
 		]
 	},
 	{
-		"title": "University of Derby (October 1998 to June 2001)",
+		"title": "University of Derby",
+		"subTitle": [
+			"Dates: October 1998 to June 2001"
+		],
+		"image": {
+			"filename": "/images/logos/university-of-derby.jpg",
+			"link": "https://www.derby.ac.uk"
+		},
 		"points": [
 			"HND Computer Studies",
 			"Passed all modules apart from common skills"
