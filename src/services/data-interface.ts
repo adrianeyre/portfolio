@@ -13,6 +13,12 @@ interface ISubTitle {
 interface IImage {
 	filename: string;
 	link?: string;
+	type?: string;
+}
+
+enum IModalType {
+	data = 0,
+	email = 1,
 }
 
 export default interface IDataService {
@@ -25,4 +31,4 @@ export default interface IDataService {
 	link?: string;
 }
 
-export { ITags, ISubTitle, IPoints };
+export { ITags, ISubTitle, IPoints, IModalType };

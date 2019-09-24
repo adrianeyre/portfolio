@@ -1,21 +1,23 @@
 import * as React from 'react';
 import { Component } from 'react';
-import { Modal as ModalComponent, Button, Badge } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTags } from '@fortawesome/free-solid-svg-icons';
+import { Modal as ModalComponent, Button } from 'react-bootstrap';
 
-import IDataService, { ITags } from '../../services/data-interface';
+import IDataService, { IModalType } from '../../services/data-interface';
+import DefaultBody from './default-body';
+import EmailBody from './email-body';
 
 import './modal.css';
 
 interface IModalProps {
 	data?: IDataService;
+	modalType?: IModalType;
 	closeModal(): void;
 }
 
 interface IModalState {
 	data?: IDataService;
 	show: boolean;
+	modalType?: IModalType;
 }
 
 class Modal extends Component<IModalProps, IModalState> {
@@ -24,6 +26,7 @@ class Modal extends Component<IModalProps, IModalState> {
 
 		this.state = {
 			data: this.props.data,
+			modalType: this.props.modalType,
 			show: true
 		}
 	}
@@ -38,21 +41,11 @@ class Modal extends Component<IModalProps, IModalState> {
 					</ModalComponent.Title>
 				</ModalComponent.Header>
 				<ModalComponent.Body>
-					{ item.image && <a href={ item.image.link } target="_blank">
-						<img src={ item.image.filename } />
-					</a> }
-
-					{ item.tags && <div className="card-tags">
-						<FontAwesomeIcon icon={ faTags } />
-						{ item.tags.map((tag: ITags, tagInbdex: number) => <Badge className="card-tag" key={ `card-tag-${ tagInbdex }` } pill={ true } variant="primary">
-							{ tag }
-						</Badge>) }
-					</div> }
-
-					{ item.body && <div>{ item.body }</div> }
+					{ this.state.modalType === IModalType.data && <DefaultBody item={ item }/> }
+					{ this.state.modalType === IModalType.email && <EmailBody item={ item }/> }
 				</ModalComponent.Body>
 				<ModalComponent.Footer>
-					<a href={ item.link } target="_blank" className="btn btn-primary">Link</a>
+					{ item.link && <a href={ item.link } target="_blank" className="btn btn-primary">Link</a> }
 					<Button variant="secondary" onClick={ this.props.closeModal }>
 						Close
 					</Button>

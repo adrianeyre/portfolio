@@ -1,7 +1,7 @@
 @import '../../styles/colour-palette.scss';
 
 .carousel-container {
-	padding: 10px;
+	padding: 10px 0px;
 	overflow-y: hidden !important;
 	overflow-x: hidden !important;
 
@@ -55,7 +55,9 @@
 			position: absolute;
 
 			.card-tags {
-				margin: 1px;
+				.card-tag {
+					margin: 1px;
+				}
 			}
 
 			.card-text {

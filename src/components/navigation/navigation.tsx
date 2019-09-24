@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Component } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 
-import IDataService from '../../services/data-interface'
+import IDataService, { IModalType } from '../../services/data-interface'
 
 import Links from '../links/links';
 
@@ -12,6 +12,7 @@ interface INavigationProps {
 	data: IDataService[];
 	linksData: IDataService[];
 	scrollToAnchor(anchor: string): void;
+	showModal(type: IModalType, data?: IDataService): void;
 }
 
 interface INavigationState {
@@ -33,7 +34,7 @@ class Navigation extends Component<INavigationProps, INavigationState> {
 		return <div className="navigation-container">
 			<Navbar bg="light" expand="lg" fixed="top">
 				<Navbar.Brand href="/">ADRIAN EYRE</Navbar.Brand>
-				<Links data={ this.state.linksData }/>
+				<Links data={ this.state.linksData } showModal={ this.props.showModal } />
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="mr-auto">

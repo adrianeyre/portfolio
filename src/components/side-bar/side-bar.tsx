@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Component } from 'react';
 import { Image } from 'react-bootstrap';
 
-import IDataService from '../../services/data-interface'
+import IDataService, { IModalType } from '../../services/data-interface'
 
 import Links from '../links/links';
 
@@ -12,6 +12,7 @@ interface ISideBarProps {
 	data: IDataService[];
 	linksData: IDataService[];
 	scrollToAnchor(anchor: string): void;
+	showModal(type: IModalType, data?: IDataService): void;
 }
 
 interface ISideBarState {
@@ -39,7 +40,7 @@ class SideBar extends Component<ISideBarProps, ISideBarState> {
 				<a className="link" onClick={ this.props.scrollToAnchor.bind(this, item.link) }>{ item.title }</a>
 			</div>) }
 
-			<Links data={ this.state.linksData }/>
+			<Links data={ this.state.linksData } showModal={ this.props.showModal }/>
 		</div>
 	}
 }

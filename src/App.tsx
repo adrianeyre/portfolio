@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 import DataService from './services/data-service'
-import IDataService from './services/data-interface'
+import IDataService, { IModalType } from './services/data-interface'
 
 import Image from './components/image/image';
 import Text from './components/text/text';
@@ -24,6 +24,7 @@ interface IAppState {
 	width: number;
 	showModal: boolean;
 	modalData?: IDataService;
+	modalType?: IModalType;
 }
 
 class App extends Component<any, IAppState> {
@@ -72,23 +73,33 @@ class App extends Component<any, IAppState> {
 
 		return <div>
 			{ this.state.showModal && <div className="modal">
-				<Modal data={ this.state.modalData } closeModal={ this.closeModal }/>
+				<Modal data={ this.state.modalData } modalType={ this.state.modalType } closeModal={ this.closeModal }/>
 			</div> }
 
 			<div className="container">
 				<div className="menu">
-					<Navigation data={ this.state.data.menu } linksData={ this.state.data.links } scrollToAnchor={ this.scrollToAnchor }/>
+					<Navigation
+						data={ this.state.data.menu }
+						linksData={ this.state.data.links }
+						scrollToAnchor={ this.scrollToAnchor }
+						showModal={ this.showModal }
+					/>
 				</div>
 
 				<div className="sidebar">
-					<SideBar data={ this.state.data.menu } linksData={ this.state.data.links } scrollToAnchor={ this.scrollToAnchor }/>
+					<SideBar
+						data={ this.state.data.menu }
+						linksData={ this.state.data.links }
+						scrollToAnchor={ this.scrollToAnchor }
+						showModal={ this.showModal }
+					/>
 				</div>
 
 				<div className="main">
 					<Element name="about">
 						<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
 						<Text data={ this.state.data.about } />
-						<Links data={ this.state.data.links }/>
+						<Links data={ this.state.data.links } showModal={ this.showModal } />
 					</Element>
 					<Element name="skills">
 						<Image imageName="image2.jpg" title="SKILLS" />
@@ -119,9 +130,8 @@ class App extends Component<any, IAppState> {
 		</div>
 	}
 
-	private showModal = (modalData: IDataService) => {
-		console.log('APP SHOW MODAL')
-		this.setState({ showModal: true, modalData });
+	private showModal = (modalType: IModalType, modalData?: IDataService, ) => {
+		this.setState({ showModal: true, modalData, modalType });
 	}
 
 	private closeModal = () => this.setState({ showModal: false });
