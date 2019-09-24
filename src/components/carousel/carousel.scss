@@ -29,42 +29,65 @@
 		height: 50px;
 	}
 
-	.card-item {
-		height: 100%;
-		padding: 0px 10px;
+	.card {
+		height: 500px;
+		padding: 5px 5px;
+		border: 1px solid black;
 
-		.card {
-			height: 600px !important;
-
-			.card-img-top {
+		.card-image {
+			img {
 				height: 185px;
-			}
-
-			.card-body {
-				max-height: 350px;
-				padding: 0.5rem;
-
-				.card-text {
-					font-size: 1rem;
-				}
-
-				.card-tags {
-					margin-bottom: 5px;
-
-					.card-tag {
-						margin: 1px;
-					}
-				}
-			}
-
-			.card-button {
-				bottom: 10px;
-				color: white;
-				margin: auto;
 				width: 100%;
-				a {
-					margin-right: 10px;
-				}
+			}
+		}
+
+		.card-title {
+			width: 100%;
+
+			h3 {
+				text-align: center;
+			}
+		}
+
+		.card-body {
+			height: 210px;
+			padding: 0px;
+			position: absolute;
+
+			.card-tags {
+				margin: 1px;
+			}
+
+			.card-text {
+				font-size: 1rem;
+				overflow: hidden;
+				height: 100%;
+			}
+
+			.card-text:after {
+				content: "";
+				position: absolute;
+				z-index: 1;
+				bottom: 0;
+				left: 0;
+				pointer-events: none;
+				background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
+				width: 100%;
+				height: 4em;
+			}
+		}
+
+		.card-buttons {
+			position: absolute;
+			color: white;
+			background-color: white;
+			padding: 10px 0px;
+			width: 100%;
+			bottom: 0px;
+			left: 0px;
+
+			a {
+				margin-left: 5px;
 			}
 		}
 	}

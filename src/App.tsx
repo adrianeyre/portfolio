@@ -21,6 +21,7 @@ import './App.css';
 interface IAppState {
 	data: any;
 	height: number;
+	width: number;
 	showModal: boolean;
 	modalData?: IDataService;
 }
@@ -40,6 +41,7 @@ class App extends Component<any, IAppState> {
 		this.state = {
 			data: {},
 			height: 0,
+			width: 0,
 			showModal: false
 		};
 	}
@@ -48,15 +50,17 @@ class App extends Component<any, IAppState> {
 		const data = {};
 
 		await this.dataFiles.forEach(async (filename: string) =>  {
-			data[filename] = await this.dataService.getData(`${ filename }.json`) as IDataService[]
+			data[filename] = await this.dataService.getData(`${ filename }.json`) as IDataService[];
 			this.setState(({ data }));
 		})
 
-		window.addEventListener('scroll', this.listenToScroll)
+		window.addEventListener('scroll', this.listenToScroll);
+		window.addEventListener('resize', this.listenToResize);
 	}
 
 	public componentWillUnmount() {
-		window.removeEventListener('scroll', this.listenToScroll)
+		window.removeEventListener('scroll', this.listenToScroll);
+		window.removeEventListener('resize', this.listenToResize);
 	}
 
 	public render() {
@@ -92,7 +96,7 @@ class App extends Component<any, IAppState> {
 					</Element>
 					<Element name="projects">
 						<Image imageName="image3.jpg" title="PROJECTS" />
-						<Carousel data={ this.state.data.projects } showModal={ this.showModal } />
+						<Carousel data={ this.state.data.projects } showModal={ this.showModal } screenWidth={ this.state.width } />
 					</Element>
 					<Element name="education">
 						<Image imageName="image4.jpg" title="EDUCATION" />
@@ -104,7 +108,7 @@ class App extends Component<any, IAppState> {
 					</Element>
 					<Element name="codewars">
 						<Image imageName="image6.jpg" title="AUTHORED CODEWARS KATAS" />
-						<Carousel data={ this.state.data.codewars } showModal={ this.showModal } />
+						<Carousel data={ this.state.data.codewars } showModal={ this.showModal } screenWidth={ this.state.width } />
 					</Element>
 				</div>
 
@@ -127,6 +131,8 @@ class App extends Component<any, IAppState> {
 		const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
 		this.setState({ height: winScroll / height })
 	}
+
+	private listenToResize = () => this.setState({ width: window.innerWidth })
 
 	private scrollToTop = () => scroll.scrollToTop();
 

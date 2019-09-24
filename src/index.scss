@@ -22,6 +22,13 @@ h2 {
 	font-weight: 700;
 }
 
+h3 {
+	color: $primary-colour-text;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+}
+
 @media (max-width: 1000px) {
 	body {
 		padding: 0px;
