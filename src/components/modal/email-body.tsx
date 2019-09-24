@@ -64,7 +64,10 @@ const EmailBody = (props: any) => (
 			</InputGroup>
 
 			<div className="recaptcha">
-				<Recaptcha sitekey="6LelMLoUAAAAAK6x5PuJ2PUcWrqXhU8FJjWMZ2dV" />
+				<Recaptcha
+					sitekey="6LelMLoUAAAAAK6x5PuJ2PUcWrqXhU8FJjWMZ2dV"
+					render="explicit"
+				/>
 			</div>
 
 			<div className="submit-button">
