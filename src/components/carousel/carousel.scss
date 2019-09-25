@@ -5,6 +5,10 @@
 	overflow-y: hidden !important;
 	overflow-x: hidden !important;
 
+	.slick-slide {
+		padding: 0px 5px;
+	}
+
 	button.slick-arrow.slick-next:before {
 		color: black;
 		margin-left: -30px;

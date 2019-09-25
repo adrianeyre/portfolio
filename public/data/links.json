@@ -15,6 +15,13 @@
 	},
 	{
 		"image": {
+			"filename": "/images/links/slack.png",
+			"link": "https://www.technottingham.com/slack",
+			"type": "link"
+		}
+	},
+	{
+		"image": {
 			"filename": "/images/links/codewars.png",
 			"link": "https://www.codewars.com/users/adrian.eyre",
 			"type": "link"

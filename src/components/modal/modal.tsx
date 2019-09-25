@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-import { Modal as ModalComponent, Button } from 'react-bootstrap';
+import { Modal as ModalComponent } from 'react-bootstrap';
 
 import IDataService, { IModalType } from '../../services/data-interface';
 import DefaultBody from './default-body';
@@ -40,16 +40,8 @@ class Modal extends Component<IModalProps, IModalState> {
 						{ item.title && <h2>{ item.title }</h2>}
 					</ModalComponent.Title>
 				</ModalComponent.Header>
-				<ModalComponent.Body>
-					{ this.state.modalType === IModalType.data && <DefaultBody item={ item }/> }
-					{ this.state.modalType === IModalType.email && <EmailBody item={ item }/> }
-				</ModalComponent.Body>
-				<ModalComponent.Footer>
-					{ item.link && <a href={ item.link } target="_blank" className="btn btn-primary">Link</a> }
-					<Button variant="secondary" onClick={ this.props.closeModal }>
-						Close
-					</Button>
-				</ModalComponent.Footer>
+				{ this.state.modalType === IModalType.data && <DefaultBody item={ item } closeModal={ this.props.closeModal } /> }
+				{ this.state.modalType === IModalType.email && <EmailBody item={ item } closeModal={ this.props.closeModal } /> }
 			</ModalComponent>
 		</div>
 	}
