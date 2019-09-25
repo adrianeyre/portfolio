@@ -1,82 +1,113 @@
 import * as React from 'react';
+import { Component } from 'react';
 import { InputGroup, Form, FormControl, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelopeOpenText, faStickyNote, faShare } from '@fortawesome/free-solid-svg-icons';
-import * as Recaptcha from 'react-recaptcha';
+import ReCAPTCHA from "react-google-recaptcha";
 
-const handleSubmit = (event: any) => {
-	// const form = event.currentTarget;
-	event.preventDefault();
-	event.stopPropagation();
-};
+interface IEmailBodyData {
+	name: string;
+	email: string;
+	message: string;
+	recaptchaInstance?: any;
+	recaptchaValue?: any;
+}
 
-const data = {
-	name: '',
-	email: '',
-	message: '',
-};
+class EmailBody extends Component<any, any> {
+	private data: IEmailBodyData;
+	private recaptchaRef: any
 
-const handleNameChange = (event: any) => data.name = event.target.value;
-const handleEmailChange = (event: any) => data.email = event.target.value;
-const handleMessageChange = (event: any) => data.message = event.target.value;
+	constructor(props: any) {
+		super(props);
 
-const EmailBody = (props: any) => (
-	<div>
-		<Form onSubmit={ handleSubmit }>
-			<InputGroup className="mb-3">
-				<InputGroup.Prepend>
-					<InputGroup.Text id="basic-addon1"><FontAwesomeIcon icon={ faUser } /></InputGroup.Text>
-				</InputGroup.Prepend>
-				<FormControl
-					required={ true }
-					placeholder="Your Name"
-					aria-label="Your Name"
-					aria-describedby="basic-addon1"
-					onChange={ handleNameChange}
-				/>
-			</InputGroup>
+		this.data = {
+			name: '',
+			email: '',
+			message: '',
+			recaptchaInstance: undefined,
+			recaptchaValue: undefined,
+		}
 
-			<InputGroup className="mb-3">
-				<InputGroup.Prepend>
-					<InputGroup.Text id="basic-addon1"><FontAwesomeIcon icon={ faEnvelopeOpenText } /></InputGroup.Text>
-				</InputGroup.Prepend>
-				<FormControl
-					type="email"
-					required={ true }
-					placeholder="Your Email"
-					aria-label="Your Email"
-					aria-describedby="basic-addon1"
-					onChange={ handleEmailChange}
-				/>
-			</InputGroup>
+		this.recaptchaRef = React.createRef();
+	}
 
-			<InputGroup>
-				<InputGroup.Prepend>
-					<InputGroup.Text><FontAwesomeIcon icon={ faStickyNote } /></InputGroup.Text>
-				</InputGroup.Prepend>
-				<FormControl
-					required={ true }
-					as="textarea"
-					aria-label="Your Message"
-					placeholder="Your Message"
-					onChange={ handleMessageChange}
-				/>
-			</InputGroup>
+	public render() {
+		return <div>
+			<Form onSubmit={ this.handleSubmit }>
+				<InputGroup className="mb-3">
+					<InputGroup.Prepend>
+						<InputGroup.Text id="basic-addon1"><FontAwesomeIcon icon={ faUser } /></InputGroup.Text>
+					</InputGroup.Prepend>
+					<FormControl
+						required={ true }
+						placeholder="Your Name"
+						aria-label="Your Name"
+						aria-describedby="basic-addon1"
+						onChange={ this.handleNameChange}
+					/>
+				</InputGroup>
 
-			<div className="recaptcha">
-				<Recaptcha
-					sitekey="6LelMLoUAAAAAK6x5PuJ2PUcWrqXhU8FJjWMZ2dV"
-					render="explicit"
-				/>
-			</div>
+				<InputGroup className="mb-3">
+					<InputGroup.Prepend>
+						<InputGroup.Text id="basic-addon1"><FontAwesomeIcon icon={ faEnvelopeOpenText } /></InputGroup.Text>
+					</InputGroup.Prepend>
+					<FormControl
+						type="email"
+						required={ true }
+						placeholder="Your Email"
+						aria-label="Your Email"
+						aria-describedby="basic-addon1"
+						onChange={ this.handleEmailChange}
+					/>
+				</InputGroup>
 
-			<div className="submit-button">
-				<Button variant="primary" type="submit">
-					<FontAwesomeIcon icon={ faShare } /> Send Email
-				</Button>
-			</div>
-		</Form>
-	</div>
-)
+				<InputGroup>
+					<InputGroup.Prepend>
+						<InputGroup.Text><FontAwesomeIcon icon={ faStickyNote } /></InputGroup.Text>
+					</InputGroup.Prepend>
+					<FormControl
+						required={ true }
+						as="textarea"
+						aria-label="Your Message"
+						placeholder="Your Message"
+						onChange={ this.handleMessageChange}
+					/>
+				</InputGroup>
 
-export default EmailBody
+				<div className="recaptcha">
+					<ReCAPTCHA
+						ref={ this.recaptchaRef }
+						sitekey="6LfkZ7oUAAAAAIik0v6p7CQugJChqZ2SbsK4hpOd"
+						onChange={ this.onChange }
+					/>
+				</div>
+
+				<div className="submit-button">
+					<Button variant="primary" type="submit">
+						<FontAwesomeIcon icon={ faShare } /> Send Email
+					</Button>
+				</div>
+			</Form>
+		</div>
+	}
+
+	private onChange = (r: any) => {
+		console.log('onChange')
+		console.log(r);
+		this.data.recaptchaInstance = r;
+	}
+
+	private handleSubmit = (event: any) => {
+		this.data.recaptchaValue = this.recaptchaRef.current.getValue();
+
+		console.log(this.data)
+		event.preventDefault();
+		event.stopPropagation();
+	};
+
+	private handleNameChange = (event: any) => this.data.name = event.target.value;
+	private handleEmailChange = (event: any) => this.data.email = event.target.value;
+	private handleMessageChange = (event: any) => this.data.message = event.target.value;
+}
+
+export default EmailBody;
