@@ -23,7 +23,6 @@ class Message extends Component<IMessageProps, IMessageState> {
 	}
 
 	public render() {
-		console.log(this.props)
 		if (!this.props.message || !this.state.show) return null;
 
 		return <div className="message-container">

@@ -16,10 +16,13 @@ interface IEmailBodyData {
 	name: string;
 	email: string;
 	message: string;
+}
+
+interface IEmailBodyState {
 	recaptchaValue?: string;
 }
 
-class EmailBody extends Component<IEmailBodyProps, any> {
+class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 	private data: IEmailBodyData;
 	private recaptchaRef: any
 
@@ -30,6 +33,9 @@ class EmailBody extends Component<IEmailBodyProps, any> {
 			name: '',
 			email: '',
 			message: '',
+		}
+
+		this.state = {
 			recaptchaValue: undefined,
 		}
 
@@ -92,7 +98,7 @@ class EmailBody extends Component<IEmailBodyProps, any> {
 					</div>
 				</ModalComponent.Body>
 				<ModalComponent.Footer>
-					<Button variant="primary" type="submit" disabled={ !this.data.recaptchaValue }>
+					<Button variant="primary" type="submit" disabled={ !this.state.recaptchaValue }>
 						<FontAwesomeIcon icon={ faShare } /> Send Email
 					</Button>
 					<Button variant="secondary" onClick={ this.props.closeModal }>
@@ -103,11 +109,7 @@ class EmailBody extends Component<IEmailBodyProps, any> {
 		</div>
 	}
 
-	private onChange = (value: string) => {
-		console.log(value)
-		this.data.recaptchaValue = value;
-	}
-
+	private onChange = (value: string) => this.setState({ recaptchaValue: value });
 	private handleNameChange = (event: any) => this.data.name = event.target.value;
 	private handleEmailChange = (event: any) => this.data.email = event.target.value;
 	private handleMessageChange = (event: any) => this.data.message = event.target.value;
