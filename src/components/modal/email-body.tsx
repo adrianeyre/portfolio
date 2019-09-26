@@ -38,7 +38,7 @@ class EmailBody extends Component<IEmailBodyProps, any> {
 
 	public render() {
 		return <div>
-			<Form onSubmit={ this.handleSubmit }>
+			<Form method="post" action="/scripts/email.php">
 				<ModalComponent.Body>
 					<InputGroup className="mb-3">
 						<InputGroup.Prepend>
@@ -46,6 +46,7 @@ class EmailBody extends Component<IEmailBodyProps, any> {
 						</InputGroup.Prepend>
 						<FormControl
 							required={ true }
+							name="name"
 							placeholder="Your Name"
 							aria-label="Your Name"
 							aria-describedby="basic-addon1"
@@ -59,6 +60,7 @@ class EmailBody extends Component<IEmailBodyProps, any> {
 						</InputGroup.Prepend>
 						<FormControl
 							type="email"
+							name="email"
 							required={ true }
 							placeholder="Your Email"
 							aria-label="Your Email"
@@ -73,6 +75,7 @@ class EmailBody extends Component<IEmailBodyProps, any> {
 						</InputGroup.Prepend>
 						<FormControl
 							required={ true }
+							name="message"
 							as="textarea"
 							aria-label="Your Message"
 							placeholder="Your Message"
@@ -89,7 +92,7 @@ class EmailBody extends Component<IEmailBodyProps, any> {
 					</div>
 				</ModalComponent.Body>
 				<ModalComponent.Footer>
-					<Button variant="primary" type="submit" disabled={ !this.data.recaptchaValue }>
+					<Button variant="primary" type="submit">
 						<FontAwesomeIcon icon={ faShare } /> Send Email
 					</Button>
 					<Button variant="secondary" onClick={ this.props.closeModal }>
@@ -102,11 +105,11 @@ class EmailBody extends Component<IEmailBodyProps, any> {
 
 	private onChange = (value: string) => this.data.recaptchaValue = value;
 
-	private handleSubmit = (event: any) => {
-		console.log(this.data)
-		event.preventDefault();
-		event.stopPropagation();
-	};
+	// private handleSubmit = (event: any) => {
+	// 	console.log(this.data)
+	// 	event.preventDefault();
+	// 	event.stopPropagation();
+	// };
 
 	private handleNameChange = (event: any) => this.data.name = event.target.value;
 	private handleEmailChange = (event: any) => this.data.email = event.target.value;
