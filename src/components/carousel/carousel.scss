@@ -104,3 +104,11 @@
 		overflow-y: hidden;
 	}
 }
+
+@media (max-width: 700px) {
+	.carousel-container {
+		.slick-arrow {
+			display: none !important;
+		}
+	}
+}
