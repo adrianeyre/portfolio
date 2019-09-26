@@ -1,0 +1,15 @@
+@import '../../styles/colour-palette.scss';
+
+.message-container {
+	padding: 20px;
+
+	.message-area {
+		display: inline-flex;
+
+		.message-close {
+			cursor: pointer;
+			position: absolute;
+			right: 10px;
+		}
+	}
+}

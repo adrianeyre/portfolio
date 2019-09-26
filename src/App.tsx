@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 import DataService from './services/data-service'
+import URLParser, { IURLParser } from './services/url-parser';
 import IDataService, { IModalType } from './services/data-interface'
 
 import Image from './components/image/image';
@@ -15,6 +16,7 @@ import SideBar from './components/side-bar/side-bar';
 import Bottom from './components/bottom/bottom';
 import Links from './components/links/links';
 import Modal from './components/modal/modal';
+import Message from './components/message/message';
 
 import './App.css';
 
@@ -25,25 +27,33 @@ interface IAppState {
 	showModal: boolean;
 	modalData?: IDataService;
 	modalType?: IModalType;
+	message?: string;
+	type?: string;
 }
 
 class App extends Component<any, IAppState> {
 	private dataService: DataService;
+	private urlParser: URLParser;
 	private dataFiles = ['menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars'];
 
 	constructor(props: any) {
 		super(props);
 
 		this.dataService = new DataService;
+		this.urlParser = new URLParser;
 
 		this.scrollToAnchor = this.scrollToAnchor.bind(this);
 		this.scrollToTop = this.scrollToTop.bind(this);
+
+		const urlData: IURLParser = this.urlParser.getParams(window.location.search);
 
 		this.state = {
 			data: {},
 			height: 0,
 			width: 0,
-			showModal: false
+			showModal: false,
+			message: urlData.message,
+			type: urlData.type,
 		};
 	}
 
@@ -96,6 +106,10 @@ class App extends Component<any, IAppState> {
 				</div>
 
 				<div className="main">
+					<Message
+						message={ this.state.message }
+						type={ this.state.type }
+					/>
 					<Element name="about">
 						<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
 						<Text data={ this.state.data.about } />
