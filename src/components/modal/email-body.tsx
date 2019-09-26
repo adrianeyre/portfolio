@@ -92,7 +92,7 @@ class EmailBody extends Component<IEmailBodyProps, any> {
 					</div>
 				</ModalComponent.Body>
 				<ModalComponent.Footer>
-					<Button variant="primary" type="submit">
+					<Button variant="primary" type="submit" disabled={ !this.data.recaptchaValue }>
 						<FontAwesomeIcon icon={ faShare } /> Send Email
 					</Button>
 					<Button variant="secondary" onClick={ this.props.closeModal }>
@@ -103,13 +103,10 @@ class EmailBody extends Component<IEmailBodyProps, any> {
 		</div>
 	}
 
-	private onChange = (value: string) => this.data.recaptchaValue = value;
-
-	// private handleSubmit = (event: any) => {
-	// 	console.log(this.data)
-	// 	event.preventDefault();
-	// 	event.stopPropagation();
-	// };
+	private onChange = (value: string) => {
+		console.log(value)
+		this.data.recaptchaValue = value;
+	}
 
 	private handleNameChange = (event: any) => this.data.name = event.target.value;
 	private handleEmailChange = (event: any) => this.data.email = event.target.value;
