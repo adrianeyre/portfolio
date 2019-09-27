@@ -33,7 +33,7 @@ class SideBar extends Component<ISideBarProps, ISideBarState> {
 	public render() {
 		return <div className="side-bar-container">
 			<div className="image">
-				<Image src="/images/photo.jpeg" roundedCircle={true} />
+				<Image src="/images/links/photo.jpeg" roundedCircle={true} />
 			</div>
 
 			{ this.state.data && this.state.data.map((item: IDataService, sidebarIndex: number) => <div key={ `sidebar-${ sidebarIndex }` } className="link-container">
