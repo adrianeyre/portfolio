@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 import DataService from './services/data-service'
-import URLParser, { IURLParser } from './services/url-parser';
+import CookieParser, { ICookieParser } from './services/cookie-parser';
 import IDataService, { IModalType } from './services/data-interface'
 
 import Image from './components/image/image';
@@ -33,27 +33,28 @@ interface IAppState {
 
 class App extends Component<any, IAppState> {
 	private dataService: DataService;
-	private urlParser: URLParser;
+	private cookieParser: CookieParser;
 	private dataFiles = ['menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars'];
 
 	constructor(props: any) {
 		super(props);
 
 		this.dataService = new DataService;
-		this.urlParser = new URLParser;
+		this.cookieParser = new CookieParser;
 
 		this.scrollToAnchor = this.scrollToAnchor.bind(this);
 		this.scrollToTop = this.scrollToTop.bind(this);
 
-		const urlData: IURLParser = this.urlParser.getParams(window.location.search);
+		const cookieData: ICookieParser = this.cookieParser.getCookies();
+		this.cookieParser.removeCookies();
 
 		this.state = {
 			data: {},
 			height: 0,
 			width: 0,
 			showModal: false,
-			message: urlData.message,
-			type: urlData.type,
+			message: cookieData.message,
+			type: cookieData.type,
 		};
 	}
 
@@ -110,28 +111,28 @@ class App extends Component<any, IAppState> {
 						message={ this.state.message }
 						type={ this.state.type }
 					/>
-					<Element name="about">
+					<Element className="block" name="about">
 						<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
 						<Text data={ this.state.data.about } />
 						<Links data={ this.state.data.links } showModal={ this.showModal } />
 					</Element>
-					<Element name="skills">
+					<Element className="block" name="skills">
 						<Image imageName="image2.jpg" title="SKILLS" />
 						<Text data={ this.state.data.skills } />
 					</Element>
-					<Element name="projects">
+					<Element className="block" name="projects">
 						<Image imageName="image3.jpg" title="PROJECTS" />
 						<Carousel data={ this.state.data.projects } showModal={ this.showModal } screenWidth={ this.state.width } />
 					</Element>
-					<Element name="education">
+					<Element className="block" name="education">
 						<Image imageName="image4.jpg" title="EDUCATION" />
 						<Text data={ this.state.data.education } />
 					</Element>
-					<Element name="experience">
+					<Element className="block" name="experience">
 						<Image imageName="image5.jpg" title="EXPERIENCE" />
 						<Text data={ this.state.data.experience } />
 					</Element>
-					<Element name="codewars">
+					<Element className="block" name="codewars">
 						<Image imageName="image6.jpg" title="AUTHORED CODEWARS KATAS" />
 						<Carousel data={ this.state.data.codewars } showModal={ this.showModal } screenWidth={ this.state.width } />
 					</Element>

@@ -13,7 +13,7 @@
 		"no-console": false,
 		"ordered-imports": false,
 		"jsx-no-lambda": {
-		"severity": "warning"
+			"severity": "warning"
 		}
 	},
 	"jsRules": {

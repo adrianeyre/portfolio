@@ -47,7 +47,14 @@
 	
 	.main {
 		width: calc(100% - 17rem);
-		background-color: $main-colour-background;
+		
+
+		.block {
+			margin: 0px 0px 10px 10px;
+			// border: 1px solid black;
+			border-radius: 15px;
+			background-color: $main-colour-background;
+		}
 	}
 	
 	.bottom {
@@ -68,6 +75,10 @@
 
 		.main {
 			width: 100%;
+
+			.block {
+				margin: 0px 0px 10px 0px;
+			}
 		}
 
 		.menu {

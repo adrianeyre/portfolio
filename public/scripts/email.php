@@ -1,7 +1,9 @@
 <?php
 
 	function died($error) {
-		header("Location: /?type=danger&message={ $error }");
+		setcookie("message", $error, time() + 3600, "/");
+		setcookie("type", "danger", time() + 3600, "/");
+		header("Location: /");
 		die();
 	}
 
@@ -35,5 +37,7 @@
 
 	@mail($email_to, $email_subject, $email_message, $headers);
 
-	header("Location: /?type=success&message=Thank you for contacting me, I shall get back to you as soon as possible");
+	setcookie("message", "Thank you for contacting me, I shall get back to you as soon as possible", time() + 3600, "/");
+	setcookie("type", "success", time() + 3600, "/");
+	header("Location: /");
 ?>

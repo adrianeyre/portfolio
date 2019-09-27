@@ -1,7 +1,7 @@
 @import '../../styles/colour-palette.scss';
 
 .message-container {
-	padding: 20px;
+	padding: 10px 0px 10px 10px;
 
 	.message-area {
 		display: inline-flex;
@@ -11,5 +11,12 @@
 			position: absolute;
 			right: 10px;
 		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.message-container {
+		padding: 10px 0px 10px 0px;
+		margin-top: 60px;
 	}
 }
