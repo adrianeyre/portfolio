@@ -1,35 +1,35 @@
 [
 	{
 		"image": {
-			"filename": "/images/links/github.png",
+			"font": "brand.faGithub",
 			"link": "https://github.com/adrianeyre",
 			"type": "link"
 		}
 	},
 	{
 		"image": {
-			"filename": "/images/links/linkedin.png",
+			"font": "brand.faLinkedin",
 			"link": "https://www.linkedin.com/in/adrian-eyre-92b78390/",
 			"type": "link"
 		}
 	},
 	{
 		"image": {
-			"filename": "/images/links/slack.png",
+			"font": "brand.faSlack",
 			"link": "https://www.technottingham.com/slack",
 			"type": "link"
 		}
 	},
 	{
 		"image": {
-			"filename": "/images/links/codewars.png",
+			"font": "free.faCode",
 			"link": "https://www.codewars.com/users/adrian.eyre",
 			"type": "link"
 		}
 	},
 	{
 		"image": {
-			"filename": "/images/links/email.png",
+			"font": "free.faEnvelope",
 			"link": "mailto:info@adrianeyre.co.uk",
 			"type": "modal"
 		}

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Component } from 'react';
+import { Component, RefObject } from 'react';
 import { Modal as ModalComponent, InputGroup, Form, FormControl, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelopeOpenText, faStickyNote, faShare } from '@fortawesome/free-solid-svg-icons';
@@ -24,7 +24,7 @@ interface IEmailBodyState {
 
 class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 	private data: IEmailBodyData;
-	private recaptchaRef: any
+	private recaptchaRef: RefObject<any>;
 
 	constructor(props: IEmailBodyProps) {
 		super(props);
@@ -56,7 +56,7 @@ class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 							placeholder="Your Name"
 							aria-label="Your Name"
 							aria-describedby="basic-addon1"
-							onChange={ this.handleNameChange}
+							onChange={ this.handleNameChange }
 						/>
 					</InputGroup>
 
@@ -71,7 +71,7 @@ class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 							placeholder="Your Email"
 							aria-label="Your Email"
 							aria-describedby="basic-addon1"
-							onChange={ this.handleEmailChange}
+							onChange={ this.handleEmailChange }
 						/>
 					</InputGroup>
 
@@ -85,7 +85,7 @@ class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 							as="textarea"
 							aria-label="Your Message"
 							placeholder="Your Message"
-							onChange={ this.handleMessageChange}
+							onChange={ this.handleMessageChange }
 						/>
 					</InputGroup>
 
@@ -93,7 +93,7 @@ class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 						<ReCAPTCHA
 							ref={ this.recaptchaRef }
 							sitekey="6LfkZ7oUAAAAAIik0v6p7CQugJChqZ2SbsK4hpOd"
-							onChange={ this.onChange }
+							onChange={ this.onRecaptchaChange }
 						/>
 					</div>
 				</ModalComponent.Body>
@@ -109,10 +109,10 @@ class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 		</div>
 	}
 
-	private onChange = (value: string) => this.setState({ recaptchaValue: value });
-	private handleNameChange = (event: any) => this.data.name = event.target.value;
-	private handleEmailChange = (event: any) => this.data.email = event.target.value;
-	private handleMessageChange = (event: any) => this.data.message = event.target.value;
+	private onRecaptchaChange = (value: string) => this.setState({ recaptchaValue: value });
+	private handleNameChange = (event: React.ChangeEvent<any>) => this.data.name = event.target.value;
+	private handleEmailChange = (event: React.ChangeEvent<any>) => this.data.email = event.target.value;
+	private handleMessageChange = (event: React.ChangeEvent<any>) => this.data.message = event.target.value;
 }
 
 export default EmailBody;

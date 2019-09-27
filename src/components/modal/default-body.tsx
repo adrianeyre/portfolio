@@ -3,9 +3,14 @@ import { Modal as ModalComponent, Button, Badge } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTags } from '@fortawesome/free-solid-svg-icons';
 
-import { ITags } from '../../services/data-interface';
+import IDataService, { ITags } from '../../services/data-interface';
 
-const DefaultBody = (props: any) => (
+interface IDefaultBody {
+	item: IDataService;
+	closeModal(): void;
+}
+
+const DefaultBody = (props: IDefaultBody) => (
 	<div>
 		<ModalComponent.Body>
 			{ props.item.image && <a href={ props.item.image.link } target="_blank">

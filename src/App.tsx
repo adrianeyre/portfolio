@@ -31,12 +31,12 @@ interface IAppState {
 	type?: string;
 }
 
-class App extends Component<any, IAppState> {
+class App extends Component<{}, IAppState> {
 	private dataService: DataService;
 	private cookieParser: CookieParser;
 	private dataFiles = ['menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars'];
 
-	constructor(props: any) {
+	constructor(props: {}) {
 		super(props);
 
 		this.dataService = new DataService;

@@ -3,13 +3,17 @@
 .links-container {
 	text-align: center;
 
-	img {
+	img, .icon {
 		width: 50px;
 		height: 50px;
 		margin: 10px;
 	}
 
-	img:hover {
+	img {
+		margin: 0px;
+	}
+
+	img:hover, .icon:hover {
 		animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
 		transform: translate3d(0, 0, 0);
 		backface-visibility: hidden;
@@ -34,14 +38,15 @@
 		}
 	}
 
-	img {
+	img, .icon {
 		filter: gray;
 		-webkit-filter: grayscale(1);
 		-webkit-transition: all .4s ease-in-out;
 	}
 
-	img:hover {
+	img:hover, .icon:hover {
 		filter: none;
+		color: $sidebar-colour-link;
 		-webkit-filter: grayscale(0);
 		-webkit-transform: scale(1.01);
 	}

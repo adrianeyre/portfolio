@@ -10,7 +10,7 @@ interface IImageProps {
 }
 
 interface IImageState {
-	style: any;
+	style: React.CSSProperties;
 }
 
 class Image extends Component<IImageProps, IImageState> {
