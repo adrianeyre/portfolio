@@ -19,7 +19,7 @@ class Image extends Component<IImageProps, IImageState> {
 
 		this.state = {
 			style: {
-				backgroundImage: `url("./images/${ props.imageName }")`,
+				backgroundImage: `url("./images/blocks/${ props.imageName }")`,
 			}
 		}
 	}

@@ -107,5 +107,23 @@
 			"HTML"
 		],
 		"link": "https://github.com/adrianeyre/battle"
+	},
+	{
+		"title": "Portfolio",
+		"body": "A portfolio site with information on my career and experiences, written in React",
+		"image": {
+			"filename": "/images/projects/portfolio.png",
+			"link": "https://github.com/adrianeyre/portfolio"
+		},
+		"tags": [
+			"TypeScript",
+			"JavaScript",
+			"React",
+			"CircleCI",
+			"HTML",
+			"SCSS",
+			"PHP"
+		],
+		"link": "https://github.com/adrianeyre/portfolio"
 	}
 ]
