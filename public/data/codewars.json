@@ -58,7 +58,7 @@
 		"body": "We all love to play games especially as children. I have fond memories playing Connect 4 with my brother so decided to create this Kata based on the classic game. Connect 4 is known as several names such as 'Four in a Row' and 'Captain’s Mistress' but was made popular by Hasbro MB Games",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/connect4.jpg",
-			"link": "https://www.codewars.com/kata/connect4"
+			"link": "https://www.codewars.com/kata/connect-4"
 		},
 		"tags": [
 			"C#",
@@ -69,7 +69,7 @@
 			"TypeScript",
 			"VB"
 		],
-		"link": "https://www.codewars.com/kata/connect4"
+		"link": "https://www.codewars.com/kata/connect-4"
 	},
 	{
 		"title": "Vending Machine",

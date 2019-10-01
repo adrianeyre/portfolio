@@ -23,6 +23,7 @@
 	{
 		"title": "University of Derby",
 		"subTitle": [
+			"Qualification: HND Computer Studies",
 			"Dates: October 1998 to June 2001"
 		],
 		"image": {
@@ -30,14 +31,34 @@
 			"link": "https://www.derby.ac.uk"
 		},
 		"points": [
-			"HND Computer Studies",
 			"Passed all modules apart from common skills"
 		]
 	},
 	{
+		"title": "Certified Scrum Master",
+		"subTitle": [
+			"Qualification: CSM",
+			"Date: 29th July 2019"
+		],
+		"image": {
+			"filename": "/images/logos/csm.png",
+			"link": "https://certification.scrumalliance.org"
+		}
+	},
+	{
+		"title": "Oracle Database 11g Administrator",
+		"subTitle": [
+			"Qualification: Certified Associate",
+			"Date: 28th October 2014"
+		],
+		"image": {
+			"filename": "/images/logos/oracle-dba.jpg",
+			"link": "https://education.oracle.com/"
+		}
+	},
+	{
 		"title": "Other Qualifications",
 		"points": [
-			"Oracle Database 11g Administrator Certified Associate",
 			"Full First Aid certificate",
 			"Duke of Edinburgh Bronze to Gold Award",
 			"Qualified Duke of Edinburgh Bronze and Silver Instructor",

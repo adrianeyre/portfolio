@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Pacman",
-		"body": "Remake of the classic arcade game of Pacman",
+		"body": "Remake of the classic arcade game of Pacman. This windows application is fully tested with NUnit and written in C#. It emulated the original Pacman games where ghosts will chase you around the playing board.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/pacman/master/images/screenshot1.png",
 			"link": "https://github.com/adrianeyre/pacman"
@@ -14,7 +14,7 @@
 	},
 	{
 		"title": "Chitter Challenge",
-		"body": "Twitter clone that will allow the users to post messages to a public stream.",
+		"body": "A Twitter clone that will allow the users to post messages to a public board. You are able to reply and like other peoples comments. This is written in Ruby and uses the Sinatra web framework to host the pages.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/chitter-challenge/master/images/screenshot1.png",
 			"link": "https://github.com/adrianeyre/chitter-challenge"
@@ -34,7 +34,7 @@
 	},
 	{
 		"title": "Treasure Hunt",
-		"body": "Group mobile phone application project using augmented reality where the user has to navigate the real world on a treasure hunt.",
+		"body": "A mobile phone application project using augmented reality where the user has to navigate the real world on a treasure hunt. You are given clues on where to find the next point on your treasure map. The application uses GPS to let the user know how far away from each point they are. The mobile application is written in C#, Ruby, JavaScript, Swift and Unity.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/treasure-hunt/master/images/GameFlow.png",
 			"link": "https://github.com/adrianeyre/treasure-hunt"
@@ -57,7 +57,7 @@
 	},
 	{
 		"title": "Bowling Challenge",
-		"body": "Web page displaying bowling scores using Javascript and JQuery",
+		"body": "A web page application to display bowling scores. The user can either enter their own score or randomise a result. The web application is written in Javascript and JQuery.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/bowling-challenge/master/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/bowling-challenge"
@@ -73,7 +73,7 @@
 	},
 	{
 		"title": "Instagram Challenge",
-		"body": "Remake if Instagram.",
+		"body": "A remake of Instagram where the user can sign up via FaceBook and post their favourite images that will get stored on AWS. Other users can like and comment on your images. This web application is written in Ruby and JavaScript.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/instagram-challenge/master/images/screenshot1.png",
 			"link": "https://github.com/adrianeyre/instagram-challenge"
@@ -93,7 +93,7 @@
 	},
 	{
 		"title": "Battle",
-		"body": "Web page for a battle style game using Javascript and JQuery.",
+		"body": "A web application for a two player battle style game using Javascript and JQuery.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/battle/master/images/ScreenShot1.png",
 			"link": "https://github.com/adrianeyre/battle"
@@ -110,7 +110,7 @@
 	},
 	{
 		"title": "Portfolio",
-		"body": "A portfolio site with information about my career and experiences, written in React",
+		"body": "A portfolio site with information about my career, education and experiences, written in React, TypeScript, SCSS and PHP.",
 		"image": {
 			"filename": "/images/projects/portfolio.png",
 			"link": "https://github.com/adrianeyre/portfolio"

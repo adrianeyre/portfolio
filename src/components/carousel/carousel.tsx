@@ -3,8 +3,7 @@ import { Component } from 'react';
 import { Badge } from 'react-bootstrap';
 import Slider, { Settings } from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTags, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faTags, faInfoCircle, faLink } from '@fortawesome/free-solid-svg-icons';
 
 import IDataService, { ITags, IModalType } from '../../services/data-interface';
 
@@ -74,7 +73,7 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 
 					<div className="card-buttons">
 						{ item.link && <div>
-							<a href={ item.link } target="_blank" className="btn btn-primary"><FontAwesomeIcon icon={ faGithub } /> Code</a>
+							<a href={ item.link } target="_blank" className="btn btn-primary"><FontAwesomeIcon icon={ faLink} /> Link</a>
 							<a onClick={ this.props.showModal.bind(this, IModalType.data, item) } className="btn btn-primary"><FontAwesomeIcon icon={ faInfoCircle } /> Info</a>
 						</div> }
 					</div>

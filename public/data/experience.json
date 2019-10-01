@@ -9,17 +9,21 @@
 			"Dates: June 2019 to Present",
 			"Position: Software Developer"
 		],
-		"body": "Full stack software developer writing internal applications to support Head Office",
+		"body": "Full stack software developer writing internal applications to support the Head Office",
 		"points": [
-			"Frameworks – ASP.NET, ASP.NET Core and React",
-			"Languages – C# and TypeScript",
+			"Frameworks – ASP.NET, ASP.NET Core, React and Redux",
+			"Languages – C#, TypeScript and JavaScript",
+			"Entity Framework",
+			"SQL Server",
+			"Modern CSS and dynamic stylesheet using SCSS",
 			"HTML5",
 			"MVC architecture",
+			"Continuous Integration / Continuous Deployment",
 			"Azure (AD, Functions, Virtual Machines, ARM Templates)",
 			"SQL Server",
 			"Team City",
 			"Octopus Deployments",
-			"NUnit and XUnit testing"
+			"NUnit, XUnit and Moq testing"
 		]
 	},
 	{

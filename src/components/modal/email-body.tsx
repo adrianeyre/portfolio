@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Component, RefObject } from 'react';
 import { Modal as ModalComponent, InputGroup, Form, FormControl, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelopeOpenText, faStickyNote, faShare } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faEnvelopeOpenText, faStickyNote, faShare, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import ReCAPTCHA from "react-google-recaptcha";
 
 import IDataService from '../../services/data-interface';
@@ -98,12 +98,8 @@ class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 					</div>
 				</ModalComponent.Body>
 				<ModalComponent.Footer>
-					<Button variant="primary" type="submit" disabled={ !this.state.recaptchaValue }>
-						<FontAwesomeIcon icon={ faShare } /> Send Email
-					</Button>
-					<Button variant="secondary" onClick={ this.props.closeModal }>
-						Close
-					</Button>
+					<Button variant="primary" type="submit" disabled={ !this.state.recaptchaValue }><FontAwesomeIcon icon={ faShare } /> Send Email</Button>
+					<Button variant="secondary" onClick={ this.props.closeModal }><FontAwesomeIcon icon={ faTimesCircle} /> Close</Button>
 				</ModalComponent.Footer>
 			</Form>
 		</div>

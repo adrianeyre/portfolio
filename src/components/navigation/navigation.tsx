@@ -34,13 +34,14 @@ class Navigation extends Component<INavigationProps, INavigationState> {
 		return <div className="navigation-container">
 			<Navbar bg="light" expand="lg" fixed="top">
 				<Navbar.Brand href="/">ADRIAN EYRE</Navbar.Brand>
-				<Links data={ this.state.linksData } showModal={ this.props.showModal } />
+				<span className="top-bar-links"><Links data={ this.state.linksData } showModal={ this.props.showModal } /></span>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="mr-auto">
 						{ this.state.data && this.state.data.map((item: IDataService, navIndex: number) => <Nav.Link key={ `navigation-${ navIndex }` }>
 							<a onClick={ this.props.scrollToAnchor.bind(this, item.link) }>{ item.title }</a>
 						</Nav.Link>) }
+						<Nav.Link><Links data={ this.state.linksData } showModal={ this.props.showModal } /></Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>

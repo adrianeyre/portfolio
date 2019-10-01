@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Modal as ModalComponent, Button, Badge } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTags } from '@fortawesome/free-solid-svg-icons';
+import { faTags, faLink, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 import IDataService, { ITags } from '../../services/data-interface';
 
@@ -27,10 +27,8 @@ const DefaultBody = (props: IDefaultBody) => (
 			{ props.item.body && <div>{ props.item.body }</div> }
 		</ModalComponent.Body>
 		<ModalComponent.Footer>
-			{ props.item.link && <a href={ props.item.link } target="_blank" className="btn btn-primary">Link</a> }
-			<Button variant="secondary" onClick={ props.closeModal }>
-				Close
-			</Button>
+			{ props.item.link && <a href={ props.item.link } target="_blank" className="btn btn-primary"><FontAwesomeIcon icon={ faLink} /> Link</a> }
+			<Button variant="secondary" onClick={ props.closeModal }><FontAwesomeIcon icon={ faTimesCircle} /> Close</Button>
 		</ModalComponent.Footer>
 	</div>
 )
