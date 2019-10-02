@@ -2,23 +2,12 @@ import * as React from 'react';
 import { Component } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 
-import IDataService, { IModalType } from '../../services/data-interface'
+import IDataService from '../../services/interface/data-service-interface';
 
 import Links from '../links/links';
-
+import INavigationProps from './interface/navigation-props';
+import INavigationState from './interface/navigation-state';
 import './navigation.css';
-
-interface INavigationProps {
-	data: IDataService[];
-	linksData: IDataService[];
-	scrollToAnchor(anchor: string): void;
-	showModal(type: IModalType, data?: IDataService): void;
-}
-
-interface INavigationState {
-	data: IDataService[];
-	linksData: IDataService[];
-}
 
 class Navigation extends Component<INavigationProps, INavigationState> {
 	constructor(props: INavigationProps) {
@@ -39,7 +28,7 @@ class Navigation extends Component<INavigationProps, INavigationState> {
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="mr-auto">
 						{ this.state.data && this.state.data.map((item: IDataService, navIndex: number) => <Nav.Link key={ `navigation-${ navIndex }` }>
-							<a onClick={ this.props.scrollToAnchor.bind(this, item.link) }>{ item.title }</a>
+							{ item.link && <a onClick={ this.props.scrollToAnchor.bind(this, item.link) }>{ item.title }</a> }
 						</Nav.Link>) }
 						<Nav.Link><Links data={ this.state.linksData } showModal={ this.props.showModal } /></Nav.Link>
 					</Nav>

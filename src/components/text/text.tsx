@@ -1,17 +1,12 @@
 import * as React from 'react';
 import { Component } from 'react';
 
-import IDataService, { IPoints, ISubTitle } from '../../services/data-interface'
-
+import IDataService from '../../services/interface/data-service-interface'
+import IPoints from '../../services/interface/points-interface'
+import ISubTitle from '../../services/interface/subtitle-interface'
+import ITextProps from './interface/text-props';
+import ITextState from './interface/text-state';
 import './text.css';
-
-interface ITextProps {
-	data: IDataService[];
-}
-
-interface ITextState {
-	data: IDataService[];
-}
 
 class Text extends Component<ITextProps, ITextState> {
 

@@ -3,15 +3,13 @@ import { Modal as ModalComponent, Button, Badge } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTags, faLink, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
-import IDataService, { ITags } from '../../services/data-interface';
+import ITags from '../../services/interface/tag-interface';
+import IDefaultBody from './interface/default-body-props';
 
-interface IDefaultBody {
-	item: IDataService;
-	closeModal(): void;
-}
+const DefaultBody = (props: IDefaultBody) => {
+	if (!props.item) return null;
 
-const DefaultBody = (props: IDefaultBody) => (
-	<div>
+	return <div>
 		<ModalComponent.Body>
 			{ props.item.image && <a href={ props.item.image.link } target="_blank">
 			<img src={ props.item.image.filename } />
@@ -31,6 +29,6 @@ const DefaultBody = (props: IDefaultBody) => (
 			<Button variant="secondary" onClick={ props.closeModal }><FontAwesomeIcon icon={ faTimesCircle} /> Close</Button>
 		</ModalComponent.Footer>
 	</div>
-)
+}
 
 export default DefaultBody

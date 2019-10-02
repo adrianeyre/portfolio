@@ -30,7 +30,7 @@
 	{
 		"image": {
 			"font": "free.faEnvelope",
-			"link": "",
+			"link": "mailto",
 			"type": "modal"
 		}
 	}

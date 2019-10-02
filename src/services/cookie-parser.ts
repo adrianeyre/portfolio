@@ -1,9 +1,6 @@
 import Cookies from 'js-cookie';
 
-interface ICookieParser {
-	message?: string;
-	type?: string;
-}
+import ICookieParser from './interface/cookie-interface';
 
 export default class CookieParser {
 	public getCookies(): ICookieParser {
@@ -23,4 +20,3 @@ export default class CookieParser {
 	}
 }
 
-export { ICookieParser };

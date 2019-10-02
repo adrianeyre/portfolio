@@ -5,9 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 import DataService from './services/data-service'
-import CookieParser, { ICookieParser } from './services/cookie-parser';
-import IDataService, { IModalType } from './services/data-interface'
-
+import CookieParser from './services/cookie-parser';
+import ICookieParser from './services/interface/cookie-interface';
+import IDataService from './services/interface/data-service-interface';
+import IModalType from './services/interface/modal-type-interface';
 import Image from './components/image/image';
 import Text from './components/text/text';
 import Navigation from './components/navigation/navigation';

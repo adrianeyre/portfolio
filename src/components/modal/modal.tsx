@@ -2,23 +2,12 @@ import * as React from 'react';
 import { Component } from 'react';
 import { Modal as ModalComponent } from 'react-bootstrap';
 
-import IDataService, { IModalType } from '../../services/data-interface';
+import IModalType from '../../services/interface/modal-type-interface';
 import DefaultBody from './default-body';
 import EmailBody from './email-body';
-
+import IModalProps from './interface/modal-props';
+import IModalState from './interface/modal-state';
 import './modal.css';
-
-interface IModalProps {
-	data?: IDataService;
-	modalType?: IModalType;
-	closeModal(): void;
-}
-
-interface IModalState {
-	data?: IDataService;
-	show: boolean;
-	modalType?: IModalType;
-}
 
 class Modal extends Component<IModalProps, IModalState> {
 	constructor(props: IModalProps) {

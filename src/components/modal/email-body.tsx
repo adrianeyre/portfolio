@@ -5,21 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelopeOpenText, faStickyNote, faShare, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import ReCAPTCHA from "react-google-recaptcha";
 
-import IDataService from '../../services/data-interface';
-
-interface IEmailBodyProps {
-	item: IDataService;
-	closeModal(): void;
-}
+import IEmailBodyProps from './interface/email-body-props';
+import IEmailBodyState from './interface/email-body-state';
 
 interface IEmailBodyData {
 	name: string;
 	email: string;
 	message: string;
-}
-
-interface IEmailBodyState {
-	recaptchaValue?: string;
 }
 
 class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
@@ -36,7 +28,7 @@ class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 		}
 
 		this.state = {
-			recaptchaValue: undefined,
+			recaptchaValue: null,
 		}
 
 		this.recaptchaRef = React.createRef();
@@ -105,7 +97,7 @@ class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 		</div>
 	}
 
-	private onRecaptchaChange = (value: string) => this.setState({ recaptchaValue: value });
+	private onRecaptchaChange = (value: string | null) => this.setState({ recaptchaValue: value });
 	private handleNameChange = (event: React.ChangeEvent<any>) => this.data.name = event.target.value;
 	private handleEmailChange = (event: React.ChangeEvent<any>) => this.data.email = event.target.value;
 	private handleMessageChange = (event: React.ChangeEvent<any>) => this.data.message = event.target.value;

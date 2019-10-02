@@ -5,23 +5,15 @@ import Slider, { Settings } from "react-slick";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTags, faInfoCircle, faLink } from '@fortawesome/free-solid-svg-icons';
 
-import IDataService, { ITags, IModalType } from '../../services/data-interface';
+import IDataService from '../../services/interface/data-service-interface';
+import ITags from '../../services/interface/tag-interface';
+import IModalType from '../../services/interface/modal-type-interface';
+import ICarouselProps from './interface/carousel-props';
+import ICarouselState from './interface/carousel-state';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './carousel.css';
-
-interface ICarouselProps {
-	title?: string;
-	body?: string;
-	data: IDataService[];
-	screenWidth: number;
-	showModal(type: IModalType, data?: IDataService): void;
-}
-
-interface ICarouselState {
-	data: IDataService[];
-}
 
 class Carousel extends Component<ICarouselProps, ICarouselState> {
 	constructor(props: ICarouselProps) {

@@ -2,16 +2,9 @@ import * as React from 'react';
 import { Component } from 'react';
 import { Alert } from 'react-bootstrap';
 
+import IMessageProps from './interface/message-props';
+import IMessageState from './interface/message-state';
 import './message.css';
-
-interface IMessageProps {
-	message?: string;
-	type?: string;
-}
-
-interface IMessageState {
-	show: boolean;
-}
 
 class Message extends Component<IMessageProps, IMessageState> {
 	constructor(props: IMessageProps) {

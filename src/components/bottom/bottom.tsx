@@ -3,14 +3,10 @@ import { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons'
 
+import IBottomProps from './interface/bottom-props';
 import './bottom.css';
 
-interface IBottomProps {
-	scrollToTop(): void;
-}
-
-
-class Bottom extends Component<IBottomProps, any> {
+export default class Bottom extends Component<IBottomProps, any> {
 	constructor(props: IBottomProps) {
 		super(props);
 	}
@@ -21,5 +17,3 @@ class Bottom extends Component<IBottomProps, any> {
 		</div>
 	}
 }
-
-export default Bottom;

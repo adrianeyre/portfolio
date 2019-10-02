@@ -5,19 +5,11 @@ import * as FreeFonts from '@fortawesome/free-solid-svg-icons';
 import * as BrandFonts from '@fortawesome/free-brands-svg-icons';
 import { get } from 'lodash';
 
-import IDataService, { IModalType } from '../../services/data-interface'
-
+import IDataService from '../../services/interface/data-service-interface';
+import IModalType from '../../services/interface/modal-type-interface';
+import ILinksProps from './interface/links-props';
+import ILinksState from './interface/links-state';
 import './links.css';
-
-interface ILinksProps {
-	data: IDataService[];
-	showModal(type: IModalType, data?: IDataService): void;
-}
-
-interface ILinksState {
-	data: IDataService[];
-	fonts: any;
-}
 
 class Links extends Component<ILinksProps, ILinksState> {
 	constructor(props: ILinksProps) {
@@ -35,7 +27,7 @@ class Links extends Component<ILinksProps, ILinksState> {
 	public render() {
 		return <div className="links-container">
 			{ this.state.data && this.state.data.map((item: IDataService, linkIndex: number) => <span key={ `link-${ linkIndex }` }>
-				{ item.image && <a onClick={ this.handleClickLink.bind(this, item.image.link, item.image.type) }>
+				{ item.image && item.image.link && item.image.type && <a onClick={ this.handleClickLink.bind(this, item.image.link, item.image.type) }>
 					{ item.image.filename && <img src={ item.image.filename } /> }
 					{ item.image.font && <FontAwesomeIcon className="icon" icon={ get(this.state.fonts, item.image.font) } /> }
 				</a> }

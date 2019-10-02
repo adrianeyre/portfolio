@@ -1,17 +1,9 @@
 import * as React from 'react';
 import { Component } from 'react';
 
+import IImageProps from './interface/image-props';
+import IImageState from './interface/image-state';
 import './image.css';
-
-interface IImageProps {
-	imageName: string;
-	title?: string;
-	subTitle?: string;
-}
-
-interface IImageState {
-	style: React.CSSProperties;
-}
 
 class Image extends Component<IImageProps, IImageState> {
 	constructor(props: IImageProps) {
