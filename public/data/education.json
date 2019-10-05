@@ -29,10 +29,7 @@
 		"image": {
 			"filename": "/images/logos/university-of-derby.jpg",
 			"link": "https://www.derby.ac.uk"
-		},
-		"points": [
-			"Passed all modules apart from common skills"
-		]
+		}
 	},
 	{
 		"title": "Certified Scrum Master",
