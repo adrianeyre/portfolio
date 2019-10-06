@@ -11,8 +11,8 @@ describe('Message', () => {
 	};
 
 	it('Should render correctly', () => {
-		const login = shallow(<Message { ...defaultProps }/>);
+		const messageComponent = shallow(<Message { ...defaultProps }/>);
 
-		expect(login).toMatchSnapshot();
+		expect(messageComponent).toMatchSnapshot();
 	});
 });

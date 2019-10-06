@@ -16,8 +16,8 @@ describe('Carousel', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const login = shallow(<Carousel { ...defaultProps }/>);
+		const carouselComponent = shallow(<Carousel { ...defaultProps }/>);
 
-		expect(login).toMatchSnapshot();
+		expect(carouselComponent).toMatchSnapshot();
 	});
 });

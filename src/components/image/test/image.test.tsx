@@ -12,8 +12,8 @@ describe('Image', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const login = shallow(<Image { ...defaultProps }/>);
+		const imageComponent = shallow(<Image { ...defaultProps }/>);
 
-		expect(login).toMatchSnapshot();
+		expect(imageComponent).toMatchSnapshot();
 	});
 });

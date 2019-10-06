@@ -13,8 +13,8 @@ describe('DefaultBody', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const login = shallow(<DefaultBody { ...defaultProps }/>);
+		const defaultBodyComponent = shallow(<DefaultBody { ...defaultProps }/>);
 
-		expect(login).toMatchSnapshot();
+		expect(defaultBodyComponent).toMatchSnapshot();
 	});
 });

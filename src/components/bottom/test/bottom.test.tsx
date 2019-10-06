@@ -12,8 +12,8 @@ describe('Bottom', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const login = shallow(<Bottom { ...defaultProps }/>);
+		const bottomComponent = shallow(<Bottom { ...defaultProps }/>);
 
-		expect(login).toMatchSnapshot();
+		expect(bottomComponent).toMatchSnapshot();
 	});
 });

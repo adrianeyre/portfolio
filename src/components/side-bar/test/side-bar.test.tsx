@@ -15,8 +15,8 @@ describe('SideBar', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const login = shallow(<SideBar { ...defaultProps }/>);
+		const sidebarComponent = shallow(<SideBar { ...defaultProps }/>);
 
-		expect(login).toMatchSnapshot();
+		expect(sidebarComponent).toMatchSnapshot();
 	});
 });

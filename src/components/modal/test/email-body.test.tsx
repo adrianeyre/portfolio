@@ -13,8 +13,8 @@ describe('EmailBody', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const login = shallow(<EmailBody { ...defaultProps }/>);
+		const emailBodyComponent = shallow(<EmailBody { ...defaultProps }/>);
 
-		expect(login).toMatchSnapshot();
+		expect(emailBodyComponent).toMatchSnapshot();
 	});
 });

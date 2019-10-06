@@ -1,17 +1,33 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import ITextProps from '../interface/text-props';
+import IDataService from '../../../services/interface/data-service-interface';
 import Text from '../text';
 
 describe('Text', () => {
-	const defaultProps: ITextProps = {
-		data: undefined,
-	};
+	const data: IDataService[] = [
+		{
+			title: 'My Title',
+			subTitle: [
+				{
+					name: 'My Subtitle'
+				}
+			],
+			body: "My Body",
+			image: {
+				filename: 'myimage.png',
+			},
+			points: [
+				{
+					name: 'point 1',
+				}
+			]
+		}
+	]
 	
 	it('Should render correctly', () => {
-		const login = shallow(<Text { ...defaultProps }/>);
+		const textComponent = shallow(<Text data={ data }/>);
 
-		expect(login).toMatchSnapshot();
+		expect(textComponent).toMatchSnapshot();
 	});
 });

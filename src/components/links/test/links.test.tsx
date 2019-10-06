@@ -13,8 +13,8 @@ describe('Links', () => {
 	};
 
 	it('Should render correctly', () => {
-		const login = shallow(<Links { ...defaultProps }/>);
+		const linksComponent = shallow(<Links { ...defaultProps }/>);
 
-		expect(login).toMatchSnapshot();
+		expect(linksComponent).toMatchSnapshot();
 	});
 });

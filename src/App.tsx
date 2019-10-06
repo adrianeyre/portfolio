@@ -30,6 +30,14 @@ interface IAppState {
 	modalType?: IModalType;
 	message?: string;
 	type?: string;
+	sidebarStyle: React.CSSProperties;
+}
+
+declare global {
+	// tslint:disable-next-line
+	interface Document {
+		documentMode?: any;
+	}
 }
 
 class App extends Component<{}, IAppState> {
@@ -56,6 +64,9 @@ class App extends Component<{}, IAppState> {
 			showModal: false,
 			message: cookieData.message,
 			type: cookieData.type,
+			sidebarStyle: {
+				position: /*@cc_on!@*/false || !!window.document.documentMode ? 'relative' : 'sticky',
+			},
 		};
 	}
 
@@ -98,7 +109,7 @@ class App extends Component<{}, IAppState> {
 					/>
 				</div>
 
-				<div className="sidebar">
+				<div className="sidebar" style={ this.state.sidebarStyle }>
 					<SideBar
 						data={ this.state.data.menu }
 						linksData={ this.state.data.links }

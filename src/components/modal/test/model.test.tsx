@@ -14,8 +14,8 @@ describe('Modal', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const login = shallow(<Modal { ...defaultProps }/>);
+		const modelComponent = shallow(<Modal { ...defaultProps }/>);
 
-		expect(login).toMatchSnapshot();
+		expect(modelComponent).toMatchSnapshot();
 	});
 });

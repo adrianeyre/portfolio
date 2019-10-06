@@ -15,8 +15,8 @@ describe('Navigation', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const login = shallow(<Navigation { ...defaultProps }/>);
+		const navigationComponent = shallow(<Navigation { ...defaultProps }/>);
 
-		expect(login).toMatchSnapshot();
+		expect(navigationComponent).toMatchSnapshot();
 	});
 });

@@ -41,7 +41,6 @@
 		left: 0;
 		height: 100vh;
 		position: -webkit-sticky;
-		position: sticky;
 		background-color: $body-colour-background;
 	}
 	
@@ -51,7 +50,6 @@
 
 		.block {
 			margin: 0px 0px 10px 10px;
-			// border: 1px solid black;
 			border-radius: 15px;
 			background-color: $main-colour-background;
 		}
