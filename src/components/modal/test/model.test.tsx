@@ -12,7 +12,7 @@ describe('Modal', () => {
 		modalType: undefined,
 		closeModal: mockRouteProp,
 	};
-	
+
 	it('Should render correctly', () => {
 		const modelComponent = shallow(<Modal { ...defaultProps }/>);
 

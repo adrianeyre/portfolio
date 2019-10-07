@@ -24,7 +24,7 @@ describe('Text', () => {
 			]
 		}
 	]
-	
+
 	it('Should render correctly', () => {
 		const textComponent = shallow(<Text data={ data }/>);
 

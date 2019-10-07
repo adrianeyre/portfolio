@@ -13,7 +13,7 @@ describe('SideBar', () => {
 		scrollToAnchor: mockRouteProp,
 		showModal: mockRouteProp,
 	};
-	
+
 	it('Should render correctly', () => {
 		const sidebarComponent = shallow(<SideBar { ...defaultProps }/>);
 

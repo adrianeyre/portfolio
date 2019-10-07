@@ -11,7 +11,7 @@ describe('EmailBody', () => {
 		item: undefined,
 		closeModal: mockRouteProp,
 	};
-	
+
 	it('Should render correctly', () => {
 		const emailBodyComponent = shallow(<EmailBody { ...defaultProps }/>);
 

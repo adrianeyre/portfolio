@@ -13,7 +13,7 @@ describe('Navigation', () => {
 		scrollToAnchor: mockRouteProp,
 		showModal: mockRouteProp,
 	};
-	
+
 	it('Should render correctly', () => {
 		const navigationComponent = shallow(<Navigation { ...defaultProps }/>);
 

@@ -19,4 +19,3 @@ export default class CookieParser {
 		Cookies.remove('type');
 	}
 }
-

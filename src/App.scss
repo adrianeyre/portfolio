@@ -46,7 +46,6 @@
 	
 	.main {
 		width: calc(100% - 17rem);
-		
 
 		.block {
 			margin: 0px 0px 10px 10px;
@@ -54,7 +53,7 @@
 			background-color: $main-colour-background;
 		}
 	}
-	
+
 	.bottom {
 		justify-self: bottom;
 	}
@@ -96,7 +95,7 @@
 	.loading-container {
 		.loading-box {
 			width: 70%;
-	
+
 			.loading-text {
 				font-size: 2em;
 			}
