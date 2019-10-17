@@ -3,6 +3,7 @@ import { Component } from 'react';
 import { Element, animateScroll as scroll, scroller } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { Zoom } from 'react-reveal';
 
 import DataService from './services/data-service'
 import CookieParser from './services/cookie-parser';
@@ -123,11 +124,13 @@ class App extends Component<{}, IAppState> {
 						message={ this.state.message }
 						type={ this.state.type }
 					/>
-					<Element className="block" name="about">
-						<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
-						<Text data={ this.state.data.about } />
-						<Links data={ this.state.data.links } showModal={ this.showModal } />
-					</Element>
+					<Zoom>
+						<Element className="block" name="about">
+							<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
+							<Text data={ this.state.data.about }/>
+							<Links data={ this.state.data.links } showModal={ this.showModal } />
+						</Element>
+					</Zoom>
 					<Element className="block" name="skills">
 						<Image imageName="image2.jpg" title="SKILLS" />
 						<Text data={ this.state.data.skills } />
