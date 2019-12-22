@@ -13,6 +13,20 @@
 		"link": "https://github.com/adrianeyre/pacman"
 	},
 	{
+		"title": "Fishy",
+		"body": "You are a little fish minding your own business swimming around the sea, but in order to survive you must eat other fish! Be aware, you may only eat fish that are small than yourself. Larger fish will eat you up, so you must avoid them at all costs!",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/fishy/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/fishy"
+		},
+		"tags": [
+			"TypeScript",
+			"React",
+			"Jest"
+		],
+		"link": "https://github.com/adrianeyre/fishy"
+	},
+	{
 		"title": "Chitter Challenge",
 		"body": "A Twitter clone that will allow the users to post messages to a public board. You are able to reply and like other peoples comments. This is written in Ruby and uses the Sinatra web framework to host the pages.",
 		"image": {
