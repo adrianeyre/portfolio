@@ -22,7 +22,8 @@
 		"tags": [
 			"TypeScript",
 			"React",
-			"Jest"
+			"Jest",
+			"SCSS"
 		],
 		"link": "https://github.com/adrianeyre/fishy"
 	},
@@ -36,7 +37,8 @@
 		"tags": [
 			"TypeScript",
 			"React",
-			"Jest"
+			"Jest",
+			"SCSS"
 		],
 		"link": "https://github.com/adrianeyre/frogger"
 	},
