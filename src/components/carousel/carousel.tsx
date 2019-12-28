@@ -2,11 +2,14 @@ import * as React from 'react';
 import { Component } from 'react';
 import { Badge } from 'react-bootstrap';
 import Slider, { Settings } from "react-slick";
+import { get } from 'lodash';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTags, faInfoCircle, faLink } from '@fortawesome/free-solid-svg-icons';
+import * as FreeFonts from '@fortawesome/free-solid-svg-icons';
+import * as BrandFonts from '@fortawesome/free-brands-svg-icons';
 
 import IDataService from '../../services/interface/data-service-interface';
 import ITags from '../../services/interface/tag-interface';
+import ILink from '../../services/interface/link-interface';
 import IModalType from '../../services/interface/modal-type-interface';
 import ICarouselProps from './interface/carousel-props';
 import ICarouselState from './interface/carousel-state';
@@ -21,6 +24,10 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 
 		this.state = {
 			data: this.props.data,
+			fonts: {
+				free: FreeFonts,
+				brand: BrandFonts,
+			}
 		}
 	}
 
@@ -51,7 +58,7 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 					<div className="card-body">
 						<div className="card-tags">
 							{ item.tags && <div>
-								<FontAwesomeIcon icon={ faTags } />
+								<FontAwesomeIcon icon={ FreeFonts.faTags } />
 								{ item.tags.map((tag: ITags, tagInbdex: number) => <Badge className="card-tag" key={ `card-item-${ cardIndex }-card-tag-${ tagInbdex }` } pill={ true } variant="primary">
 									{ tag }
 								</Badge>) }
@@ -64,10 +71,10 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 					</div>
 
 					<div className="card-buttons">
-						{ item.link && <div>
-							<a href={ item.link } target="_blank" className="btn btn-primary"><FontAwesomeIcon icon={ faLink} /> Link</a>
-							<a onClick={ this.props.showModal.bind(this, IModalType.data, item) } className="btn btn-primary"><FontAwesomeIcon icon={ faInfoCircle } /> Info</a>
-						</div> }
+						{ item.links && item.links.map((link: ILink, linkIndex: number) => <a key={ `link-${ linkIndex }` } href={ link.link } target="_blank" className="btn btn-primary">
+							{ link.font && <FontAwesomeIcon icon={ get(this.state.fonts, link.font) } /> } { link.text }
+						</a>)}
+						<a onClick={ this.props.showModal.bind(this, IModalType.data, item) } className="btn btn-primary"><FontAwesomeIcon icon={ FreeFonts.faInfoCircle } /> Info</a>
 					</div>
 				</div>)}
 			</Slider>

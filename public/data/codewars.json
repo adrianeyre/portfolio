@@ -15,7 +15,13 @@
 			"Ruby",
 			"TypeScript"
 		],
-		"link": "https://www.codewars.com/kata/maze-runner"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/maze-runner"
+			}
+		]
 	},
 	{
 		"title": "Scooby Doo Puzzle",
@@ -29,7 +35,13 @@
 			"Python",
 			"Ruby"
 		],
-		"link": "https://www.codewars.com/kata/scooby-doo-puzzle"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/scooby-doo-puzzle"
+			}
+		]
 	},
 	{
 		"title": "Driving Licence",
@@ -51,7 +63,13 @@
 			"Ruby",
 			"TypeScript"
 		],
-		"link": "https://www.codewars.com/kata/driving-licence"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/driving-licence"
+			}
+		]
 	},
 	{
 		"title": "Connect 4",
@@ -69,7 +87,13 @@
 			"TypeScript",
 			"VB"
 		],
-		"link": "https://www.codewars.com/kata/connect-4"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/connect-4"
+			}
+		]
 	},
 	{
 		"title": "Vending Machine",
@@ -83,7 +107,13 @@
 			"Python",
 			"Ruby"
 		],
-		"link": "https://www.codewars.com/kata/586e6d4cb98de09e3800014f"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/586e6d4cb98de09e3800014f"
+			}
+		]
 	},
 	{
 		"title": "Snakes and Ladders",
@@ -103,7 +133,13 @@
 			"TypeScript",
 			"VB"
 		],
-		"link": "https://www.codewars.com/kata/587136ba2eefcb92a9000027"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/587136ba2eefcb92a9000027"
+			}
+		]
 	},
 	{
 		"title": "Mastermind",
@@ -117,7 +153,13 @@
 			"Python",
 			"Ruby"
 		],
-		"link": "https://www.codewars.com/kata/58a848258a6909dd35000003"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/58a848258a6909dd35000003"
+			}
+		]
 	},
 	{
 		"title": "Guess Who?",
@@ -131,7 +173,13 @@
 			"Python",
 			"Ruby"
 		],
-		"link": "https://www.codewars.com/kata/58b2c5de4cf8b90723000051"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/58b2c5de4cf8b90723000051"
+			}
+		]
 	},
 	{
 		"title": "Am I safe to drive?",
@@ -146,7 +194,13 @@
 			"Python",
 			"Ruby"
 		],
-		"link": "https://www.codewars.com/kata/58ce88427e6c3f41c2000087"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/58ce88427e6c3f41c2000087"
+			}
+		]
 	},
 	{
 		"title": "Mexican Wave",
@@ -175,7 +229,13 @@
 			"TypeScript",
 			"VB"
 		],
-		"link": "https://www.codewars.com/kata/58f5c63f1e26ecda7e000029"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/58f5c63f1e26ecda7e000029"
+			}
+		]
 	},
 	{
 		"title": "Pigs in a Pen",
@@ -192,7 +252,13 @@
 			"Ruby",
 			"TypeScript"
 		],
-		"link": "https://www.codewars.com/kata/58fdcc51b4f81a0b1e00003e"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/58fdcc51b4f81a0b1e00003e"
+			}
+		]
 	},
 	{
 		"title": "Hungry Hippos",
@@ -209,7 +275,13 @@
 			"Ruby",
 			"TypeScript"
 		],
-		"link": "https://www.codewars.com/kata/590300eb378a9282ba000095"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/590300eb378a9282ba000095"
+			}
+		]
 	},
 	{
 		"title": "Plenty of Fish in the Pond",
@@ -230,7 +302,13 @@
 			"TypeScript",
 			"VB"
 		],
-		"link": "https://www.codewars.com/kata/5904be220881cb68be00007d"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/5904be220881cb68be00007d"
+			}
+		]
 	},
 	{
 		"title": "Fruit Machine",
@@ -252,7 +330,13 @@
 			"Ruby",
 			"TypeScript"
 		],
-		"link": "https://www.codewars.com/kata/590adadea658017d90000039"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/590adadea658017d90000039"
+			}
+		]
 	},
 	{
 		"title": "Car Park Escape",
@@ -271,6 +355,12 @@
 			"Ruby",
 			"TypeScript"
 		],
-		"link": "https://www.codewars.com/kata/591eab1d192fe0435e000014"
+		"links": [
+			{
+				"text": "Codewars",
+				"font": "free.faCode",
+				"link": "https://www.codewars.com/kata/591eab1d192fe0435e000014"
+			}
+		]
 	}
 ]

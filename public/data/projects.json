@@ -10,7 +10,13 @@
 			"C#",
 			"NUnit"
 		],
-		"link": "https://github.com/adrianeyre/pacman"
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/pacman"
+			}
+		]
 	},
 	{
 		"title": "Fishy",
@@ -25,7 +31,18 @@
 			"Jest",
 			"SCSS"
 		],
-		"link": "https://github.com/adrianeyre/fishy"
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/fishy"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/fishy"
+			}
+		]
 	},
 	{
 		"title": "Frogger",
@@ -40,7 +57,18 @@
 			"Jest",
 			"SCSS"
 		],
-		"link": "https://github.com/adrianeyre/frogger"
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/frogger"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/frogger"
+			}
+		]
 	},
 	{
 		"title": "Chitter Challenge",
@@ -60,7 +88,13 @@
 			"SQL",
 			"DataMapper"
 		],
-		"link": "https://github.com/adrianeyre/chitter-challenge"
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/chitter-challenge"
+			}
+		]
 	},
 	{
 		"title": "Treasure Hunt",
@@ -83,7 +117,13 @@
 			"MongoDB",
 			"Xcode"
 		],
-		"link": "https://github.com/adrianeyre/treasure-hunt"
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/treasure-hunt"
+			}
+		]
 	},
 	{
 		"title": "Bowling Challenge",
@@ -99,7 +139,13 @@
 			"HTML",
 			"CSS"
 		],
-		"link": "https://github.com/adrianeyre/bowling-challenge"
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/bowling-challenge"
+			}
+		]
 	},
 	{
 		"title": "Instagram Challenge",
@@ -119,7 +165,13 @@
 			"Facebook",
 			"AWS"
 		],
-		"link": "https://github.com/adrianeyre/instagram-challenge"
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/instagram-challenge"
+			}
+		]
 	},
 	{
 		"title": "Battle",
@@ -136,7 +188,13 @@
 			"Selenium Webdriver",
 			"HTML"
 		],
-		"link": "https://github.com/adrianeyre/battle"
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/battle"
+			}
+		]
 	},
 	{
 		"title": "Portfolio",
@@ -154,6 +212,17 @@
 			"SCSS",
 			"PHP"
 		],
-		"link": "https://github.com/adrianeyre/portfolio"
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/portfolio"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk"
+			}
+		]
 	}
 ]
