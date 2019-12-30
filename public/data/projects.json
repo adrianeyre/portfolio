@@ -48,7 +48,7 @@
 		"title": "Frogger",
 		"body": "A game where you navigate frogger through the traffic and across the river to arrive safely home. This a web based application that is mobile device friendly and adapts its size accordingly",
 		"image": {
-			"filename": "https://raw.githubusercontent.com/adrianeyre/frogger/master/src/images/screenshot1.png",
+			"filename": "https://raw.githubusercontent.com/adrianeyre/frogger/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/frogger"
 		},
 		"tags": [
@@ -74,7 +74,7 @@
 		"title": "Space Invaders",
 		"body": "A remake of the classic game Space Invaders where you navigate your ship to attack the space aliens. This a web based application that is mobile device friendly and adapts its size accordingly",
 		"image": {
-			"filename": "https://raw.githubusercontent.com/adrianeyre/space-invaders/master/src/images/screenshot1.png",
+			"filename": "https://raw.githubusercontent.com/adrianeyre/space-invaders/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/space-invaders"
 		},
 		"tags": [
