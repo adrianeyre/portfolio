@@ -119,6 +119,11 @@
 				"text": "Repo",
 				"font": "brand.faGithub",
 				"link": "https://github.com/adrianeyre/chitter-challenge"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://adrianeyre-chitter.herokuapp.com"
 			}
 		]
 	},
@@ -170,6 +175,11 @@
 				"text": "Repo",
 				"font": "brand.faGithub",
 				"link": "https://github.com/adrianeyre/bowling-challenge"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://adrianeyre-bowling.herokuapp.com"
 			}
 		]
 	},
@@ -196,6 +206,11 @@
 				"text": "Repo",
 				"font": "brand.faGithub",
 				"link": "https://github.com/adrianeyre/instagram-challenge"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://adrianeyre-instagram.herokuapp.com"
 			}
 		]
 	},
@@ -219,6 +234,11 @@
 				"text": "Repo",
 				"font": "brand.faGithub",
 				"link": "https://github.com/adrianeyre/battle"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://adrianeyre-battle.herokuapp.com"
 			}
 		]
 	},
