@@ -97,6 +97,32 @@
 		]
 	},
 	{
+		"title": "Mine Sweeper",
+		"body": "The purpose of the game is to open all the cells of the board which do not contain a bomb. You lose if you set off a bomb cell. Every non-bomb cell you open will tell you the total number of bombs in the eight neighboring cells. Once you are sure that a cell contains a bomb, you can right-click to put a flag it on it as a reminder. Once you have flagged all the bombs around an open cell, you can quickly open the remaining non-bomb cells by shift-clicking on the cell.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/mine-sweeper/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/mine-sweeper"
+		},
+		"tags": [
+			"TypeScript",
+			"React",
+			"Jest",
+			"SCSS"
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/mine-sweeper"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/mine-sweeper"
+			}
+		]
+	},
+	{
 		"title": "Chitter Challenge",
 		"body": "A Twitter clone that will allow the users to post messages to a public board. You are able to reply and like other peoples comments. This is written in Ruby and uses the Sinatra web framework to host the pages.",
 		"image": {
