@@ -19,6 +19,7 @@ import Bottom from './components/bottom/bottom';
 import Links from './components/links/links';
 import Modal from './components/modal/modal';
 import Message from './components/message/message';
+import Title from './components/title/title';
 
 import './App.css';
 
@@ -132,23 +133,23 @@ class App extends Component<{}, IAppState> {
 						</Element>
 					</Zoom>
 					<Element className="block" name="skills">
-						<Image imageName="image2.jpg" title="SKILLS" />
+						<Title title="SKILLS" />
 						<Text data={ this.state.data.skills } />
 					</Element>
 					<Element className="block" name="projects">
-						<Image imageName="image3.jpg" title="PROJECTS" />
+						<Title title="PROJECTS" />
 						<Carousel data={ this.state.data.projects } showModal={ this.showModal } screenWidth={ this.state.width } />
 					</Element>
 					<Element className="block" name="education">
-						<Image imageName="image4.jpg" title="EDUCATION" />
+						<Title title="EDUCATION" />
 						<Text data={ this.state.data.education } />
 					</Element>
 					<Element className="block" name="experience">
-						<Image imageName="image5.jpg" title="EXPERIENCE" />
+						<Title title="EXPERIENCE" />
 						<Text data={ this.state.data.experience } />
 					</Element>
 					<Element className="block" name="codewars">
-						<Image imageName="image6.jpg" title="AUTHORED CODEWARS KATAS" />
+						<Title title="AUTHORED CODEWARS KATAS" />
 						<Carousel data={ this.state.data.codewars } showModal={ this.showModal } screenWidth={ this.state.width } />
 					</Element>
 				</div>
