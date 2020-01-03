@@ -20,6 +20,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/maze-runner"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/MazeRunner.rb"
 			}
 		]
 	},
@@ -40,6 +45,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/scooby-doo-puzzle"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/ScoobyDoo.rb"
 			}
 		]
 	},
@@ -68,6 +78,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/driving-licence"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/Driving.rb"
 			}
 		]
 	},
@@ -92,6 +107,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/connect-4"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/Connect4.rb"
 			}
 		]
 	},
@@ -112,6 +132,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/586e6d4cb98de09e3800014f"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/VendingMachine.rb"
 			}
 		]
 	},
@@ -138,6 +163,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/587136ba2eefcb92a9000027"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/SnakesLadders.rb"
 			}
 		]
 	},
@@ -158,6 +188,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/58a848258a6909dd35000003"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/Mastermind.rb"
 			}
 		]
 	},
@@ -178,6 +213,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/58b2c5de4cf8b90723000051"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/GuessWho.rb"
 			}
 		]
 	},
@@ -199,6 +239,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/58ce88427e6c3f41c2000087"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/Drunk.rb"
 			}
 		]
 	},
@@ -234,6 +279,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/58f5c63f1e26ecda7e000029"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/Wave.rb"
 			}
 		]
 	},
@@ -257,6 +307,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/58fdcc51b4f81a0b1e00003e"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/Square.rb"
 			}
 		]
 	},
@@ -280,6 +335,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/590300eb378a9282ba000095"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/Hippo.rb"
 			}
 		]
 	},
@@ -307,6 +367,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/5904be220881cb68be00007d"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/Fish.rb"
 			}
 		]
 	},
@@ -335,6 +400,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/590adadea658017d90000039"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/Fruit.rb"
 			}
 		]
 	},
@@ -360,6 +430,11 @@
 				"text": "Codewars",
 				"font": "free.faCode",
 				"link": "https://www.codewars.com/kata/591eab1d192fe0435e000014"
+			},
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/codewars/blob/master/Ruby/Authored/CarPark.rb"
 			}
 		]
 	}
