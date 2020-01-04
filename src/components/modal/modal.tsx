@@ -9,7 +9,7 @@ import IModalProps from './interface/modal-props';
 import IModalState from './interface/modal-state';
 import './modal.css';
 
-class Modal extends Component<IModalProps, IModalState> {
+export default class Modal extends Component<IModalProps, IModalState> {
 	constructor(props: IModalProps) {
 		super(props);
 
@@ -35,5 +35,3 @@ class Modal extends Component<IModalProps, IModalState> {
 		</div>
 	}
 }
-
-export default Modal;

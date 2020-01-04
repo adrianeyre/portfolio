@@ -9,7 +9,7 @@ import INavigationProps from './interface/navigation-props';
 import INavigationState from './interface/navigation-state';
 import './navigation.css';
 
-class Navigation extends Component<INavigationProps, INavigationState> {
+export default class Navigation extends Component<INavigationProps, INavigationState> {
 	constructor(props: INavigationProps) {
 		super(props);
 
@@ -45,5 +45,3 @@ class Navigation extends Component<INavigationProps, INavigationState> {
 		this.props.scrollToAnchor(link);
 	}
 }
-
-export default Navigation;

@@ -9,7 +9,7 @@ import ISideBarProps from './interface/side-bar-props';
 import ISideBarState from './interface/side-bar-state';
 import './side-bar.css';
 
-class SideBar extends Component<ISideBarProps, ISideBarState> {
+export default class SideBar extends Component<ISideBarProps, ISideBarState> {
 	constructor(props: ISideBarProps) {
 		super(props);
 
@@ -33,5 +33,3 @@ class SideBar extends Component<ISideBarProps, ISideBarState> {
 		</div>
 	}
 }
-
-export default SideBar;

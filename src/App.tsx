@@ -42,7 +42,7 @@ declare global {
 	}
 }
 
-class App extends Component<{}, IAppState> {
+export default class App extends Component<{}, IAppState> {
 	private dataService: DataService;
 	private cookieParser: CookieParser;
 	private dataFiles = ['menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars'];
@@ -184,5 +184,3 @@ class App extends Component<{}, IAppState> {
 		offset: 0
 	})
 }
-
-export default App;

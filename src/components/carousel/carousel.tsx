@@ -18,7 +18,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './carousel.css';
 
-class Carousel extends Component<ICarouselProps, ICarouselState> {
+export default class Carousel extends Component<ICarouselProps, ICarouselState> {
 	constructor(props: ICarouselProps) {
 		super(props);
 
@@ -81,5 +81,3 @@ class Carousel extends Component<ICarouselProps, ICarouselState> {
 		</div>
 	}
 }
-
-export default Carousel;

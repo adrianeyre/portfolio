@@ -14,7 +14,7 @@ interface IEmailBodyData {
 	message: string;
 }
 
-class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
+export default class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 	private data: IEmailBodyData;
 	private recaptchaRef: RefObject<any>;
 
@@ -102,5 +102,3 @@ class EmailBody extends Component<IEmailBodyProps, IEmailBodyState> {
 	private handleEmailChange = (event: React.ChangeEvent<any>) => this.data.email = event.target.value;
 	private handleMessageChange = (event: React.ChangeEvent<any>) => this.data.message = event.target.value;
 }
-
-export default EmailBody;

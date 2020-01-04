@@ -6,7 +6,7 @@ import IMessageProps from './interface/message-props';
 import IMessageState from './interface/message-state';
 import './message.css';
 
-class Message extends Component<IMessageProps, IMessageState> {
+export default class Message extends Component<IMessageProps, IMessageState> {
 	constructor(props: IMessageProps) {
 		super(props);
 
@@ -34,5 +34,3 @@ class Message extends Component<IMessageProps, IMessageState> {
 
 	private handleClickLink = () => this.setState({ show: false });
 }
-
-export default Message;

@@ -5,7 +5,7 @@ import IImageProps from './interface/image-props';
 import IImageState from './interface/image-state';
 import './image.css';
 
-class Image extends Component<IImageProps, IImageState> {
+export default class Image extends Component<IImageProps, IImageState> {
 	constructor(props: IImageProps) {
 		super(props);
 
@@ -29,5 +29,3 @@ class Image extends Component<IImageProps, IImageState> {
 		</div>
 	}
 }
-
-export default Image;

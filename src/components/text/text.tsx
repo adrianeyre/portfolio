@@ -8,7 +8,7 @@ import ITextProps from './interface/text-props';
 import ITextState from './interface/text-state';
 import './text.css';
 
-class Text extends Component<ITextProps, ITextState> {
+export default class Text extends Component<ITextProps, ITextState> {
 
 	constructor(props: ITextProps) {
 		super(props);
@@ -35,5 +35,3 @@ class Text extends Component<ITextProps, ITextState> {
 		</div>
 	}
 }
-
-export default Text;

@@ -11,7 +11,7 @@ import ILinksProps from './interface/links-props';
 import ILinksState from './interface/links-state';
 import './links.css';
 
-class Links extends Component<ILinksProps, ILinksState> {
+export default class Links extends Component<ILinksProps, ILinksState> {
 	constructor(props: ILinksProps) {
 		super(props);
 
@@ -48,5 +48,3 @@ class Links extends Component<ILinksProps, ILinksState> {
 		this.props.showModal(IModalType.email, data);
 	}
 }
-
-export default Links;
