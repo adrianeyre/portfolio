@@ -123,6 +123,32 @@
 		]
 	},
 	{
+		"title": "Tetris",
+		"body": "You have to make full horizontal lines with the different shaped blocks that fall into the game area. Full lines will then disappear and provide points. The more lines you make at the same time, the more points you earn.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/tetris/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/tetris"
+		},
+		"tags": [
+			"TypeScript",
+			"React",
+			"Jest",
+			"SCSS"
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/tetris"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/tetris"
+			}
+		]
+	},
+	{
 		"title": "Chitter Challenge",
 		"body": "A Twitter clone that will allow the users to post messages to a public board. You are able to reply and like other peoples comments. This is written in Ruby and uses the Sinatra web framework to host the pages.",
 		"image": {
