@@ -149,6 +149,32 @@
 		]
 	},
 	{
+		"title": "Connect 4",
+		"body": "To win Connect Four you must be the first player to get four of your colored checkers in a row either horizontally, vertically or diagonally.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/connect4/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/connect4"
+		},
+		"tags": [
+			"TypeScript",
+			"React",
+			"Jest",
+			"SCSS"
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/connect4"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/connect4"
+			}
+		]
+	},
+	{
 		"title": "Chitter Challenge",
 		"body": "A Twitter clone that will allow the users to post messages to a public board. You are able to reply and like other peoples comments. This is written in Ruby and uses the Sinatra web framework to host the pages.",
 		"image": {
