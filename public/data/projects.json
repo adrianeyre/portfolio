@@ -201,6 +201,32 @@
 		]
 	},
 	{
+		"title": "Pipeline",
+		"body": "This is a remake of two of my favourite games for the BBC Micro, Repton and Pipeline. You have to navigate Repton around the playing field collecting all of the stars. There are plenty of puzzles to solve including gates, keys, boulders and teleports.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/pipeline/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/pipeline"
+		},
+		"tags": [
+			"TypeScript",
+			"React",
+			"Jest",
+			"SCSS"
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/pipeline"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/pipeline"
+			}
+		]
+	},
+	{
 		"title": "Chitter Challenge",
 		"body": "A Twitter clone that will allow the users to post messages to a public board. You are able to reply and like other peoples comments. This is written in Ruby and uses the Sinatra web framework to host the pages.",
 		"image": {
