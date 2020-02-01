@@ -1,14 +1,24 @@
 .image-block-container {
-	background-color: red;
-	//display: inline-flex;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+	button.slick-arrow.slick-next:before {
+		color: black;
+		margin-left: -30px;
+	}
+
+	button.slick-arrow.slick-prev:before {
+		color: black;
+		margin-right: -30px;
+	}
+
+	.slick-arrow {
+		padding: 1px 0px 0px 0px;
+		border-radius: 50%;
+		z-index: 20;
+		font-size: 20px;
+		transform: scale(2, 2);
+	}
 
 	.thumbnail {
 		height: 5em;
 		width: 5em;
-		//overflow-y: hidden;
-		// max-width: 100%;
 	}
 }
