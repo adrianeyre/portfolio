@@ -22,3 +22,11 @@
 		width: 5em;
 	}
 }
+
+@media (max-width: 700px) {
+	.image-block-container {
+		.slick-arrow {
+			display: none !important;
+		}
+	}
+}
