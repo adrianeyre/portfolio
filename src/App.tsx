@@ -20,6 +20,7 @@ import Links from './components/links/links';
 import Modal from './components/modal/modal';
 import Message from './components/message/message';
 import Title from './components/title/title';
+import ImageBlock from './components/image-block/image-block';
 
 import './App.css';
 
@@ -45,7 +46,7 @@ declare global {
 export default class App extends Component<{}, IAppState> {
 	private dataService: DataService;
 	private cookieParser: CookieParser;
-	private dataFiles = ['menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars'];
+	private dataFiles = ['menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars', 'interests', 'interestsImages'];
 
 	constructor(props: {}) {
 		super(props);
@@ -151,6 +152,11 @@ export default class App extends Component<{}, IAppState> {
 					<Element className="block" name="codewars">
 						<Title title="AUTHORED CODEWARS KATAS" />
 						<Carousel data={ this.state.data.codewars } showModal={ this.showModal } screenWidth={ this.state.width } />
+					</Element>
+					<Element className="block" name="interests">
+						<Title title="INTERESTS" />
+						<Text data={ this.state.data.interests } />
+						<ImageBlock data={ this.state.data.interestsImages } screenWidth={ this.state.width } />
 					</Element>
 				</div>
 

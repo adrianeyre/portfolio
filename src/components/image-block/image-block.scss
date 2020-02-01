@@ -1,0 +1,14 @@
+.image-block-container {
+	background-color: red;
+	//display: inline-flex;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+
+	.thumbnail {
+		height: 5em;
+		width: 5em;
+		//overflow-y: hidden;
+		// max-width: 100%;
+	}
+}
