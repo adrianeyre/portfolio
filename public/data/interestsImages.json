@@ -83,5 +83,20 @@
 		"image": {
 			"filename": "/images/interests/ding.png"
 		}
+	},
+	{
+		"image": {
+			"filename": "/images/interests/segway.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/interests/flight-sim.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/interests/zip.png"
+		}
 	}
 ]
