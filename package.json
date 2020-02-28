@@ -26,6 +26,7 @@
 		"react-scripts-ts": "^3.1.0",
 		"react-scroll": "^1.7.14",
 		"react-slick": "^0.25.2",
+		"serialize-javascript": "^3.0.0",
 		"slick-carousel": "^1.8.1",
 		"ts-jest": "^24.1.0",
 		"tslint": "^5.20.0"
