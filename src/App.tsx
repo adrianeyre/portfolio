@@ -142,7 +142,7 @@ export default class App extends Component<{}, IAppState> {
 						<Title title="SKILLS" />
 						<Text data={ this.state.data.skills } />
 						<ImageList title="Languages" data={ this.state.data.languageImages } />
-						<ImageList title="Frameworkds" data={ this.state.data.frameworksImages } />
+						<ImageList title="Frameworks" data={ this.state.data.frameworksImages } />
 					</Element>
 					<Element className="block" name="projects">
 						<Title title="PROJECTS" />
