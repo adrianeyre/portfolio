@@ -1,11 +1,13 @@
+@import '../../styles/colour-palette.scss';
+
 .image-block-container {
 	button.slick-arrow.slick-next:before {
-		color: black;
+		color: $image-block-button-colour;
 		margin-left: -30px;
 	}
 
 	button.slick-arrow.slick-prev:before {
-		color: black;
+		color: $image-block-button-colour;
 		margin-right: -30px;
 	}
 

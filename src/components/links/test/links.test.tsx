@@ -10,6 +10,7 @@ describe('Links', () => {
 	const defaultProps: ILinksProps = {
 		data: undefined,
 		showModal: mockRouteProp,
+		scrollToAnchor: mockRouteProp,
 	};
 
 	it('Should render correctly', () => {

@@ -41,6 +41,10 @@ export default class Links extends Component<ILinksProps, ILinksState> {
 			return;
 		}
 
+		if (type === 'anchor') {
+			return this.props.scrollToAnchor(link);
+		}
+
 		const data: IDataService = {
 			title: 'Contact Me'
 		};

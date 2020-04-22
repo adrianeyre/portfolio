@@ -1,0 +1,27 @@
+@import '../../styles/colour-palette.scss';
+
+.blocks-container {
+	.block-box {
+		margin: 0.5em;
+		padding: 1em;
+		min-height: 210px;
+		border-radius: 10px;
+
+		.body-text {
+			color: $blocks-color-text;
+			font-size: 2em;
+		}
+
+		.link {
+			position: absolute;
+			bottom: 1em;
+			right: 2em;
+
+
+			.svg-inline--fa {
+				width: 2em;
+				height: 2em;
+			}
+		}
+	}
+}

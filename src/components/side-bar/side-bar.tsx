@@ -29,7 +29,7 @@ export default class SideBar extends Component<ISideBarProps, ISideBarState> {
 				{ item.link && <a className="link" onClick={ this.props.scrollToAnchor.bind(this, item.link) }>{ item.title }</a> }
 			</div>) }
 
-			<Links data={ this.state.linksData } showModal={ this.props.showModal }/>
+			<Links data={ this.state.linksData } showModal={ this.props.showModal } scrollToAnchor={ this.props.scrollToAnchor } />
 		</div>
 	}
 }

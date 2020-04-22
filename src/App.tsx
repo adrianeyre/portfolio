@@ -21,6 +21,8 @@ import Modal from './components/modal/modal';
 import Message from './components/message/message';
 import Title from './components/title/title';
 import ImageBlock from './components/image-block/image-block';
+import Footer from './components/footer/footer';
+import ImageList from './components/image-list/image-list';
 
 import './App.css';
 
@@ -46,7 +48,10 @@ declare global {
 export default class App extends Component<{}, IAppState> {
 	private dataService: DataService;
 	private cookieParser: CookieParser;
-	private dataFiles = ['menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars', 'interests', 'interestsImages'];
+	private dataFiles = [
+		'menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars', 'interests',
+		'interestsImages', 'languages', 'languageImages', 'frameworks', 'frameworksImages'
+	];
 
 	constructor(props: {}) {
 		super(props);
@@ -130,12 +135,14 @@ export default class App extends Component<{}, IAppState> {
 						<Element className="block" name="about">
 							<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
 							<Text data={ this.state.data.about }/>
-							<Links data={ this.state.data.links } showModal={ this.showModal } />
+							<Links data={ this.state.data.links } showModal={ this.showModal } scrollToAnchor={ this.scrollToAnchor } />
 						</Element>
 					</Zoom>
 					<Element className="block" name="skills">
 						<Title title="SKILLS" />
 						<Text data={ this.state.data.skills } />
+						<Text page={ <ImageList data={ this.state.data.languageImages } /> } data={ this.state.data.languages } />
+						<Text page={ <ImageList data={ this.state.data.frameworksImages } /> } data={ this.state.data.frameworks } />
 					</Element>
 					<Element className="block" name="projects">
 						<Title title="PROJECTS" />
@@ -164,6 +171,7 @@ export default class App extends Component<{}, IAppState> {
 					<Bottom scrollToTop={ this.scrollToTop }/>
 				</div> }
 			</div>
+			<Footer />
 		</div>
 	}
 
