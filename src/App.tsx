@@ -49,8 +49,8 @@ export default class App extends Component<{}, IAppState> {
 	private dataService: DataService;
 	private cookieParser: CookieParser;
 	private dataFiles = [
-		'menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars', 'interests',
-		'interestsImages', 'languages', 'languageImages', 'frameworks', 'frameworksImages'
+		'menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars',
+		'interests', 'interestsImages', 'languageImages', 'frameworksImages'
 	];
 
 	constructor(props: {}) {
@@ -141,8 +141,8 @@ export default class App extends Component<{}, IAppState> {
 					<Element className="block" name="skills">
 						<Title title="SKILLS" />
 						<Text data={ this.state.data.skills } />
-						<Text page={ <ImageList data={ this.state.data.languageImages } /> } data={ this.state.data.languages } />
-						<Text page={ <ImageList data={ this.state.data.frameworksImages } /> } data={ this.state.data.frameworks } />
+						<ImageList title="Languages" data={ this.state.data.languageImages } />
+						<ImageList title="Frameworkds" data={ this.state.data.frameworksImages } />
 					</Element>
 					<Element className="block" name="projects">
 						<Title title="PROJECTS" />

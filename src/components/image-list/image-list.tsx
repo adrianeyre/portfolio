@@ -27,6 +27,7 @@ export default class ImageList extends Component<IImageListProps, IImageListStat
 
 	public render() {
 		return <div className="image-list-container" ref={(d) => { this.container = d }}>
+			{ this.props.title && <h2>{ this.props.title }</h2> }
 			{ this.state.data && this.state.data.map((item: IDataService, imageIndex: number) => <div key={ `image-list-${ imageIndex }` } className="image-list-box">
 				{ item.image?.filename &&
 					<img
@@ -44,7 +45,7 @@ export default class ImageList extends Component<IImageListProps, IImageListStat
 		if (!this.container || !this.state.data || !this.state.autoWidth) return;
 
 		const amountOfImages = Object.keys(this.state.data).length
-		const width = (this.container.getBoundingClientRect().width - ((amountOfImages - 1) * 12)) / amountOfImages;
+		const width = (this.container.getBoundingClientRect().width - ((amountOfImages - 1) * 15)) / amountOfImages;
 
 		this.setState(() => ({ width: `${ width }px` }))
 	}
