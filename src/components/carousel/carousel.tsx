@@ -44,16 +44,16 @@ export default class Carousel extends Component<ICarouselProps, ICarouselState> 
 
 		return <div className="carousel-container">
 			<Slider {...settings}>
-				{ this.state.data && this.state.data.map((item: IDataService, cardIndex: number) => <div key={ `card-item-${ cardIndex }` } className="card">
+				{ this.state.data && this.state.data.map((item: IDataService, cardIndex: number) => <article key={ `card-item-${ cardIndex }` } className="card">
 					<div className="card-image">
 						{ item.image && <a href={ item.image.link } target="_blank">
 							<img src={ item.image.filename } />
 						</a> }
 					</div>
 
-					<div className="card-title">
+					<header className="card-title">
 						<h3>{ item.title }</h3>
-					</div>
+					</header>
 
 					<div className="card-body">
 						<div className="card-tags">
@@ -76,7 +76,7 @@ export default class Carousel extends Component<ICarouselProps, ICarouselState> 
 						</a>)}
 						<a onClick={ this.props.showModal.bind(this, IModalType.data, item) } className="btn btn-primary"><FontAwesomeIcon icon={ FreeFonts.faInfoCircle } /> Info</a>
 					</div>
-				</div>)}
+				</article> )}
 			</Slider>
 		</div>
 	}

@@ -25,9 +25,9 @@ export default class SideBar extends Component<ISideBarProps, ISideBarState> {
 				<Image src="/images/links/photo.jpeg" roundedCircle={true} />
 			</div>
 
-			{ this.state.data && this.state.data.map((item: IDataService, sidebarIndex: number) => <div key={ `sidebar-${ sidebarIndex }` } className="link-container">
+			{ this.state.data && this.state.data.map((item: IDataService, sidebarIndex: number) => <nav key={ `sidebar-${ sidebarIndex }` } className="link-container">
 				{ item.link && <a className="link" onClick={ this.props.scrollToAnchor.bind(this, item.link) }>{ item.title }</a> }
-			</div>) }
+			</nav>) }
 
 			<Links data={ this.state.linksData } showModal={ this.props.showModal } scrollToAnchor={ this.props.scrollToAnchor } />
 		</div>

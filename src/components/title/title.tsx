@@ -8,10 +8,10 @@ export default class Title extends Component<ITitleProps, {}> {
 	public render() {
 		return <div className="title-container">
 			{ (this.props.title || this.props.subTitle) && <div className="text-row">
-				<div className="text-container">
+				<header className="text-container">
 					{ this.props.title && <h1 className="primary-text">{ this.props.title }</h1> }
 					{ this.props.subTitle && <span className="secondary-text">{ this.props.subTitle }</span> }
-				</div>
+				</header>
 			</div> }
 		</div>
 	}
