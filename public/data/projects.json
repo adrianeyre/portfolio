@@ -313,7 +313,7 @@
 	},
 	{
 		"title": "A B Electrical & Maintenance",
-		"body": "A site for a local business, written in React, TypeScript, SCSS and PHP.",
+		"body": "A site for a local business, written in React, TypeScript, and SCSS.",
 		"image": {
 			"filename": "/images/projects/ab-electrical.png",
 			"link": "https://github.com/adrianeyre/a-b-electrical"
@@ -324,8 +324,7 @@
 			"React",
 			"CircleCI",
 			"HTML",
-			"SCSS",
-			"PHP"
+			"SCSS"
 		],
 		"links": [
 			{
