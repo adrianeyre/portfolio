@@ -312,6 +312,32 @@
 		]
 	},
 	{
+		"title": "Free Cell",
+		"body": "A remake of the classic game Free Cell using vanilla TypeScript.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/free-cell/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/free-cell"
+		},
+		"tags": [
+			"TypeScript",
+			"Canvas",
+			"Mocha",
+			"Chai"
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/free-cell"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/free-cell"
+			}
+		]
+	},
+	{
 		"title": "A B Electrical & Maintenance",
 		"body": "A site for a local business, written in React, TypeScript, and SCSS.",
 		"image": {
