@@ -32,6 +32,16 @@
 		}
 	},
 	{
+		"title": "MCSA Web Applications",
+		"subTitle": [
+			"70-480 - Programming in HTML5 with JavaScript and CSS3"
+		],
+		"image": {
+			"filename": "/images/logos/exam70-480.png",
+			"link": "https://www.microsoft.com/en-us/learning"
+		}
+	},
+	{
 		"title": "Certified Scrum Master",
 		"subTitle": [
 			"Qualification: CSM",
