@@ -34,17 +34,19 @@
 	{
 		"title": "MCSA Web Applications",
 		"subTitle": [
-			"70-480 - Programming in HTML5 with JavaScript and CSS3"
+			"70-480 - Programming in HTML5 with JavaScript and CSS3",
+			"70-486 - Developing ASP.NET MVC Web Applications",
+			"Date: 27th June 2020"
 		],
 		"image": {
-			"filename": "/images/logos/exam70-480.png",
-			"link": "https://www.microsoft.com/en-us/learning"
+			"filename": "/images/logos/mcsa-web-applications.png",
+			"link": "https://www.youracclaim.com/users/adrian-eyre/badges"
 		}
 	},
 	{
 		"title": "Certified Scrum Master",
 		"subTitle": [
-			"Qualification: CSM",
+			"Certified Scrum Master",
 			"Date: 29th July 2019"
 		],
 		"image": {
@@ -53,14 +55,14 @@
 		}
 	},
 	{
-		"title": "Oracle Database Administrator",
+		"title": "Oracle Certified Associate",
 		"subTitle": [
-			"Qualification: 11g Certified Associate",
+			"Oracle Database 11g Administrator Certified Associate",
 			"Date: 28th October 2014"
 		],
 		"image": {
-			"filename": "/images/logos/oracle-dba.jpg",
-			"link": "https://education.oracle.com/"
+			"filename": "/images/logos/oracle-associate.png",
+			"link": "https://www.youracclaim.com/users/adrian-eyre/badges"
 		}
 	},
 	{
