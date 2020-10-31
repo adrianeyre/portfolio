@@ -36,7 +36,7 @@ export default class ImageBlock extends Component<IImageBlockProps, {}> {
 
 		return <div className="image-block-container">
 			<Slider {...settings}>
-				{ this.images.map((image: string, imageIndex: number) => <img className="thumbnail" key={ imageIndex } src={ image } onClick={ this.handleClick.bind(this, image) }/> )}
+				{ this.images.map((image: string, imageIndex: number) => <img alt={ image } className="thumbnail" key={ imageIndex } src={ image } onClick={ this.handleClick.bind(this, image) }/> )}
 			</Slider>
 		</div>
 	}

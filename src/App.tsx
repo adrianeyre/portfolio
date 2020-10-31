@@ -56,8 +56,8 @@ export default class App extends Component<{}, IAppState> {
 	constructor(props: {}) {
 		super(props);
 
-		this.dataService = new DataService;
-		this.cookieParser = new CookieParser;
+		this.dataService = new DataService();
+		this.cookieParser = new CookieParser();
 
 		this.scrollToAnchor = this.scrollToAnchor.bind(this);
 		this.scrollToTop = this.scrollToTop.bind(this);

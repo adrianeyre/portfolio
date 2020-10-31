@@ -22,6 +22,14 @@
 				display: inline;
 			}
 		}
+
+		.images-row {
+			display: flex;
+
+			img {
+				margin-right: 5px;
+			}
+		}
 	}
 }
 

@@ -25,6 +25,68 @@
 			"Team City",
 			"Octopus Deployments",
 			"NUnit, XUnit and Moq testing"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/dotnet.png",
+				"title": ".NET",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/dotnetcore.png",
+				"title": ".NET Core",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/typescript.png",
+				"title": "TypeScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/css.png",
+				"title": "SCSS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/html.png",
+				"title": "HTML",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/azure.png",
+				"title": "Microsoft Azure",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/azure-devops.png",
+				"title": "Microsoft Azure DevOps",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/react.png",
+				"title": "React",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/sql-server.png",
+				"title": "SQL Server",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/bitbucket.png",
+				"title": "Bit Bucket",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/octopus.png",
+				"title": "Octopus Deploy",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/team-city.png",
+				"title": "Team City",
+				"width": "30px;"
+			}
 		]
 	},
 	{
@@ -62,6 +124,68 @@
 			"Continuous Integration",
 			"SOLID principles",
 			"Clean DRY code"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/javascript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/php.png",
+				"title": "PHP",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/html.png",
+				"title": "HTML",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/css.png",
+				"title": "SCSS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/angular.png",
+				"title": "Angular JS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/oracle-rightnow.png",
+				"title": "Oracle Right-Now",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/node.png",
+				"title": "Node",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/github.png",
+				"title": "Github",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/azure.png",
+				"title": "Microsoft Azure",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/aws.png",
+				"title": "AWS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/heroku.png",
+				"title": "Heroku",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/sql-server.png",
+				"title": "SQL Server",
+				"width": "30px;"
+			}
 		]
 	},
 	{

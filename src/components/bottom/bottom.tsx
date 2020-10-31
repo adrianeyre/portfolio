@@ -7,10 +7,6 @@ import IBottomProps from './interface/bottom-props';
 import './bottom.css';
 
 export default class Bottom extends Component<IBottomProps, any> {
-	constructor(props: IBottomProps) {
-		super(props);
-	}
-
 	public render() {
 		return  <div className="bottom-container">
 			<a onClick={ this.props.scrollToTop }><FontAwesomeIcon icon={ faArrowCircleUp } /></a>

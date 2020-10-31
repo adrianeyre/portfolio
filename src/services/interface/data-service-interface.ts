@@ -9,6 +9,7 @@ export default interface IDataService {
 	subTitle?: ISubTitle[];
 	body?: string;
 	image?: IImage;
+	images?: IImage[];
 	tags?: ITags[];
 	points?: IPoints[];
 	link?: string;

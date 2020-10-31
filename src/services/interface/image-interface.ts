@@ -3,4 +3,7 @@ export default interface IImage {
 	font?: string;
 	link?: string;
 	type?: string;
+	width?: string;
+	height?: string;
+	title?: string;
 }

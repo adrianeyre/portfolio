@@ -28,7 +28,7 @@ export default class Links extends Component<ILinksProps, ILinksState> {
 		return <div className="links-container">
 			{ this.state.data && this.state.data.map((item: IDataService, linkIndex: number) => <span key={ `link-${ linkIndex }` }>
 				{ item.image && item.image.link && item.image.type && <a onClick={ this.handleClickLink.bind(this, item.image.link, item.image.type) }>
-					{ item.image.filename && <img src={ item.image.filename } /> }
+					{ item.image.filename && <img alt={ item.image.filename } src={ item.image.filename } /> }
 					{ item.image.font && <FontAwesomeIcon className="icon" icon={ get(this.state.fonts, item.image.font) } /> }
 				</a> }
 			</span>)}

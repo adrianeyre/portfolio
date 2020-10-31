@@ -32,6 +32,7 @@ export default class ImageList extends Component<IImageListProps, IImageListStat
 				{ item.image?.filename &&
 					<img
 						className="thumbnail"
+						alt={ item.image.filename }
 						src={ item.image.filename }
 						width={ this.state.width }
 						height={ this.props.height ? this.props.height : undefined }

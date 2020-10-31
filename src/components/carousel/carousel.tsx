@@ -46,8 +46,8 @@ export default class Carousel extends Component<ICarouselProps, ICarouselState> 
 			<Slider {...settings}>
 				{ this.state.data && this.state.data.map((item: IDataService, cardIndex: number) => <article key={ `card-item-${ cardIndex }` } className="card">
 					<div className="card-image">
-						{ item.image && <a href={ item.image.link } target="_blank">
-							<img src={ item.image.filename } />
+						{ item.image && <a href={ item.image.link } rel="noopener noreferrer" target="_blank">
+							<img alt={ item.image.filename } src={ item.image.filename } />
 						</a> }
 					</div>
 
@@ -71,7 +71,7 @@ export default class Carousel extends Component<ICarouselProps, ICarouselState> 
 					</div>
 
 					<div className="card-buttons">
-						{ item.links && item.links.map((link: ILink, linkIndex: number) => <a key={ `link-${ linkIndex }` } href={ link.link } target="_blank" className="btn btn-primary">
+						{ item.links && item.links.map((link: ILink, linkIndex: number) => <a key={ `link-${ linkIndex }` } href={ link.link } rel="noopener noreferrer" target="_blank" className="btn btn-primary">
 							{ link.font && <FontAwesomeIcon icon={ get(this.state.fonts, link.font) } /> } { link.text }
 						</a>)}
 						<a onClick={ this.props.showModal.bind(this, IModalType.data, item) } className="btn btn-primary"><FontAwesomeIcon icon={ FreeFonts.faInfoCircle } /> Info</a>
