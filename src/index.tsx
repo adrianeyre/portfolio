@@ -7,9 +7,13 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
+import reportWebVitals from './reportWebVitals';
+
 ReactDOM.render(
-	<div>
-		<App />
-	</div>,
-	document.getElementById('root') as HTMLElement
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
 );
+
+reportWebVitals();

@@ -24,7 +24,7 @@ export default class Modal extends Component<IModalProps, IModalState> {
 		const item = this.state.data ? this.state.data : {}
 		return <div className="modal-container">
 			<ModalComponent show={ this.state.show } onHide={ this.props.closeModal } size="lg">
-				<ModalComponent.Header closeButton={ true }>
+				<ModalComponent.Header translate={''} closeButton={ true }>
 					<ModalComponent.Title>
 						{ item.title && <h2>{ item.title }</h2>}
 					</ModalComponent.Title>

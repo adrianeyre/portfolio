@@ -11,6 +11,7 @@
 	top: 50%;
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+	// text-decoration: none;
 
 	h3 {
 		margin: 30px;
@@ -29,6 +30,8 @@
 			letter-spacing: .05rem;
 			text-transform: uppercase;
 			transition: all 500ms;
+			text-decoration: none;
+			color: #003a65;
 
 			&:hover {
 				font-size: 1.2em;
