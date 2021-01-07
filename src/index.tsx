@@ -1,8 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'react-app-polyfill/ie11';
-import 'react-app-polyfill/stable';
+import '@babel/polyfill';
 
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import App from './App';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
