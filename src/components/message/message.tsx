@@ -1,36 +1,28 @@
-import * as React from 'react';
-import { Component } from 'react';
+import React, { FC, useState } from 'react';
 import { Alert } from 'react-bootstrap';
 
 import IMessageProps from './interface/message-props';
-import IMessageState from './interface/message-state';
+
 import './message.css';
 
-export default class Message extends Component<IMessageProps, IMessageState> {
-	constructor(props: IMessageProps) {
-		super(props);
+const Message: FC<IMessageProps> = (props: IMessageProps) => {
+	const [show, setShow] = useState<boolean>(!!props.message);
 
-		this.state = {
-			show: !!this.props.message
-		}
-	}
+	const handleClickLink = () => setShow(false);
 
-	public render() {
-		if (!this.props.message || !this.state.show) return null;
+	if (!props.message || !show) return null;
 
-		return <div className="message-container">
-			
-			<Alert variant={ this.props.type === 'success' ? 'success' : 'danger' }>
-				<div className="message-area">
-					<div className="message">{ this.props.message }</div>
+	return <div className="message-container">
+		<Alert variant={ props.type === 'success' ? 'success' : 'danger' }>
+			<div className="message-area">
+				<div className="message">{ props.message }</div>
 
-					<div className="message-close">
-						<a onClick={ this.handleClickLink }>X</a>
-					</div>
+				<div className="message-close">
+					<a onClick={ handleClickLink }>X</a>
 				</div>
-			</Alert>
-		</div>
-	}
-
-	private handleClickLink = () => this.setState({ show: false });
+			</div>
+		</Alert>
+	</div>
 }
+
+export default Message;

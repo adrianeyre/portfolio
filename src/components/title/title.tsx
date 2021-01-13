@@ -1,18 +1,18 @@
-import * as React from 'react';
-import { Component } from 'react';
+import React, { FC } from 'react';
 
 import ITitleProps from './interface/title-props';
+
 import './title.css';
 
-export default class Title extends Component<ITitleProps, {}> {
-	public render() {
-		return <div className="title-container">
-			{ (this.props.title || this.props.subTitle) && <div className="text-row">
-				<header className="text-container">
-					{ this.props.title && <h1 className="primary-text">{ this.props.title }</h1> }
-					{ this.props.subTitle && <span className="secondary-text">{ this.props.subTitle }</span> }
-				</header>
-			</div> }
-		</div>
-	}
+const Title: FC<ITitleProps> = (props: ITitleProps) => {
+	return <div className="title-container">
+		{ (props.title || props.subTitle) && <div className="text-row">
+			<header className="text-container">
+				{ props.title && <h1 className="primary-text">{ props.title }</h1> }
+				{ props.subTitle && <span className="secondary-text">{ props.subTitle }</span> }
+			</header>
+		</div> }
+	</div>
 }
+
+export default Title;

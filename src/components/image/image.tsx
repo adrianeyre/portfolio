@@ -1,31 +1,24 @@
-import * as React from 'react';
-import { Component } from 'react';
+import React, { FC } from 'react';
 
 import IImageProps from './interface/image-props';
-import IImageState from './interface/image-state';
+
 import './image.css';
 
-export default class Image extends Component<IImageProps, IImageState> {
-	constructor(props: IImageProps) {
-		super(props);
-
-		this.state = {
-			style: {
-				backgroundImage: `url("./images/blocks/${ props.imageName }")`,
-			}
-		}
+const Image: FC<IImageProps> = (props: IImageProps) => {
+	const style = {
+		backgroundImage: `url("./images/blocks/${ props.imageName }")`,
 	}
 
-	public render() {
-		return <div className="image-container">
-			<div className="image" style={ this.state.style }>
-				{ (this.props.title || this.props.subTitle) && <div className="text-row">
-					<div className="text-container">
-						{ this.props.title && <h1 className="primary-text">{ this.props.title }</h1> }
-						{ this.props.subTitle && <span className="secondary-text">{ this.props.subTitle }</span> }
-					</div>
-				</div> }
-			</div>
+	return <div className="image-container">
+		<div className="image" style={ style }>
+			{ (props.title || props.subTitle) && <div className="text-row">
+				<div className="text-container">
+					{ props.title && <h1 className="primary-text">{ props.title }</h1> }
+					{ props.subTitle && <span className="secondary-text">{ props.subTitle }</span> }
+				</div>
+			</div> }
 		</div>
-	}
+	</div>
 }
+
+export default Image;
