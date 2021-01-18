@@ -21,6 +21,17 @@
 		}
 	},
 	{
+		"title": "Azure Fundamentals",
+		"subTitle": [
+			"Qualification: AZ-900 Azure Fundamentals",
+			"Dates: 18th January 2021"
+		],
+		"image": {
+			"filename": "/images/logos/azure-fundamental.png",
+			"link": "https://www.youracclaim.com/users/adrian-eyre/badges"
+		}
+	},
+	{
 		"title": "MCSA Web Applications",
 		"subTitle": [
 			"70-480 - Programming in HTML5 with JavaScript and CSS3",
