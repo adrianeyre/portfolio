@@ -7,24 +7,23 @@
 		},
 		"subTitle": [
 			"Dates: June 2019 to Present",
-			"Position: Senior Software Developer"
+			"Position: Senior Software Developer & Scrum Master"
 		],
 		"body": "Full stack software developer writing internal applications to support the Head Office",
 		"points": [
 			"Frameworks – .NET Core, React, Redux and Knockout",
-			"Microsoft Devops",
 			"Languages – C#, TypeScript and JavaScript",
+			"Azure DevOps (Boards, Pipelines and Releases)",
 			"Entity Framework",
-			"SQL Server",
+			"SQL Server, Azure SQL and MongoDB",
 			"Modern CSS and dynamic stylesheet using SCSS",
 			"HTML5",
-			"MVC architecture",
+			"MVC Architecture",
 			"Continuous Integration / Continuous Deployment",
-			"Azure (AD, Functions, Virtual Machines, ARM Templates)",
-			"SQL Server",
+			"Azure (AD, Functions, Virtual Machines, ARM Templates, Web Apps, Blob Storage)",
 			"Team City",
 			"Octopus Deployments",
-			"NUnit, XUnit and Moq testing"
+			"NUnit, XUnit, Moq, Jest, React Testing Framework and Cypress"
 		],
 		"images": [
 			{
