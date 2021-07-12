@@ -1,12 +1,23 @@
 [
 	{
+		"title": "Koodoo",
+		"image": {
+			"filename": "/images/logos/koodoo.png",
+			"link": "https://koodoo.io"
+		},
+		"subTitle": [
+			"Dates: July 2021 to Present",
+			"Position: Senior Software Developer"
+		]
+	},
+	{
 		"title": "Slimming World",
 		"image": {
 			"filename": "/images/logos/slimming-world.png",
 			"link": "https://www.slimmingworld.co.uk"
 		},
 		"subTitle": [
-			"Dates: June 2019 to Present",
+			"Dates: June 2019 to July 2021",
 			"Position: Senior Software Developer & Scrum Master"
 		],
 		"body": "Full stack software developer writing internal applications to support the Head Office",
