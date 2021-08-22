@@ -338,6 +338,30 @@
 		]
 	},
 	{
+		"title": "Pairs",
+		"body": "A remake of the classic game Pairs using vanilla TypeScript.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/pairs/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/pairs"
+		},
+		"tags": [
+			"TypeScript",
+			"Canvas"
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/pairs"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/pairs"
+			}
+		]
+	},
+	{
 		"title": "A B Electrical & Maintenance",
 		"body": "A site for a local business, written in React, TypeScript, and SCSS.",
 		"image": {
