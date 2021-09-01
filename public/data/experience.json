@@ -7,7 +7,72 @@
 		},
 		"subTitle": [
 			"Dates: July 2021 to Present",
-			"Position: Senior Software Developer"
+			"Position: Senior Software Developer & Squad Lead"
+		],
+		"body": "Full stack software developer writing applications in the mortgage sector",
+		"points": [
+			"Frameworks – React, Node, Express and Svelte",
+			"Languages – JavaScript",
+			"Atlassian and Confluence",
+			"MongoDB",
+			"Modern CSS and dynamic stylesheet using SCSS",
+			"HTML5",
+			"Continuous Integration / Continuous Deployment with Circle CI and Netlify",
+			"Google Cloud (Functions, Virtual Machines, Storage)",
+			"Github",
+			"Jest, React Testing Framework and Cypress"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/javascript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/css.png",
+				"title": "SCSS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/html.png",
+				"title": "HTML",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/github.png",
+				"title": "Github",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/react.png",
+				"title": "React",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/node.png",
+				"title": "Node Express",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/circleci.png",
+				"title": "Circle CI",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/mongodb.png",
+				"title": "Mongo DB",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/atlassian.png",
+				"title": "Atlassian",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/netlify.png",
+				"title": "Netlify",
+				"width": "30px;"
+			}
 		]
 	},
 	{
