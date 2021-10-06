@@ -96,7 +96,7 @@
 		"ssri": "^8.0.1",
 		"typescript": "^3.9.7",
 		"urijs": "^1.19.6",
-		"url-parse": "^1.5.1",
+		"url-parse": "^1.5.2",
 		"web-vitals": "^1.0.1",
 		"websocket-extensions": ">=0.1.4",
 		"ws": "^7.4.6",
