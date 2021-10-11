@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Component } from 'react';
 import { Modal as ModalComponent } from 'react-bootstrap';
 
@@ -7,7 +6,7 @@ import DefaultBody from './default-body';
 import EmailBody from './email-body';
 import IModalProps from './interface/modal-props';
 import IModalState from './interface/modal-state';
-import './modal.css';
+import './modal.scss';
 
 export default class Modal extends Component<IModalProps, IModalState> {
 	constructor(props: IModalProps) {
@@ -24,7 +23,7 @@ export default class Modal extends Component<IModalProps, IModalState> {
 		const item = this.state.data ? this.state.data : {}
 		return <div className="modal-container">
 			<ModalComponent show={ this.state.show } onHide={ this.props.closeModal } size="lg">
-				<ModalComponent.Header translate={''} closeButton={ true }>
+				<ModalComponent.Header translate={undefined} closeButton={ true }>
 					<ModalComponent.Title>
 						{ item.title && <h2>{ item.title }</h2>}
 					</ModalComponent.Title>

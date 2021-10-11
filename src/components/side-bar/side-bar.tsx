@@ -1,11 +1,11 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Image } from 'react-bootstrap';
 
 import IDataService from '../../services/interface/data-service-interface'
 import Links from '../links/links';
 import ISideBarProps from './interface/side-bar-props';
 
-import './side-bar.css';
+import './side-bar.scss';
 
 const SideBar: FC<ISideBarProps> = (props: ISideBarProps) => {
 	return <div className="side-bar-container">

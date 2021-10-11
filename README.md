@@ -11,7 +11,8 @@
 ```shell
 $ git clone https://github.com/adrianeyre/portfolio
 $ cd portfolio
-$ npm i
+$ npm install --global yarn
+$ yarn
 ```
 
 ## <a name="Tests">Running the Tests</a>

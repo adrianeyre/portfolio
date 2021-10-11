@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { Modal as ModalComponent, Button, Badge } from 'react-bootstrap';
 import { get } from 'lodash';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

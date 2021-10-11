@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 import IImageProps from './interface/image-props';
 
-import './image.css';
+import './image.scss';
 
 const Image: FC<IImageProps> = (props: IImageProps) => {
 	const style = {

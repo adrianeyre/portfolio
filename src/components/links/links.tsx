@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as FreeFonts from '@fortawesome/free-solid-svg-icons';
 import * as BrandFonts from '@fortawesome/free-brands-svg-icons';
@@ -8,7 +8,7 @@ import IDataService from '../../services/interface/data-service-interface';
 import IModalType from '../../services/interface/modal-type-interface';
 import ILinksProps from './interface/links-props';
 
-import './links.css';
+import './links.scss';
 
 const Links: FC<ILinksProps> = (props: ILinksProps) => {
 	const fonts = {

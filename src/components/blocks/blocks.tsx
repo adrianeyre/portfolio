@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -6,7 +6,7 @@ import IDataService from '../../services/interface/data-service-interface';
 import IModalType from '../../services/interface/modal-type-interface';
 import IBlocksProps from './interface/blocks-props';
 
-import './blocks.css';
+import './blocks.scss';
 
 const Blocks: FC<IBlocksProps> = (props: IBlocksProps) => {
 	const evenBoxBackgroundColour: string = '#25A7E1';

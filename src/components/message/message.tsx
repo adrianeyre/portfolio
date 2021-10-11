@@ -1,9 +1,9 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import { Alert } from 'react-bootstrap';
 
 import IMessageProps from './interface/message-props';
 
-import './message.css';
+import './message.scss';
 
 const Message: FC<IMessageProps> = (props: IMessageProps) => {
 	const [show, setShow] = useState<boolean>(!!props.message);

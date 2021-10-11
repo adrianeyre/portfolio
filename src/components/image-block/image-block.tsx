@@ -1,11 +1,10 @@
-import * as React from 'react';
 import { Component } from 'react';
 import Slider, { Settings } from "react-slick";
 
 import IImageBlockProps from './interface/image-block-props';
 import IDataService from '../../services/interface/data-service-interface';
 
-import './image-block.css';
+import './image-block.scss';
 
 export default class ImageBlock extends Component<IImageBlockProps, {}> {
 	private images: string[]

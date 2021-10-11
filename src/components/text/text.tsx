@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 import IDataService from '../../services/interface/data-service-interface'
 import IPoints from '../../services/interface/points-interface'
@@ -6,7 +6,7 @@ import ISubTitle from '../../services/interface/subtitle-interface'
 import IImage from '../../services/interface/image-interface';
 import ITextProps from './interface/text-props';
 
-import './text.css';
+import './text.scss';
 
 const Text: FC<ITextProps> = (props: ITextProps) => {
 	const styleImage = () => ({

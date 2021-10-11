@@ -24,7 +24,7 @@ import ImageBlock from './components/image-block/image-block';
 import Footer from './components/footer/footer';
 import ImageList from './components/image-list/image-list';
 
-import './App.css';
+import './App.scss';
 
 interface IAppState {
 	data: any;

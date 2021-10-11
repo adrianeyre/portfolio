@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 import ITitleProps from './interface/title-props';
 
-import './title.css';
+import './title.scss';
 
 const Title: FC<ITitleProps> = (props: ITitleProps) => {
 	return <div className="title-container">
