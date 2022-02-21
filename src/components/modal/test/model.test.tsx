@@ -1,13 +1,12 @@
-import React from 'react';
 import { shallow } from 'enzyme';
 
-import IModalrops from '../interface/modal-props';
+import IModalProps from '../interface/modal-props';
 import Modal from '../modal';
 
 describe('Modal', () => {
 	const mockRouteProp: any = jest.fn();
 
-	const defaultProps: IModalrops = {
+	const defaultProps: IModalProps = {
 		data: undefined,
 		modalType: undefined,
 		closeModal: mockRouteProp,

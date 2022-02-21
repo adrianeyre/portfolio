@@ -1,4 +1,3 @@
-import React from 'react';
 import { shallow } from 'enzyme';
 
 import IDataService from '../../../services/interface/data-service-interface';

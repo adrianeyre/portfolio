@@ -24,7 +24,7 @@ const DefaultBody = (props: IDefaultBody) => {
 
 			{ props.item.tags && <div className="card-tags">
 			<FontAwesomeIcon icon={ fonts.free.faTags } />
-			{ props.item.tags.map((tag: ITags, tagInbdex: number) => <Badge className="card-tag" key={ `card-tag-${ tagInbdex }` } pill={ true } variant="primary">
+			{ props.item.tags.map((tag: ITags, tagInbdex: number) => <Badge className="card-tag" key={ `card-tag-${ tagInbdex }` } pill={ true } bg="primary">
 				{ tag }
 			</Badge>) }
 			</div> }

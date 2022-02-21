@@ -3,7 +3,7 @@ import { Component, RefObject } from 'react';
 import { Modal as ModalComponent, InputGroup, Form, FormControl, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelopeOpenText, faStickyNote, faShare, faTimesCircle } from '@fortawesome/free-solid-svg-icons';
-import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import IEmailBodyProps from './interface/email-body-props';
 import IEmailBodyState from './interface/email-body-state';
@@ -39,9 +39,9 @@ export default class EmailBody extends Component<IEmailBodyProps, IEmailBodyStat
 			<Form method="post" action="/scripts/email.php">
 				<ModalComponent.Body>
 					<InputGroup className="mb-3">
-						<InputGroup.Prepend>
+						<InputGroup>
 							<InputGroup.Text id="basic-addon1"><FontAwesomeIcon icon={ faUser } /></InputGroup.Text>
-						</InputGroup.Prepend>
+						</InputGroup>
 						<FormControl
 							required={ true }
 							name="name"
@@ -53,9 +53,9 @@ export default class EmailBody extends Component<IEmailBodyProps, IEmailBodyStat
 					</InputGroup>
 
 					<InputGroup className="mb-3">
-						<InputGroup.Prepend>
+						<InputGroup>
 							<InputGroup.Text id="basic-addon1"><FontAwesomeIcon icon={ faEnvelopeOpenText } /></InputGroup.Text>
-						</InputGroup.Prepend>
+						</InputGroup>
 						<FormControl
 							type="email"
 							name="email"
@@ -68,9 +68,9 @@ export default class EmailBody extends Component<IEmailBodyProps, IEmailBodyStat
 					</InputGroup>
 
 					<InputGroup>
-						<InputGroup.Prepend>
+						<InputGroup>
 							<InputGroup.Text><FontAwesomeIcon icon={ faStickyNote } /></InputGroup.Text>
-						</InputGroup.Prepend>
+						</InputGroup>
 						<FormControl
 							required={ true }
 							name="message"

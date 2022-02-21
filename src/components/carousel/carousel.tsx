@@ -49,7 +49,7 @@ const Carousel: FC<ICarouselProps> = (props: ICarouselProps) => {
 					<div className="card-tags">
 						{ item.tags && <div>
 							<FontAwesomeIcon icon={ FreeFonts.faTags } />
-							{ item.tags.map((tag: ITags, tagInbdex: number) => <Badge className="card-tag" key={ `card-item-${ cardIndex }-card-tag-${ tagInbdex }` } pill={ true } variant="primary">
+							{ item.tags.map((tag: ITags, tagInbdex: number) => <Badge className="card-tag" key={ `card-item-${ cardIndex }-card-tag-${ tagInbdex }` } pill={ true } bg="primary">
 								{ tag }
 							</Badge>) }
 						</div> }
