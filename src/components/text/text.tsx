@@ -1,8 +1,6 @@
 import { FC } from 'react';
 
 import IDataService from '../../services/interface/data-service-interface'
-import IPoints from '../../services/interface/points-interface'
-import ISubTitle from '../../services/interface/subtitle-interface'
 import IImage from '../../services/interface/image-interface';
 import ITextProps from './interface/text-props';
 
@@ -25,7 +23,7 @@ const Text: FC<ITextProps> = (props: ITextProps) => {
 						{ item.title && <h2>{ item.title }</h2> }
 					</div>
 
-					{ item.subTitle && item.subTitle.map((subTitle: ISubTitle, subtitleIndex: number) => <h4 key={ `subtitle-${ subtitleIndex }` }>{ subTitle }</h4>) }
+					{ item.subTitle && item.subTitle.map((subTitle: string, subtitleIndex: number) => <h4 key={ `subtitle-${ subtitleIndex }` }>{ subTitle }</h4>) }
 					{ item.images && <div className="images-row">
 						{ item.images.map((image: IImage, imageIndex: number) => <div key={ `item-image-${ textIndex }-${ imageIndex }` } >
 							<a href={ image.link } rel="noopener noreferrer" target="_blank"><img height={ image.height } width={ image.width } alt={ image.filename } src={ image.filename } title={ image.title }/></a>
@@ -33,7 +31,7 @@ const Text: FC<ITextProps> = (props: ITextProps) => {
 					</div> }
 					{ item.body && <span dangerouslySetInnerHTML={{__html: item.body }} /> }
 					{ item.points && <ul>
-						{ item.points.map((point: IPoints, pointIndex: number) => <li key={ pointIndex }>{ point }</li>) }
+						{ item.points.map((point: string, pointIndex: number) => <li key={ pointIndex }>{ point }</li>) }
 					</ul> }
 				</article>) }
 				{ props.page }

@@ -8,18 +8,14 @@ describe('Text', () => {
 		{
 			title: 'My Title',
 			subTitle: [
-				{
-					name: 'My Subtitle'
-				}
+				'My Subtitle',
 			],
 			body: "My Body",
 			image: {
 				filename: 'myimage.png',
 			},
 			points: [
-				{
-					name: 'point 1',
-				}
+				'point 1',
 			]
 		}
 	]

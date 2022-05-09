@@ -7,7 +7,6 @@ import * as FreeFonts from '@fortawesome/free-solid-svg-icons';
 import * as BrandFonts from '@fortawesome/free-brands-svg-icons';
 
 import IDataService from '../../services/interface/data-service-interface';
-import ITags from '../../services/interface/tag-interface';
 import ILink from '../../services/interface/link-interface';
 import IModalType from '../../services/interface/modal-type-interface';
 import ICarouselProps from './interface/carousel-props';
@@ -49,7 +48,7 @@ const Carousel: FC<ICarouselProps> = (props: ICarouselProps) => {
 					<div className="card-tags">
 						{ item.tags && <div>
 							<FontAwesomeIcon icon={ FreeFonts.faTags } />
-							{ item.tags.map((tag: ITags, tagInbdex: number) => <Badge className="card-tag" key={ `card-item-${ cardIndex }-card-tag-${ tagInbdex }` } pill={ true } bg="primary">
+							{ item.tags.map((tag: string, tagIndex: number) => <Badge className="card-tag" key={ `card-item-${ cardIndex }-card-tag-${ tagIndex }` } pill={ true } bg="primary">
 								{ tag }
 							</Badge>) }
 						</div> }

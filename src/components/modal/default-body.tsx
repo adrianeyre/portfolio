@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as FreeFonts from '@fortawesome/free-solid-svg-icons';
 import * as BrandFonts from '@fortawesome/free-brands-svg-icons';
 
-import ITags from '../../services/interface/tag-interface';
 import ILink from '../../services/interface/link-interface';
 import IDefaultBody from './interface/default-body-props';
 
@@ -24,7 +23,7 @@ const DefaultBody = (props: IDefaultBody) => {
 
 			{ props.item.tags && <div className="card-tags">
 			<FontAwesomeIcon icon={ fonts.free.faTags } />
-			{ props.item.tags.map((tag: ITags, tagInbdex: number) => <Badge className="card-tag" key={ `card-tag-${ tagInbdex }` } pill={ true } bg="primary">
+			{ props.item.tags.map((tag: any, tagIndex: number) => <Badge className="card-tag" key={ `card-tag-${ tagIndex }` } pill={ true } bg="primary">
 				{ tag }
 			</Badge>) }
 			</div> }
