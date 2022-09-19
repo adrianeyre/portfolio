@@ -1,5 +1,76 @@
 [
 	{
+		"title": "Candor",
+		"image": {
+			"filename": "/images/logos/candor.png",
+			"link": "https://www.candor.co.uk/"
+		},
+		"subTitle": [
+			"Dates: February 2022 to Present",
+			"Position: Senior Software Developer & Squad Lead"
+		],
+		"body": "Full stack software developer writing front end applications and API's for a finance company",
+		"points": [
+			"Frameworks – React, Node, Express and Svelte",
+			"Languages – Typescript, JavaScript",
+			"Atlassian and Confluence",
+			"MongoDB",
+			"Modern CSS and dynamic stylesheet using SCSS",
+			"HTML5",
+			"Continuous Integration / Continuous Deployment with Github Actions and Netlify",
+			"Google Cloud (Functions, Virtual Machines, Storage)",
+			"Github",
+			"Jest, React Testing Framework and Cypress"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/javascript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/css.png",
+				"title": "SCSS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/html.png",
+				"title": "HTML",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/github.png",
+				"title": "Github",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/react.png",
+				"title": "React",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/node.png",
+				"title": "Node Express",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/mongodb.png",
+				"title": "Mongo DB",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/atlassian.png",
+				"title": "Atlassian",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/netlify.png",
+				"title": "Netlify",
+				"width": "30px;"
+			}
+		]
+	},
+	{
 		"title": "Koodoo",
 		"image": {
 			"filename": "/images/logos/koodoo.png",
@@ -9,7 +80,7 @@
 			"Dates: July 2021 to Present",
 			"Position: Senior Software Developer & Squad Lead"
 		],
-		"body": "Full stack software developer writing applications in the mortgage sector",
+		"body": "Full stack software developer writing front end applications and API's in the mortgage sector",
 		"points": [
 			"Frameworks – React, Node, Express and Svelte",
 			"Languages – JavaScript",
