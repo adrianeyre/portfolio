@@ -12,14 +12,14 @@
 		"body": "Full stack software developer writing front end applications and API's for a finance company",
 		"points": [
 			"Frameworks – React, Node, Express and Svelte",
-			"Languages – Typescript, JavaScript",
-			"Atlassian and Confluence",
+			"Languages – Typescript, JavaScript, Python",
+			"Atlassian, Jira and Confluence",
 			"MongoDB",
 			"Modern CSS and dynamic stylesheet using SCSS",
 			"HTML5",
 			"Continuous Integration / Continuous Deployment with Github Actions and Netlify",
 			"Google Cloud (Functions, Virtual Machines, Storage)",
-			"Github",
+			"Github, GraphQL",
 			"Jest, React Testing Framework and Cypress"
 		],
 		"images": [
@@ -84,7 +84,7 @@
 		"points": [
 			"Frameworks – React, Node, Express and Svelte",
 			"Languages – JavaScript",
-			"Atlassian and Confluence",
+			"Atlassian, Jira and Confluence",
 			"MongoDB",
 			"Modern CSS and dynamic stylesheet using SCSS",
 			"HTML5",
