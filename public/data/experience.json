@@ -1,12 +1,55 @@
 [
 	{
+		"title": "Percayso Inform",
+		"image": {
+			"filename": "/images/logos/percayso-inform.png",
+			"link": "https://www.percayso-inform.com/"
+		},
+		"subTitle": [
+			"Dates: January 2023 to Present",
+			"Position: Senior Software Developer"
+		],
+		"body": "Full stack software developer",
+		"points": [
+			"Frameworks – Node and Express",
+			"Languages – Typescript, JavaScript"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/typescript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/javascript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/aws.png",
+				"title": "AWS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/github.png",
+				"title": "Github",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/node.png",
+				"title": "Node Express",
+				"width": "30px;"
+			}
+		]
+	},
+	{
 		"title": "Candor",
 		"image": {
 			"filename": "/images/logos/candor.png",
 			"link": "https://www.candor.co.uk/"
 		},
 		"subTitle": [
-			"Dates: February 2022 to Present",
+			"Dates: February 2022 to January 2023",
 			"Position: Senior Software Developer & Squad Lead"
 		],
 		"body": "Full stack software developer writing front end applications and API's for a finance company",
@@ -23,6 +66,11 @@
 			"Jest, React Testing Framework and Cypress"
 		],
 		"images": [
+			{
+				"filename": "/images/languages/typescript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
 			{
 				"filename": "/images/languages/javascript.png",
 				"title": "JavaScript",
@@ -77,7 +125,7 @@
 			"link": "https://koodoo.io"
 		},
 		"subTitle": [
-			"Dates: July 2021 to Present",
+			"Dates: July 2021 to January 2023",
 			"Position: Senior Software Developer & Squad Lead"
 		],
 		"body": "Full stack software developer writing front end applications and API's in the mortgage sector",
@@ -94,6 +142,11 @@
 			"Jest, React Testing Framework and Cypress"
 		],
 		"images": [
+			{
+				"filename": "/images/languages/typescript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
 			{
 				"filename": "/images/languages/javascript.png",
 				"title": "JavaScript",
