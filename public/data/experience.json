@@ -1,5 +1,74 @@
 [
 	{
+		"title": "Percayso Vehicle Intelligence",
+		"image": {
+			"filename": "/images/logos/percayso-inform.png",
+			"link": "https://www.percayso-vehicle-intelligence.com/"
+		},
+		"subTitle": [
+			"Dates: January 2023 to Present",
+			"Position: Senior Software Developer"
+		],
+		"body": "Full stack software developer",
+		"points": [
+			"Frameworks – Node, AWS and Express",
+			"Languages – Typescript, JavaScript, Python, C#",
+			"Jira and Confluence",
+			"Modern CSS and dynamic stylesheet using SCSS and HTML5",
+			"Continuous Integration / Continuous Deployment with Github Actions and Buddy Works",
+			"AWS lambda, S3, ECS, EC2, DynamoDB, MySQL, Amplify",
+			"Vue 2, Github",
+			"Jest Testing Framework and Cypress"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/typescript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/javascript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/aws.png",
+				"title": "AWS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/github.png",
+				"title": "Github",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/vue.png",
+				"title": "Vue",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/node.png",
+				"title": "Node Express",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/dotnet.png",
+				"title": ".NET",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/dotnetcore.png",
+				"title": ".NET Core",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/octopus.png",
+				"title": "Octopus Deploy",
+				"width": "30px;"
+			}
+		]
+	},
+	{
 		"title": "Percayso Inform",
 		"image": {
 			"filename": "/images/logos/percayso-inform.png",
@@ -12,7 +81,8 @@
 		"body": "Full stack software developer",
 		"points": [
 			"Frameworks – Node and Express",
-			"Languages – Typescript, JavaScript"
+			"Languages – Typescript, JavaScript",
+			"Shared Component Library using Typescript"
 		],
 		"images": [
 			{
