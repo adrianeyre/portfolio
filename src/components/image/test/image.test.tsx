@@ -1,4 +1,7 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
 
 import IImageProps from '../interface/image-props';
 import Image from '../image';
@@ -11,7 +14,7 @@ describe('Image', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const imageComponent = shallow(<Image { ...defaultProps }/>);
+		const imageComponent = render(<Image { ...defaultProps }/>);
 
 		expect(imageComponent).toMatchSnapshot();
 	});

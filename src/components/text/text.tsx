@@ -1,12 +1,10 @@
-import { FC } from 'react';
-
 import IDataService from '../../services/interface/data-service-interface'
 import IImage from '../../services/interface/image-interface';
 import ITextProps from './interface/text-props';
 
 import styles from '@/styles/text.module.scss';
 
-const Text: FC<ITextProps> = (props: ITextProps) => {
+const Text = (props: ITextProps) => {
 	const styleImage = () => ({
 		borderRadius: props.imageRadius ? props.imageRadius : undefined,
 	})

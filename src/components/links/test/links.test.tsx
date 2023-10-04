@@ -1,4 +1,7 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
 
 import ILinksProps from '../interface/links-props';
 import Links from '../links';
@@ -13,7 +16,7 @@ describe('Links', () => {
 	};
 
 	it('Should render correctly', () => {
-		const linksComponent = shallow(<Links { ...defaultProps }/>);
+		const linksComponent = render(<Links { ...defaultProps }/>);
 
 		expect(linksComponent).toMatchSnapshot();
 	});

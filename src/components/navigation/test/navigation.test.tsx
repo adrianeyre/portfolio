@@ -1,4 +1,8 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
+
 
 import INavigationProps from '../interface/navigation-props';
 import Navigation from '../navigation';
@@ -14,7 +18,7 @@ describe('Navigation', () => {
 	};
 
 	it('Should render correctly', () => {
-		const navigationComponent = shallow(<Navigation { ...defaultProps }/>);
+		const navigationComponent = render(<Navigation { ...defaultProps }/>);
 
 		expect(navigationComponent).toMatchSnapshot();
 	});

@@ -1,4 +1,7 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
 
 import IModalProps from '../interface/modal-props';
 import Modal from '../modal';
@@ -13,7 +16,7 @@ describe('Modal', () => {
 	};
 
 	it('Should render correctly', () => {
-		const modelComponent = shallow(<Modal { ...defaultProps }/>);
+		const modelComponent = render(<Modal { ...defaultProps }/>);
 
 		expect(modelComponent).toMatchSnapshot();
 	});

@@ -1,10 +1,8 @@
-import { FC } from 'react';
-
 import IImageProps from './interface/image-props';
 
 import styles from '@/styles/image.module.scss';
 
-const Image: FC<IImageProps> = (props: IImageProps) => {
+const Image = (props: IImageProps) => {
 	const style = {
 		backgroundImage: `url("./images/blocks/${ props.imageName }")`,
 	}

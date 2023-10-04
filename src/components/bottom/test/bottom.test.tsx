@@ -1,4 +1,7 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
 
 import IBottomProps from '../interface/bottom-props';
 import Bottom from '../bottom';
@@ -11,7 +14,7 @@ describe('Bottom', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const bottomComponent = shallow(<Bottom { ...defaultProps }/>);
+		const bottomComponent = render(<Bottom { ...defaultProps }/>);
 
 		expect(bottomComponent).toMatchSnapshot();
 	});

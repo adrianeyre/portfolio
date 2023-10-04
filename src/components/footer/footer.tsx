@@ -1,10 +1,9 @@
-import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import styles from '@/styles/footer.module.scss';
 
-const Footer: FC = () => {
+const Footer = () => {
 	const todaysDate = new Date();
 	const thisYear = todaysDate.getFullYear();
 

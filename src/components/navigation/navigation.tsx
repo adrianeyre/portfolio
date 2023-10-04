@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 
 import IDataService from '../../services/interface/data-service-interface';
@@ -8,7 +8,7 @@ import INavigationProps from './interface/navigation-props';
 
 import styles from '@/styles/navigation.module.scss';
 
-const Navigation: FC<INavigationProps> = (props: INavigationProps) => {
+const Navigation = (props: INavigationProps) => {
 	const [isCollasped, setIsCollasped] = useState<boolean>(true);
 
 	const toggleNav = () => setIsCollasped(!isCollasped);

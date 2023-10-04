@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { Badge } from 'react-bootstrap';
 import Slider, { Settings } from "react-slick";
 import { get } from 'lodash';
@@ -14,7 +13,7 @@ import ICarouselProps from './interface/carousel-props';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Carousel: FC<ICarouselProps> = (props: ICarouselProps) => {
+const Carousel = (props: ICarouselProps) => {
 	const fonts = {
 		free: FreeFonts,
 		brand: BrandFonts,

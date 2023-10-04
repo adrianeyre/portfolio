@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { Image } from 'react-bootstrap';
 
 import IDataService from '../../services/interface/data-service-interface'
@@ -7,7 +6,7 @@ import ISideBarProps from './interface/side-bar-props';
 
 import styles from '@/styles/side-bar.module.scss';
 
-const SideBar: FC<ISideBarProps> = (props: ISideBarProps) => {
+const SideBar = (props: ISideBarProps) => {
 	return <div className={styles.sideBarContainer}>
 		<div className={styles.image}>
 			<Image src="/images/links/photo.jpeg" roundedCircle={true} />

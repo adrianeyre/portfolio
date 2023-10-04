@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as FreeFonts from '@fortawesome/free-solid-svg-icons';
 import * as BrandFonts from '@fortawesome/free-brands-svg-icons';
@@ -10,7 +9,7 @@ import ILinksProps from './interface/links-props';
 
 import styles from '@/styles/links.module.scss';
 
-const Links: FC<ILinksProps> = (props: ILinksProps) => {
+const Links = (props: ILinksProps) => {
 	const fonts = {
 		free: FreeFonts,
 		brand: BrandFonts,

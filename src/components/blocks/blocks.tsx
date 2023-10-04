@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -8,7 +7,7 @@ import IBlocksProps from './interface/blocks-props';
 
 import styles from '@/styles/blocks.module.scss';
 
-const Blocks: FC<IBlocksProps> = (props: IBlocksProps) => {
+const Blocks = (props: IBlocksProps) => {
 	const evenBoxBackgroundColour: string = '#25A7E1';
 	const oddBoxBackgroundColour: string = '#056B93';
 

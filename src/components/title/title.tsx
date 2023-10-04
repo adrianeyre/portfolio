@@ -1,10 +1,8 @@
-import { FC } from 'react';
-
 import ITitleProps from './interface/title-props';
 
 import styles from '@/styles/title.module.scss';
 
-const Title: FC<ITitleProps> = (props: ITitleProps) => {
+const Title = (props: ITitleProps) => {
 	return <div className={styles.titleContainer}>
 		{ (props.title || props.subTitle) && <div className={styles.textRow}>
 			<header className={styles.textContainer}>

@@ -1,4 +1,7 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
 
 import IEmailBodyProps from '../interface/email-body-props';
 import EmailBody from '../email-body';
@@ -12,7 +15,7 @@ describe('EmailBody', () => {
 	};
 
 	it('Should render correctly', () => {
-		const emailBodyComponent = shallow(<EmailBody { ...defaultProps }/>);
+		const emailBodyComponent = render(<EmailBody { ...defaultProps }/>);
 
 		expect(emailBodyComponent).toMatchSnapshot();
 	});
