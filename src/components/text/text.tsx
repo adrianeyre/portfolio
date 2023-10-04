@@ -4,27 +4,27 @@ import IDataService from '../../services/interface/data-service-interface'
 import IImage from '../../services/interface/image-interface';
 import ITextProps from './interface/text-props';
 
-import './text.scss';
+import styles from '@/styles/text.module.scss';
 
 const Text: FC<ITextProps> = (props: ITextProps) => {
 	const styleImage = () => ({
 		borderRadius: props.imageRadius ? props.imageRadius : undefined,
 	})
 
-	return <div className="text-container">
+	return <div className={styles.textContainer}>
 		<div className="row">
 			{ props.imageName && props.imagePosition === 'left' && <div className="col-md-6">
 				<img width="100%" height="100%" alt={ props.imageName } src={`/images/backgrounds/${ props.imageName }`} style={ styleImage() } />
 			</div> }
 			<div className={ props.imageName ? 'col-md-6' : 'col-md-12' }>
-				{ props.data && props.data.map((item: IDataService, textIndex: number) => <article key={ `text-item-${ textIndex }` } className="text-item">
-					<div className="title">
+				{ props.data && props.data.map((item: IDataService, textIndex: number) => <article key={ `text-item-${ textIndex }` } className={styles.textItem}>
+					<div className={styles.title}>
 						{ item.image && <a href={ item.image.link } rel="noopener noreferrer" target="_blank"><img alt={ item.image.filename } src={ item.image.filename } /></a> }
 						{ item.title && <h2>{ item.title }</h2> }
 					</div>
 
 					{ item.subTitle && item.subTitle.map((subTitle: string, subtitleIndex: number) => <h4 key={ `subtitle-${ subtitleIndex }` }>{ subTitle }</h4>) }
-					{ item.images && <div className="images-row">
+					{ item.images && <div className={styles.imagesRow}>
 						{ item.images.map((image: IImage, imageIndex: number) => <div key={ `item-image-${ textIndex }-${ imageIndex }` } >
 							<a href={ image.link } rel="noopener noreferrer" target="_blank"><img height={ image.height } width={ image.width } alt={ image.filename } src={ image.filename } title={ image.title }/></a>
 						</div>) }

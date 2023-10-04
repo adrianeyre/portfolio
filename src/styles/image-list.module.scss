@@ -1,0 +1,19 @@
+.imageListContainer {
+	padding: 10px;
+	margin-bottom: 1em;
+
+	.imageListBox {
+		margin-right: 10px;
+		display: inline;
+
+		.thumbnail {
+			height: 5em;
+			width: 5em;
+		}
+	}
+}
+
+.thumbnail {
+	height: 5em;
+	width: 5em;
+}

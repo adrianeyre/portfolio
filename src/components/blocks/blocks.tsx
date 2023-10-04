@@ -6,7 +6,7 @@ import IDataService from '../../services/interface/data-service-interface';
 import IModalType from '../../services/interface/modal-type-interface';
 import IBlocksProps from './interface/blocks-props';
 
-import './blocks.scss';
+import styles from '@/styles/blocks.module.scss';
 
 const Blocks: FC<IBlocksProps> = (props: IBlocksProps) => {
 	const evenBoxBackgroundColour: string = '#25A7E1';
@@ -36,13 +36,13 @@ const Blocks: FC<IBlocksProps> = (props: IBlocksProps) => {
 		props.showModal(IModalType.email, data);
 	}
 
-	return <div className="blocks-container">
+	return <div className={styles.blocksContainer}>
 		<div className="row">
 			{ props.data && props.data.map((item: IDataService, blockIndex: number) => <div key={ `block-${ blockIndex }` } className="col-md-4">
 				<div className="block-box" onClick={ () => handleClickLink(item.image?.link, item.image?.type) } style={ styleBlockBox(blockIndex, item.image?.link !== undefined) }>
-					{ item.body && <div className="body-text">{ item.body }</div>}
+					{ item.body && <div className={styles.bodyText}>{ item.body }</div>}
 					
-					{ item.image?.link && <div className="link"><FontAwesomeIcon icon={ faPlayCircle } /></div>}
+					{ item.image?.link && <div className={styles.link}><FontAwesomeIcon icon={ faPlayCircle } /></div>}
 				</div>
 			</div> )}
 		</div>

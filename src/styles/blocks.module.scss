@@ -1,13 +1,13 @@
-@import '../../styles/colour-palette.scss';
+@import './colour-palette.scss';
 
-.blocks-container {
-	.block-box {
+.blocksContainer {
+	.blockBox {
 		margin: 0.5em;
 		padding: 1em;
 		min-height: 210px;
 		border-radius: 10px;
 
-		.body-text {
+		.bodyText {
 			color: $blocks-color-text;
 			font-size: 2em;
 		}

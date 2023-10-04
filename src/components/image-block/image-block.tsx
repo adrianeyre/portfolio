@@ -4,8 +4,6 @@ import Slider, { Settings } from "react-slick";
 import IImageBlockProps from './interface/image-block-props';
 import IDataService from '../../services/interface/data-service-interface';
 
-import './image-block.scss';
-
 export default class ImageBlock extends Component<IImageBlockProps, {}> {
 	private images: string[]
 

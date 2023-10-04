@@ -1,6 +1,6 @@
-@import '../../styles/colour-palette.scss';
+@import './colour-palette.scss';
 
-.image-container {
+.imageContainer {
 	height: 100%;
 
 	.image {
@@ -14,13 +14,13 @@
 		border-top-right-radius: 15px;
 		border-top-left-radius: 15px;
 
-		.text-row {
+		.textRow {
 			position: absolute;
 			left: 0;
 			top: 20%;
 			width: 100%;
 
-			.text-container {
+			.textContainer {
 				position: relative;
 				display: grid;
 				text-align: center;
@@ -32,12 +32,12 @@
 				text-transform: uppercase;
 				padding: 10px;
 
-				.primary-text {
+				.primaryText {
 					font-size: 4rem;
 					color: $primary-colour-text;
 				}
 
-				.secondary-text {
+				.secondaryText {
 					font-size: 2rem;
 					color: $secondary-colour-text;
 				}
@@ -47,15 +47,15 @@
 }
 
 @media (max-width: 1000px) {
-	.image-container {
+	.imageContainer {
 		.image {
-			.text-row {
+			.textRow {
 				.text-container {
-					.primary-text {
+					.primaryText {
 						font-size: 2.5rem;
 					}
 
-					.secondary-text {
+					.secondaryText {
 						font-size: 1.6rem;
 					}
 				}

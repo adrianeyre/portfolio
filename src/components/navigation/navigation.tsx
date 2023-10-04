@@ -6,7 +6,7 @@ import IDataService from '../../services/interface/data-service-interface';
 import Links from '../links/links';
 import INavigationProps from './interface/navigation-props';
 
-import './navigation.scss';
+import styles from '@/styles/navigation.module.scss';
 
 const Navigation: FC<INavigationProps> = (props: INavigationProps) => {
 	const [isCollasped, setIsCollasped] = useState<boolean>(true);
@@ -20,10 +20,10 @@ const Navigation: FC<INavigationProps> = (props: INavigationProps) => {
 		props.scrollToAnchor(link);
 	}
 
-	return <div className="navigation-container">
+	return <div className={styles.navigationContainer}>
 		<Navbar expanded={ !isCollasped } bg="light" expand="lg" fixed="top">
 			<Navbar.Brand href="/">ADRIAN EYRE</Navbar.Brand>
-			<span className="top-bar-links"><Links data={ props.linksData } showModal={ props.showModal } scrollToAnchor={ props.scrollToAnchor } /></span>
+			<span className={styles.topBarLinks}><Links data={ props.linksData } showModal={ props.showModal } scrollToAnchor={ props.scrollToAnchor } /></span>
 			<Navbar.Toggle onClick={ toggleNav } aria-controls="basic-navbar-nav" />
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="mr-auto">

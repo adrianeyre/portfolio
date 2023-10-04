@@ -1,10 +1,10 @@
-@import '../../styles/colour-palette.scss';
+@import './colour-palette.scss';
 
-.title-container {
+.titleContainer {
 	height: 100%;
 
-	.text-row {
-		.text-container {
+	.textRow {
+		.textContainer {
 			border-top-right-radius: 15px;
 			border-top-left-radius: 15px;
 			position: relative;
@@ -18,21 +18,15 @@
 			text-transform: uppercase;
 			padding: 10px;
 
-			.primary-text {
+			.primaryText {
 				font-size: 4rem;
 				color: $secondary-colour-text;
 			}
 
-			.secondary-text {
+			.secondaryText {
 				font-size: 2rem;
 				color: $secondary-colour-text;
 			}
 		}
 	}
 }
-
-// @media (max-width: 1000px) {
-// 	.title-container {
-
-// 	}
-// }

@@ -1,14 +1,14 @@
-@import './styles/colour-palette.scss';
+@import './colour-palette.scss';
 
 .modal {
 	z-index: 100;
 	display: block;
 }
 
-.loading-container {
+.loadingContainer {
 	width: 100%;
 
-	.loading-box {
+	.loadingBox {
 		margin: auto;
 		width: 50%;
 		background-color: $main-colour-background;
@@ -17,7 +17,7 @@
 		border-radius: 2%;
 		border: 2px solid $primary-colour-text;
 
-		.loading-text {
+		.loadingText {
 			color: $primary-colour-text;
 			text-align: center;
 			vertical-align: middle;
@@ -49,6 +49,7 @@
 		width: calc(100% - 17rem);
 
 		.block {
+			background-color: yellow;
 			margin: 0px 0px 10px 10px;
 			border-radius: 15px;
 			background-color: $main-colour-background;
@@ -93,19 +94,19 @@
 		margin: 0px !important;
 	}
 
-	.loading-container {
-		.loading-box {
+	.loadingContainer {
+		.loadingBox {
 			width: 70%;
 
-			.loading-text {
+			.loadingText {
 				font-size: 2em;
 			}
 		}
 	}
 }
 
-.flat-button {
-	background: none !important;
+.flatButton {
+  background: none !important;
   border: none;
   padding: 0 !important;
   text-decoration: underline;

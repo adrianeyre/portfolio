@@ -6,7 +6,6 @@ import DefaultBody from './default-body';
 import EmailBody from './email-body';
 import IModalProps from './interface/modal-props';
 import IModalState from './interface/modal-state';
-import './modal.scss';
 
 export default class Modal extends Component<IModalProps, IModalState> {
 	constructor(props: IModalProps) {

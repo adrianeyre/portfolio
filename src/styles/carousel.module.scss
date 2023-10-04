@@ -1,4 +1,4 @@
-@import '../../styles/colour-palette.scss';
+@import './colour-palette.scss';
 
 .carousel-container {
 	padding: 10px 0px;
@@ -55,10 +55,14 @@
 
 		.card-body {
 			height: 210px;
+			overflow-y: hidden;
 			padding: 0px;
 			position: absolute;
 
 			.card-tags {
+				svg {
+					height: 20px;
+				}
 				.card-tag {
 					margin: 1px;
 				}
@@ -88,13 +92,17 @@
 			color: white;
 			background-color: white;
 			padding: 10px 0px;
-			width: 100%;
+			// width: 100%;
 			bottom: 0px;
-			left: 0px;
+			// left: 0px;
 
 			a {
 				margin-left: 5px;
 				cursor: pointer;
+
+				svg {
+					width: 15.5px;
+				}
 			}
 		}
 	}

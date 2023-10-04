@@ -8,7 +8,7 @@ import IDataService from '../../services/interface/data-service-interface';
 import IModalType from '../../services/interface/modal-type-interface';
 import ILinksProps from './interface/links-props';
 
-import './links.scss';
+import styles from '@/styles/links.module.scss';
 
 const Links: FC<ILinksProps> = (props: ILinksProps) => {
 	const fonts = {
@@ -35,11 +35,11 @@ const Links: FC<ILinksProps> = (props: ILinksProps) => {
 		props.showModal(IModalType.email, data);
 	}
 
-	return <div className="links-container">
+	return <div className={styles.linksContainer}>
 		{ props.data && props.data.map((item: IDataService, linkIndex: number) => <span key={ `link-${ linkIndex }` }>
 			{ item && item.image && item.image.link && item.image.type && <a onClick={ () => handleClickLink(item.image?.link, item.image?.type) }>
 				{ item.image.filename && <img alt={ item.image.filename } src={ item.image.filename } /> }
-				{ item.image.font && <FontAwesomeIcon className="icon" icon={ get(fonts, item.image.font) } /> }
+				{ item.image.font && <FontAwesomeIcon className={styles.icon} icon={ get(fonts, item.image.font) } /> }
 			</a> }
 		</span>)}
 	</div>

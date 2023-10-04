@@ -13,7 +13,6 @@ import ICarouselProps from './interface/carousel-props';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './carousel.scss';
 
 const Carousel: FC<ICarouselProps> = (props: ICarouselProps) => {
 	const fonts = {

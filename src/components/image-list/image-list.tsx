@@ -4,7 +4,7 @@ import IDataService from '../../services/interface/data-service-interface';
 import IImageListProps from './interface/image-list-props';
 import IImageListState from './interface/image-list-state';
 
-import './image-list.scss';
+import styles from '@/styles/image-list.module.scss';
 
 export default class ImageList extends Component<IImageListProps, IImageListState> {
 	private container: any;
@@ -25,12 +25,12 @@ export default class ImageList extends Component<IImageListProps, IImageListStat
 	}
 
 	public render() {
-		return <div className="image-list-container" ref={(d) => { this.container = d }}>
+		return <div className={styles.imageListContainer} ref={(d) => { this.container = d }}>
 			{ this.props.title && <h2>{ this.props.title }</h2> }
-			{ this.state.data && this.state.data.map((item: IDataService, imageIndex: number) => <div key={ `image-list-${ imageIndex }` } className="image-list-box">
+			{ this.state.data && this.state.data.map((item: IDataService, imageIndex: number) => <div key={ `image-list-${ imageIndex }` } className={styles.imageListBox}>
 				{ item.image?.filename &&
 					<img
-						className="thumbnail"
+						className={styles.thumbnail}
 						alt={ item.image.filename }
 						src={ item.image.filename }
 						width={ this.state.width }

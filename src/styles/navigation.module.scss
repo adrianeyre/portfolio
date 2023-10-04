@@ -1,10 +1,10 @@
-@import '../../styles/colour-palette.scss';
+@import './colour-palette.scss';
 
-.nav-link active {
+.navLink active {
 	color: red;
 }
 
-.navigation-container {
+.navigationContainer {
 	.navbar {
 		background-color: $body-colour-background !important;
 
@@ -22,12 +22,12 @@
 		}
 	}
 
-	.top-bar-links {
+	.topBarLinks {
 		position: absolute;
 		right: 90px;
 		top: 10px;
 
-		.links-container {
+		.linksContainer {
 			img, .icon {
 				width: 30px;
 				height: 30px;
@@ -36,17 +36,17 @@
 		}
 	}
 
-	.navbar-nav {
-		.links-container {
+	.navbarNav {
+		.linksContainer {
 			display: none;
 		}
 	}
 }
 
 @media (max-width: 1000px) {
-	.navigation-container {
-		.top-bar-links {
-			.links-container {
+	.navigationContainer {
+		.topBarLinks {
+			.linksContainer {
 				right: 80px;
 			}
 		}
@@ -54,16 +54,16 @@
 }
 
 @media (max-width: 470px) {
-	.navigation-container {
-		.top-bar-links {
-			.links-container {
+	.navigationContainer {
+		.topBarLinks {
+			.linksContainer {
 				display: none;
 			}
 		}
 	}
 
-	.navbar-nav {
-		.links-container {
+	.navbarNav {
+		.linksContainer {
 			display: block !important;
 			text-align: left !important;
 

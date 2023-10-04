@@ -1,6 +1,6 @@
-@import '../../styles/colour-palette.scss';
+@import './colour-palette.scss';
 
-.footer-container {
+.footerContainer {
 	margin: 0px;
 	position: fixed;
 	bottom: 0px;
@@ -12,6 +12,10 @@
 	a {
 		color: $footer-colour-link;
 		text-decoration: none;
+
+		svg {
+			height: 18.6px;
+		}
 	}
 
 	a:hover {

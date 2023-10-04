@@ -1,6 +1,6 @@
-@import '../../styles/colour-palette.scss';
+@import './colour-palette.scss';
 
-.side-bar-container {
+.sideBarContainer {
 	padding: 10px;
 	text-align: center;
 	display: grid;
@@ -11,13 +11,12 @@
 	top: 50%;
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
-	// text-decoration: none;
 
 	h3 {
 		margin: 30px;
 	}
 
-	.link-container {
+	.linkContainer {
 		padding: 10px;
 		cursor: pointer;
 		position: relative;
@@ -49,7 +48,7 @@
 		}
 	}
 
-	.links-container {
+	.linksContainer {
 		margin-top: 20px;
 		bottom: 20px;
 		width: 90%;

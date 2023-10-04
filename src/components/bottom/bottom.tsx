@@ -3,11 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleUp } from '@fortawesome/free-solid-svg-icons'
 
 import IBottomProps from './interface/bottom-props';
-import './bottom.scss';
+
+import styles from '@/styles/bottom.module.scss';
 
 const Bottom: FC<IBottomProps> = (props: IBottomProps) => {
-	return  <div className="bottom-container">
-		<button className="flat-button" onClick={ props.scrollToTop }><FontAwesomeIcon icon={ faArrowCircleUp } /></button>
+	return  <div className={styles.bottomContainer}>
+		<button className={styles.flatButton} onClick={ props.scrollToTop }><FontAwesomeIcon icon={ faArrowCircleUp } /></button>
 	</div>
 }
 

@@ -1,9 +1,9 @@
-@import '../../styles/colour-palette.scss';
+@import './colour-palette.scss';
 
-.text-container {
+.textContainer {
 	padding: 10px;
 
-	.text-item {
+	.textItem {
 		margin-bottom: 20px;
 
 		.title {
@@ -23,7 +23,7 @@
 			}
 		}
 
-		.images-row {
+		.imagesRow {
 			display: flex;
 
 			img {
@@ -34,8 +34,8 @@
 }
 
 @media (max-width: 1000px) {
-	.text-container {
-		.text-item {
+	.textContainer {
+		.textItem {
 			.title {
 				a {
 					margin-right: 4px;

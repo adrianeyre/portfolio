@@ -90,8 +90,8 @@ export default class EmailBody extends Component<IEmailBodyProps, IEmailBodyStat
 					</div>
 				</ModalComponent.Body>
 				<ModalComponent.Footer>
-					<Button variant="primary" type="submit" disabled={ !this.state.recaptchaValue }><FontAwesomeIcon icon={ faShare } /> Send Email</Button>
-					<Button variant="secondary" onClick={ this.props.closeModal }><FontAwesomeIcon icon={ faTimesCircle} /> Close</Button>
+					<Button className="modal-button" variant="primary" type="submit" disabled={ !this.state.recaptchaValue }><FontAwesomeIcon icon={ faShare } /> Send Email</Button>
+					<Button className="modal-button" variant="secondary" onClick={ this.props.closeModal }><FontAwesomeIcon icon={ faTimesCircle} /> Close</Button>
 				</ModalComponent.Footer>
 			</Form>
 		</div>

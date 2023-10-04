@@ -1,12 +1,12 @@
-@import '../../styles/colour-palette.scss';
+@import './colour-palette.scss';
 
-.message-container {
+.messageContainer {
 	padding: 10px 0px 10px 10px;
 
-	.message-area {
+	.messageArea {
 		display: inline-flex;
 
-		.message-close {
+		.messageClose {
 			cursor: pointer;
 			position: absolute;
 			right: 10px;
@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 1000px) {
-	.message-container {
+	.messageContainer {
 		padding: 10px 0px 10px 0px;
 		margin-top: 60px;
 	}
