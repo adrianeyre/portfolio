@@ -5,7 +5,9 @@ orbs:
 
 
 jobs:
-  - build:
-      npm-run: build
-  - deploy:
-      npm-run: ftp-deploy
+  build:
+    steps:
+      - checkout
+      - npm-run ci
+      - npm-run: build
+      - npm-run: ftp-deploy
