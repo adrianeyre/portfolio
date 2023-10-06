@@ -1,24 +1,18 @@
-version: 2.1
-
-orbs:
-  node: circleci/node@5.1.0
-
-
+version: 2
 jobs:
-  run_tests:
+  build:
     docker:
-      - image circleci/node:10
+      - image: circleci/node:14
     steps:
       - checkout
-      - run:
-        name: Install Dependancies
-        command: |
-          npm ci
-      - run:
-        name: Build
-        command: |
-          npm run build
-      - run:
-        name: Deploy
-        command: |
-          npm run deploy
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+      - run: npm ci
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run: CI=false npm run build
+      - run: npm run ftp-deploy
