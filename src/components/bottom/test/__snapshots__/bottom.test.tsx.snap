@@ -6,10 +6,10 @@ exports[`Bottom Should render correctly 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="bottomContainer"
+        class="bottom-container"
       >
         <button
-          class="flatButton"
+          class="flat-button"
         >
           <svg
             aria-hidden="true"
@@ -32,10 +32,10 @@ exports[`Bottom Should render correctly 1`] = `
   </body>,
   "container": <div>
     <div
-      class="bottomContainer"
+      class="bottom-container"
     >
       <button
-        class="flatButton"
+        class="flat-button"
       >
         <svg
           aria-hidden="true"
