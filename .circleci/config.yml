@@ -3,10 +3,9 @@ version: 2.1
 orbs:
   node: circleci/node@5.1.0
 
-workflows:
-  run-npm-command:
-    jobs:
-      - node/run:
-          npm-run: build
-      - node/run:
-          npm-run: ftp-deploy
+
+jobs:
+  - build:
+      npm-run: build
+  - deploy:
+      npm-run: ftp-deploy
