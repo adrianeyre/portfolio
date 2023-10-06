@@ -3,20 +3,10 @@ version: 2.1
 orbs:
   node: circleci/node@5.1.0
 
-jobs:
-  build:
-    working_directory: ~/mern-starter
-    executor: node/default
-    steps:
-      - checkout
-      - node/install-npm
-      - node/install-packages:
-          app-dir: ~/mern-starter
-          cache-path: node_modules
-          override-ci-command: npm i
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .
-      - run: CI=false npm run build
-      - run: npm run ftp-deploy
+workflows:
+  run-npm-command:
+    jobs:
+      - node/run:
+          npm-run: build
+      - node/run:
+          npm-run: ftp-deploy
