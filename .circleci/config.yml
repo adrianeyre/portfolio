@@ -5,9 +5,20 @@ orbs:
 
 
 jobs:
-  build:
+  run_tests:
+    docker:
+      - image circleci/node:10
     steps:
       - checkout
-      - npm-run ci
-      - npm-run: build
-      - npm-run: ftp-deploy
+      - run:
+        name: Install Dependancies
+        command: |
+          npm ci
+      - run:
+        name: Build
+        command: |
+          npm run build
+      - run:
+        name: Deploy
+        command: |
+          npm run deploy

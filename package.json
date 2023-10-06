@@ -12,7 +12,7 @@
 		"lint": "next lint",
 		"test": "jest",
 		"test:ci": "jest --ci",
-		"ftp-deploy": "node deploy.js"
+		"deploy": "node deploy.js"
 	},
 	"dependencies": {
 		"bootstrap": "^5.3.2",
