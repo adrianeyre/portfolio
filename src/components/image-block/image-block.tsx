@@ -19,6 +19,7 @@ const ImageBlock = (props: IImageBlockProps) => {
 		});
 
 		setImages(updatedImages);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	const screenWidth = props.screenWidth > 0 ? props.screenWidth : window.innerWidth;
@@ -32,6 +33,7 @@ const ImageBlock = (props: IImageBlockProps) => {
 
 	return <div className="image-block-container">
 		<Slider {...settings}>
+			{/* eslint-disable-next-line @next/next/no-img-element */}
 			{ images.map((image: string, imageIndex: number) => <img alt={ image } className="thumbnail" key={ imageIndex } src={ image } onClick={ handleClick.bind(this, image) }/> )}
 		</Slider>
 	</div>

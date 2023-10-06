@@ -18,7 +18,8 @@ const DefaultBody = (props: IDefaultBody) => {
 	return <div>
 		<ModalComponent.Body>
 			{ props.item.image && <a href={ props.item.image.link } rel="noopener noreferrer" target="_blank">
-			<img alt={ props.item.image.filename} src={ props.item.image.filename } />
+				{/* eslint-disable-next-line @next/next/no-img-element */}
+				<img alt={ props.item.image.filename} src={ props.item.image.filename } />
 			</a> }
 
 			{ props.item.tags && <div className="card-tags">

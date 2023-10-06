@@ -83,6 +83,8 @@ const App = () => {
 			window.removeEventListener('scroll', listenToScroll);
 			window.removeEventListener('resize', listenToResize);
 		}
+
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	const openModal = (modalType: IModalType, modalData?: IDataService, ) => {
@@ -151,6 +153,7 @@ const App = () => {
 					/>
 					<div>
 						<Element className={styles.block} name="about">
+							{/* eslint-disable-next-line jsx-a11y/alt-text */}
 							<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
 							<Text data={ data.about }/>
 							<Links data={ data.links } showModal={ openModal } scrollToAnchor={ scrollToAnchor } />

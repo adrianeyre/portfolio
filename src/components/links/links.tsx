@@ -37,6 +37,7 @@ const Links = (props: ILinksProps) => {
 	return <div className={styles.linksContainer}>
 		{ props.data && props.data.map((item: IDataService, linkIndex: number) => <span key={ `link-${ linkIndex }` }>
 			{ item && item.image && item.image.link && item.image.type && <a onClick={ () => handleClickLink(item.image?.link, item.image?.type) }>
+				{/* eslint-disable-next-line @next/next/no-img-element */}
 				{ item.image.filename && <img alt={ item.image.filename } src={ item.image.filename } /> }
 				{ item.image.font && <FontAwesomeIcon className={styles.icon} icon={ get(fonts, item.image.font) } /> }
 			</a> }

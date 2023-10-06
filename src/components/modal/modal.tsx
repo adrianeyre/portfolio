@@ -11,6 +11,7 @@ const Modal = (props: IModalProps) => {
 
 	useEffect(() => {
 		setData(props.data || {});
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	const item = data ? data : {}

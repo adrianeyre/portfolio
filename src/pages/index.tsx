@@ -33,10 +33,6 @@ export default function Home() {
         <meta property="twitter:description" content="Portfolio site of Adrian Eyre" />
         <meta property="twitter:image" content="http://adrianeyre.co.uk/images/meta/banner.png" />
       </Head>
-      <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
-		  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
-      <script src="https://www.google.com/recaptcha/api.js" async defer />
-		  <script src="https://unpkg.com/react/umd/react.production.min.js" />
       <App />
     </>
   )

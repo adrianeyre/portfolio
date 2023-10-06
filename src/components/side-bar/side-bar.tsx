@@ -9,6 +9,7 @@ import styles from '@/styles/side-bar.module.scss';
 const SideBar = (props: ISideBarProps) => {
 	return <div className={styles.sideBarContainer}>
 		<div className={styles.image}>
+			{/* eslint-disable-next-line jsx-a11y/alt-text */}
 			<Image src="/images/links/photo.jpeg" roundedCircle={true} />
 		</div>
 

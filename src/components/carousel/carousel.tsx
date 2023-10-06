@@ -34,6 +34,7 @@ const Carousel = (props: ICarouselProps) => {
 			{ props.data && props.data.map((item: IDataService, cardIndex: number) => <article key={ `card-item-${ cardIndex }` } className="card">
 				<div className="card-image">
 					{ item.image && <a href={ item.image.link } rel="noopener noreferrer" target="_blank">
+						{/* eslint-disable-next-line @next/next/no-img-element */}
 						<img alt={ item.image.filename } src={ item.image.filename } />
 					</a> }
 				</div>

@@ -12,11 +12,13 @@ const Text = (props: ITextProps) => {
 	return <div className={styles.textContainer}>
 		<div className="row">
 			{ props.imageName && props.imagePosition === 'left' && <div className="col-md-6">
+				{/* eslint-disable-next-line @next/next/no-img-element */}
 				<img width="100%" height="100%" alt={ props.imageName } src={`/images/backgrounds/${ props.imageName }`} style={ styleImage() } />
 			</div> }
 			<div className={ props.imageName ? 'col-md-6' : 'col-md-12' }>
 				{ props.data && props.data.map((item: IDataService, textIndex: number) => <article key={ `text-item-${ textIndex }` } className={styles.textItem}>
 					<div className={styles.title}>
+						{/* eslint-disable-next-line @next/next/no-img-element */}
 						{ item.image && <a href={ item.image.link } rel="noopener noreferrer" target="_blank"><img alt={ item.image.filename } src={ item.image.filename } /></a> }
 						{ item.title && <h2>{ item.title }</h2> }
 					</div>
@@ -24,6 +26,7 @@ const Text = (props: ITextProps) => {
 					{ item.subTitle && item.subTitle.map((subTitle: string, subtitleIndex: number) => <h4 key={ `subtitle-${ subtitleIndex }` }>{ subTitle }</h4>) }
 					{ item.images && <div className={styles.imagesRow}>
 						{ item.images.map((image: IImage, imageIndex: number) => <div key={ `item-image-${ textIndex }-${ imageIndex }` } >
+							{/* eslint-disable-next-line @next/next/no-img-element */}
 							<a href={ image.link } rel="noopener noreferrer" target="_blank"><img height={ image.height } width={ image.width } alt={ image.filename } src={ image.filename } title={ image.title }/></a>
 						</div>) }
 					</div> }
@@ -35,6 +38,7 @@ const Text = (props: ITextProps) => {
 				{ props.page }
 			</div>
 			{ props.imageName && props.imagePosition === 'right' && <div className="col-md-6">
+				{/* eslint-disable-next-line @next/next/no-img-element */}
 				<img width="100%" height="100%" alt={ props.imageName } src={`/images/backgrounds/${ props.imageName }`} style={ styleImage() } />
 			</div> }
 		</div>

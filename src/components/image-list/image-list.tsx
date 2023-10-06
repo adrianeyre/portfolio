@@ -22,12 +22,14 @@ const ImageList = (props: IImageListProps) => {
 		const width = (container?.getBoundingClientRect().width - ((amountOfImages - 1) * 15)) / amountOfImages;
 
 		setWidth(`${ width }px`);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	return <div className={styles.imageListContainer} ref={(d) => { setContainer(d) }}>
 		{ props.title && <h2>{ props.title }</h2> }
 		{ data && data.map((item: IDataService, imageIndex: number) => <div key={ `image-list-${ imageIndex }` } className={styles.imageListBox}>
 			{ item.image?.filename &&
+				// eslint-disable-next-line @next/next/no-img-element
 				<img
 					className={styles.thumbnail}
 					alt={ item.image.filename }
