@@ -1,7 +1,6 @@
 @import './colour-palette.scss';
 
-
-.bottomContainer {
+.bottom-container {
 	bottom: 20px;
 	right: 20px;
 	color: $bottom-colour-arrow;
@@ -12,10 +11,10 @@
 		cursor: pointer;
 	}
 
-	.flatButton {
+	.flat-button {
 		background: none !important;
 		border: none;
 		padding: 0 !important;
 		text-decoration: underline;
-	  }
+	}
 }

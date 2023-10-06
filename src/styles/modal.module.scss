@@ -11,8 +11,17 @@
 			height: 200px;
 		}
 
-		.card-ags {
+		.card-tags {
 			margin: 20px 0px;
+
+			.card-tag {
+				margin-left: 2px;
+			}
+
+			svg {
+				height: 20px;
+				width: 20px;
+			}
 		}
 
 		.recaptcha {
@@ -26,8 +35,7 @@
 
 	.modal-footer {
 		.modal-button {
-			width: 150px;
-			height: 50px;
+			height: 38px;
 
 			svg {
 				height: 20px;

@@ -34,7 +34,7 @@ const DefaultBody = (props: IDefaultBody) => {
 			{ props.item.links && props.item.links.map((link: ILink, linkIndex: number) => <a key={ `link-${ linkIndex }` } href={ link.link } rel="noopener noreferrer" target="_blank" className="btn btn-primary modal-button">
 				{ link.font && <FontAwesomeIcon icon={ get(fonts, link.font) } /> } { link.text }
 			</a>) }
-			<Button variant="secondary" onClick={ props.closeModal }><FontAwesomeIcon icon={ fonts.free.faTimesCircle} /> Close</Button>
+			<Button className="modal-button" variant="secondary" onClick={ props.closeModal }><FontAwesomeIcon icon={ fonts.free.faTimesCircle} /> Close</Button>
 		</ModalComponent.Footer>
 	</div>
 }

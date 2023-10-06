@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { Component } from 'react';
+import { useState, useEffect } from 'react';
 import { Element, animateScroll as scroll, scroller } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
@@ -25,18 +24,6 @@ import ImageList from '../image-list/image-list';
 
 import styles from '@/styles/app.module.scss'
 
-interface IAppState {
-	data: any;
-	height: number;
-	width: number;
-	showModal: boolean;
-	modalData?: IDataService;
-	modalType?: IModalType;
-	message?: string;
-	type?: string;
-	sidebarStyle: any;
-}
-
 declare global {
 	// tslint:disable-next-line
 	interface Document {
@@ -44,163 +31,167 @@ declare global {
 	}
 }
 
-export default class App extends Component<{}, IAppState> {
-	private dataService: DataService;
-	private cookieParser: CookieParser;
-	private dataFiles = [
+const App = () => {
+	const [loading, setLoading] = useState<boolean>(true);
+	const [data, setData] = useState<any>();
+	const [sidebarStyle, setSidebarStyle] = useState<any>();
+	const [showModal, setShowModal] = useState<boolean>(false);
+	const [modalData, setModalData] = useState<IDataService>();
+	const [modalType, setModalType] = useState<IModalType>();
+	const [height, setHeight] = useState<number>(0);
+	const [width, setWidth] = useState<number>(0);
+	const [message, setMessage] = useState<any>();
+	const [type, setType] = useState<any>();
+
+	const dataService = new DataService();
+	const cookieParser = new CookieParser();
+	cookieParser.removeCookies();
+
+	const dataFiles = [
 		'menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars',
 		'interests', 'interestsImages', 'languageImages', 'frameworksImages'
 	];
 
-	constructor(props: {}) {
-		super(props);
+	async function callData() {
+		const data: any = {};
 
-		this.dataService = new DataService();
-		this.cookieParser = new CookieParser();
+		for(const filename of dataFiles) {
+			data[filename] = await await dataService.getData(`${ filename }.json`) as IDataService[];
+		}
 
-		this.scrollToAnchor = this.scrollToAnchor.bind(this);
-		this.scrollToTop = this.scrollToTop.bind(this);
+		setData(data);
+		setLoading(false);
+	};
 
-		const cookieData: ICookieParser = this.cookieParser.getCookies();
-		this.cookieParser.removeCookies();
-
-		this.state = {
-			data: {},
-			height: 0,
-			width: 0,
-			showModal: false,
-			message: cookieData.message,
-			type: cookieData.type,
-			sidebarStyle: {},
-		};
-	}
-
-	public async componentDidMount() {
-		const data = {};
-
-		await this.dataFiles.forEach(async (filename: string) =>  {
-			// @ts-ignore
-			data[filename] = await this.dataService.getData(`${ filename }.json`) as IDataService[];
-			this.setState(({ data }));
-		})
-
-		const sidebarStyle = {
+	useEffect(() => {
+		callData();
+		
+		const updatedSidebarStyle = {
 			position: /*@cc_on!@*/false || !!window.document.documentMode ? 'relative' : 'sticky',
 		}
 
-		this.setState(({ sidebarStyle }));
+		setSidebarStyle(updatedSidebarStyle);
 
-		window.addEventListener('scroll', this.listenToScroll);
-		window.addEventListener('resize', this.listenToResize);
+		window.addEventListener('scroll', listenToScroll);
+		window.addEventListener('resize', listenToResize);
+
+		const cookieData: ICookieParser = cookieParser.getCookies();
+		setMessage(cookieData.message)
+		setType(cookieData.type);
+
+		return () => {
+			window.removeEventListener('scroll', listenToScroll);
+			window.removeEventListener('resize', listenToResize);
+		}
+	}, []);
+
+	const openModal = (modalType: IModalType, modalData?: IDataService, ) => {
+		setModalType(modalType);
+		setModalData(modalData);
+		setShowModal(true);
 	}
 
-	public componentWillUnmount() {
-		window.removeEventListener('scroll', this.listenToScroll);
-		window.removeEventListener('resize', this.listenToResize);
+	const closeModal = () => setShowModal(false);
+
+	const listenToScroll = () => {
+		const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+		const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+		setHeight(winScroll / height)
 	}
 
-	public render() {
-		if (Object.keys(this.state.data).length !== this.dataFiles.length) return <div className={styles.loadingContainer}>
-			<div className={styles.loadingBox}>
-				<div className={styles.loadingText}>Loading <FontAwesomeIcon icon={ faSpinner } spin={ true } /></div>
-			</div>
-		</div>
+	const listenToResize = () => setWidth(window.innerWidth);
 
-		return <div>
-			{ this.state.showModal && <div className={styles.modal}>
-				<Modal data={ this.state.modalData } modalType={ this.state.modalType } closeModal={ this.closeModal }/>
-			</div> }
+	const scrollToTop = () => scroll.scrollToTop();
 
-			<div className="container">
-				<div className={styles.container}>
-					<div className={styles.menu}>
-						<Navigation
-							data={ this.state.data.menu }
-							linksData={ this.state.data.links }
-							scrollToAnchor={ this.scrollToAnchor }
-							showModal={ this.showModal }
-						/>
-					</div>
-
-					<div className={styles.sidebar} style={ this.state.sidebarStyle }>
-						<SideBar
-							data={ this.state.data.menu }
-							linksData={ this.state.data.links }
-							scrollToAnchor={ this.scrollToAnchor }
-							showModal={ this.showModal }
-						/>
-					</div>
-
-					<div className={styles.main}>
-						<Message
-							message={ this.state.message }
-							type={ this.state.type }
-						/>
-						<div>
-							<Element className={styles.block} name="about">
-								<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
-								<Text data={ this.state.data.about }/>
-								<Links data={ this.state.data.links } showModal={ this.showModal } scrollToAnchor={ this.scrollToAnchor } />
-							</Element>
-						</div>
-						<Element className={styles.block} name="skills">
-							<Title title="SKILLS" />
-							<Text data={ this.state.data.skills } />
-							<ImageList title="Languages" data={ this.state.data.languageImages } />
-							<ImageList title="Frameworks" data={ this.state.data.frameworksImages } />
-						</Element>
-						<Element className={styles.block} name="projects">
-							<Title title="PROJECTS" />
-							<Carousel data={ this.state.data.projects } showModal={ this.showModal } screenWidth={ this.state.width } />
-						</Element>
-						<Element className={styles.block} name="education">
-							<Title title="EDUCATION" />
-							<Text data={ this.state.data.education } />
-						</Element>
-						<Element className={styles.block} name="experience">
-							<Title title="EXPERIENCE" />
-							<Text data={ this.state.data.experience } />
-						</Element>
-						<Element className={styles.block} name="codewars">
-							<Title title="AUTHORED CODEWARS KATAS" />
-							<Carousel data={ this.state.data.codewars } showModal={ this.showModal } screenWidth={ this.state.width } />
-						</Element>
-						<Element className={styles.block} name="interests">
-							<Title title="INTERESTS" />
-							<Text data={ this.state.data.interests } />
-							<ImageBlock data={ this.state.data.interestsImages } screenWidth={ this.state.width } />
-						</Element>
-					</div>
-
-					{ this.state.height > 0.01 && <div className={styles.bottom}>
-						<Bottom scrollToTop={ this.scrollToTop }/>
-					</div> }
-				</div>
-			</div>
-			<Footer />
-		</div>
-	}
-
-	private showModal = (modalType: IModalType, modalData?: IDataService, ) => {
-		this.setState({ showModal: true, modalData, modalType });
-	}
-
-	private closeModal = () => this.setState({ showModal: false });
-
-	private listenToScroll = () => {
-		const winScroll = document.body.scrollTop || document.documentElement.scrollTop
-		const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-		this.setState({ height: winScroll / height })
-	}
-
-	private listenToResize = () => this.setState({ width: window.innerWidth })
-
-	private scrollToTop = () => scroll.scrollToTop();
-
-	private scrollToAnchor = (anchor: string) => scroller.scrollTo(anchor, {
+	const scrollToAnchor = (anchor: string) => scroller.scrollTo(anchor, {
 		duration: 800,
 		delay: 0,
 		smooth: 'easeInOutQuart',
 		offset: 0
-	})
+	});
+
+	if (loading) return <div className={styles.loadingContainer}>
+		<div className='loadingContainer'>
+			<div className={styles.loadingBox}>
+				<div className={styles.loadingText}>Loading <FontAwesomeIcon icon={ faSpinner } spin={ true } /></div>
+			</div>
+		</div>
+	</div>
+
+	return <div>
+		{ showModal && <div className={styles.modal}>
+			<Modal data={ modalData } modalType={ modalType } closeModal={ closeModal }/>
+		</div> }
+
+		<div className="container">
+			<div className={styles.container}>
+				<div className={styles.menu}>
+					<Navigation
+						data={ data.menu }
+						linksData={ data.links }
+						scrollToAnchor={ scrollToAnchor }
+						showModal={ openModal }
+					/>
+				</div>
+
+				<div className={styles.sidebar} style={ sidebarStyle }>
+					<SideBar
+						data={ data.menu }
+						linksData={ data.links }
+						scrollToAnchor={ scrollToAnchor }
+						showModal={ openModal }
+					/>
+				</div>
+
+				<div className={styles.main}>
+					<Message
+						message={ message }
+						type={ type }
+					/>
+					<div>
+						<Element className={styles.block} name="about">
+							<Image imageName="image1.jpg" title="ADRIAN EYRE" subTitle="Software Developer" />
+							<Text data={ data.about }/>
+							<Links data={ data.links } showModal={ openModal } scrollToAnchor={ scrollToAnchor } />
+						</Element>
+					</div>
+					<Element className={styles.block} name="skills">
+						<Title title="SKILLS" />
+						<Text data={ data.skills } />
+						<ImageList title="Languages" data={ data.languageImages } />
+						<ImageList title="Frameworks" data={ data.frameworksImages } />
+					</Element>
+					<Element className={styles.block} name="projects">
+						<Title title="PROJECTS" />
+						<Carousel data={ data.projects } showModal={ openModal } screenWidth={ width } />
+					</Element>
+					<Element className={styles.block} name="education">
+						<Title title="EDUCATION" />
+						<Text data={ data.education } />
+					</Element>
+					<Element className={styles.block} name="experience">
+						<Title title="EXPERIENCE" />
+						<Text data={ data.experience } />
+					</Element>
+					<Element className={styles.block} name="codewars">
+						<Title title="AUTHORED CODEWARS KATAS" />
+						<Carousel data={ data.codewars } showModal={ openModal } screenWidth={ width } />
+					</Element>
+					<Element className={styles.block} name="interests">
+						<Title title="INTERESTS" />
+						<Text data={ data.interests } />
+						<ImageBlock data={ data.interestsImages } screenWidth={ width } />
+					</Element>
+				</div>
+
+				{ height > 0.01 && <div className={styles.bottom}>
+					<Bottom scrollToTop={ scrollToTop }/>
+				</div> }
+			</div>
+		</div>
+		<Footer />
+	</div>
 }
+
+export default App;
