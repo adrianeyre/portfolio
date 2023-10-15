@@ -1,4 +1,8 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
+
 
 import ITitleProps from '../interface/title-props';
 import Title from '../title';
@@ -10,7 +14,7 @@ describe('Image', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const imageComponent = shallow(<Title { ...defaultProps }/>);
+		const imageComponent = render(<Title { ...defaultProps }/>);
 
 		expect(imageComponent).toMatchSnapshot();
 	});

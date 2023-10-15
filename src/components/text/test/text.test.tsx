@@ -1,4 +1,7 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
 
 import IDataService from '../../../services/interface/data-service-interface';
 import Text from '../text';
@@ -21,7 +24,7 @@ describe('Text', () => {
 	]
 
 	it('Should render correctly', () => {
-		const textComponent = shallow(<Text data={ data }/>);
+		const textComponent = render(<Text data={ data }/>);
 
 		expect(textComponent).toMatchSnapshot();
 	});

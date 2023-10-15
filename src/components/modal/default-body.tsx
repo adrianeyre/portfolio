@@ -18,7 +18,8 @@ const DefaultBody = (props: IDefaultBody) => {
 	return <div>
 		<ModalComponent.Body>
 			{ props.item.image && <a href={ props.item.image.link } rel="noopener noreferrer" target="_blank">
-			<img alt={ props.item.image.filename} src={ props.item.image.filename } />
+				{/* eslint-disable-next-line @next/next/no-img-element */}
+				<img alt={ props.item.image.filename} src={ props.item.image.filename } />
 			</a> }
 
 			{ props.item.tags && <div className="card-tags">
@@ -31,10 +32,10 @@ const DefaultBody = (props: IDefaultBody) => {
 			{ props.item.body && <div>{ props.item.body }</div> }
 		</ModalComponent.Body>
 		<ModalComponent.Footer>
-			{ props.item.links && props.item.links.map((link: ILink, linkIndex: number) => <a key={ `link-${ linkIndex }` } href={ link.link } rel="noopener noreferrer" target="_blank" className="btn btn-primary">
+			{ props.item.links && props.item.links.map((link: ILink, linkIndex: number) => <a key={ `link-${ linkIndex }` } href={ link.link } rel="noopener noreferrer" target="_blank" className="btn btn-primary modal-button">
 				{ link.font && <FontAwesomeIcon icon={ get(fonts, link.font) } /> } { link.text }
 			</a>) }
-			<Button variant="secondary" onClick={ props.closeModal }><FontAwesomeIcon icon={ fonts.free.faTimesCircle} /> Close</Button>
+			<Button className="modal-button" variant="secondary" onClick={ props.closeModal }><FontAwesomeIcon icon={ fonts.free.faTimesCircle} /> Close</Button>
 		</ModalComponent.Footer>
 	</div>
 }

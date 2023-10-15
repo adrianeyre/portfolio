@@ -1,0 +1,20 @@
+@import './colour-palette.scss';
+
+.bottom-container {
+	bottom: 20px;
+	right: 20px;
+	color: $bottom-colour-arrow;
+	font-size: 50px;
+	position: fixed;
+
+	a {
+		cursor: pointer;
+	}
+
+	.flat-button {
+		background: none !important;
+		border: none;
+		padding: 0 !important;
+		text-decoration: underline;
+	}
+}

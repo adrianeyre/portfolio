@@ -1,0 +1,32 @@
+@import './colour-palette.scss';
+
+.titleContainer {
+	height: 100%;
+
+	.textRow {
+		.textContainer {
+			border-top-right-radius: 15px;
+			border-top-left-radius: 15px;
+			position: relative;
+			display: grid;
+			text-align: center;
+			background: $sidebar-colour-body;
+			margin: 0px;
+			width: 100%;
+			font-weight: 700;
+			line-height: 3.5rem;
+			text-transform: uppercase;
+			padding: 10px;
+
+			.primaryText {
+				font-size: 4rem;
+				color: $secondary-colour-text;
+			}
+
+			.secondaryText {
+				font-size: 2rem;
+				color: $secondary-colour-text;
+			}
+		}
+	}
+}

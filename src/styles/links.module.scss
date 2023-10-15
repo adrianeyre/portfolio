@@ -1,0 +1,54 @@
+@import './colour-palette.scss';
+
+.linksContainer {
+	text-align: center;
+
+	img, .icon {
+		width: 30px;
+		height: 30px;
+		margin: 10px;
+		cursor: pointer;
+	}
+
+	img {
+		margin: 0px;
+	}
+
+	img:hover, .icon:hover {
+		animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+		perspective: 1000px;
+	}
+
+	@keyframes shake {
+		10%, 90% {
+			transform: translate3d(-1px, 0, 0);
+		}
+
+		20%, 80% {
+			transform: translate3d(2px, 0, 0);
+		}
+
+		30%, 50%, 70% {
+			transform: translate3d(-4px, 0, 0);
+		}
+
+		40%, 60% {
+			transform: translate3d(4px, 0, 0);
+		}
+	}
+
+	img, .icon {
+		filter: gray;
+		-webkit-filter: grayscale(1);
+		-webkit-transition: all .4s ease-in-out;
+	}
+
+	img:hover, .icon:hover {
+		filter: none;
+		color: $sidebar-colour-link;
+		-webkit-filter: grayscale(0);
+		-webkit-transform: scale(1.01);
+	}
+}

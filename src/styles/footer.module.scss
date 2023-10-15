@@ -1,0 +1,26 @@
+@import './colour-palette.scss';
+
+.footerContainer {
+	margin: 0px;
+	position: fixed;
+	bottom: 0px;
+	height: 30px;
+	background-color: $nav-bar-background-color;
+	box-shadow: -6px -9px 6px -6px $footer-box-shadow;
+	width: 100%;
+
+	a {
+		color: $footer-colour-link;
+		text-decoration: none;
+
+		svg {
+			height: 18.6px;
+		}
+	}
+
+	a:hover {
+		color: $footer-colour-link-hover;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}

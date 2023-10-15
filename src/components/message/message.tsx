@@ -1,23 +1,23 @@
-import { FC, useState } from 'react';
+import { useState } from 'react';
 import { Alert } from 'react-bootstrap';
 
 import IMessageProps from './interface/message-props';
 
-import './message.scss';
+import styles from '@/styles/message.module.scss';
 
-const Message: FC<IMessageProps> = (props: IMessageProps) => {
+const Message = (props: IMessageProps) => {
 	const [show, setShow] = useState<boolean>(!!props.message);
 
 	const handleClickLink = () => setShow(false);
 
 	if (!props.message || !show) return null;
 
-	return <div className="message-container">
+	return <div className={styles.messageContainer}>
 		<Alert variant={ props.type === 'success' ? 'success' : 'danger' }>
-			<div className="message-area">
-				<div className="message">{ props.message }</div>
+			<div className={styles.messageArea}>
+				<div className={styles.message}>{ props.message }</div>
 
-				<div className="message-close">
+				<div className={styles.messageClose}>
 					<a onClick={ handleClickLink }>X</a>
 				</div>
 			</div>

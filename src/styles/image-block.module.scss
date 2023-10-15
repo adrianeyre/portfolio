@@ -1,0 +1,38 @@
+@import './colour-palette.scss';
+
+.image-block-container {
+	button.slick-arrow.slick-next:before {
+		color: $image-block-button-colour;
+		margin-left: -30px;
+	}
+
+	button.slick-arrow.slick-prev:before {
+		color: $image-block-button-colour;
+		margin-right: -30px;
+	}
+
+	.slick-arrow {
+		padding: 1px 0px 0px 0px;
+		border-radius: 50%;
+		z-index: 20;
+		font-size: 20px;
+		transform: scale(2, 2);
+	}
+
+	.slick-list {
+		border-radius: 15px;
+	}
+
+	.thumbnail {
+		height: 5em;
+		width: 5em;
+	}
+}
+
+@media (max-width: 700px) {
+	.image-block-container {
+		.slick-arrow {
+			display: none !important;
+		}
+	}
+}

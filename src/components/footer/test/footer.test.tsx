@@ -1,10 +1,13 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
 
 import Footer from '../footer';
 
 describe('Footer', () => {
 	it('Should render correctly', () => {
-		const footerComponent = shallow(<Footer />);
+		const footerComponent = render(<Footer />);
 
 		expect(footerComponent).toMatchSnapshot();
 	});

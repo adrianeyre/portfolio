@@ -1,4 +1,7 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
 
 import IMessageProps from '../interface/message-props';
 import Message from '../message';
@@ -10,7 +13,7 @@ describe('Message', () => {
 	};
 
 	it('Should render correctly', () => {
-		const messageComponent = shallow(<Message { ...defaultProps }/>);
+		const messageComponent = render(<Message { ...defaultProps }/>);
 
 		expect(messageComponent).toMatchSnapshot();
 	});

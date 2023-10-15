@@ -1,4 +1,7 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
 
 import IBlocksProps from '../interface/blocks-props';
 import Blocks from '../blocks';
@@ -12,7 +15,7 @@ describe('Blocks', () => {
 	};
 	
 	it('Should render correctly', () => {
-		const blocksComponent = shallow(<Blocks { ...defaultProps }/>);
+		const blocksComponent = render(<Blocks { ...defaultProps } />);
 
 		expect(blocksComponent).toMatchSnapshot();
 	});

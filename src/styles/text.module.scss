@@ -1,0 +1,56 @@
+@import './colour-palette.scss';
+
+.textContainer {
+	padding: 10px;
+
+	.textItem {
+		margin-bottom: 20px;
+
+		.title {
+			a {
+				margin-right: 10px;
+
+				img {
+					vertical-align: middle;
+					height: 50px;
+					width: 50px;
+				}
+			}
+
+			h2 {
+				vertical-align: middle;
+				display: inline;
+			}
+		}
+
+		.imagesRow {
+			display: flex;
+
+			img {
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.textContainer {
+		.textItem {
+			.title {
+				a {
+					margin-right: 4px;
+
+					img {
+						height: 40px;
+						width: 40px;
+					}
+				}
+	
+				h2 {
+					font-size: 2rem;
+					line-height: 1.6rem;
+				}
+			}
+		}
+	}
+}

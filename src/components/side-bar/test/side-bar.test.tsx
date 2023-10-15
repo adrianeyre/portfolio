@@ -1,4 +1,7 @@
-import { shallow } from 'enzyme';
+/**
+ * @jest-environment jsdom
+ */
+import { render } from '@testing-library/react';
 
 import ISideBarProps from '../interface/side-bar-props';
 import SideBar from '../side-bar';
@@ -14,7 +17,7 @@ describe('SideBar', () => {
 	};
 
 	it('Should render correctly', () => {
-		const sidebarComponent = shallow(<SideBar { ...defaultProps }/>);
+		const sidebarComponent = render(<SideBar { ...defaultProps }/>);
 
 		expect(sidebarComponent).toMatchSnapshot();
 	});
