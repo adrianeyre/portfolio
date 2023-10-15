@@ -4,7 +4,7 @@
 	color: red;
 }
 
-.navigationContainer {
+.navigation-container {
 	.navbar {
 		background-color: $body-colour-background !important;
 
@@ -22,12 +22,12 @@
 		}
 	}
 
-	.topBarLinks {
+	.top-bar-links {
 		position: absolute;
 		right: 90px;
 		top: 10px;
 
-		.linksContainer {
+		.links-container {
 			img, .icon {
 				width: 30px;
 				height: 30px;
@@ -36,17 +36,17 @@
 		}
 	}
 
-	.navbarNav {
-		.linksContainer {
+	.navbar-nav {
+		.links-container {
 			display: none;
 		}
 	}
 }
 
 @media (max-width: 1000px) {
-	.navigationContainer {
-		.topBarLinks {
-			.linksContainer {
+	.navigationcontainer {
+		.top-bar-links {
+			.links-container {
 				right: 80px;
 			}
 		}
@@ -54,16 +54,16 @@
 }
 
 @media (max-width: 470px) {
-	.navigationContainer {
-		.topBarLinks {
-			.linksContainer {
+	.navigation-container {
+		.top-bar-links {
+			.links-container {
 				display: none;
 			}
 		}
 	}
 
-	.navbarNav {
-		.linksContainer {
+	.navbar-nav {
+		.links-container {
 			display: block !important;
 			text-align: left !important;
 
