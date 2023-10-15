@@ -1,16 +1,5 @@
 [
 	{
-		"title": "School of Code Mentor",
-		"image": {
-			"filename": "/images/logos/school-of-code.png",
-			"link": "https://www.schoolofcode.co.uk"
-		},
-		"subTitle": [
-			"Dates: March 2023 - Present",
-			"Mentoring students while they are on the course"
-		]
-	},
-	{
 		"title": "Makers Academy",
 		"image": {
 			"filename": "/images/logos/makers-acadey.png",

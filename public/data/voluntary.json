@@ -1,0 +1,26 @@
+[
+	{
+		"title": "School of Code",
+		"image": {
+			"filename": "/images/logos/soc.png",
+			"link": "https://www.schoolofcode.co.uk"
+		},
+		"subTitle": [
+			"Dates: March 2023 - Present",
+			"Mentoring students while they are on the course"
+		],
+		"body": "I am a voluntary mentor for the current boot campers. I help them on their journey to become software engineers."
+	},
+	{
+		"title": "Nottinghamshire Police",
+		"image": {
+			"filename": "/images/logos/notts-police.jpg",
+			"link": "https://www.nottinghamshire.police.uk"
+		},
+		"subTitle": [
+			"Dates: February 2009 to June 2019",
+			"Position: Special Police Inspector"
+		],
+		"body": "I perform a wide variety of duties such as enforcement of laws and the prevention of crimes, controls traffic flow and enforces state and local traffic regulations, participate in and conducts a variety of criminal investigations, arrests, support and assistance to special crime prevention and law enforcement programs and a variety of technical and administrative tasks in support of law enforcement services and activities."
+	}
+]

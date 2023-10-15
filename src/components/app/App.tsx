@@ -48,8 +48,8 @@ const App = () => {
 	cookieParser.removeCookies();
 
 	const dataFiles = [
-		'menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'codewars',
-		'interests', 'interestsImages', 'languageImages', 'frameworksImages'
+		'menu', 'about', 'links', 'skills', 'projects', 'education', 'experience', 'voluntary',
+		'codewars', 'interests', 'interestsImages', 'languageImages', 'frameworksImages'
 	];
 
 	async function callData() {
@@ -176,6 +176,10 @@ const App = () => {
 					<Element className={styles.block} name="experience">
 						<Title title="EXPERIENCE" />
 						<Text data={ data.experience } />
+					</Element>
+					<Element className={styles.block} name="voluntary">
+						<Title title="VOLUNTARY WORK" />
+						<Text data={ data.voluntary } />
 					</Element>
 					<Element className={styles.block} name="codewars">
 						<Title title="AUTHORED CODEWARS KATAS" />
