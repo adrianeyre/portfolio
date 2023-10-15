@@ -12,6 +12,18 @@
 		"body": "I am a voluntary mentor for the current boot campers. I help them on their journey to become software engineers."
 	},
 	{
+		"title": "Duke of Edinburgh Leader",
+		"image": {
+			"filename": "/images/logos/doe.png",
+			"link": "https://www.dofe.org"
+		},
+		"subTitle": [
+			"Dates: July 2011 to December 2016",
+			"Leading the Bronze and Silver course"
+		],
+		"body": "I helped student gain their Bronze and Silver DoE qualifications including leading several group expeditions."
+	},
+	{
 		"title": "Nottinghamshire Police",
 		"image": {
 			"filename": "/images/logos/notts-police.jpg",
