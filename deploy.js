@@ -2,7 +2,7 @@ const fs = require('fs');
 const FtpClient = require('ftp');
 const glob = require('glob');
 
-const basePath = './build';
+const basePath = './dist';
 const destinationPath = '/public_html';
 const config = {
 	host: process.env.FTP_HOST,
