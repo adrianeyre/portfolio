@@ -10,7 +10,6 @@ const Footer = () => {
 	const { version, author } = packageJson;
 	const todaysDate = new Date();
 	const thisYear = todaysDate.getFullYear();
-	console.log('\n\npackage', packageJson)
 
 	return <div className={styles.footerContainer}>
 		<footer className="centre-text">
