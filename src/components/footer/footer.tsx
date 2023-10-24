@@ -1,4 +1,3 @@
-
 import packageJson from '../../../package.json';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
