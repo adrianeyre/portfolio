@@ -3,7 +3,7 @@ const FtpClient = require('ftp');
 const glob = require('glob');
 
 const basePath = './dist';
-const destinationPath = '/public_html';
+const destinationPath = '/';
 const config = {
 	host: process.env.FTP_HOST,
 	password: process.env.FTP_PASSWORD,

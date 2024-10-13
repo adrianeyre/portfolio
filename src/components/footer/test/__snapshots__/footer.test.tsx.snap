@@ -13,8 +13,15 @@ exports[`Footer Should render correctly 1`] = `
         >
           <span>
             ©
-            2023
-             Adrian Eyre |
+            2024
+             
+            Adrian Eyre
+             |
+          </span>
+          <span>
+             Version 
+            0.4.3
+             |
           </span>
           <span>
              
@@ -54,8 +61,15 @@ exports[`Footer Should render correctly 1`] = `
       >
         <span>
           ©
-          2023
-           Adrian Eyre |
+          2024
+           
+          Adrian Eyre
+           |
+        </span>
+        <span>
+           Version 
+          0.4.3
+           |
         </span>
         <span>
            
