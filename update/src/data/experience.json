@@ -1,0 +1,512 @@
+[
+	{
+		"title": "Percayso Vehicle Intelligence",
+		"image": {
+			"filename": "/images/logos/percayso-inform.png",
+			"link": "https://www.percayso-vehicle-intelligence.com/"
+		},
+		"subTitle": [
+			"Dates: January 2023 to Present",
+			"Position: Senior Software Developer"
+		],
+		"body": "Full stack software developer",
+		"points": [
+			"Frameworks – Node, AWS and Express",
+			"Languages – Typescript, JavaScript, Python, C#",
+			"Jira and Confluence",
+			"Modern CSS and dynamic stylesheet using SCSS and HTML5",
+			"Continuous Integration / Continuous Deployment with Github Actions and Buddy Works",
+			"AWS lambda, S3, ECS, EC2, DynamoDB, MySQL, Amplify",
+			"Vue 2, Github",
+			"Jest Testing Framework and Cypress"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/typescript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/javascript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/aws.png",
+				"title": "AWS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/github.png",
+				"title": "Github",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/vue.png",
+				"title": "Vue",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/node.png",
+				"title": "Node Express",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/dotnet.png",
+				"title": ".NET",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/dotnetcore.png",
+				"title": ".NET Core",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/octopus.png",
+				"title": "Octopus Deploy",
+				"width": "30px;"
+			}
+		]
+	},
+	{
+		"title": "Percayso Inform",
+		"image": {
+			"filename": "/images/logos/percayso-inform.png",
+			"link": "https://www.percayso-inform.com/"
+		},
+		"subTitle": [
+			"Dates: January 2023 to Present",
+			"Position: Senior Software Developer"
+		],
+		"body": "Full stack software developer",
+		"points": [
+			"Frameworks – Node and Express",
+			"Languages – Typescript, JavaScript",
+			"Shared Component Library using Typescript"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/typescript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/javascript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/aws.png",
+				"title": "AWS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/github.png",
+				"title": "Github",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/node.png",
+				"title": "Node Express",
+				"width": "30px;"
+			}
+		]
+	},
+	{
+		"title": "Candor",
+		"image": {
+			"filename": "/images/logos/candor.png",
+			"link": "https://www.candor.co.uk/"
+		},
+		"subTitle": [
+			"Dates: February 2022 to January 2023",
+			"Position: Senior Software Developer & Squad Lead"
+		],
+		"body": "Full stack software developer writing front end applications and API's for a finance company",
+		"points": [
+			"Frameworks – React, NextJS, Node and Express",
+			"Languages – Typescript, JavaScript, Python",
+			"Atlassian, Jira and Confluence",
+			"MongoDB",
+			"Modern CSS and dynamic stylesheet using SCSS",
+			"HTML5",
+			"Continuous Integration / Continuous Deployment with Github Actions and Netlify",
+			"Google Cloud (Functions, Virtual Machines, Storage)",
+			"Github, GraphQL",
+			"Jest, React Testing Framework and Cypress"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/typescript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/javascript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/css.png",
+				"title": "SCSS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/html.png",
+				"title": "HTML",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/github.png",
+				"title": "Github",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/react.png",
+				"title": "React",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/node.png",
+				"title": "Node Express",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/mongodb.png",
+				"title": "Mongo DB",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/atlassian.png",
+				"title": "Atlassian",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/netlify.png",
+				"title": "Netlify",
+				"width": "30px;"
+			}
+		]
+	},
+	{
+		"title": "Koodoo",
+		"image": {
+			"filename": "/images/logos/koodoo.png",
+			"link": "https://koodoo.io"
+		},
+		"subTitle": [
+			"Dates: July 2021 to January 2023",
+			"Position: Senior Software Developer & Squad Lead"
+		],
+		"body": "Full stack software developer writing front end applications and API's in the mortgage sector",
+		"points": [
+			"Frameworks – React, NextJS, Node, Express and Svelte",
+			"Languages – JavaScript",
+			"Atlassian, Jira and Confluence",
+			"MongoDB",
+			"Modern CSS and dynamic stylesheet using SCSS",
+			"HTML5",
+			"Continuous Integration / Continuous Deployment with Circle CI and Netlify",
+			"Google Cloud (Functions, Virtual Machines, Storage)",
+			"Github",
+			"Jest, React Testing Framework and Cypress"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/typescript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/javascript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/css.png",
+				"title": "SCSS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/html.png",
+				"title": "HTML",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/github.png",
+				"title": "Github",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/react.png",
+				"title": "React",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/node.png",
+				"title": "Node Express",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/circleci.png",
+				"title": "Circle CI",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/mongodb.png",
+				"title": "Mongo DB",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/atlassian.png",
+				"title": "Atlassian",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/netlify.png",
+				"title": "Netlify",
+				"width": "30px;"
+			}
+		]
+	},
+	{
+		"title": "Slimming World",
+		"image": {
+			"filename": "/images/logos/slimming-world.png",
+			"link": "https://www.slimmingworld.co.uk"
+		},
+		"subTitle": [
+			"Dates: June 2019 to July 2021",
+			"Position: Senior Software Developer & Scrum Master"
+		],
+		"body": "Full stack software developer writing internal applications to support the Head Office",
+		"points": [
+			"Frameworks – .NET Core, React, Redux and Knockout",
+			"Languages – C#, TypeScript and JavaScript",
+			"Azure DevOps (Boards, Pipelines and Releases)",
+			"Entity Framework",
+			"SQL Server, Azure SQL and MongoDB",
+			"Modern CSS and dynamic stylesheet using SCSS",
+			"HTML5",
+			"MVC Architecture",
+			"Continuous Integration / Continuous Deployment",
+			"Azure (AD, Functions, Virtual Machines, ARM Templates, Web Apps, Blob Storage)",
+			"Team City",
+			"Octopus Deployments",
+			"NUnit, XUnit, Moq, Jest, React Testing Framework and Cypress"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/dotnet.png",
+				"title": ".NET",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/dotnetcore.png",
+				"title": ".NET Core",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/typescript.png",
+				"title": "TypeScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/css.png",
+				"title": "SCSS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/html.png",
+				"title": "HTML",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/azure.png",
+				"title": "Microsoft Azure",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/azure-devops.png",
+				"title": "Microsoft Azure DevOps",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/react.png",
+				"title": "React",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/sql-server.png",
+				"title": "SQL Server",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/bitbucket.png",
+				"title": "Bit Bucket",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/octopus.png",
+				"title": "Octopus Deploy",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/team-city.png",
+				"title": "Team City",
+				"width": "30px;"
+			}
+		]
+	},
+	{
+		"title": "Solutions for Retail Brands",
+		"image": {
+			"filename": "/images/logos/s4rb.png",
+			"link": "https://www.s4rb.com"
+		},
+		"subTitle": [
+			"Dates: June 2017 to June 2019",
+			"Position: Software Developer"
+		],
+		"body": "Full stack software development engaging worldwide supermarkets such as Walmart, Asda, Waitrose, Woolworths (Australia), Walgreens Boots Alliance, Co-Op, Musgrave, Sams Club, Albertsons (Safeway) with their suppliers.",
+		"points": [
+			"Frameworks – AngularJS, Node Express and Laravel",
+			"Languages – Javascript, TypeScript and PHP",
+			"HTML5",
+			"MVC architecture",
+			"AWS (S3, EC2, Lamnda, DynamoDB)",
+			"Azure (AD, Functions, Virtual Machines)",
+			"SQL Server",
+			"Visual Studio Code and Atom",
+			"Modern CSS and dynamic stylesheet using LESS",
+			"RESTful APIs",
+			"Agile methodologies using SCRUM",
+			"Project building using Gulp and Webpack",
+			"GIT tools and branching methods using GIT Flow in Github",
+			"NPM Package management",
+			"Unit and e2e testing using Mocha and Chai",
+			"Front end testing using Cypress",
+			"Oracle RightNow",
+			"Test Driven Development",
+			"Behavior-Driven Development",
+			"Dependency Injection",
+			"Continuous Integration",
+			"SOLID principles",
+			"Clean DRY code"
+		],
+		"images": [
+			{
+				"filename": "/images/languages/javascript.png",
+				"title": "JavaScript",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/php.png",
+				"title": "PHP",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/html.png",
+				"title": "HTML",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/languages/css.png",
+				"title": "SCSS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/angular.png",
+				"title": "Angular JS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/oracle-rightnow.png",
+				"title": "Oracle Right-Now",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/node.png",
+				"title": "Node",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/github.png",
+				"title": "Github",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/azure.png",
+				"title": "Microsoft Azure",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/aws.png",
+				"title": "AWS",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/heroku.png",
+				"title": "Heroku",
+				"width": "30px;"
+			},
+			{
+				"filename": "/images/frameworks/sql-server.png",
+				"title": "SQL Server",
+				"width": "30px;"
+			}
+		]
+	},
+	{
+		"title": "All Saints Catholic Academy",
+		"image": {
+			"filename": "/images/logos/all-saints.jpg",
+			"link": "https://www.allsaints.notts.sch.uk"
+		},
+		"subTitle": [
+			"Dates: July 2011 to December 2016",
+			"Position: IT Manager"
+		],
+		"body": "I am a fully integrated member of staff within the school and enjoy the fast pace and challenges it brings on a daily basis. I am involved in a lot of voluntary aspects such as helping instruct the Duke of Edinburgh awards, assistant tutor, school radio, helping with the sound and light for school productions and a programming club. I am always looking for new trends and initiatives in IT so that I can bring them into the classroom. Budgets are tight for training so I keep up to date by researching and self-teaching to broaden my technical expertise. My main role consists of the below daily tasks.",
+		"points": [
+			"Developing Web and Windows based applications in ASP VB Script and VB6.",
+			"Managing the whole school network infrastructure.",
+			"Managing a small team and department budget.",
+			"Microsoft Server 2003, 2008 & 2012r2 Domain",
+			"Microsoft Exchange 2007, 2010 & 2013 email system",
+			"Microsoft SQL 2000, 2008, 2012 Server",
+			"ASP, VB Script, HTML, IIS incorporating databases",
+			"Oracle SQL",
+			"Unitrends backup and disaster recovery system",
+			"Milestone IP CCTV Cameras system",
+			"IP telephone system",
+			"Symantec Endpoint Protection",
+			"Cisco switch configuration",
+			"Microsoft Office, Adobe WebSuite and Serif Suite support",
+			"Microsoft MDT Deployment Server",
+			"Creation and maintenance of school IT polices"
+		]
+	},
+	{
+		"title": "The Carlton Academy",
+		"image": {
+			"filename": "/images/logos/carlton-academy.png",
+			"link": "http://www.theacademycarlton.org.uk"
+		},
+		"subTitle": [
+			"Dates: January 2002 to July 2011",
+			"Position: Network Manager"
+		]
+	},
+	{
+		"title": "PC Service Call - Dixons Group",
+		"image": {
+			"filename": "/images/logos/pc-world.jpg",
+			"link": "https://www.currys.co.uk"
+		},
+		"subTitle": [
+			"Dates: October 2001 to January 2002",
+			"Position: Technical Support"
+		]
+	}
+]

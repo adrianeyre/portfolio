@@ -1,0 +1,37 @@
+[
+	{
+		"image": {
+			"filename": "/images/frameworks/react.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/frameworks/angular.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/frameworks/node.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/frameworks/jquery.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/frameworks/rubyonrails.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/frameworks/azure.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/frameworks/aws.png"
+		}
+	}
+]

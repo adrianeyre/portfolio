@@ -1,0 +1,37 @@
+[
+	{
+		"image": {
+			"filename": "/images/languages/typescript.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/languages/javascript.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/languages/dotnet.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/languages/dotnetcore.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/languages/ruby.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/languages/python.png"
+		}
+	},
+	{
+		"image": {
+			"filename": "/images/languages/vb.png"
+		}
+	}
+]
