@@ -222,7 +222,7 @@ a {
 }
 
 .section-tag {
-  font-size: 0.85rem;
+  font-size: clamp(2rem, 3vw, 2.8rem);
   text-transform: uppercase;
   letter-spacing: 0.18em;
   color: var(--accent);
@@ -230,7 +230,7 @@ a {
 
 .section h2 {
   margin: 0;
-  font-size: clamp(2rem, 3vw, 2.8rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.2rem);
 }
 
 .about-grid,
