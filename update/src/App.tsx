@@ -44,16 +44,17 @@ const interestsList = interestsData.flatMap((item) => item.points ?? []);
 const App = () => {
   const contactLinks = useMemo(
     () =>
-      linksData.map((item) => {
-        const font = item.image.font;
-        const href = item.image.link === 'mailto' ? 'mailto:' : item.image.link;
-        return {
-          icon: getIcon(font),
-          href,
-          type: item.image.type,
-          title: font.replace('brand.', '').replace('free.', '')
-        };
-      }),
+      linksData
+        .filter((item) => item.image.link !== 'mailto')
+        .map((item) => {
+          const font = item.image.font;
+          return {
+            icon: getIcon(font),
+            href: item.image.link,
+            type: item.image.type,
+            title: font.replace('brand.', '').replace('free.', '')
+          };
+        }),
     []
   );
 
