@@ -1,4 +1,4 @@
-import { Fragment, useMemo } from 'react';
+import { Fragment, useMemo, useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaSlack, FaCode, FaEnvelope } from 'react-icons/fa';
 import menuData from './data/menu.json';
 import aboutData from './data/about.json';
@@ -58,9 +58,24 @@ const App = () => {
     []
   );
 
+  const [scrolled, setScrolled] = useState(false);
+
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const navElement = document.querySelector('.nav-bar');
+      if (navElement) {
+        const rect = navElement.getBoundingClientRect();
+        setScrolled(rect.top <= 0);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="page-shell">
@@ -90,7 +105,7 @@ const App = () => {
         </div>
       </header>
 
-      <nav className="nav-bar">
+      <nav className={`nav-bar${scrolled ? ' scrolled' : ''}`}>
         <div className="nav-inner">
           <div className="nav-logo">
             <img src="/images/links/photo.jpeg" alt="Adrian Eyre" />

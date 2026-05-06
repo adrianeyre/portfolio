@@ -150,6 +150,10 @@ a {
   margin: 16px 0 0;
 }
 
+.nav-bar.scrolled {
+  border-radius: 24px 24px 0 0;
+}
+
 .nav-inner {
   display: flex;
   align-items: center;
