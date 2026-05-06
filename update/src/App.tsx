@@ -65,7 +65,7 @@ const App = () => {
     <div className="page-shell">
       <header className="hero">
         <div className="hero-body">
-          <span className="eyebrow">Senior Software Developer</span>
+          <span className="eyebrow">Lead Software Developer</span>
           <h1>Adrian Eyre</h1>
           <p>Building modern web experiences using React, TypeScript and cloud-native tooling.</p>
           <div className="hero-actions">
@@ -91,10 +91,18 @@ const App = () => {
 
       <nav className="nav-bar">
         <div className="nav-inner">
-          <div className="nav-logo">A.E.</div>
+          <div className="nav-logo">
+            <img src="/images/links/photo.jpeg" alt="Adrian Eyre" />
+          </div>
           <div className="nav-links">
             {sectionIds.map((section) => (
-              <button key={section.id} onClick={() => scrollTo(section.id)}>{section.label}</button>
+              <button 
+                key={section.id} 
+                onClick={() => scrollTo(section.id)}
+                className={section.label === 'Interests' ? 'nav-interests' : ''}
+              >
+                {section.label}
+              </button>
             ))}
           </div>
         </div>
@@ -285,7 +293,6 @@ const App = () => {
       <footer className="footer-panel">
         <div>
           <h3>Connect with me</h3>
-          <p>All the same portfolio links from the site, modernised for a cleaner experience.</p>
         </div>
         <div className="social-links">
           {contactLinks.map((contact) => (
