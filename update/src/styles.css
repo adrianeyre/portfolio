@@ -55,7 +55,7 @@ a {
   grid-template-columns: minmax(0, 1.4fr) minmax(300px, 1fr);
   gap: 24px;
   align-items: center;
-  padding: 64px 0 48px;
+  padding: 30px 0 10px;
 }
 
 .hero-body {
@@ -299,6 +299,11 @@ a {
 
 .carousel-container {
   margin: 0 -10px;
+}
+
+.image-item { 
+  width: 40px;
+  margin-right: 5px;
 }
 
 .content {

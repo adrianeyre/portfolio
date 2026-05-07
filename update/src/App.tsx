@@ -107,11 +107,11 @@ const App = () => {
             </div>
             <div className="hero-card">
               <span>Tech stack</span>
-              <strong>Typescript · Python · AWS · AI Tooling ·</strong>
+              <strong>Typescript · Python · AWS · AI Tooling</strong>
             </div>
             <div className="hero-card">
               <span>Focus</span>
-              <strong>Frontend UI · APIs · CI/CD</strong>
+              <strong>Leadership · Architecture · Team Management</strong>
             </div>
           </div>
         </header>
@@ -261,7 +261,7 @@ const App = () => {
                   ) : (
                     <img className="title-image" src={item.image.filename} alt={item.title} />
                   )) }{item.title}</h3>
-                  <p>{item.subTitle?.join(' · ')}</p>
+                  { item.subTitle && item.subTitle.map(subTitleItem => <p key={subTitleItem}>{subTitleItem}</p>) }
                   {item.points?.length ? <ul>{item.points.map((point) => <li key={point}>{point}</li>)}</ul> : null}
                   {item.image?.link ? (
                     <a href={item.image.link} target="_blank" rel="noreferrer">View credential</a>
@@ -283,8 +283,11 @@ const App = () => {
                   ) : (
                     <img className="title-image" src={item.image.filename} alt={item.title} />
                   )) }{item.title}</h3>
-                  <p>{item.subTitle?.join(' · ')}</p>
+                  { item.subTitle && item.subTitle.map(subTitleItem => <p key={subTitleItem}>{subTitleItem}</p>) }
                   <p>{item.body}</p>
+                  <p>{item.images?.map((image) => (
+                    <img key={image.filename} className="image-item" src={image.filename} alt={image.title} />
+                  ))}</p>
                   <ul>{item.points?.map((point) => <li key={point}>{point}</li>)}</ul>
                 </article>
               ))}
