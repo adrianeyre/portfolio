@@ -15,7 +15,7 @@ import interestsData from './data/interests.json';
 import linksData from './data/links.json';
 import languageImagesData from './data/languageImages.json';
 import frameworksImagesData from './data/frameworksImages.json';
-import interestsImagesData from './data/interestsImages.json';
+import packageJson from '../package.json';
 
 const getIcon = (font: string) => {
   switch (font) {
@@ -36,6 +36,9 @@ const getIcon = (font: string) => {
 
 const sectionIds = menuData.map((item) => ({ id: item.link, label: item.title }));
 const interestsList = interestsData.flatMap((item) => item.points ?? []);
+const { version, author } = packageJson;
+const todaysDate = new Date();
+const thisYear = todaysDate.getFullYear();
 
 const App = () => {
   const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
@@ -358,10 +361,9 @@ const App = () => {
       </main>
 
       <footer className="footer-panel">
-        <div>
-          <h3>Connect with me</h3>
-        </div>
-        
+        <span>&#169;{ thisYear } { author } |</span>
+        <span> Version { version } |</span>
+        <span> <a href="https://github.com/adrianeyre/portfolio" rel="noopener noreferrer" target="_blank">Website Design</a></span>
       </footer>
     </div>
   );

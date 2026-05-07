@@ -1,11 +1,15 @@
 {
-  "name": "portfolio-update",
-  "private": true,
-  "version": "0.1.0",
+  "name": "portfolio",
+	"version": "0.4.3",
+	"author": "Adrian Eyre",
+	"private": true,
+	"repository": "https://github.com/adrianeyre/portfolio",
+	"license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "node deploy.js"
   },
   "dependencies": {
     "react": "^19.2.6",
