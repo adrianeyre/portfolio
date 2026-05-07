@@ -1,6 +1,6 @@
 :root {
   color-scheme: dark;
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
   background: #04070f;
   color: #e8eff6;
   --bg: #04070f;
@@ -257,6 +257,10 @@ a {
   gap: 20px;
 }
 
+.about-copy li {
+  margin-bottom: 10px;
+}
+
 .about-copy div {
   line-height: 1.75;
   color: var(--text-muted);
@@ -437,9 +441,11 @@ a {
 }
 
 .footer-panel {
-  margin-top: 48px;
-  padding: 30px 32px 32px;
-  border-radius: 28px;
+  /* margin-top: 48px; */
+  position: sticky;
+  bottom: 0;
+  padding: 10px 10px 10px;
+  /* border-radius: 28px; */
   background: rgba(10, 16, 28, 0.95);
   border: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 1.2rem;
@@ -447,7 +453,7 @@ a {
 }
 
 .footer-panel h3 {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
 }
 
 .footer-panel p {
@@ -501,4 +507,34 @@ a {
   .nav-links {
     width: 100%;
   }
+}
+
+.image-block-container {
+  margin-top: 32px;
+  padding: 20px;
+  background: rgba(13, 20, 34, 0.94);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.image-slide {
+  padding: 0 8px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid rgba(91, 192, 190, 0.2);
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(91, 192, 190, 0.3);
 }
