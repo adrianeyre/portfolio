@@ -201,6 +201,14 @@ a {
   padding-right: 20px;
 }
 
+.title-image {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 6px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
 .content {
   display: grid;
   gap: 48px;

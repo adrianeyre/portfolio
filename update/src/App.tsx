@@ -95,7 +95,7 @@ const App = () => {
         <div className="hero-body">
           <span className="eyebrow">Lead Software Developer</span>
           <h1>Adrian Eyre</h1>
-          <p>Building modern web experiences using React, TypeScript and cloud-native tooling.</p>
+          <p>Building modern applications using AI and cloud-native tooling.</p>
           <div className="hero-actions">
             <button onClick={() => scrollTo('projects')}>View Projects</button>
             <button className="secondary" onClick={() => scrollTo('about')}>About Me</button>
@@ -104,15 +104,15 @@ const App = () => {
         <div className="hero-side">
           <div className="hero-card">
             <span>Experience</span>
-            <strong>13+ years</strong>
+            <strong>15+ years</strong>
           </div>
           <div className="hero-card">
             <span>Tech stack</span>
-            <strong>React · Node · AWS</strong>
+            <strong>Typescript · Python · AWS · AI Tooling ·</strong>
           </div>
           <div className="hero-card">
             <span>Focus</span>
-            <strong>Frontend UI, APIs, CI/CD</strong>
+            <strong>Frontend UI · APIs · CI/CD</strong>
           </div>
         </div>
       </header>
@@ -230,7 +230,7 @@ const App = () => {
             </div>
             {educationData.map((item, index) => (
               <article className="timeline-card" key={index}>
-                <h3>{item.title}</h3>
+                <h3>{ item.image?.filename && <img className="title-image" src={item.image.filename} alt={item.title} /> } {item.title}</h3>
                 <p>{item.subTitle?.join(' · ')}</p>
                 {item.points?.length ? <ul>{item.points.map((point) => <li key={point}>{point}</li>)}</ul> : null}
                 {item.image?.link ? (
@@ -246,7 +246,7 @@ const App = () => {
             </div>
             {experienceData.map((item, index) => (
               <article className="timeline-card" key={index}>
-                <h3>{item.title}</h3>
+                <h3>{ item.image?.filename && <img className="title-image" src={item.image.filename} alt={item.title} /> }{item.title}</h3>
                 <p>{item.subTitle?.join(' · ')}</p>
                 <p>{item.body}</p>
                 <ul>{item.points?.map((point) => <li key={point}>{point}</li>)}</ul>
