@@ -1,5 +1,8 @@
 import { Fragment, useMemo, useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaSlack, FaCode, FaEnvelope } from 'react-icons/fa';
+import Slider, { Settings } from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import menuData from './data/menu.json';
 import aboutData from './data/about.json';
 import skillsData from './data/skills.json';
@@ -42,6 +45,15 @@ const frameworks = frameworksImagesData.map((item) => formatLabel(item.image.fil
 const interestsList = interestsData.flatMap((item) => item.points ?? []);
 
 const App = () => {
+  const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
+  const sliderSettings: Settings = {
+    dots: true,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: screenWidth <= 700 ? 1 : 2,
+    slidesToScroll: 1,
+  };
   const contactLinks = useMemo(
     () =>
       linksData
@@ -183,26 +195,30 @@ const App = () => {
             <span className="section-tag">Projects</span>
             <h2>Recent Work</h2>
           </div>
-          <div className="grid project-grid">
-            {projectsData.map((project, index) => (
-              <article className="project-card" key={index}>
-                <div className="project-image">
-                  <img src={project.image.filename} alt={project.title} />
+          <div className="carousel-container">
+            <Slider {...sliderSettings}>
+              {projectsData.map((project, index) => (
+                <div key={index} className="project-slide">
+                  <article className="project-card">
+                    <div className="project-image">
+                      <img src={project.image.filename} alt={project.title} />
+                    </div>
+                    <div className="project-body">
+                      <h3>{project.title}</h3>
+                      <p>{project.body}</p>
+                      <div className="tag-list">{project.tags?.map((tag) => <span key={tag}>{tag}</span>)}</div>
+                      <div className="project-actions">
+                        {project.links?.map((link) => (
+                          <a key={link.text} href={link.link} target="_blank" rel="noreferrer">
+                            {link.text}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  </article>
                 </div>
-                <div className="project-body">
-                  <h3>{project.title}</h3>
-                  <p>{project.body}</p>
-                  <div className="tag-list">{project.tags?.map((tag) => <span key={tag}>{tag}</span>)}</div>
-                  <div className="project-actions">
-                    {project.links?.map((link) => (
-                      <a key={link.text} href={link.link} target="_blank" rel="noreferrer">
-                        {link.text}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </article>
-            ))}
+              ))}
+            </Slider>
           </div>
         </section>
 
