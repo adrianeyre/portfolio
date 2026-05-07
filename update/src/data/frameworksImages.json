@@ -1,35 +1,42 @@
 [
 	{
+		"label": "React",
 		"image": {
 			"filename": "/images/frameworks/react.png"
 		}
 	},
 	{
+		"label": "Angular",
 		"image": {
 			"filename": "/images/frameworks/angular.png"
 		}
 	},
 	{
+		"label": "Node.js",
 		"image": {
 			"filename": "/images/frameworks/node.png"
 		}
 	},
 	{
+		"label": "jQuery",
 		"image": {
 			"filename": "/images/frameworks/jquery.png"
 		}
 	},
 	{
+		"label": "Ruby on Rails",
 		"image": {
 			"filename": "/images/frameworks/rubyonrails.png"
 		}
 	},
 	{
+		"label": "Azure",
 		"image": {
 			"filename": "/images/frameworks/azure.png"
 		}
 	},
 	{
+		"label": "AWS",
 		"image": {
 			"filename": "/images/frameworks/aws.png"
 		}

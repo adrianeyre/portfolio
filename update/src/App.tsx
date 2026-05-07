@@ -34,14 +34,7 @@ const getIcon = (font: string) => {
   }
 };
 
-const formatLabel = (path: string) => {
-  const name = path.split('/').pop()?.replace(/\.[^.]+$/, '') ?? path;
-  return name.replace(/[-_]/g, ' ').replace(/\b\w/g, (match) => match.toUpperCase());
-};
-
 const sectionIds = menuData.map((item) => ({ id: item.link, label: item.title }));
-const languages = languageImagesData.map((item) => formatLabel(item.image.filename));
-const frameworks = frameworksImagesData.map((item) => formatLabel(item.image.filename));
 const interestsList = interestsData.flatMap((item) => item.points ?? []);
 
 const App = () => {
@@ -152,14 +145,27 @@ const App = () => {
               <div className="info-card">
                 <h3>Core Strengths</h3>
                 <ul>
-                  <li>Responsive front-end architecture</li>
-                  <li>Cross-platform application development</li>
-                  <li>Test-driven and maintainable code</li>
+                    <li>Architecture and systems design</li>
+                    <li>Cloud-native and distributed systems expertise</li>
+                    <li>Mentoring and team enablement</li>
+                    <li>Technical decision-making and tradeoff assessment</li>
+                    <li>Delivery ownership and execution</li>
+                    <li>Cross-functional collaboration</li>
+                    <li>Code quality and review leadership</li>
+                    <li>Continuous improvement and automation</li>
+                    <li>Product empathy and stakeholder communication</li>
+                    <li>Incident response and resilience planning</li>
                 </ul>
               </div>
               <div className="info-card accent">
-                <h3>Current Tools</h3>
-                <p>React · TypeScript · AWS · Node · Jest · Cypress · Git</p>
+                <h3>Connect with me</h3>
+                <p>
+                  {contactLinks.map((contact) => (
+                    <a className="social-icon" key={contact.title} href={contact.href} target="_blank" rel="noreferrer" aria-label={contact.title}>
+                      {contact.icon}
+                    </a>
+                  ))}
+                </p>
               </div>
             </div>
           </div>
@@ -181,11 +187,17 @@ const App = () => {
           <div className="skill-shelves">
             <div>
               <h3>Languages</h3>
-              <div className="pill-grid">{languages.map((label) => <span key={label}>{label}</span>)}</div>
+              <div className="pill-grid">{languageImagesData.map((item) => <span key={item.label}>
+                { item.image?.filename && <img className="title-image" src={item.image.filename} alt={item.label} /> }
+                {item.label}</span>)}
+              </div>
             </div>
             <div>
               <h3>Frameworks</h3>
-              <div className="pill-grid">{frameworks.map((label) => <span key={label}>{label}</span>)}</div>
+              <div className="pill-grid">{frameworksImagesData.map((item) => <span key={item.label}>
+                { item.image?.filename && <img className="title-image" src={item.image.filename} alt={item.label} /> }
+                {item.label}</span>)}
+              </div>
             </div>
           </div>
         </section>
@@ -203,10 +215,16 @@ const App = () => {
                     <div className="project-image">
                       <img src={project.image.filename} alt={project.title} />
                     </div>
+                    <div className="project-tags">
+                      <div className="pill-grid">{project?.tags.map((item) =>
+                        <span className="pill" key={item.label}>
+                          {item.label}
+                        </span>)}
+                      </div>
+                    </div>
                     <div className="project-body">
                       <h3>{project.title}</h3>
                       <p>{project.body}</p>
-                      <div className="tag-list">{project.tags?.map((tag) => <span key={tag}>{tag}</span>)}</div>
                       <div className="project-actions">
                         {project.links?.map((link) => (
                           <a key={link.text} href={link.link} target="_blank" rel="noreferrer">
@@ -230,7 +248,13 @@ const App = () => {
             </div>
             {educationData.map((item, index) => (
               <article className="timeline-card" key={index}>
-                <h3>{ item.image?.filename && <img className="title-image" src={item.image.filename} alt={item.title} /> } {item.title}</h3>
+                <h3>{ item.image?.filename && (item.image.link ? (
+                  <a href={item.image.link} target="_blank" rel="noreferrer">
+                    <img className="title-image" src={item.image.filename} alt={item.title} />
+                  </a>
+                ) : (
+                  <img className="title-image" src={item.image.filename} alt={item.title} />
+                )) }{item.title}</h3>
                 <p>{item.subTitle?.join(' · ')}</p>
                 {item.points?.length ? <ul>{item.points.map((point) => <li key={point}>{point}</li>)}</ul> : null}
                 {item.image?.link ? (
@@ -246,7 +270,13 @@ const App = () => {
             </div>
             {experienceData.map((item, index) => (
               <article className="timeline-card" key={index}>
-                <h3>{ item.image?.filename && <img className="title-image" src={item.image.filename} alt={item.title} /> }{item.title}</h3>
+                <h3>{ item.image?.filename && (item.image.link ? (
+                  <a href={item.image.link} target="_blank" rel="noreferrer">
+                    <img className="title-image" src={item.image.filename} alt={item.title} />
+                  </a>
+                ) : (
+                  <img className="title-image" src={item.image.filename} alt={item.title} />
+                )) }{item.title}</h3>
                 <p>{item.subTitle?.join(' · ')}</p>
                 <p>{item.body}</p>
                 <ul>{item.points?.map((point) => <li key={point}>{point}</li>)}</ul>
@@ -263,8 +293,14 @@ const App = () => {
           <div className="grid cards-grid">
             {voluntaryData.map((item, index) => (
               <article className="card" key={index}>
-                <h3>{item.title}</h3>
-                <p>{item.subTitle?.join(' · ')}</p>
+                <h3>{ item.image?.filename && (item.image.link ? (
+                  <a href={item.image.link} target="_blank" rel="noreferrer">
+                    <img className="title-image" src={item.image.filename} alt={item.title} />
+                  </a>
+                ) : (
+                  <img className="title-image" src={item.image.filename} alt={item.title} />
+                )) }{item.title}</h3>
+                { item.subTitle && item.subTitle.map(subTitleItem => <p key={subTitleItem}>{subTitleItem}</p>) }
                 <p>{item.body}</p>
               </article>
             ))}
@@ -284,8 +320,8 @@ const App = () => {
                 </div>
                 <div className="project-body">
                   <h3>{item.title}</h3>
-                  <p>{item.body}</p>
                   <div className="tag-list">{item.tags?.map((tag) => <span key={tag}>{tag}</span>)}</div>
+                  <p>{item.body}</p>
                   <div className="project-actions">
                     {item.links?.map((link) => (
                       <a key={link.text} href={link.link} target="_blank" rel="noreferrer">
@@ -308,7 +344,6 @@ const App = () => {
             <div className="about-copy">
               {interestsData.map((item, index) => (
                 <Fragment key={index}>
-                  <h3>{item.title}</h3>
                   <ul>{item.points.map((point) => <li key={point}>{point}</li>)}</ul>
                 </Fragment>
               ))}
@@ -326,13 +361,7 @@ const App = () => {
         <div>
           <h3>Connect with me</h3>
         </div>
-        <div className="social-links">
-          {contactLinks.map((contact) => (
-            <a key={contact.title} href={contact.href} target="_blank" rel="noreferrer" aria-label={contact.title}>
-              {contact.icon}
-            </a>
-          ))}
-        </div>
+        
       </footer>
     </div>
   );

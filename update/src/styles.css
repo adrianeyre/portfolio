@@ -325,7 +325,6 @@ a {
 
 .project-slide {
   outline: none;
-  /* width: 100%; */
 }
 
 .card,
@@ -348,9 +347,7 @@ a {
 }
 
 .project-card {
-  display: grid;
-  grid-template-rows: 240px 1fr;
-  height: 520px;
+  height: 760px;
 }
 
 .project-image {
@@ -361,20 +358,17 @@ a {
 
 .project-image img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
 }
 
 .project-body {
   padding: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 .project-body p {
   color: var(--text-muted);
   line-height: 1.75;
-  height: 800px;
 }
 
 .tag-list,
@@ -392,6 +386,14 @@ a {
   background: rgba(91, 192, 190, 0.12);
   color: #b9e9e8;
   font-size: 0.9rem;
+}
+
+.pill {
+  display: flex;
+}
+
+.project-tags {
+  margin-left: 20px;
 }
 
 .project-actions {
@@ -441,12 +443,7 @@ a {
   color: var(--text-muted);
 }
 
-.social-links {
-  display: flex;
-  gap: 16px;
-}
-
-.social-links a {
+.social-icon {
   width: 52px;
   height: 52px;
   display: inline-flex;
@@ -456,6 +453,7 @@ a {
   background: rgba(91, 192, 190, 0.12);
   color: #fff;
   font-size: 1.2rem;
+  margin-right: 1rem;;
 }
 
 @media (max-width: 1024px) {

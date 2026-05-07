@@ -7,8 +7,15 @@
 			"link": "https://github.com/adrianeyre/pacman"
 		},
 		"tags": [
-			"C#",
-			"NUnit"
+			{
+				"label": "C#",
+				"image": {
+					"filename": "/images/languages/dotnet.png"
+				}
+			},
+			{
+				"label": "NUnit"
+			}
 		],
 		"links": [
 			{
@@ -26,10 +33,24 @@
 			"link": "https://github.com/adrianeyre/fishy"
 		},
 		"tags": [
-			"TypeScript",
-			"React",
-			"Jest",
-			"SCSS"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
 		],
 		"links": [
 			{
@@ -52,10 +73,24 @@
 			"link": "https://github.com/adrianeyre/frogger"
 		},
 		"tags": [
-			"TypeScript",
-			"React",
-			"Jest",
-			"SCSS"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
 		],
 		"links": [
 			{
@@ -78,10 +113,24 @@
 			"link": "https://github.com/adrianeyre/space-invaders"
 		},
 		"tags": [
-			"TypeScript",
-			"React",
-			"Jest",
-			"SCSS"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
 		],
 		"links": [
 			{
@@ -104,10 +153,24 @@
 			"link": "https://github.com/adrianeyre/mine-sweeper"
 		},
 		"tags": [
-			"TypeScript",
-			"React",
-			"Jest",
-			"SCSS"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
 		],
 		"links": [
 			{
@@ -130,10 +193,24 @@
 			"link": "https://github.com/adrianeyre/tetris"
 		},
 		"tags": [
-			"TypeScript",
-			"React",
-			"Jest",
-			"SCSS"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
 		],
 		"links": [
 			{
@@ -156,10 +233,24 @@
 			"link": "https://github.com/adrianeyre/connect4"
 		},
 		"tags": [
-			"TypeScript",
-			"React",
-			"Jest",
-			"SCSS"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
 		],
 		"links": [
 			{
@@ -182,10 +273,24 @@
 			"link": "https://github.com/adrianeyre/ant-run"
 		},
 		"tags": [
-			"TypeScript",
-			"React",
-			"Jest",
-			"SCSS"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
 		],
 		"links": [
 			{
@@ -208,10 +313,24 @@
 			"link": "https://github.com/adrianeyre/pipeline"
 		},
 		"tags": [
-			"TypeScript",
-			"React",
-			"Jest",
-			"SCSS"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
 		],
 		"links": [
 			{
@@ -234,10 +353,24 @@
 			"link": "https://github.com/adrianeyre/racer"
 		},
 		"tags": [
-			"TypeScript",
-			"React",
-			"Jest",
-			"SCSS"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
 		],
 		"links": [
 			{
@@ -260,12 +393,36 @@
 			"link": "https://github.com/adrianeyre/battleships-game"
 		},
 		"tags": [
-			"TypeScript",
-			"React",
-			"Express",
-			"Socket.io",
-			"Jest",
-			"SCSS"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Express",
+				"image": {
+					"filename": "/images/frameworks/express.png"
+				}
+			},
+			{
+				"label": "Socket.io",
+				"image": {
+					"filename": "/images/frameworks/socketio.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
 		],
 		"links": [
 			{
@@ -293,10 +450,24 @@
 			"link": "https://github.com/adrianeyre/chuckie-egg"
 		},
 		"tags": [
-			"TypeScript",
-			"React",
-			"Jest",
-			"SCSS"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
 		],
 		"links": [
 			{
@@ -319,10 +490,30 @@
 			"link": "https://github.com/adrianeyre/free-cell"
 		},
 		"tags": [
-			"TypeScript",
-			"Canvas",
-			"Mocha",
-			"Chai"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "Canvas",
+				"image": {
+					"filename": "/images/frameworks/canvas.png"
+				}
+			},
+			{
+				"label": "Mocha",
+				"image": {
+					"filename": "/images/frameworks/mocha.png"
+				}
+			},
+			{
+				"label": "Chai",
+				"image": {
+					"filename": "/images/frameworks/chai.png"
+				}
+			}
 		],
 		"links": [
 			{
@@ -345,8 +536,18 @@
 			"link": "https://github.com/adrianeyre/pairs"
 		},
 		"tags": [
-			"TypeScript",
-			"Canvas"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "Canvas",
+				"image": {
+					"filename": "/images/frameworks/canvas.png"
+				}
+			}
 		],
 		"links": [
 			{
@@ -369,13 +570,37 @@
 			"link": "https://github.com/adrianeyre/a-b-electrical"
 		},
 		"tags": [
-			"TypeScript",
-			"JavaScript",
-			"React",
-			"CircleCI",
-			"HTML",
-			"SCSS"
-		],
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "JavaScript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "CircleCI",
+				"image": {
+					"filename": "/images/tools/circleci.png"
+				}
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "SCSS"
+			}
+	],
 		"links": [
 			{
 				"text": "Repo",
@@ -397,15 +622,51 @@
 			"link": "https://github.com/adrianeyre/chitter-challenge"
 		},
 		"tags": [
-			"Ruby",
-			"Rspec",
-			"Sinatra",
-			"Heroku",
-			"HTML",
-			"CSS",
-			"Postgres",
-			"SQL",
-			"DataMapper"
+			{
+				"label": "Ruby",
+				"image": {
+					"filename": "/images/languages/ruby.png"
+				}
+			},
+			{
+				"label": "RSpec"
+			},
+			{
+				"label": "Sinatra",
+				"image": {
+					"filename": "/images/frameworks/sinatra.png"
+				}
+			},
+			{
+				"label": "Heroku",
+				"image": {
+					"filename": "/images/tools/heroku.png"
+				}
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS",
+				"image": {
+					"filename": "/images/frameworks/css.png"
+				}
+			},
+			{
+				"label": "Postgres",
+				"image": {
+					"filename": "/images/languages/postgres.png"
+				}
+			},
+			{
+				"label": "SQL",
+				"image": {
+					"filename": "/images/languages/sql.png"
+				}
+			},
+			{
+				"label": "DataMapper"
+			}
 		],
 		"links": [
 			{
@@ -428,18 +689,72 @@
 			"link": "https://github.com/adrianeyre/treasure-hunt"
 		},
 		"tags": [
-			"C#",
-			"Ruby",
-			"Javascript",
-			"Swift",
-			"Node",
-			"Unity",
-			"Rspec",
-			"Capybara",
-			"Mocha",
-			"PostgresSQL",
-			"MongoDB",
-			"Xcode"
+			{
+				"label": "C#",
+				"image": {
+					"filename": "/images/languages/csharp.png"
+				}
+			},
+			{
+				"label": "Ruby",
+				"image": {
+					"filename": "/images/languages/ruby.png"
+				}
+			},
+			{
+				"label": "Javascript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "Swift",
+				"image": {
+					"filename": "/images/languages/swift.png"
+				}
+			},
+			{
+				"label": "Node"
+			},
+			{
+				"label": "Unity",
+				"image": {
+					"filename": "/images/frameworks/unity.png"
+				}
+			},
+			{
+				"label": "RSpec"
+			},
+			{
+				"label": "Capybara",
+				"image": {
+					"filename": "/images/languages/capybara.png"
+				}
+			},
+			{
+				"label": "Mocha",
+				"image": {
+					"filename": "/images/languages/mocha.png"
+				}
+			},
+			{
+				"label": "PostgresSQL",
+				"image": {
+					"filename": "/images/frameworks/postgressql.png"
+				}
+			},
+			{
+				"label": "MongoDB",
+				"image": {
+					"filename": "/images/languages/mongodb.png"
+				}
+			},
+			{
+				"label": "XCode",
+				"image": {
+					"filename": "/images/languages/xcode.png"
+				}
+			}
 		],
 		"links": [
 			{
@@ -457,11 +772,39 @@
 			"link": "https://github.com/adrianeyre/bowling-challenge"
 		},
 		"tags": [
-			"Javascript",
-			"Jasmine",
-			"Heroku",
-			"HTML",
-			"CSS"
+			{
+				"label": "Javascript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "Jasmine",
+				"image": {
+					"filename": "/images/languages/jasmine.png"
+				}
+			},
+			{
+				"label": "Heroku",
+				"image": {
+					"filename": "/images/languages/heroku.png"
+				}
+			},
+			{
+				"label": "XCode",
+				"image": {
+					"filename": "/images/languages/xcode.png"
+				}
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS",
+				"image": {
+					"filename": "/images/languages/css.png"
+				}
+			}
 		],
 		"links": [
 			{
@@ -484,15 +827,57 @@
 			"link": "https://github.com/adrianeyre/instagram-challenge"
 		},
 		"tags": [
-			"Ruby",
-			"Javascript",
-			"Rspec",
-			"Rails",
-			"Postgres",
-			"SQL",
-			"Heroku",
-			"Facebook",
-			"AWS"
+			{
+				"label": "Ruby",
+				"image": {
+					"filename": "/images/languages/ruby.png"
+				}
+			},
+			{
+				"label": "Javascript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "RSpec"
+			},
+			{
+				"label": "Rails",
+				"image": {
+					"filename": "/images/languages/rubyonrails.png"
+				}
+			},
+			{
+				"label": "Postgres SQL",
+				"image": {
+					"filename": "/images/languages/postgressql.png"
+				}
+			},
+			{
+				"label": "SQL",
+				"image": {
+					"filename": "/images/languages/sql.png"
+				}
+			},
+			{
+				"label": "Heroku",
+				"image": {
+					"filename": "/images/languages/heroku.png"
+				}
+			},
+			{
+				"label": "Facebook",
+				"image": {
+					"filename": "/images/languages/facebook.png"
+				}
+			},
+			{
+				"label": "AWS",
+				"image": {
+					"filename": "/images/languages/aws.png"
+				}
+			}
 		],
 		"links": [
 			{
@@ -515,12 +900,36 @@
 			"link": "https://github.com/adrianeyre/battle"
 		},
 		"tags": [
-			"Ruby",
-			"Rspec",
-			"Sinatra",
-			"Capybara",
-			"Selenium Webdriver",
-			"HTML"
+			{
+				"label": "Ruby",
+				"image": {
+					"filename": "/images/languages/ruby.png"
+				}
+			},
+			{
+				"label": "RSpec"
+			},
+			{
+				"label": "Sinatra",
+				"image": {
+					"filename": "/images/languages/sinatra.png"
+				}
+			},
+			{
+				"label": "Capybara",
+				"image": {
+					"filename": "/images/languages/capybara.png"
+				}
+			},
+			{
+				"label": "Selenium Webdriver",
+				"image": {
+					"filename": "/images/languages/selenium.png"
+				}
+			},
+			{
+				"label": "HTML"
+			}
 		],
 		"links": [
 			{
@@ -543,13 +952,42 @@
 			"link": "https://github.com/adrianeyre/portfolio"
 		},
 		"tags": [
-			"TypeScript",
-			"JavaScript",
-			"React",
-			"CircleCI",
-			"HTML",
-			"SCSS",
-			"PHP"
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "JavaScript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "CircleCI",
+				"image": {
+					"filename": "/images/frameworks/circleci.png"
+				}
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "SCSS"
+			},
+			{
+				"label": "PHP",
+				"image": {
+					"filename": "/images/languages/php.png"
+				}
+			}
 		],
 		"links": [
 			{
