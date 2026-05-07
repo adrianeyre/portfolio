@@ -347,7 +347,7 @@ a {
 }
 
 .project-card {
-  height: 760px;
+  height: 800px;
 }
 
 .project-image {
@@ -403,11 +403,23 @@ a {
 }
 
 .project-actions a {
-  color: var(--accent);
-  background: rgba(91, 192, 190, 0.08);
-  padding: 10px 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #041428;
+  background: linear-gradient(135deg, #5bc0be, #4c90f8);
+  padding: 12px 18px;
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 20px rgba(25, 47, 78, 0.18);
+}
+
+.project-actions a:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
 }
 
 .timeline-card {
