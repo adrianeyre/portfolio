@@ -343,6 +343,7 @@ a {
   overflow: hidden;
   background: rgba(13, 20, 34, 0.94);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 30px;
 }
 
 .card h3,
