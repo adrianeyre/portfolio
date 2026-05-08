@@ -1,6 +1,6 @@
 import Slider, { Settings } from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import SectionHeader from '../components/SectionHeader';
+import ProjectActions from '../components/ProjectActions';
 import projectsData from '../data/projects.json';
 
 interface ProjectsProps {
@@ -19,10 +19,7 @@ const Projects = ({ screenWidth }: ProjectsProps) => {
 
   return (
     <section id="projects" className="section panel">
-      <div className="section-header">
-        <span className="section-tag">Projects</span>
-        <h2>Recent Work</h2>
-      </div>
+      <SectionHeader tag="Projects" title="Recent Work" />
       <div className="carousel-container">
         <Slider {...sliderSettings}>
           {projectsData.map((project, index) => (
@@ -43,13 +40,7 @@ const Projects = ({ screenWidth }: ProjectsProps) => {
                 <div className="project-body">
                   <h3>{project.title}</h3>
                   <p>{project.body}</p>
-                  <div className="project-actions">
-                    {project.links?.map((link) => (
-                      <a key={link.text} href={link.link} target="_blank" rel="noreferrer">
-                        {link.text}
-                      </a>
-                    ))}
-                  </div>
+                  <ProjectActions links={project.links} />
                 </div>
               </article>
             </div>

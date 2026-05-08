@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import Slider, { Settings } from 'react-slick';
 
-import IImageBlockProps from './interface/image-block-props';
+interface IImageBlockProps {
+	data?: any[];
+	screenWidth: number;
+}
 
 const ImageBlock = (props: IImageBlockProps) => {
 	const [images, setImages] = useState<string[]>([]);

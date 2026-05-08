@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
-import ImageBlock from '../components/image-block/image-block';
+import SectionHeader from '../components/SectionHeader';
+import ImageBlock from '../components/ImageBlock';
 import interestsData from '../data/interests.json';
 import interestsImagesData from '../data/interestsImages.json';
 
@@ -9,10 +10,7 @@ interface InterestsProps {
 
 const Interests = ({ screenWidth }: InterestsProps) => (
   <section id="interests" className="section panel">
-    <div className="section-header">
-      <span className="section-tag">Interests</span>
-      <h2>Personal Passions</h2>
-    </div>
+    <SectionHeader tag="Interests" title="Personal Passions" />
     <div className="split-grid">
       <div className="about-copy">
         {interestsData.map((item, index) => (

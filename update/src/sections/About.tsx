@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { FaGithub, FaLinkedin, FaSlack, FaCode, FaEnvelope } from 'react-icons/fa';
+import SectionHeader from '../components/SectionHeader';
 import aboutData from '../data/about.json';
 import linksData from '../data/links.json';
 
@@ -33,10 +34,7 @@ const About = () => {
 
   return (
     <section id="about" className="section panel">
-      <div className="section-header">
-        <span className="section-tag">About</span>
-        <h2>Who I Am</h2>
-      </div>
+      <SectionHeader tag="About" title="Who I Am" />
       <div className="about-grid">
         <div className="about-copy">
           {aboutData.map((block, index) => (

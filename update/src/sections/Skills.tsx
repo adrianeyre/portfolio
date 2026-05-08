@@ -1,13 +1,11 @@
+import SectionHeader from '../components/SectionHeader';
 import skillsData from '../data/skills.json';
 import languageImagesData from '../data/languageImages.json';
 import frameworksImagesData from '../data/frameworksImages.json';
 
 const Skills = () => (
   <section id="skills" className="section panel">
-    <div className="section-header">
-      <span className="section-tag">Skills</span>
-      <h2>What I Do Best</h2>
-    </div>
+    <SectionHeader tag="Skills" title="What I Do Best" />
     <div className="grid cards-grid">
       {skillsData.map((skill, index) => (
         <article className="card" key={index}>

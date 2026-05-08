@@ -1,11 +1,10 @@
+import SectionHeader from '../components/SectionHeader';
+import ProjectActions from '../components/ProjectActions';
 import codewarsData from '../data/codewars.json';
 
 const Codewars = () => (
   <section id="codewars" className="section panel">
-    <div className="section-header">
-      <span className="section-tag">Codewars</span>
-      <h2>Authored Katas</h2>
-    </div>
+    <SectionHeader tag="Codewars" title="Authored Katas" />
     <div className="grid project-grid">
       {codewarsData.slice(0, 6).map((item, index) => (
         <article className="project-card" key={index}>
@@ -18,13 +17,7 @@ const Codewars = () => (
               {item.tags?.map((tag) => <span key={tag}>{tag}</span>)}
             </div>
             <p>{item.body}</p>
-            <div className="project-actions">
-              {item.links?.map((link) => (
-                <a key={link.text} href={link.link} target="_blank" rel="noreferrer">
-                  {link.text}
-                </a>
-              ))}
-            </div>
+            <ProjectActions links={item.links} />
           </div>
         </article>
       ))}

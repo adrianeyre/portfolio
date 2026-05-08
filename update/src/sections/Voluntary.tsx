@@ -1,22 +1,15 @@
+import SectionHeader from '../components/SectionHeader';
+import TitleImage from '../components/TitleImage';
 import voluntaryData from '../data/voluntary.json';
 
 const Voluntary = () => (
   <section id="voluntary" className="section panel">
-    <div className="section-header">
-      <span className="section-tag">Voluntary Work</span>
-      <h2>Giving Back</h2>
-    </div>
+    <SectionHeader tag="Voluntary Work" title="Giving Back" />
     <div className="grid cards-grid">
       {voluntaryData.map((item, index) => (
         <article className="card" key={index}>
           <h3>
-            {item.image?.filename && (item.image.link ? (
-              <a href={item.image.link} target="_blank" rel="noreferrer">
-                <img className="title-image" src={item.image.filename} alt={item.title} />
-              </a>
-            ) : (
-              <img className="title-image" src={item.image.filename} alt={item.title} />
-            ))}
+            <TitleImage filename={item.image?.filename} link={item.image?.link} alt={item.title} />
             {item.title}
           </h3>
           {item.subTitle && item.subTitle.map((subTitleItem) => <p key={subTitleItem}>{subTitleItem}</p>)}
