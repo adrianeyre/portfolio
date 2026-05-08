@@ -1,11 +1,11 @@
-version: 2
+version: 2.1
 jobs:
   build:
     branches:
         only:
           - master
     docker:
-      - image: cimg/node:22.8.0
+      - image: cimg/node:current
     steps:
       - checkout
       - restore_cache:
@@ -17,5 +17,4 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: CI=false npm run build
       - run: npm run deploy
