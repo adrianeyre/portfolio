@@ -1,60 +1,29 @@
 {
-	"name": "portfolio",
-	"version": "0.4.3",
-	"author": "Adrian Eyre",
-	"private": true,
-	"repository": "https://github.com/adrianeyre/portfolio",
-	"license": "MIT",
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint",
-		"test": "jest",
-		"test:ci": "jest --ci",
-		"deploy": "node deploy.js"
-	},
-	"dependencies": {
-		"bootstrap": "^5.3.8",
-		"ftp": "^0.3.10",
-		"js-cookie": "^3.0.5",
-		"lodash": "^4.18.1",
-		"next": "^16.2.5",
-		"react": "^19.2.6",
-		"react-bootstrap": "^2.10.10",
-		"react-dom": "^19.2.6",
-		"react-google-recaptcha": "^3.1.0",
-		"react-scroll": "^1.9.3",
-		"react-slick": "^0.31.0",
-		"slick-carousel": "^1.8.1"
-	},
-	"devDependencies": {
-		"@fortawesome/fontawesome-common-types": "^7.2.0",
-		"@fortawesome/fontawesome-svg-core": "^7.2.0",
-		"@fortawesome/free-brands-svg-icons": "^7.2.0",
-		"@fortawesome/free-regular-svg-icons": "^7.2.0",
-		"@fortawesome/free-solid-svg-icons": "^7.2.0",
-		"@fortawesome/react-fontawesome": "^3.3.1",
-		"@fortawesome/react-native-fontawesome": "^1.0.0",
-		"@testing-library/dom": "^10.4.1",
-		"@testing-library/jest-dom": "^6.9.1",
-		"@testing-library/react": "^16.3.2",
-		"@testing-library/user-event": "^14.6.1",
-		"@types/jest": "^30.0.0",
-		"@types/js-cookie": "^3.0.6",
-		"@types/lodash": "^4.17.24",
-		"@types/node": "^25.6.0",
-		"@types/react": "^19.2.14",
-		"@types/react-dom": "^19.2.3",
-		"@types/react-google-recaptcha": "^2.1.9",
-		"@types/react-scroll": "^1.8.10",
-		"@types/react-slick": "^0.23.13",
-		"eslint": "^10.3.0",
-		"eslint-config-next": "^16.2.5",
-		"jest": "^30.3.0",
-		"jest-environment-jsdom": "^30.3.0",
-		"sass": "^1.99.0",
-		"typescript": "^6.0.3"
-	},
-	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "name": "portfolio",
+  "version": "1.0.0",
+  "author": "Adrian Eyre",
+  "private": true,
+  "repository": "https://github.com/adrianeyre/portfolio",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "node deploy.js"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-icons": "^5.0.1",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/react-slick": "^0.23.13",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.1"
+  }
 }
