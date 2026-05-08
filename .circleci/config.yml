@@ -1,9 +1,6 @@
 version: 2.1
 jobs:
   build:
-    branches:
-        only:
-          - master
     docker:
       - image: cimg/node:current
     steps:
@@ -18,3 +15,11 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: npm run deploy
+
+workflows:
+  deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
