@@ -1,0 +1,1005 @@
+[
+	{
+		"title": "Pacman",
+		"body": "Remake of the classic arcade game of Pacman. This windows application is fully tested with NUnit and written in C#. It emulated the original Pacman games where ghosts will chase you around the playing board.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/pacman/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/pacman"
+		},
+		"tags": [
+			{
+				"label": "C#",
+				"image": {
+					"filename": "/images/languages/dotnet.png"
+				}
+			},
+			{
+				"label": "NUnit"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/pacman"
+			}
+		]
+	},
+	{
+		"title": "Fishy",
+		"body": "You are a little fish minding your own business swimming around the sea, but in order to survive you must eat other fish! Be aware, you may only eat fish that are small than yourself. Larger fish will eat you up, so you must avoid them at all costs!",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/fishy/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/fishy"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/fishy"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/fishy"
+			}
+		]
+	},
+	{
+		"title": "Frogger",
+		"body": "A game where you navigate frogger through the traffic and across the river to arrive safely home. This a web based application that is mobile device friendly and adapts its size accordingly",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/frogger/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/frogger"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/frogger"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/frogger"
+			}
+		]
+	},
+	{
+		"title": "Space Invaders",
+		"body": "A remake of the classic game Space Invaders where you navigate your ship to attack the space aliens. This a web based application that is mobile device friendly and adapts its size accordingly",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/space-invaders/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/space-invaders"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/space-invaders"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/space-invaders"
+			}
+		]
+	},
+	{
+		"title": "Mine Sweeper",
+		"body": "The purpose of the game is to open all the cells of the board which do not contain a bomb. You lose if you set off a bomb cell. Every non-bomb cell you open will tell you the total number of bombs in the eight neighboring cells. Once you are sure that a cell contains a bomb, you can right-click to put a flag it on it as a reminder. Once you have flagged all the bombs around an open cell, you can quickly open the remaining non-bomb cells by shift-clicking on the cell.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/mine-sweeper/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/mine-sweeper"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/mine-sweeper"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/mine-sweeper"
+			}
+		]
+	},
+	{
+		"title": "Tetris",
+		"body": "You have to make full horizontal lines with the different shaped blocks that fall into the game area. Full lines will then disappear and provide points. The more lines you make at the same time, the more points you earn.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/tetris/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/tetris"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/tetris"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/tetris"
+			}
+		]
+	},
+	{
+		"title": "Connect 4",
+		"body": "To win Connect Four you must be the first player to get four of your colored checkers in a row either horizontally, vertically or diagonally.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/connect4/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/connect4"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/connect4"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/connect4"
+			}
+		]
+	},
+	{
+		"title": "Ant Run",
+		"body": "You must navigate the ant around the board using the paths. Falling into an empty block will kill your ant. Use the holes around the edges of the board to jump to the opposite block.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/ant-run/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/ant-run"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/ant-run"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/ant-run"
+			}
+		]
+	},
+	{
+		"title": "Pipeline",
+		"body": "This is a remake of two of my favourite games for the BBC Micro, Repton and Pipeline. You have to navigate Repton around the playing field collecting all of the stars. There are plenty of puzzles to solve including gates, keys, boulders and teleports.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/pipeline/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/pipeline"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/pipeline"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/pipeline"
+			}
+		]
+	},
+	{
+		"title": "Racer",
+		"body": "The aim of the game is to navigate your car around the track avoiding the grass and other cars. Beware of the oil spills that will cause you to slip!",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/racer/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/racer"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/racer"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/racer"
+			}
+		]
+	},
+	{
+		"title": "Battleships",
+		"body": "Each player places the 5 ships somewhere on their board.  The ships can only be placed vertically or horizontally. Diagonal placement is not allowed. No part of a ship may hang off the edge of the board.  Ships may not overlap each other.  No ships may be placed on another ship. Once the guessing begins, the players may not move the ships.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/battleships-game/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/battleships-game"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Express",
+				"image": {
+					"filename": "/images/frameworks/express.png"
+				}
+			},
+			{
+				"label": "Socket.io",
+				"image": {
+					"filename": "/images/frameworks/socketio.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Game",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/battleships-game"
+			},
+			{
+				"text": "Server",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/battleships-server"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/battle-ships"
+			}
+		]
+	},
+	{
+		"title": "Chuckie Egg",
+		"body": "As Hen-House Harry, the player must collect the twelve eggs positioned in each level, before a countdown timer reaches zero. In addition there are piles of seed which may be collected to increase points and stop the countdown timer for a while, but will otherwise be eaten by hens that patrol the level, causing them to pause. If the player touches a hen or falls through a gap in the bottom of the level, he loses a life. Each level is made of solid platforms, ladders and occasionally lift platforms that constantly move upwards but upon leaving the top of the screen will reappear at the bottom. Hitting the top of the screen while on one of these lifts, however, will also cause the player to lose a life.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/chuckie-egg/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/chuckie-egg"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/chuckie-egg"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/chuckie-egg"
+			}
+		]
+	},
+	{
+		"title": "Free Cell",
+		"body": "A remake of the classic game Free Cell using vanilla TypeScript.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/free-cell/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/free-cell"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "Canvas",
+				"image": {
+					"filename": "/images/frameworks/canvas.png"
+				}
+			},
+			{
+				"label": "Mocha",
+				"image": {
+					"filename": "/images/frameworks/mocha.png"
+				}
+			},
+			{
+				"label": "Chai",
+				"image": {
+					"filename": "/images/frameworks/chai.png"
+				}
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/free-cell"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/free-cell"
+			}
+		]
+	},
+	{
+		"title": "Pairs",
+		"body": "A remake of the classic game Pairs using vanilla TypeScript.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/pairs/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/pairs"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "Canvas",
+				"image": {
+					"filename": "/images/frameworks/canvas.png"
+				}
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/pairs"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "http://adrianeyre.co.uk/pairs"
+			}
+		]
+	},
+	{
+		"title": "A B Electrical & Maintenance",
+		"body": "A site for a local business, written in React, TypeScript, and SCSS.",
+		"image": {
+			"filename": "/images/projects/ab-electrical.png",
+			"link": "https://github.com/adrianeyre/a-b-electrical"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "JavaScript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "CircleCI",
+				"image": {
+					"filename": "/images/tools/circleci.png"
+				}
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "SCSS"
+			}
+	],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/a-b-electrical"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "http://a-belectrical.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Chitter Challenge",
+		"body": "A Twitter clone that will allow the users to post messages to a public board. You are able to reply and like other peoples comments. This is written in Ruby and uses the Sinatra web framework to host the pages.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/chitter-challenge/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/chitter-challenge"
+		},
+		"tags": [
+			{
+				"label": "Ruby",
+				"image": {
+					"filename": "/images/languages/ruby.png"
+				}
+			},
+			{
+				"label": "RSpec"
+			},
+			{
+				"label": "Sinatra",
+				"image": {
+					"filename": "/images/frameworks/sinatra.png"
+				}
+			},
+			{
+				"label": "Heroku",
+				"image": {
+					"filename": "/images/tools/heroku.png"
+				}
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS",
+				"image": {
+					"filename": "/images/frameworks/css.png"
+				}
+			},
+			{
+				"label": "Postgres",
+				"image": {
+					"filename": "/images/languages/postgres.png"
+				}
+			},
+			{
+				"label": "SQL",
+				"image": {
+					"filename": "/images/languages/sql.png"
+				}
+			},
+			{
+				"label": "DataMapper"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/chitter-challenge"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://adrianeyre-chitter.herokuapp.com"
+			}
+		]
+	},
+	{
+		"title": "Treasure Hunt",
+		"body": "A mobile phone application project using augmented reality where the user has to navigate the real world on a treasure hunt. You are given clues on where to find the next point on your treasure map. The application uses GPS to let the user know how far away from each point they are. The mobile application is written in C#, Ruby, JavaScript, Swift and Unity.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/treasure-hunt/master/images/GameFlow.png",
+			"link": "https://github.com/adrianeyre/treasure-hunt"
+		},
+		"tags": [
+			{
+				"label": "C#",
+				"image": {
+					"filename": "/images/languages/csharp.png"
+				}
+			},
+			{
+				"label": "Ruby",
+				"image": {
+					"filename": "/images/languages/ruby.png"
+				}
+			},
+			{
+				"label": "Javascript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "Swift",
+				"image": {
+					"filename": "/images/languages/swift.png"
+				}
+			},
+			{
+				"label": "Node"
+			},
+			{
+				"label": "Unity",
+				"image": {
+					"filename": "/images/frameworks/unity.png"
+				}
+			},
+			{
+				"label": "RSpec"
+			},
+			{
+				"label": "Capybara",
+				"image": {
+					"filename": "/images/languages/capybara.png"
+				}
+			},
+			{
+				"label": "Mocha",
+				"image": {
+					"filename": "/images/languages/mocha.png"
+				}
+			},
+			{
+				"label": "PostgresSQL",
+				"image": {
+					"filename": "/images/frameworks/postgressql.png"
+				}
+			},
+			{
+				"label": "MongoDB",
+				"image": {
+					"filename": "/images/languages/mongodb.png"
+				}
+			},
+			{
+				"label": "XCode",
+				"image": {
+					"filename": "/images/languages/xcode.png"
+				}
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/treasure-hunt"
+			}
+		]
+	},
+	{
+		"title": "Bowling Challenge",
+		"body": "A web page application to display bowling scores. The user can either enter their own score or randomise a result. The web application is written in Javascript and JQuery.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/bowling-challenge/master/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/bowling-challenge"
+		},
+		"tags": [
+			{
+				"label": "Javascript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "Jasmine",
+				"image": {
+					"filename": "/images/languages/jasmine.png"
+				}
+			},
+			{
+				"label": "Heroku",
+				"image": {
+					"filename": "/images/languages/heroku.png"
+				}
+			},
+			{
+				"label": "XCode",
+				"image": {
+					"filename": "/images/languages/xcode.png"
+				}
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS",
+				"image": {
+					"filename": "/images/languages/css.png"
+				}
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/bowling-challenge"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://adrianeyre-bowling.herokuapp.com"
+			}
+		]
+	},
+	{
+		"title": "Instagram Challenge",
+		"body": "A remake of Instagram where the user can sign up via FaceBook and post their favourite images that will get stored on AWS. Other users can like and comment on your images. This web application is written in Ruby and JavaScript.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/instagram-challenge/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/instagram-challenge"
+		},
+		"tags": [
+			{
+				"label": "Ruby",
+				"image": {
+					"filename": "/images/languages/ruby.png"
+				}
+			},
+			{
+				"label": "Javascript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "RSpec"
+			},
+			{
+				"label": "Rails",
+				"image": {
+					"filename": "/images/languages/rubyonrails.png"
+				}
+			},
+			{
+				"label": "Postgres SQL",
+				"image": {
+					"filename": "/images/languages/postgressql.png"
+				}
+			},
+			{
+				"label": "SQL",
+				"image": {
+					"filename": "/images/languages/sql.png"
+				}
+			},
+			{
+				"label": "Heroku",
+				"image": {
+					"filename": "/images/languages/heroku.png"
+				}
+			},
+			{
+				"label": "Facebook",
+				"image": {
+					"filename": "/images/languages/facebook.png"
+				}
+			},
+			{
+				"label": "AWS",
+				"image": {
+					"filename": "/images/languages/aws.png"
+				}
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/instagram-challenge"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://adrianeyre-instagram.herokuapp.com"
+			}
+		]
+	},
+	{
+		"title": "Battle",
+		"body": "A web application for a two player battle style game using Javascript and JQuery.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/battle/master/images/ScreenShot1.png",
+			"link": "https://github.com/adrianeyre/battle"
+		},
+		"tags": [
+			{
+				"label": "Ruby",
+				"image": {
+					"filename": "/images/languages/ruby.png"
+				}
+			},
+			{
+				"label": "RSpec"
+			},
+			{
+				"label": "Sinatra",
+				"image": {
+					"filename": "/images/languages/sinatra.png"
+				}
+			},
+			{
+				"label": "Capybara",
+				"image": {
+					"filename": "/images/languages/capybara.png"
+				}
+			},
+			{
+				"label": "Selenium Webdriver",
+				"image": {
+					"filename": "/images/languages/selenium.png"
+				}
+			},
+			{
+				"label": "HTML"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/battle"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://adrianeyre-battle.herokuapp.com"
+			}
+		]
+	},
+	{
+		"title": "Portfolio",
+		"body": "A portfolio site with information about my career, education and experiences, written in React, TypeScript, SCSS and PHP.",
+		"image": {
+			"filename": "/images/projects/portfolio.png",
+			"link": "https://github.com/adrianeyre/portfolio"
+		},
+		"tags": [
+			{
+				"label": "TypeScript",
+				"image": {
+					"filename": "/images/languages/typescript.png"
+				}
+			},
+			{
+				"label": "JavaScript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "React",
+				"image": {
+					"filename": "/images/frameworks/react.png"
+				}
+			},
+			{
+				"label": "CircleCI",
+				"image": {
+					"filename": "/images/frameworks/circleci.png"
+				}
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "SCSS"
+			},
+			{
+				"label": "PHP",
+				"image": {
+					"filename": "/images/languages/php.png"
+				}
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/portfolio"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "http://adrianeyre.co.uk"
+			}
+		]
+	}
+]

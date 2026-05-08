@@ -11,18 +11,12 @@
 ```shell
 $ git clone https://github.com/adrianeyre/portfolio
 $ cd portfolio
-$ npm install --global yarn
-$ yarn
-```
-
-## <a name="Tests">Running the Tests</a>
-```shell
-$ npm run test
+$ npm install
 ```
 
 ## <a name="Run">Running the Website</a>
 ```shell
-$ npm start
+$ npm run dev
 ```
 
 [![Portfolio](http://adrianeyre.co.uk/images/projects/portfolio.png)](http://adrianeyre.co.uk/images/projects/portfolio.png "Portfolio")

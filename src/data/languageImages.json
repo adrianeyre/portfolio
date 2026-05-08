@@ -1,0 +1,44 @@
+[
+	{
+		"label": "TypeScript",
+		"image": {
+			"filename": "/images/languages/typescript.png"
+		}
+	},
+	{
+		"label": "JavaScript",
+		"image": {
+			"filename": "/images/languages/javascript.png"
+		}
+	},
+	{
+		"label": ".NET",
+		"image": {
+			"filename": "/images/languages/dotnet.png"
+		}
+	},
+	{
+		"label": ".NET Core",
+		"image": {
+			"filename": "/images/languages/dotnetcore.png"
+		}
+	},
+	{
+		"label": "Ruby",
+		"image": {
+			"filename": "/images/languages/ruby.png"
+		}
+	},
+	{
+		"label": "Python",
+		"image": {
+			"filename": "/images/languages/python.png"
+		}
+	},
+	{
+		"label": "Visual Basic",
+		"image": {
+			"filename": "/images/languages/vb.png"
+		}
+	}
+]
