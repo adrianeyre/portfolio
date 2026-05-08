@@ -1,17 +1,35 @@
 :root {
   color-scheme: dark;
-  font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-  background: #04070f;
-  color: #e8eff6;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  background: var(--bg);
+  color: var(--text);
+
+  /* Base */
   --bg: #04070f;
+  --text: #e8eff6;
+  --text-muted: #8aa8c7;
+  --dark: #041428;
+
+  /* Surfaces */
   --surface: #0d1321;
   --surface-2: #111b2f;
   --surface-3: #11243d;
   --panel: rgba(14, 20, 35, 0.88);
+  --card-bg: rgba(13, 20, 34, 0.94);
+  --nav-bg: rgba(4, 7, 15, 0.9);
+
+  /* Accents */
   --accent: #5bc0be;
-  --accent-soft: rgba(91, 192, 190, 0.14);
-  --text-muted: #8aa8c7;
+  --accent-blue: #4c90f8;
+  --accent-text: #c0f6f3;
+  --accent-pill: #b9e9e8;
+  --accent-soft: rgba(91, 192, 190, 0.12);
+  --gradient: linear-gradient(135deg, #5bc0be, #4c90f8);
+
+  /* Borders */
   --border: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.16);
 }
 
 * {
@@ -26,8 +44,8 @@ body {
   margin: 0;
   min-height: 100vh;
   background: radial-gradient(circle at top, rgba(91, 192, 190, 0.14), transparent 25%),
-    linear-gradient(180deg, #050a12 0%, #04070f 100%);
-  color: #e8eff6;
+    linear-gradient(180deg, #050a12 0%, var(--bg) 100%);
+  color: var(--text);
 }
 
 button,
@@ -81,8 +99,8 @@ a {
   gap: 8px;
   padding: 10px 16px;
   border-radius: 999px;
-  background: rgba(91, 192, 190, 0.12);
-  color: #c0f6f3;
+  background: var(--accent-soft);
+  color: var(--accent-text);
   font-size: 0.88rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -99,16 +117,16 @@ a {
   border: none;
   padding: 14px 24px;
   border-radius: 999px;
-  background: linear-gradient(135deg, #5bc0be, #4c90f8);
-  color: #041428;
+  background: var(--gradient);
+  color: var(--dark);
   font-weight: 700;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .hero-actions button.secondary {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  color: #e8eff6;
+  border: 1px solid var(--border-strong);
+  color: var(--text);
 }
 
 .hero-actions button:hover {
@@ -121,7 +139,7 @@ a {
 }
 
 .hero-card {
-  background: rgba(11, 20, 35, 0.9);
+  background: var(--card-bg);
   border: 1px solid var(--border);
   padding: 22px;
   border-radius: 24px;
@@ -143,8 +161,8 @@ a {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(18px);
-  background: rgba(4, 7, 15, 0.9);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--border-subtle);
   border-radius: 24px;
   width: 100%;
   margin: 16px 0 0;
@@ -193,8 +211,8 @@ a {
 }
 
 .nav-links button:hover {
-  background: rgba(91, 192, 190, 0.12);
-  color: #fff;
+  background: var(--accent-soft);
+  color: var(--text);
 }
 
 .nav-interests {
@@ -209,6 +227,7 @@ a {
   vertical-align: middle;
   margin-right: 8px;
 }
+
 .content {
   display: grid;
   gap: 48px;
@@ -221,7 +240,7 @@ a {
 .section-panel,
 .panel {
   background: var(--panel);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
   border-radius: 32px;
   padding: 32px;
 }
@@ -268,8 +287,8 @@ a {
 
 .info-card {
   padding: 20px;
-  background: rgba(15, 23, 41, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--card-bg);
+  border: 1px solid var(--border-subtle);
   border-radius: 20px;
 }
 
@@ -301,11 +320,6 @@ a {
   margin: 0 -10px;
 }
 
-.image-item { 
-  width: 40px;
-  margin-right: 5px;
-}
-
 .content {
   width: calc(100% - 10px) !important;
 }
@@ -314,10 +328,14 @@ a {
   width: 1235px;
 }
 
+.image-item {
+  width: 40px;
+  margin-right: 5px;
+}
+
 .slick-slide {
   padding: 10px;
   height: 100%;
-  /* width: 100px !important */
 }
 
 .slick-prev,
@@ -341,8 +359,8 @@ a {
 .timeline-card {
   border-radius: 24px;
   overflow: hidden;
-  background: rgba(13, 20, 34, 0.94);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
   margin-bottom: 30px;
 }
 
@@ -363,12 +381,11 @@ a {
 .project-image {
   height: 240px;
   overflow: hidden;
-  background: #0f1729;
+  background: var(--surface);
 }
 
 .project-image img {
   width: 100%;
-  /* height: 100%; */
   object-fit: cover;
 }
 
@@ -393,8 +410,8 @@ a {
 .pill-grid span {
   padding: 8px 12px;
   border-radius: 999px;
-  background: rgba(91, 192, 190, 0.12);
-  color: #b9e9e8;
+  background: var(--accent-soft);
+  color: var(--accent-pill);
   font-size: 0.9rem;
 }
 
@@ -416,8 +433,8 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #041428;
-  background: linear-gradient(135deg, #5bc0be, #4c90f8);
+  color: var(--dark);
+  background: var(--gradient);
   padding: 12px 18px;
   border-radius: 999px;
   font-weight: 700;
@@ -447,13 +464,11 @@ a {
 }
 
 .footer-panel {
-  /* margin-top: 48px; */
   position: sticky;
   bottom: 0;
-  padding: 10px 10px 10px;
-  /* border-radius: 28px; */
-  background: rgba(10, 16, 28, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 10px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
   font-size: 1.2rem;
   text-align: center;
 }
@@ -474,10 +489,10 @@ a {
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  background: rgba(91, 192, 190, 0.12);
-  color: #fff;
+  background: var(--accent-soft);
+  color: var(--text);
   font-size: 1.2rem;
-  margin-right: 1rem;;
+  margin-right: 1rem;
 }
 
 @media (max-width: 1024px) {
@@ -518,9 +533,9 @@ a {
 .image-block-container {
   margin-top: 32px;
   padding: 20px;
-  background: rgba(13, 20, 34, 0.94);
+  background: var(--card-bg);
   border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
 }
 
 .image-slide {

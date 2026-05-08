@@ -37,7 +37,6 @@ const getIcon = (font: string) => {
 };
 
 const sectionIds = menuData.map((item) => ({ id: item.link, label: item.title }));
-const interestsList = interestsData.flatMap((item) => item.points ?? []);
 const { version, author } = packageJson;
 const todaysDate = new Date();
 const thisYear = todaysDate.getFullYear();
