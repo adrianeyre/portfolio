@@ -169,7 +169,7 @@ a {
 }
 
 .nav-bar.scrolled {
-  border-radius: 24px 24px 0 0;
+  border-radius: 0;
 }
 
 .nav-inner {
@@ -235,6 +235,8 @@ a {
 
 .section {
   padding: 36px 0;
+  width: 1232px;
+  /* width: 1195px; */
 }
 
 .section-panel,
@@ -322,10 +324,6 @@ a {
 
 .content {
   width: calc(100% - 10px) !important;
-}
-
-.section {
-  width: 1235px;
 }
 
 .image-item {
@@ -495,41 +493,6 @@ a {
   margin-right: 1rem;
 }
 
-@media (max-width: 1024px) {
-  .hero {
-    grid-template-columns: 1fr;
-  }
-
-  .cards-grid,
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 760px) {
-  .page-shell {
-    padding: 0 18px 28px;
-  }
-
-  .hero-body h1 {
-    font-size: 3rem;
-  }
-
-  .about-grid,
-  .split-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    width: 100%;
-  }
-}
-
 .image-block-container {
   margin-top: 32px;
   padding: 20px;
@@ -558,4 +521,94 @@ a {
 .thumbnail:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(91, 192, 190, 0.3);
+}
+
+@media (max-width: 1320px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .page-shell {
+    padding: 0;
+    margin : 0;
+    max-width: 100%;
+  }
+
+  .content {
+    padding: 0;
+    margin : 0;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .nav-inner {
+    padding: 0;
+    height: auto;
+  };
+
+  .nav-logo {
+    display: none;
+  }
+
+  .cards-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-shell {
+    padding: 0;
+    margin : 0;
+    max-width: 100%;
+  }
+
+  .hero-body h1 {
+    font-size: 3rem;
+    margin: 10px;
+  }
+
+  .hero-body p {
+    margin: 10px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  button {
+    font-size: small;
+  }
+
+  .content {
+    padding: 0;
+    margin : 0;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .nav-inner {
+    /* padding: 0; */
+  };
+
+  /* .nav-logo {
+    display: none;
+  } */
+
+  .about-grid,
+  .split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    width: 100%;
+  }
 }

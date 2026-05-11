@@ -12,12 +12,12 @@
 		"body": "Full stack software developer",
 		"points": [
 			"Frameworks – Node, AWS and Express",
-			"Languages – Typescript, JavaScript, Python, C#",
+			"Languages – Typescript, JavaScript, Python",
 			"Jira and Confluence",
 			"Modern CSS and dynamic stylesheet using SCSS and HTML5",
 			"Continuous Integration / Continuous Deployment with Github Actions and Buddy Works",
 			"AWS lambda, S3, ECS, EC2, DynamoDB, MySQL, Amplify",
-			"Vue 2, Github",
+			"React, Vue 2, Github",
 			"Jest Testing Framework and Cypress"
 		],
 		"images": [
@@ -32,6 +32,11 @@
 				"width": "30px;"
 			},
 			{
+				"filename": "/images/languages/python.png",
+				"title": "Python",
+				"width": "30px;"
+			},
+			{
 				"filename": "/images/frameworks/aws.png",
 				"title": "AWS",
 				"width": "30px;"
@@ -42,6 +47,11 @@
 				"width": "30px;"
 			},
 			{
+				"filename": "/images/frameworks/react.png",
+				"title": "React",
+				"width": "30px;"
+			},
+			{
 				"filename": "/images/frameworks/vue.png",
 				"title": "Vue",
 				"width": "30px;"
@@ -49,16 +59,6 @@
 			{
 				"filename": "/images/frameworks/node.png",
 				"title": "Node Express",
-				"width": "30px;"
-			},
-			{
-				"filename": "/images/languages/dotnet.png",
-				"title": ".NET",
-				"width": "30px;"
-			},
-			{
-				"filename": "/images/languages/dotnetcore.png",
-				"title": ".NET Core",
 				"width": "30px;"
 			},
 			{
