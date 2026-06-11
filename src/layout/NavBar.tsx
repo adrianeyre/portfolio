@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import menuData from '../data/menu.json';
+import ThemeToggle from '../components/ThemeToggle';
 
 const sectionIds = menuData.map((item) => ({ id: item.link, label: item.title }));
 
@@ -38,6 +39,7 @@ const NavBar = () => {
               {section.label}
             </button>
           ))}
+          <ThemeToggle />
         </div>
       </div>
     </nav>
