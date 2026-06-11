@@ -284,6 +284,12 @@ a {
   color: var(--text);
 }
 
+.nav-links button.active {
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  font-weight: 600;
+}
+
 .nav-interests {
   padding-right: 20px;
 }
