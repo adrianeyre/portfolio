@@ -1,9 +1,11 @@
+import Reveal from '../components/Reveal';
+
 const scrollTo = (id: string) =>
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
 const Hero = () => (
   <header className="hero">
-    <div className="hero-body">
+    <Reveal className="hero-body">
       <span className="eyebrow">Lead Software Developer</span>
       <h1>Adrian Eyre</h1>
       <p>Building modern applications using AI and cloud-native tooling.</p>
@@ -11,8 +13,8 @@ const Hero = () => (
         <button onClick={() => scrollTo('projects')}>View Projects</button>
         <button className="secondary" onClick={() => scrollTo('about')}>About Me</button>
       </div>
-    </div>
-    <div className="hero-side">
+    </Reveal>
+    <Reveal className="hero-side" delay={0.12}>
       <div className="hero-card">
         <span>Experience</span>
         <strong>15+ years</strong>
@@ -25,7 +27,7 @@ const Hero = () => (
         <span>Focus</span>
         <strong>Leadership · Architecture · Team Management</strong>
       </div>
-    </div>
+    </Reveal>
   </header>
 );
 
