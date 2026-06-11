@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Reveal from '../components/Reveal';
 import SectionHeader from '../components/SectionHeader';
 import ProjectActions from '../components/ProjectActions';
 import codewarsData from '../data/codewars.json';
@@ -13,7 +14,9 @@ const Codewars = () => {
 
   return (
     <section id="codewars" className="section panel">
-      <SectionHeader tag="Codewars" title="Authored Katas" />
+      <Reveal>
+        <SectionHeader tag="Codewars" title="Authored Katas" />
+      </Reveal>
       {showAll && (
         <button className="kata-expand-btn kata-expand-btn--up" onClick={() => setShowAll(false)} aria-label="Show less">
           ▲ show less
@@ -21,22 +24,23 @@ const Codewars = () => {
       )}
       <div className="grid project-grid">
         {visibleKatas.map((item, index) => (
-          <article
-            className={`project-card kata-card${expanded === index ? ' expanded' : ''}`}
-            key={index}
-            onClick={() => setExpanded(expanded === index ? null : index)}
-          >
-            <div className="project-body">
-              <div className="kata-content">
-                <h3>{item.title}</h3>
-                <div className="tag-list">
-                  {item.tags?.map((tag) => <span key={tag}>{tag}</span>)}
+          <Reveal key={index} delay={(index % 3) * 0.08}>
+            <article
+              className={`project-card kata-card${expanded === index ? ' expanded' : ''}`}
+              onClick={() => setExpanded(expanded === index ? null : index)}
+            >
+              <div className="project-body">
+                <div className="kata-content">
+                  <h3>{item.title}</h3>
+                  <div className="tag-list">
+                    {item.tags?.map((tag) => <span key={tag}>{tag}</span>)}
+                  </div>
+                  <p>{item.body}</p>
                 </div>
-                <p>{item.body}</p>
+                <ProjectActions links={item.links} />
               </div>
-              <ProjectActions links={item.links} />
-            </div>
-          </article>
+            </article>
+          </Reveal>
         ))}
       </div>
       {!showAll && (

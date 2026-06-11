@@ -1,4 +1,5 @@
 import Slider, { Settings } from 'react-slick';
+import Reveal from '../components/Reveal';
 import SectionHeader from '../components/SectionHeader';
 import ProjectActions from '../components/ProjectActions';
 import projectsData from '../data/projects.json';
@@ -19,8 +20,10 @@ const Projects = ({ screenWidth }: ProjectsProps) => {
 
   return (
     <section id="projects" className="section panel">
-      <SectionHeader tag="Projects" title="Recent Work" />
-      <div className="carousel-container">
+      <Reveal>
+        <SectionHeader tag="Projects" title="Recent Work" />
+      </Reveal>
+      <Reveal className="carousel-container" delay={0.1}>
         <Slider {...sliderSettings}>
           {projectsData.map((project, index) => (
             <div key={index} className="project-slide">
@@ -46,7 +49,7 @@ const Projects = ({ screenWidth }: ProjectsProps) => {
             </div>
           ))}
         </Slider>
-      </div>
+      </Reveal>
     </section>
   );
 };
