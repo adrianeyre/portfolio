@@ -8,6 +8,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "preview": "vite preview",
     "deploy": "node deploy.js"
   },
@@ -19,6 +21,9 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@types/react-slick": "^0.23.13",
@@ -26,7 +31,9 @@
     "dotenv": "^17.4.2",
     "ftp": "^0.3.10",
     "glob": "^13.0.6",
+    "jsdom": "^29.1.1",
     "typescript": "^5.6.3",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vitest": "^2.1.9"
   }
 }
