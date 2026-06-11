@@ -5,9 +5,19 @@ const thisYear = new Date().getFullYear();
 
 const Footer = () => (
   <footer className="footer-panel">
-    <span>&#169;{thisYear} {author} |</span>
-    <span> Version {version} |</span>
-    <span> <a href="https://github.com/adrianeyre/portfolio" rel="noopener noreferrer" target="_blank">Website Design</a></span>
+    <div className="footer-inner">
+      <span className="footer-credit">&#169; {thisYear} {author}</span>
+      <span className="footer-sep" aria-hidden="true">·</span>
+      <span className="footer-version">Version {version}</span>
+      <span className="footer-sep" aria-hidden="true">·</span>
+      <a
+        href="https://github.com/adrianeyre/portfolio"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Website Design
+      </a>
+    </div>
   </footer>
 );
 
