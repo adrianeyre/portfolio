@@ -1,3 +1,4 @@
+import Reveal from '../components/Reveal';
 import SectionHeader from '../components/SectionHeader';
 import skillsData from '../data/skills.json';
 import languageImagesData from '../data/languageImages.json';
@@ -5,13 +6,17 @@ import frameworksImagesData from '../data/frameworksImages.json';
 
 const Skills = () => (
   <section id="skills" className="section panel">
-    <SectionHeader tag="Skills" title="What I Do Best" />
+    <Reveal>
+      <SectionHeader tag="Skills" title="What I Do Best" />
+    </Reveal>
     <div className="grid cards-grid">
       {skillsData.map((skill, index) => (
-        <article className="card" key={index}>
-          <h3>{skill.title}</h3>
-          <div dangerouslySetInnerHTML={{ __html: skill.body }} />
-        </article>
+        <Reveal key={index} delay={index * 0.08}>
+          <article className="card">
+            <h3>{skill.title}</h3>
+            <div dangerouslySetInnerHTML={{ __html: skill.body }} />
+          </article>
+        </Reveal>
       ))}
     </div>
     <div className="skill-shelves">

@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { FaGithub, FaLinkedin, FaSlack, FaCode, FaEnvelope } from 'react-icons/fa';
+import Reveal from '../components/Reveal';
 import SectionHeader from '../components/SectionHeader';
 import aboutData from '../data/about.json';
 import linksData from '../data/links.json';
@@ -34,14 +35,16 @@ const About = () => {
 
   return (
     <section id="about" className="section panel">
-      <SectionHeader tag="About" title="Who I Am" />
+      <Reveal>
+        <SectionHeader tag="About" title="Who I Am" />
+      </Reveal>
       <div className="about-grid">
-        <div className="about-copy">
+        <Reveal className="about-copy">
           {aboutData.map((block, index) => (
             <div key={index} dangerouslySetInnerHTML={{ __html: block.body }} />
           ))}
-        </div>
-        <div className="about-details">
+        </Reveal>
+        <Reveal className="about-details" delay={0.1}>
           <div className="info-card">
             <h3>Core Strengths</h3>
             <ul>
@@ -74,7 +77,7 @@ const About = () => {
               ))}
             </p>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
