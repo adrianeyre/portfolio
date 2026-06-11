@@ -1,11 +1,23 @@
 :root {
-  color-scheme: dark;
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   background: var(--bg);
   color: var(--text);
+}
+
+/*
+ * Theme tokens. Dark is the default: it applies to a bare :root (no
+ * data-theme attribute) as well as an explicit data-theme="dark". The light
+ * set is a separate, complete token set selected via data-theme="light" on
+ * the document root. All component styles consume these tokens only.
+ */
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
 
   /* Base */
   --bg: #04070f;
+  --bg-gradient-start: #050a12;
+  --bg-glow: rgba(91, 192, 190, 0.14);
   --text: #e8eff6;
   --text-muted: #8aa8c7;
   --dark: #041428;
@@ -30,6 +42,49 @@
   --border: rgba(255, 255, 255, 0.08);
   --border-subtle: rgba(255, 255, 255, 0.06);
   --border-strong: rgba(255, 255, 255, 0.16);
+
+  /* Shadows */
+  --shadow-action: 0 10px 20px rgba(25, 47, 78, 0.18);
+  --shadow-thumb: 0 8px 16px rgba(91, 192, 190, 0.3);
+  --thumb-border: rgba(91, 192, 190, 0.2);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  /* Base */
+  --bg: #f4f7fb;
+  --bg-gradient-start: #eef2f8;
+  --bg-glow: rgba(91, 192, 190, 0.18);
+  --text: #0c1626;
+  --text-muted: #4a5b6e;
+  --dark: #04141c;
+
+  /* Surfaces */
+  --surface: #ffffff;
+  --surface-2: #eef2f8;
+  --surface-3: #e2e9f3;
+  --panel: rgba(255, 255, 255, 0.88);
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --nav-bg: rgba(244, 247, 251, 0.9);
+
+  /* Accents */
+  --accent: #168a88;
+  --accent-blue: #2f6fd8;
+  --accent-text: #0b6f6c;
+  --accent-pill: #0b6f6c;
+  --accent-soft: rgba(22, 138, 136, 0.12);
+  --gradient: linear-gradient(135deg, #5bc0be, #4c90f8);
+
+  /* Borders */
+  --border: rgba(12, 22, 38, 0.12);
+  --border-subtle: rgba(12, 22, 38, 0.08);
+  --border-strong: rgba(12, 22, 38, 0.2);
+
+  /* Shadows */
+  --shadow-action: 0 10px 20px rgba(25, 47, 78, 0.12);
+  --shadow-thumb: 0 8px 16px rgba(22, 138, 136, 0.22);
+  --thumb-border: rgba(22, 138, 136, 0.28);
 }
 
 * {
@@ -43,8 +98,8 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: radial-gradient(circle at top, rgba(91, 192, 190, 0.14), transparent 25%),
-    linear-gradient(180deg, #050a12 0%, var(--bg) 100%);
+  background: radial-gradient(circle at top, var(--bg-glow), transparent 25%),
+    linear-gradient(180deg, var(--bg-gradient-start) 0%, var(--bg) 100%);
   color: var(--text);
 }
 
@@ -231,6 +286,33 @@ a {
 
 .nav-interests {
   padding-right: 20px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-left: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  border-radius: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  border-color: var(--border-strong);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .title-image {
@@ -540,7 +622,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.02em;
   transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 10px 20px rgba(25, 47, 78, 0.18);
+  box-shadow: var(--shadow-action);
 }
 
 .project-actions a:hover {
@@ -616,12 +698,12 @@ a {
   border-radius: 12px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border: 2px solid rgba(91, 192, 190, 0.2);
+  border: 2px solid var(--thumb-border);
 }
 
 .thumbnail:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(91, 192, 190, 0.3);
+  box-shadow: var(--shadow-thumb);
 }
 
 @media (max-width: 1320px) {
