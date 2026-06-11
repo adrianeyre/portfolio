@@ -8,6 +8,28 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--
+      Resolve the theme before first paint to avoid a flash of the wrong theme.
+      Mirrors ThemeProvider's init order: stored choice -> prefers-color-scheme -> dark.
+    -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia &&
+                window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light'
+              : 'dark';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          /* localStorage/matchMedia may be unavailable; CSS defaults to dark. */
+        }
+      })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
