@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import Reveal from '../components/Reveal';
 import SectionHeader from '../components/SectionHeader';
 import ImageBlock from '../components/ImageBlock';
 import interestsData from '../data/interests.json';
@@ -10,17 +11,19 @@ interface InterestsProps {
 
 const Interests = ({ screenWidth }: InterestsProps) => (
   <section id="interests" className="section panel">
-    <SectionHeader tag="Interests" title="Personal Passions" />
-    <div className="split-grid">
-      <div className="about-copy">
-        {interestsData.map((item, index) => (
-          <Fragment key={index}>
-            <ul>{item.points.map((point) => <li key={point}>{point}</li>)}</ul>
-          </Fragment>
-        ))}
-      </div>
-    </div>
-    <ImageBlock data={interestsImagesData} screenWidth={screenWidth} />
+    <Reveal>
+      <SectionHeader tag="Interests" title="Personal Passions" />
+    </Reveal>
+    <Reveal className="about-copy" delay={0.1}>
+      {interestsData.map((item, index) => (
+        <Fragment key={index}>
+          <ul>{item.points.map((point) => <li key={point}>{point}</li>)}</ul>
+        </Fragment>
+      ))}
+    </Reveal>
+    <Reveal delay={0.15}>
+      <ImageBlock data={interestsImagesData} screenWidth={screenWidth} />
+    </Reveal>
   </section>
 );
 
