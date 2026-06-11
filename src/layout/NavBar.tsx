@@ -6,8 +6,16 @@ import { useScrollSpy } from '../hooks/useScrollSpy';
 const sectionIds = menuData.map((item) => ({ id: item.link, label: item.title }));
 const sectionOrder = sectionIds.map((section) => section.id);
 
+const prefersReducedMotion = () =>
+  typeof window !== 'undefined' &&
+  typeof window.matchMedia === 'function' &&
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 const scrollTo = (id: string) =>
-  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.getElementById(id)?.scrollIntoView({
+    behavior: prefersReducedMotion() ? 'auto' : 'smooth',
+    block: 'start',
+  });
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
