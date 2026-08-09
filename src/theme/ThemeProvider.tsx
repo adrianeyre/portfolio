@@ -7,67 +7,102 @@ import {
   type ReactNode,
 } from 'react';
 
+/** The resolved theme that is actually applied to the document. */
 export type Theme = 'light' | 'dark';
 
+/**
+ * What the user has chosen. `system` (the default) defers to the OS
+ * `prefers-color-scheme` setting and tracks it live.
+ */
+export type ThemePreference = 'light' | 'dark' | 'system';
+
 export interface ThemeContextValue {
+  /** The resolved theme currently applied (never `system`). */
   theme: Theme;
-  toggleTheme: () => void;
-  setTheme: (theme: Theme) => void;
+  /** The user's saved preference, including `system`. */
+  preference: ThemePreference;
+  /** Persist a new preference. */
+  setPreference: (preference: ThemePreference) => void;
 }
 
 const STORAGE_KEY = 'theme';
 
 const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 
-const readStoredTheme = (): Theme | null => {
+/**
+ * Reads the saved preference. Anything unrecognised (or unavailable
+ * storage) falls back to `system`, which is the site default.
+ */
+const readStoredPreference = (): ThemePreference => {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
-    return stored === 'light' || stored === 'dark' ? stored : null;
+    if (stored === 'light' || stored === 'dark' || stored === 'system') {
+      return stored;
+    }
   } catch {
     // localStorage can throw in private-mode / sandboxed contexts.
-    return null;
   }
+  return 'system';
 };
-
-const prefersLight = (): boolean =>
-  typeof window !== 'undefined' &&
-  typeof window.matchMedia === 'function' &&
-  window.matchMedia('(prefers-color-scheme: light)').matches;
 
 /**
- * Resolves the initial theme. Order of precedence:
- *   1. A persisted choice in localStorage.
- *   2. The OS `prefers-color-scheme` media query.
- *   3. Dark (the site's original default).
+ * Resolves the OS colour scheme. Mirrors the original fallback order:
+ * when `matchMedia` is unavailable we default to dark (the site's
+ * original default); otherwise light only when the OS asks for it.
  */
-const getInitialTheme = (): Theme => {
-  const stored = readStoredTheme();
-  if (stored) return stored;
-  return prefersLight() ? 'light' : 'dark';
+const getSystemTheme = (): Theme => {
+  if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+    return 'dark';
+  }
+  return window.matchMedia('(prefers-color-scheme: light)').matches
+    ? 'light'
+    : 'dark';
 };
 
-export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setThemeState] = useState<Theme>(getInitialTheme);
+const resolveTheme = (preference: ThemePreference, systemTheme: Theme): Theme =>
+  preference === 'system' ? systemTheme : preference;
 
-  // Reflect the active theme onto the document root and persist the choice.
+export const ThemeProvider = ({ children }: { children: ReactNode }) => {
+  const [preference, setPreferenceState] =
+    useState<ThemePreference>(readStoredPreference);
+  const [systemTheme, setSystemTheme] = useState<Theme>(getSystemTheme);
+
+  const theme = resolveTheme(preference, systemTheme);
+
+  // Track the OS colour scheme so a `system` preference updates live.
+  useEffect(() => {
+    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+      return;
+    }
+    const query = window.matchMedia('(prefers-color-scheme: light)');
+    const handleChange = () => setSystemTheme(getSystemTheme());
+    // Re-sync in case the scheme changed between initial state and effect.
+    handleChange();
+    query.addEventListener?.('change', handleChange);
+    return () => query.removeEventListener?.('change', handleChange);
+  }, []);
+
+  // Reflect the resolved theme onto the document root.
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    try {
-      localStorage.setItem(STORAGE_KEY, theme);
-    } catch {
-      // Ignore persistence failures — the in-memory theme still works.
-    }
   }, [theme]);
 
-  const setTheme = useCallback((next: Theme) => setThemeState(next), []);
+  // Persist the user's preference (including `system`).
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEY, preference);
+    } catch {
+      // Ignore persistence failures — the in-memory preference still works.
+    }
+  }, [preference]);
 
-  const toggleTheme = useCallback(
-    () => setThemeState((current) => (current === 'dark' ? 'light' : 'dark')),
+  const setPreference = useCallback(
+    (next: ThemePreference) => setPreferenceState(next),
     []
   );
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, preference, setPreference }}>
       {children}
     </ThemeContext.Provider>
   );

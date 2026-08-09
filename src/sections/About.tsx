@@ -16,6 +16,17 @@ const getIcon = (font: string) => {
   }
 };
 
+const prefersReducedMotion = () =>
+  typeof window !== 'undefined' &&
+  typeof window.matchMedia === 'function' &&
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const scrollToContact = () =>
+  document.getElementById('contact')?.scrollIntoView({
+    behavior: prefersReducedMotion() ? 'auto' : 'smooth',
+    block: 'start',
+  });
+
 const About = () => {
   const contactLinks = useMemo(
     () =>
@@ -75,6 +86,14 @@ const About = () => {
                   {contact.icon}
                 </a>
               ))}
+              <button
+                type="button"
+                className="social-icon social-icon-button"
+                onClick={scrollToContact}
+                aria-label="Contact me"
+              >
+                <FaEnvelope />
+              </button>
             </p>
           </div>
         </Reveal>

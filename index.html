@@ -10,7 +10,8 @@
 
     <!--
       Resolve the theme before first paint to avoid a flash of the wrong theme.
-      Mirrors ThemeProvider's init order: stored choice -> prefers-color-scheme -> dark.
+      Mirrors ThemeProvider: an explicit light/dark choice wins; otherwise
+      (system preference or nothing saved) defer to prefers-color-scheme, then dark.
     -->
     <script>
       (function () {

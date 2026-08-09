@@ -9,14 +9,18 @@
 			"Dates: January 2023 to Present",
 			"Position: Lead Software Developer"
 		],
-		"body": "Full stack software developer",
+		"body": "Full stack software developer and technical lead",
 		"points": [
+			"Line management of the development team – running 1:1s, appraisals, career development and recruitment",
+			"Mentoring and upskilling junior and mid-level developers through pairing and code review",
+			"Championing the use of AI to automate builds, accelerate delivery and improve code quality – integrating Claude and large language model APIs into the development workflow and CI/CD pipelines",
 			"Frameworks – Node, AWS and Express",
 			"Languages – Typescript, JavaScript, Python",
 			"Jira and Confluence",
 			"Modern CSS and dynamic stylesheet using SCSS and HTML5",
 			"Continuous Integration / Continuous Deployment with Github Actions and Buddy Works",
-			"AWS lambda, S3, ECS, EC2, DynamoDB, MySQL, Amplify",
+			"AWS lambda, S3, ECS, EC2, DynamoDB, Amplify",
+			"AWS RDS running MySQL and PostgreSQL databases",
 			"React, Vue 2, Github",
 			"Jest Testing Framework and Cypress"
 		],
@@ -78,11 +82,16 @@
 			"Dates: January 2023 to Present",
 			"Position: Lead Software Developer"
 		],
-		"body": "Full stack software developer",
+		"body": "Full stack software developer and technical lead",
 		"points": [
+			"Line management of the development team – mentoring, 1:1s, performance reviews and career development",
+			"Leading agile ceremonies including sprint planning, stand-ups, retrospectives and code reviews",
+			"Driving the adoption of AI to automate builds and testing, generate boilerplate and review code – embedding Claude and large language model APIs across the team to accelerate delivery",
 			"Frameworks – Node and Express",
 			"Languages – Typescript, JavaScript",
-			"Shared Component Library using Typescript"
+			"Shared Component Library using Typescript",
+			"AWS RDS running MySQL and PostgreSQL databases",
+			"Continuous Integration / Continuous Deployment with Github Actions"
 		],
 		"images": [
 			{

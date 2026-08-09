@@ -26,7 +26,7 @@ const Education = () => (
         </Reveal>
       ))}
     </div>
-    <div>
+    <div id="experience">
       <Reveal>
         <SectionHeader tag="Experience" title="Work History" />
       </Reveal>

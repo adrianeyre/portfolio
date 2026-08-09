@@ -1,25 +1,41 @@
-import { FiMoon, FiSun } from 'react-icons/fi';
-import { useTheme } from '../theme/ThemeProvider';
+import { FiMonitor, FiMoon, FiSun } from 'react-icons/fi';
+import { useTheme, type ThemePreference } from '../theme/ThemeProvider';
+
+/** Cycle order when the button is clicked. */
+const ORDER: ThemePreference[] = ['system', 'light', 'dark'];
+
+const LABELS: Record<ThemePreference, string> = {
+  system: 'System',
+  light: 'Light',
+  dark: 'Dark',
+};
+
+const ICONS = {
+  system: FiMonitor,
+  light: FiSun,
+  dark: FiMoon,
+};
 
 /**
- * Accessible light/dark switch wired into the NavBar.
- * Renders a real <button> so it is focusable and keyboard-operable for free.
+ * Compact theme control wired into the NavBar. Shows only the currently
+ * active option's icon and cycles System → Light → Dark on each click.
+ * The chosen preference is persisted by the ThemeProvider.
  */
 const ThemeToggle = () => {
-  const { theme, toggleTheme } = useTheme();
-  const isDark = theme === 'dark';
-  const nextLabel = isDark ? 'Switch to light theme' : 'Switch to dark theme';
+  const { preference, setPreference } = useTheme();
+  const Icon = ICONS[preference];
+  const label = LABELS[preference];
+  const next = ORDER[(ORDER.indexOf(preference) + 1) % ORDER.length];
 
   return (
     <button
       type="button"
       className="theme-toggle"
-      onClick={toggleTheme}
-      aria-label={nextLabel}
-      aria-pressed={isDark}
-      title={nextLabel}
+      onClick={() => setPreference(next)}
+      aria-label={`Colour theme: ${label}. Click to change.`}
+      title={`Theme: ${label}`}
     >
-      {isDark ? <FiSun aria-hidden="true" /> : <FiMoon aria-hidden="true" />}
+      <Icon aria-hidden={true} />
     </button>
   );
 };

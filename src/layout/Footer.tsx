@@ -1,7 +1,11 @@
 import packageJson from '../../package.json';
+import { OPEN_COOKIE_POLICY_EVENT } from '../components/CookieConsent';
 
 const { version, author } = packageJson;
 const thisYear = new Date().getFullYear();
+
+const openCookiePolicy = () =>
+  window.dispatchEvent(new CustomEvent(OPEN_COOKIE_POLICY_EVENT));
 
 const Footer = () => (
   <footer className="footer-panel">
@@ -17,6 +21,10 @@ const Footer = () => (
       >
         Website Design
       </a>
+      <span className="footer-sep" aria-hidden="true">·</span>
+      <button type="button" className="footer-legal-link" onClick={openCookiePolicy}>
+        Cookie Policy
+      </button>
     </div>
   </footer>
 );

@@ -8,6 +8,8 @@ import Education from './sections/Education';
 import Voluntary from './sections/Voluntary';
 import Codewars from './sections/Codewars';
 import Interests from './sections/Interests';
+import Contact from './sections/Contact';
+import CookieConsent from './components/CookieConsent';
 
 const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
 
@@ -24,9 +26,11 @@ const App = () => (
         <Voluntary />
         <Codewars />
         <Interests screenWidth={screenWidth} />
+        <Contact />
       </main>
     </div>
     <Footer />
+    <CookieConsent />
   </>
 );
 
