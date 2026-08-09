@@ -4,8 +4,8 @@ export interface Track {
   artist: string;
   title: string;
   genre: string;
-  /** YouTube video id (key intentionally matches the source data schema). */
-  youTbeId: string;
+  /** YouTube video id. */
+  id: string;
 }
 
 interface MusicProps {
@@ -22,7 +22,7 @@ const Music = ({ tracks }: MusicProps) => {
     const grouped = new Map<string, (Track & { uid: string })[]>();
     tracks.forEach((track, index) => {
       const list = grouped.get(track.genre) ?? [];
-      list.push({ ...track, uid: `${index}-${track.youTbeId}` });
+      list.push({ ...track, uid: `${index}-${track.id}` });
       grouped.set(track.genre, list);
     });
     return Array.from(grouped, ([genre, items]) => ({ genre, items }));
@@ -108,8 +108,8 @@ const Music = ({ tracks }: MusicProps) => {
           <>
             <div className="music-player-frame">
               <iframe
-                key={selected.youTbeId}
-                src={`https://www.youtube-nocookie.com/embed/${selected.youTbeId}`}
+                key={selected.id}
+                src={`https://www.youtube-nocookie.com/embed/${selected.id}`}
                 title={`${selected.artist} — ${selected.title}`}
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
