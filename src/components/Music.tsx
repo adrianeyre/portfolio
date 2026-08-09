@@ -25,7 +25,13 @@ const Music = ({ tracks }: MusicProps) => {
       list.push({ ...track, uid: `${index}-${track.id}` });
       grouped.set(track.genre, list);
     });
-    return Array.from(grouped, ([genre, items]) => ({ genre, items }));
+    return Array.from(grouped, ([genre, items]) => ({
+      genre,
+      items: [...items].sort(
+        (a, b) =>
+          a.artist.localeCompare(b.artist) || a.title.localeCompare(b.title),
+      ),
+    }));
   }, [tracks]);
 
   const [openGenre, setOpenGenre] = useState<string | null>(null);

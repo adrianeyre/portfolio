@@ -1,381 +1,9 @@
 [
 	{
-		"artist": "Helfish",
-		"title": "The Ripper",
-		"genre": "Techno",
-		"id": "3DhRfvHRXIc"
-	},
-	{
-		"artist": "Party Animals",
-		"title": "Sick S.O.B.",
-		"genre": "Techno",
-		"id": "HkTiKtQsLh0"
-	},
-	{
-		"artist": "Delta",
-		"title": "Listen",
-		"genre": "Techno",
-		"id": "RKE0mk-rEuc"
-	},
-	{
-		"artist": "Charly Lownoise Mental Theo",
-		"title": "Wonderfull Days (Re-Style Bass-D 2012 Remix)",
-		"genre": "Techno",
-		"id": "1TjAc5iM7Ys"
-	},
-	{
-		"artist": "Kings Of Rhythm",
-		"title": "Bomb Da Loop (Loop Da Loop's Hardstep House Mix)",
-		"genre": "House",
-		"id": "cGORCmVfhZE"
-	},
-	{
-		"artist": "DJ Paul Elstak",
-		"title": "Rainbow In The Sky (Re-Style & Bass-D 2013 Remix)",
-		"genre": "Techno",
-		"id": "7wTBdbzKUsU"
-	},
-	{
-		"artist": "Nasenbluten",
-		"title": "Blows T' The Nose",
-		"genre": "Techno",
-		"id": "vkdIuiHCqQw"
-	},
-	{
-		"artist": "Nasenbluten",
-		"title": "Blows T' The Nose",
-		"genre": "Techno",
-		"id": "vkdIuiHCqQw"
-	},
-	{
-		"artist": "Evil Maniax",
-		"title": "Psychopath",
-		"genre": "Techno",
-		"id": "y-lTWuZTM_I"
-	},
-	{
-		"artist": "Dj Dave",
-		"title": "Listen",
-		"genre": "Techno",
-		"id": "di5K_qYEnS8"
-	},
-	{
-		"artist": "Charly Lownoise & Mental Theo",
-		"title": "Wonderfull Days (Rotterdam Mix)",
-		"genre": "Happy Hardcore",
-		"id": "tEAUvbjtsNk"
-	},
-	{
-		"artist": "Omar Santana",
-		"title": "Shake that ass",
-		"genre": "Happy Hardcore",
-		"id": "mPJ-urYnC5g"
-	},
-	{
-		"artist": "Omar Santana",
-		"title": "Come on everybody",
-		"genre": "Happy Hardcore",
-		"id": "VqKi8UTzsc0"
-	},
-	{
-		"artist": "Neophyte",
-		"title": "Execute",
-		"genre": "Techno",
-		"id": "cDWu8p6NMRY"
-	},
-	{
-		"artist": "QTEX V'S Technosis",
-		"title": "Kaos",
-		"genre": "Happy Hardcore",
-		"id": "y567nz6rdeQ"
-	},
-	{
-		"artist": "Urban Shakedown feat. Micky Finn",
-		"title": "Some Justice' (1991)",
-		"genre": "Dance",
-		"id": "L36m5sobhOE"
-	},
-	{
-		"artist": "Jack Rokka vs. Betty Boo",
-		"title": "Take Off",
-		"genre": "Dance",
-		"id": "HJvLEho3JdU"
-	},
-	{
-		"artist": "Jack Rokka vs. Betty Boo",
-		"title": "Take Off",
-		"genre": "Dance",
-		"id": "HJvLEho3JdU"
-	},
-	{
-		"artist": "Genotype",
-		"title": "Extra Terrestrial",
-		"genre": "Techno",
-		"id": "cnZpq0KhdCE"
-	},
-	{
-		"artist": "Benny Benassi ft. Gary Go",
-		"title": "Cinema (Skrillex Remix)",
-		"genre": "Dance",
-		"id": "Cw0nkxFhpoM"
-	},
-	{
-		"artist": "Scott Brown",
-		"title": "Systematic",
-		"genre": "Happy Hardcore",
-		"id": "W-nc6_tbDns"
-	},
-	{
-		"artist": "Scott Brown",
-		"title": "Systematic",
-		"genre": "Happy Hardcore",
-		"id": "W-nc6_tbDns"
-	},
-	{
-		"artist": "Steve Baltes",
-		"title": "3 D Girl (Remix)",
-		"genre": "Dance",
-		"id": "2NWgJX_XkZo"
-	},
-	{
-		"artist": "Revox",
-		"title": "Sysex",
-		"genre": "Dance",
-		"id": "UHqwNKIJH-o"
-	},
-	{
-		"artist": "M-Zone",
-		"title": "M1",
-		"genre": "Hard Trance",
-		"id": "3ScJjx7b-Cc"
-	},
-	{
-		"artist": "E.A.S.",
-		"title": "Energy '95 - The Assembly",
-		"genre": "Hard Trance",
-		"id": "GPNdbPpT5i0"
-	},
-	{
-		"artist": "Cyclone Tracy",
-		"title": "Pianos In Trance",
-		"genre": "Hard Trance",
-		"id": "VQDssCbdAYM"
-	},
-	{
-		"artist": "Striking Man",
-		"title": "Da Lower You Go",
-		"genre": "Dance",
-		"id": "gdrJBo1xGHg"
-	},
-	{
-		"artist": "Striking Man",
-		"title": "Da Lower You Go",
-		"genre": "Dance",
-		"id": "gdrJBo1xGHg"
-	},
-	{
-		"artist": "Ultracynic",
-		"title": "Nothing Is Forever",
-		"genre": "Dance",
-		"id": "K1IUiFirMkg"
-	},
-	{
-		"artist": "William Orbit",
-		"title": "Barber's Adagio For Strings",
-		"genre": "Dance",
-		"id": "yNcdVuPVXR0"
-	},
-	{
-		"artist": "Speed Nova",
-		"title": "Impulse",
-		"genre": "Hard Trance",
-		"id": "5ybbS-EYuWM"
-	},
-	{
-		"artist": "Gat Decor",
-		"title": "Passion (Do You Want It Right Now)",
-		"genre": "Dance",
-		"id": "0NluFOGf-IA"
-	},
-	{
-		"artist": "Q-Tex",
-		"title": "E-Creation",
-		"genre": "Techno",
-		"id": "Hd4iMJd8i2w"
-	},
-	{
-		"artist": "Jappo & Lancinhouse",
-		"title": "Exlxaxl (Neophyte & Evil Activities Remix)",
-		"genre": "Techno",
-		"id": "NpsxPkrRgls"
-	},
-	{
-		"artist": "Diplomat",
-		"title": "Mind Winder",
-		"genre": "Techno",
-		"id": "OTIvqa2tlso"
-	},
-	{
-		"artist": "Gangstar Toons Industry",
-		"title": "Sweet And Fast",
-		"genre": "Techno",
-		"id": "yaOquY_ZLpc"
-	},
-	{
-		"artist": "DJ Devon",
-		"title": "Tough Beats (Yum-Yum Remix)",
-		"genre": "Techno",
-		"id": "47kxxLJqhhU"
-	},
-	{
-		"artist": "Critical Mass",
-		"title": "Psychotic Break",
-		"genre": "Techno",
-		"id": "t8LVSKlPqt4"
-	},
-	{
-		"artist": "Critical Mass",
-		"title": "Psychotic Break",
-		"genre": "Techno",
-		"id": "t8LVSKlPqt4"
-	},
-	{
-		"artist": "The Temper Tantrum",
-		"title": "Anthem",
-		"genre": "Techno",
-		"id": "Q5P1R_r723g"
-	},
-	{
-		"artist": "New Motion",
-		"title": "Looking for love (Brisk Remix)",
-		"genre": "Happy Hardcore",
-		"id": "Yb5VFi5BmLg"
-	},
-	{
-		"artist": "Angelmoon",
-		"title": "He's All I Want (Cappery Edit Mix)",
-		"genre": "Dance",
-		"id": "4GjUyaq_8Lw"
-	},
-	{
-		"artist": "Fanatic Cracks",
-		"title": "I try to beleive",
-		"genre": "Dance",
-		"id": "fFqxqwYwojE"
-	},
-	{
 		"artist": "K's Choice",
 		"title": "Not An Addict",
 		"genre": "Alternative",
 		"id": "Cklb7L0OA1c"
-	},
-	{
-		"artist": "Habegale",
-		"title": "I Want Your Mind",
-		"genre": "Happy Hardcore",
-		"id": "o_lGcoaMeF8"
-	},
-	{
-		"artist": "Monty & Jay Prescott",
-		"title": "Are You On Drugs",
-		"genre": "Techno",
-		"id": "DxIEsQFlJpU"
-	},
-	{
-		"artist": "Scott Brown & Omar Santana",
-		"title": "Aint It Wild",
-		"genre": "Techno",
-		"id": "mI3JfH6Pdbw"
-	},
-	{
-		"artist": "Nasenbluten",
-		"title": "Dermal Plating",
-		"genre": "Techno",
-		"id": "ZX15kAIaqWo"
-	},
-	{
-		"artist": "Lockjaw",
-		"title": "Reactor",
-		"genre": "Techno",
-		"id": "S7av9jgMjPM"
-	},
-	{
-		"artist": "DJ Psykopunk",
-		"title": "Step Da Fuck Off",
-		"genre": "Techno",
-		"id": "jBY46FEFEPE"
-	},
-	{
-		"artist": "Aggroman",
-		"title": "Cloze Your Eyez",
-		"genre": "Techno",
-		"id": "us_TC_tFrsE"
-	},
-	{
-		"artist": "The Stunned Guys",
-		"title": "Love really sucks (Roger Mix)",
-		"genre": "Techno",
-		"id": "MpZ7Dpg774E"
-	},
-	{
-		"artist": "Knightvision",
-		"title": "Knight of Visions",
-		"genre": "Techno",
-		"id": "6r048p9qriw"
-	},
-	{
-		"artist": "DJ Clarkee",
-		"title": "Hellbound",
-		"genre": "Techno",
-		"id": "UZ8UXJokh-I"
-	},
-	{
-		"artist": "Party Animals",
-		"title": "Used & Abused (Amnesia Mix)",
-		"genre": "Techno",
-		"id": "OqZnpSWxYvo"
-	},
-	{
-		"artist": "Slipmatt And Eruption",
-		"title": "Sunshine",
-		"genre": "Happy Hardcore",
-		"id": "kU0g1ruukKI"
-	},
-	{
-		"artist": "Livin Joy",
-		"title": "Dreamer",
-		"genre": "Dance",
-		"id": "19HT0w1uW4A"
-	},
-	{
-		"artist": "Candi Staton",
-		"title": "You Got the Love",
-		"genre": "Dance",
-		"id": "BvkHa7s1yGc"
-	},
-	{
-		"artist": "Wedlock",
-		"title": "Ganjaman",
-		"genre": "Techno",
-		"id": "s-lUKTpkP28"
-	},
-	{
-		"artist": "Mastervibe",
-		"title": "Teknodrome",
-		"genre": "Techno",
-		"id": "MlQFMkPnc-Q"
-	},
-	{
-		"artist": "The Destroyer",
-		"title": "My Brain Is Sick",
-		"genre": "Techno",
-		"id": "yC0UKmtJqxs"
-	},
-	{
-		"artist": "OT. Quartet",
-		"title": "Hold that sucker down",
-		"genre": "Dance",
-		"id": "3YTbfkdMO4M"
 	},
 	{
 		"artist": "Acen",
@@ -384,28 +12,82 @@
 		"id": "xhrlIvpeW0o"
 	},
 	{
-		"artist": "Tellurian",
-		"title": "Guyver",
-		"genre": "Techno",
-		"id": "vcF8n1FJs44"
+		"artist": "Angelmoon",
+		"title": "He's All I Want (Cappery Edit Mix)",
+		"genre": "Dance",
+		"id": "4GjUyaq_8Lw"
 	},
 	{
-		"artist": "Chicago Hardcore Party Force ft. DJ Dave",
-		"title": "Yo Mr. DJ",
-		"genre": "Techno",
-		"id": "uVAUw9gJfnU"
+		"artist": "Benny Benassi ft. Gary Go",
+		"title": "Cinema (Skrillex Remix)",
+		"genre": "Dance",
+		"id": "Cw0nkxFhpoM"
 	},
 	{
-		"artist": "DJ Dave & The Chicago Hardcore Party Force",
-		"title": "Music In Motion",
-		"genre": "Techno",
-		"id": "mmjfQIowCFM"
+		"artist": "Candi Staton",
+		"title": "You Got the Love",
+		"genre": "Dance",
+		"id": "BvkHa7s1yGc"
 	},
 	{
-		"artist": "Weapons",
-		"title": "Waffen",
-		"genre": "Techno",
-		"id": "m_Kt-Bgeasg"
+		"artist": "Fanatic Cracks",
+		"title": "I try to beleive",
+		"genre": "Dance",
+		"id": "fFqxqwYwojE"
+	},
+	{
+		"artist": "Gat Decor",
+		"title": "Passion (Do You Want It Right Now)",
+		"genre": "Dance",
+		"id": "0NluFOGf-IA"
+	},
+	{
+		"artist": "Jack Rokka vs. Betty Boo",
+		"title": "Take Off",
+		"genre": "Dance",
+		"id": "HJvLEho3JdU"
+	},
+	{
+		"artist": "Jack Rokka vs. Betty Boo",
+		"title": "Take Off",
+		"genre": "Dance",
+		"id": "HJvLEho3JdU"
+	},
+	{
+		"artist": "Livin Joy",
+		"title": "Dreamer",
+		"genre": "Dance",
+		"id": "19HT0w1uW4A"
+	},
+	{
+		"artist": "OT. Quartet",
+		"title": "Hold that sucker down",
+		"genre": "Dance",
+		"id": "3YTbfkdMO4M"
+	},
+	{
+		"artist": "Revox",
+		"title": "Sysex",
+		"genre": "Dance",
+		"id": "UHqwNKIJH-o"
+	},
+	{
+		"artist": "Steve Baltes",
+		"title": "3 D Girl (Remix)",
+		"genre": "Dance",
+		"id": "2NWgJX_XkZo"
+	},
+	{
+		"artist": "Striking Man",
+		"title": "Da Lower You Go",
+		"genre": "Dance",
+		"id": "gdrJBo1xGHg"
+	},
+	{
+		"artist": "Striking Man",
+		"title": "Da Lower You Go",
+		"genre": "Dance",
+		"id": "gdrJBo1xGHg"
 	},
 	{
 		"artist": "UK Apache with Shy FX",
@@ -414,10 +96,148 @@
 		"id": "Y2TDE6mZQQo"
 	},
 	{
+		"artist": "Ultracynic",
+		"title": "Nothing Is Forever",
+		"genre": "Dance",
+		"id": "K1IUiFirMkg"
+	},
+	{
+		"artist": "Urban Shakedown feat. Micky Finn",
+		"title": "Some Justice' (1991)",
+		"genre": "Dance",
+		"id": "L36m5sobhOE"
+	},
+	{
+		"artist": "William Orbit",
+		"title": "Barber's Adagio For Strings",
+		"genre": "Dance",
+		"id": "yNcdVuPVXR0"
+	},
+	{
+		"artist": "Charly Lownoise & Mental Theo",
+		"title": "Wonderfull Days (Rotterdam Mix)",
+		"genre": "Happy Hardcore",
+		"id": "tEAUvbjtsNk"
+	},
+	{
+		"artist": "Habegale",
+		"title": "I Want Your Mind",
+		"genre": "Happy Hardcore",
+		"id": "o_lGcoaMeF8"
+	},
+	{
+		"artist": "New Motion",
+		"title": "Looking for love (Brisk Remix)",
+		"genre": "Happy Hardcore",
+		"id": "Yb5VFi5BmLg"
+	},
+	{
+		"artist": "Omar Santana",
+		"title": "Come on everybody",
+		"genre": "Happy Hardcore",
+		"id": "VqKi8UTzsc0"
+	},
+	{
+		"artist": "Omar Santana",
+		"title": "Shake that ass",
+		"genre": "Happy Hardcore",
+		"id": "mPJ-urYnC5g"
+	},
+	{
+		"artist": "QTEX V'S Technosis",
+		"title": "Kaos",
+		"genre": "Happy Hardcore",
+		"id": "y567nz6rdeQ"
+	},
+	{
+		"artist": "Scott Brown",
+		"title": "Systematic",
+		"genre": "Happy Hardcore",
+		"id": "W-nc6_tbDns"
+	},
+	{
+		"artist": "Scott Brown",
+		"title": "Systematic",
+		"genre": "Happy Hardcore",
+		"id": "W-nc6_tbDns"
+	},
+	{
+		"artist": "Slipmatt And Eruption",
+		"title": "Sunshine",
+		"genre": "Happy Hardcore",
+		"id": "kU0g1ruukKI"
+	},
+	{
 		"artist": "Uranus",
 		"title": "Flowed on a vibe",
 		"genre": "Happy Hardcore",
 		"id": "djhbifckfOI"
+	},
+	{
+		"artist": "Cyclone Tracy",
+		"title": "Pianos In Trance",
+		"genre": "Hard Trance",
+		"id": "VQDssCbdAYM"
+	},
+	{
+		"artist": "E.A.S.",
+		"title": "Energy '95 - The Assembly",
+		"genre": "Hard Trance",
+		"id": "GPNdbPpT5i0"
+	},
+	{
+		"artist": "Jones & Stephenson",
+		"title": "The Second Rebirth",
+		"genre": "Hard Trance",
+		"id": "UXzdNCROZS0"
+	},
+	{
+		"artist": "M-Zone",
+		"title": "M1",
+		"genre": "Hard Trance",
+		"id": "3ScJjx7b-Cc"
+	},
+	{
+		"artist": "Speed Nova",
+		"title": "Impulse",
+		"genre": "Hard Trance",
+		"id": "5ybbS-EYuWM"
+	},
+	{
+		"artist": "Kings Of Rhythm",
+		"title": "Bomb Da Loop (Loop Da Loop's Hardstep House Mix)",
+		"genre": "House",
+		"id": "cGORCmVfhZE"
+	},
+	{
+		"artist": "Aggroman",
+		"title": "Cloze Your Eyez",
+		"genre": "Techno",
+		"id": "us_TC_tFrsE"
+	},
+	{
+		"artist": "Charly Lownoise Mental Theo",
+		"title": "Wonderfull Days (Re-Style Bass-D 2012 Remix)",
+		"genre": "Techno",
+		"id": "1TjAc5iM7Ys"
+	},
+	{
+		"artist": "Chicago Hardcore Party Force ft. DJ Dave",
+		"title": "Yo Mr. DJ",
+		"genre": "Techno",
+		"id": "uVAUw9gJfnU"
+	},
+	{
+		"artist": "Critical Mass",
+		"title": "Psychotic Break",
+		"genre": "Techno",
+		"id": "t8LVSKlPqt4"
+	},
+	{
+		"artist": "Critical Mass",
+		"title": "Psychotic Break",
+		"genre": "Techno",
+		"id": "t8LVSKlPqt4"
 	},
 	{
 		"artist": "D.O.A. Disciples of Annihilation",
@@ -426,16 +246,106 @@
 		"id": "74yQpX9aYmE"
 	},
 	{
-		"artist": "The Men In Black",
-		"title": "Guitar Man",
+		"artist": "Delta",
+		"title": "Listen",
 		"genre": "Techno",
-		"id": "0RmlukNB-kc"
+		"id": "RKE0mk-rEuc"
 	},
 	{
-		"artist": "Jones & Stephenson",
-		"title": "The Second Rebirth",
-		"genre": "Hard Trance",
-		"id": "UXzdNCROZS0"
+		"artist": "Diplomat",
+		"title": "Mind Winder",
+		"genre": "Techno",
+		"id": "OTIvqa2tlso"
+	},
+	{
+		"artist": "DJ Clarkee",
+		"title": "Hellbound",
+		"genre": "Techno",
+		"id": "UZ8UXJokh-I"
+	},
+	{
+		"artist": "DJ Clarkee and Blackeye",
+		"title": "Hard Hop",
+		"genre": "Techno",
+		"id": "NL2OVu1m7v8"
+	},
+	{
+		"artist": "Dj Dave",
+		"title": "Listen",
+		"genre": "Techno",
+		"id": "di5K_qYEnS8"
+	},
+	{
+		"artist": "DJ Dave & The Chicago Hardcore Party Force",
+		"title": "Music In Motion",
+		"genre": "Techno",
+		"id": "mmjfQIowCFM"
+	},
+	{
+		"artist": "DJ Devon",
+		"title": "Tough Beats (Yum-Yum Remix)",
+		"genre": "Techno",
+		"id": "47kxxLJqhhU"
+	},
+	{
+		"artist": "DJ Paul Elstak",
+		"title": "Rainbow In The Sky (Re-Style & Bass-D 2013 Remix)",
+		"genre": "Techno",
+		"id": "7wTBdbzKUsU"
+	},
+	{
+		"artist": "DJ Psykopunk",
+		"title": "Step Da Fuck Off",
+		"genre": "Techno",
+		"id": "jBY46FEFEPE"
+	},
+	{
+		"artist": "DJ Vibrator",
+		"title": "Da Real Criminalz",
+		"genre": "Techno",
+		"id": "uTG849a4Nw"
+	},
+	{
+		"artist": "Dj Weirdo & Dj Sim",
+		"title": "Go Get Busy",
+		"genre": "Techno",
+		"id": "OGKgDrmOgFc"
+	},
+	{
+		"artist": "Evil Maniax",
+		"title": "Psychopath",
+		"genre": "Techno",
+		"id": "y-lTWuZTM_I"
+	},
+	{
+		"artist": "Gangstar Toons Industry",
+		"title": "Sweet And Fast",
+		"genre": "Techno",
+		"id": "yaOquY_ZLpc"
+	},
+	{
+		"artist": "Genotype",
+		"title": "Extra Terrestrial",
+		"genre": "Techno",
+		"id": "cnZpq0KhdCE"
+	},
+	{
+		"artist": "Helfish",
+		"title": "The Ripper",
+		"genre": "Techno",
+		"id": "3DhRfvHRXIc"
+	},
+	{
+		"artist": "Jappo & Lancinhouse",
+		"title": "Exlxaxl (Neophyte & Evil Activities Remix)",
+		"genre": "Techno",
+		"id": "NpsxPkrRgls"
+	},
+	{
+		"artist": "Knightvision",
+		"title": "Knight of Visions",
+		"genre": "Techno",
+		"id": "6r048p9qriw"
 	},
 	{
 		"artist": "Lenny Dee",
@@ -447,13 +357,19 @@
 		"artist": "Lockjaw",
 		"title": "Reactor",
 		"genre": "Techno",
+		"id": "S7av9jgMjPM"
+	},
+	{
+		"artist": "Lockjaw",
+		"title": "Reactor",
+		"genre": "Techno",
 		"id": "-pRW14Tna50"
 	},
 	{
-		"artist": "DJ Clarkee and Blackeye",
-		"title": "Hard Hop",
+		"artist": "Mastervibe",
+		"title": "Teknodrome",
 		"genre": "Techno",
-		"id": "NL2OVu1m7v8"
+		"id": "MlQFMkPnc-Q"
 	},
 	{
 		"artist": "Mastervibe",
@@ -468,16 +384,46 @@
 		"id": "AX98HxPSiO4"
 	},
 	{
-		"artist": "R. Wagner",
-		"title": "Listen Carefully",
+		"artist": "Monty & Jay Prescott",
+		"title": "Are You On Drugs",
 		"genre": "Techno",
-		"id": "zpdZsPcrEm8"
+		"id": "DxIEsQFlJpU"
 	},
 	{
-		"artist": "Dj Weirdo & Dj Sim",
-		"title": "Go Get Busy",
+		"artist": "Nasenbluten",
+		"title": "Blows T' The Nose",
 		"genre": "Techno",
-		"id": "OGKgDrmOgFc"
+		"id": "vkdIuiHCqQw"
+	},
+	{
+		"artist": "Nasenbluten",
+		"title": "Blows T' The Nose",
+		"genre": "Techno",
+		"id": "vkdIuiHCqQw"
+	},
+	{
+		"artist": "Nasenbluten",
+		"title": "Dermal Plating",
+		"genre": "Techno",
+		"id": "ZX15kAIaqWo"
+	},
+	{
+		"artist": "Neophyte",
+		"title": "Execute",
+		"genre": "Techno",
+		"id": "cDWu8p6NMRY"
+	},
+	{
+		"artist": "Party Animals",
+		"title": "Sick S.O.B.",
+		"genre": "Techno",
+		"id": "HkTiKtQsLh0"
+	},
+	{
+		"artist": "Party Animals",
+		"title": "Used & Abused (Amnesia Mix)",
+		"genre": "Techno",
+		"id": "OqZnpSWxYvo"
 	},
 	{
 		"artist": "Paul Elstak",
@@ -486,9 +432,63 @@
 		"id": "xL-0ljO5J7o"
 	},
 	{
-		"artist": "DJ Vibrator",
-		"title": "Da Real Criminalz",
+		"artist": "Q-Tex",
+		"title": "E-Creation",
 		"genre": "Techno",
-		"id": "uTG849a4Nw"
+		"id": "Hd4iMJd8i2w"
+	},
+	{
+		"artist": "R. Wagner",
+		"title": "Listen Carefully",
+		"genre": "Techno",
+		"id": "zpdZsPcrEm8"
+	},
+	{
+		"artist": "Scott Brown & Omar Santana",
+		"title": "Aint It Wild",
+		"genre": "Techno",
+		"id": "mI3JfH6Pdbw"
+	},
+	{
+		"artist": "Tellurian",
+		"title": "Guyver",
+		"genre": "Techno",
+		"id": "vcF8n1FJs44"
+	},
+	{
+		"artist": "The Destroyer",
+		"title": "My Brain Is Sick",
+		"genre": "Techno",
+		"id": "yC0UKmtJqxs"
+	},
+	{
+		"artist": "The Men In Black",
+		"title": "Guitar Man",
+		"genre": "Techno",
+		"id": "0RmlukNB-kc"
+	},
+	{
+		"artist": "The Stunned Guys",
+		"title": "Love really sucks (Roger Mix)",
+		"genre": "Techno",
+		"id": "MpZ7Dpg774E"
+	},
+	{
+		"artist": "The Temper Tantrum",
+		"title": "Anthem",
+		"genre": "Techno",
+		"id": "Q5P1R_r723g"
+	},
+	{
+		"artist": "Weapons",
+		"title": "Waffen",
+		"genre": "Techno",
+		"id": "m_Kt-Bgeasg"
+	},
+	{
+		"artist": "Wedlock",
+		"title": "Ganjaman",
+		"genre": "Techno",
+		"id": "s-lUKTpkP28"
 	}
 ]
