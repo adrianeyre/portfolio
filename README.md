@@ -1,4 +1,4 @@
-# Website - [http://adrianeyre.co.uk](http://adrianeyre.co.uk)
+# Website - [https://adrianeyre.co.uk](https://adrianeyre.co.uk)
 #### Technologies: TypeScript, React, CircleCI, PHP, SCSS, HTML
 
 ## Index
@@ -19,4 +19,4 @@ $ npm install
 $ npm run dev
 ```
 
-[![Portfolio](http://adrianeyre.co.uk/images/projects/portfolio.png)](http://adrianeyre.co.uk/images/projects/portfolio.png "Portfolio")
+[![Portfolio](https://adrianeyre.co.uk/images/projects/portfolio.png)](https://adrianeyre.co.uk/images/projects/portfolio.png "Portfolio")
