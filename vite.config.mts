@@ -3,17 +3,16 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 /*
- * GitHub Pages serves this repository at https://adrianeyre.github.io/portfolio/,
- * so the bundle it publishes needs every asset URL prefixed with `/portfolio/`.
- * The FTP deploy in `deploy.js` puts the same build at the root of
- * adrianeyre.co.uk, where that prefix would be wrong — hence an opt-in
- * environment variable rather than a hard-coded base. The Pages job in
- * `.github/workflows/release.yml` is the only thing that sets it.
+ * Both deployments serve this bundle from a domain root, so the base stays
+ * `/`: GitHub Pages publishes to the custom domain in `public/CNAME`
+ * (adrianeyre.co.uk), and the FTP deploy in `deploy.js` uploads to the root of
+ * the same domain. There was a `/portfolio/` base here for the
+ * adrianeyre.github.io/portfolio/ URL Pages used before the custom domain —
+ * once the domain was pointed at Pages that prefix made every asset URL in
+ * index.html 404, which is a blank page.
  */
-const base = process.env.GITHUB_PAGES === 'true' ? '/portfolio/' : '/';
-
 export default defineConfig({
-  base,
+  base: '/',
   plugins: [react()],
   test: {
     globals: true,

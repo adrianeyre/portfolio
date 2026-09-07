@@ -118,14 +118,12 @@ jobs:
       - name: Report the version being published
         run: echo "Publishing version $(node -p "require('./package.json').version")"
 
-      # Pages serves this repository at /portfolio/, not at a domain root, so
-      # the bundle has to be built with that prefix or every asset URL in
-      # index.html resolves one directory too high. The FTP deploy to
-      # adrianeyre.co.uk still builds without it — see vite.config.mts.
+      # Pages serves this site from the custom domain in `public/CNAME`
+      # (adrianeyre.co.uk), so the build needs no path prefix — see
+      # vite.config.mts. Vite copies `public/` verbatim into `dist`, which is
+      # what keeps the CNAME in the artifact this job uploads.
       - name: Build
         run: npm run build
-        env:
-          GITHUB_PAGES: 'true'
 
       - name: Configure Pages
         uses: actions/configure-pages@v6
