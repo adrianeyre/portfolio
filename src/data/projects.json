@@ -586,7 +586,7 @@
 			{
 				"label": "CircleCI",
 				"image": {
-					"filename": "/images/tools/circleci.png"
+					"filename": "/images/frameworks/circleci.png"
 				}
 			},
 			{
@@ -595,7 +595,7 @@
 			{
 				"label": "SCSS"
 			}
-	],
+		],
 		"links": [
 			{
 				"text": "Repo",
@@ -605,7 +605,47 @@
 			{
 				"text": "Demo",
 				"font": "free.faKeyboard",
-				"link": "http://a-belectrical.co.uk"
+				"link": "https://a-belectrical.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Belvoir Care",
+		"body": "A single page marketing site for BelvoirCare Ltd, who provide bespoke event medical cover across the UK. Built with no build step and no dependencies — plain HTML, CSS and vanilla JavaScript — with light, dark and system themes, and verified against WCAG 2.2 Level AA using axe-core.",
+		"image": {
+			"filename": "/images/projects/belvoir-care.png",
+			"link": "https://github.com/adrianeyre/belvoircare"
+		},
+		"tags": [
+			{
+				"label": "JavaScript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "HTML",
+				"image": {
+					"filename": "/images/languages/html.png"
+				}
+			},
+			{
+				"label": "CSS",
+				"image": {
+					"filename": "/images/languages/css.png"
+				}
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/belvoircare"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://belvoircare.com/"
 			}
 		]
 	},
