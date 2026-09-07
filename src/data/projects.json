@@ -61,7 +61,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/fishy"
+				"link": "https://adrianeyre.github.io/fishy/"
 			}
 		]
 	},
@@ -101,7 +101,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/frogger"
+				"link": "https://adrianeyre.github.io/frogger/"
 			}
 		]
 	},
@@ -141,7 +141,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/space-invaders"
+				"link": "https://adrianeyre.github.io/space-invaders/"
 			}
 		]
 	},
@@ -181,7 +181,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/mine-sweeper"
+				"link": "https://adrianeyre.github.io/mine-sweeper/"
 			}
 		]
 	},
@@ -221,7 +221,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/tetris"
+				"link": "https://adrianeyre.github.io/tetris/"
 			}
 		]
 	},
@@ -261,7 +261,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/connect4"
+				"link": "https://adrianeyre.github.io/connect4/"
 			}
 		]
 	},
@@ -301,7 +301,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/ant-run"
+				"link": "https://adrianeyre.github.io/ant-run/"
 			}
 		]
 	},
@@ -341,7 +341,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/pipeline"
+				"link": "https://adrianeyre.github.io/pipeline/"
 			}
 		]
 	},
@@ -381,7 +381,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/racer"
+				"link": "https://adrianeyre.github.io/racer/"
 			}
 		]
 	},
@@ -434,11 +434,6 @@
 				"text": "Server",
 				"font": "brand.faGithub",
 				"link": "https://github.com/adrianeyre/battleships-server"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/battle-ships"
 			}
 		]
 	},
@@ -478,7 +473,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/chuckie-egg"
+				"link": "https://adrianeyre.github.io/chuckie-egg/"
 			}
 		]
 	},
@@ -524,7 +519,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/free-cell"
+				"link": "https://adrianeyre.github.io/free-cell/"
 			}
 		]
 	},
@@ -558,7 +553,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faGamepad",
-				"link": "http://adrianeyre.co.uk/pairs"
+				"link": "https://adrianeyre.github.io/pairs/"
 			}
 		]
 	},
@@ -591,7 +586,7 @@
 			{
 				"label": "CircleCI",
 				"image": {
-					"filename": "/images/tools/circleci.png"
+					"filename": "/images/frameworks/circleci.png"
 				}
 			},
 			{
@@ -600,7 +595,7 @@
 			{
 				"label": "SCSS"
 			}
-	],
+		],
 		"links": [
 			{
 				"text": "Repo",
@@ -610,7 +605,47 @@
 			{
 				"text": "Demo",
 				"font": "free.faKeyboard",
-				"link": "http://a-belectrical.co.uk"
+				"link": "https://a-belectrical.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Belvoir Care",
+		"body": "A single page marketing site for BelvoirCare Ltd, who provide bespoke event medical cover across the UK. Built with no build step and no dependencies — plain HTML, CSS and vanilla JavaScript — with light, dark and system themes, and verified against WCAG 2.2 Level AA using axe-core.",
+		"image": {
+			"filename": "/images/projects/belvoir-care.png",
+			"link": "https://github.com/adrianeyre/belvoircare"
+		},
+		"tags": [
+			{
+				"label": "JavaScript",
+				"image": {
+					"filename": "/images/languages/javascript.png"
+				}
+			},
+			{
+				"label": "HTML",
+				"image": {
+					"filename": "/images/languages/html.png"
+				}
+			},
+			{
+				"label": "CSS",
+				"image": {
+					"filename": "/images/languages/css.png"
+				}
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/belvoircare"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://belvoircare.com/"
 			}
 		]
 	},
@@ -998,7 +1033,7 @@
 			{
 				"text": "Demo",
 				"font": "free.faKeyboard",
-				"link": "http://adrianeyre.co.uk"
+				"link": "https://adrianeyre.co.uk"
 			}
 		]
 	}
