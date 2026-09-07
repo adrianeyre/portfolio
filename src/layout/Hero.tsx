@@ -1,7 +1,5 @@
 import Reveal from '../components/Reveal';
-
-const scrollTo = (id: string) =>
-  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+import { scrollToSection } from '../utils/scrollToSection';
 
 const Hero = () => (
   <header className="hero">
@@ -10,8 +8,12 @@ const Hero = () => (
       <h1>Adrian Eyre</h1>
       <p>Building modern applications using AI and cloud-native tooling.</p>
       <div className="hero-actions">
-        <button onClick={() => scrollTo('projects')}>View Projects</button>
-        <button className="secondary" onClick={() => scrollTo('about')}>About Me</button>
+        <button type="button" onClick={() => scrollToSection('projects')}>
+          View Projects
+        </button>
+        <button type="button" className="secondary" onClick={() => scrollToSection('about')}>
+          About Me
+        </button>
       </div>
     </Reveal>
     <Reveal className="hero-side" delay={0.12}>

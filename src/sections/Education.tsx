@@ -2,6 +2,7 @@ import Reveal from '../components/Reveal';
 import SectionHeader from '../components/SectionHeader';
 import TitleImage from '../components/TitleImage';
 import educationData from '../data/education.json';
+import { assetUrl } from '../utils/assetUrl';
 import experienceData from '../data/experience.json';
 
 const Education = () => (
@@ -40,7 +41,7 @@ const Education = () => (
             {item.subTitle && item.subTitle.map((subTitleItem) => <p key={subTitleItem}>{subTitleItem}</p>)}
             <p>{item.body}</p>
             <p>{item.images?.map((image) => (
-              <img key={image.filename} className="image-item" src={image.filename} alt={image.title} />
+              <img key={image.filename} className="image-item" src={assetUrl(image.filename)} alt={image.title} />
             ))}</p>
             <ul>{item.points?.map((point) => <li key={point}>{point}</li>)}</ul>
           </article>

@@ -18,34 +18,62 @@ const Codewars = () => {
         <SectionHeader tag="Codewars" title="Authored Katas" />
       </Reveal>
       {showAll && (
-        <button className="kata-expand-btn kata-expand-btn--up" onClick={() => setShowAll(false)} aria-label="Show less">
-          ▲ show less
+        <button
+          type="button"
+          className="kata-expand-btn kata-expand-btn--up"
+          onClick={() => setShowAll(false)}
+        >
+          <span aria-hidden="true">▲</span> Show fewer katas
         </button>
       )}
       <div className="grid project-grid">
-        {visibleKatas.map((item, index) => (
-          <Reveal key={index} delay={(index % 3) * 0.08}>
-            <article
-              className={`project-card kata-card${expanded === index ? ' expanded' : ''}`}
-              onClick={() => setExpanded(expanded === index ? null : index)}
-            >
-              <div className="project-body">
-                <div className="kata-content">
-                  <h3>{item.title}</h3>
-                  <div className="tag-list">
-                    {item.tags?.map((tag) => <span key={tag}>{tag}</span>)}
+        {visibleKatas.map((item, index) => {
+          const isExpanded = expanded === index;
+          const bodyId = `kata-body-${index}`;
+          return (
+            <Reveal key={index} delay={(index % 3) * 0.08}>
+              <article
+                className={`project-card kata-card${isExpanded ? ' expanded' : ''}`}
+              >
+                <div className="project-body">
+                  <div className="kata-content">
+                    {/*
+                      The whole card used to be click-to-expand via `onClick` on
+                      a non-interactive element, which no keyboard could reach.
+                      The toggle now lives on a real button inside the heading,
+                      so it is focusable, operable with Enter and Space, and
+                      announces its state (WCAG 2.1.1, 4.1.2).
+                    */}
+                    <h3>
+                      <button
+                        type="button"
+                        className="kata-toggle"
+                        aria-expanded={isExpanded}
+                        aria-controls={bodyId}
+                        onClick={() => setExpanded(isExpanded ? null : index)}
+                      >
+                        {item.title}
+                      </button>
+                    </h3>
+                    <div className="tag-list">
+                      {item.tags?.map((tag) => <span key={tag}>{tag}</span>)}
+                    </div>
+                    <p id={bodyId}>{item.body}</p>
                   </div>
-                  <p>{item.body}</p>
+                  <ProjectActions links={item.links} />
                 </div>
-                <ProjectActions links={item.links} />
-              </div>
-            </article>
-          </Reveal>
-        ))}
+              </article>
+            </Reveal>
+          );
+        })}
       </div>
       {!showAll && (
-        <button className="kata-expand-btn kata-expand-btn--down" onClick={() => setShowAll(true)} aria-label="Show more">
-          ▼ show more
+        <button
+          type="button"
+          className="kata-expand-btn kata-expand-btn--down"
+          onClick={() => setShowAll(true)}
+        >
+          <span aria-hidden="true">▼</span> Show all {codewarsData.length} katas
         </button>
       )}
     </section>
