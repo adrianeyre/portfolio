@@ -1821,14 +1821,16 @@ a {
    every engine. */
 .section,
 #main-content,
-#experience {
+#experience,
+#education {
   scroll-margin-top: 130px;
 }
 
 @media (max-width: 900px) {
   .section,
   #main-content,
-  #experience {
+  #experience,
+  #education {
     scroll-margin-top: 180px;
   }
 }
