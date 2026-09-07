@@ -1,0 +1,5 @@
+# Every change in this repository is reviewed by the owner.
+#
+# GitHub matches the *last* pattern a file hits, so the catch-all comes first
+# and any narrower rule added later will take precedence over it.
+*       @adrianeyre

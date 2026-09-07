@@ -1,6 +1,7 @@
 import Reveal from '../components/Reveal';
 import SectionHeader from '../components/SectionHeader';
 import skillsData from '../data/skills.json';
+import { assetUrl } from '../utils/assetUrl';
 import languageImagesData from '../data/languageImages.json';
 import frameworksImagesData from '../data/frameworksImages.json';
 
@@ -25,7 +26,9 @@ const Skills = () => (
         <div className="pill-grid">
           {languageImagesData.map((item) => (
             <span key={item.label}>
-              {item.image?.filename && <img className="title-image" src={item.image.filename} alt={item.label} />}
+              {item.image?.filename && (
+                <img className="title-image" src={assetUrl(item.image.filename)} alt="" />
+              )}
               {item.label}
             </span>
           ))}
@@ -36,7 +39,9 @@ const Skills = () => (
         <div className="pill-grid">
           {frameworksImagesData.map((item) => (
             <span key={item.label}>
-              {item.image?.filename && <img className="title-image" src={item.image.filename} alt={item.label} />}
+              {item.image?.filename && (
+                <img className="title-image" src={assetUrl(item.image.filename)} alt="" />
+              )}
               {item.label}
             </span>
           ))}

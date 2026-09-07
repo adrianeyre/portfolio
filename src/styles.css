@@ -77,7 +77,13 @@
   --nav-bg: rgba(244, 247, 251, 0.9);
 
   /* Accents */
-  --accent: #168a88;
+  /*
+   * Darkened from #168a88. That value sat at 3.85:1 against --bg, which
+   * passes for borders and focus rings (1.4.11) but not for the body text,
+   * links and headings that also use this token (1.4.3 wants 4.5:1). This one
+   * measures 5.2:1 on the light background.
+   */
+  --accent: #0f7371;
   --accent-blue: #2f6fd8;
   --accent-text: #0b6f6c;
   --accent-pill: #0b6f6c;
@@ -102,6 +108,18 @@
 
 html {
   scroll-behavior: smooth;
+  /*
+   * The navigation bar is sticky at the top of the viewport, so an anchor or
+   * a programmatic focus move lands *underneath* it unless the scroll stops
+   * short. WCAG 2.2 added 2.4.11 Focus Not Obscured for exactly this.
+   */
+  scroll-padding-top: 130px;
+}
+
+@media (max-width: 900px) {
+  html {
+    scroll-padding-top: 180px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -328,36 +346,53 @@ a {
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  /* It is a <ul> for semantics; the bullets and indent are not wanted. */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links > li {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links::-webkit-scrollbar {
   display: none;
 }
 
-.nav-links button {
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
   border: none;
   background: transparent;
   color: var(--text-muted);
+  text-decoration: none;
+  /* Keeps every nav target above the 24x24 minimum (WCAG 2.5.8). */
+  min-height: 44px;
   padding: 10px 14px;
   border-radius: 999px;
   font-size: 0.95rem;
   font-weight: 500;
   white-space: nowrap;
+  cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-.nav-links button:hover {
+.nav-links a:hover {
   background: var(--accent-soft);
   color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.nav-links button.active {
+.nav-links a.active {
   background: var(--accent-soft);
   color: var(--accent-text);
   font-weight: 600;
 }
 
-.nav-links button:focus-visible {
+.nav-links a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
@@ -1698,4 +1733,225 @@ a {
   .cookie-actions .cookie-btn {
     flex: 1;
   }
+}
+
+
+/* ============================ Accessibility ============================= */
+
+/*
+ * Skip link. Off-screen until focused, then pinned over the header so it is
+ * unmissable — a skip link that stays invisible while focused is worse than
+ * none, because sighted keyboard users lose track of where they are
+ * (WCAG 2.4.1, 2.4.7).
+ */
+.skip-link {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -150%);
+  z-index: 500;
+  padding: 14px 22px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface);
+  color: var(--text);
+  border: 2px solid var(--accent);
+  border-radius: 0 0 14px 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: var(--shadow-nav);
+  transition: transform 0.18s ease;
+}
+
+.skip-link:focus {
+  transform: translate(-50%, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: none;
+  }
+}
+
+/* The <main> takes programmatic focus from the skip link; it is not a control,
+   so it should not draw a focus ring of its own. */
+.content:focus {
+  outline: none;
+}
+
+/*
+ * A single visible focus indicator for anything not styled individually
+ * above — including controls rendered by react-slick, which this stylesheet
+ * does not otherwise own. `:focus-visible` keeps it off mouse clicks.
+ */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/*
+ * Minimum target size (WCAG 2.5.8, new in 2.2). react-slick renders its dots
+ * and arrows small by default; these bring every one of them to at least
+ * 24x24 CSS pixels.
+ */
+.slick-dots li,
+.slick-dots li button {
+  width: 24px;
+  height: 24px;
+}
+
+.slick-dots li button:before {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--accent);
+  opacity: 1;
+}
+
+/* Section headings are the scroll destinations; give them the same clearance
+   as the document, since scroll-padding does not apply to scrollIntoView in
+   every engine. */
+.section,
+#main-content,
+#experience,
+#education {
+  scroll-margin-top: 130px;
+}
+
+@media (max-width: 900px) {
+  .section,
+  #main-content,
+  #experience,
+  #education {
+    scroll-margin-top: 180px;
+  }
+}
+
+/* ---- Accessibility statement modal ---- */
+.a11y-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 16px 0 24px;
+  padding: 14px 16px;
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.a11y-status p {
+  margin: 0;
+}
+
+.a11y-status-ic {
+  display: inline-flex;
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 1.25rem;
+  color: var(--accent-text);
+}
+
+/* ---- Social links (now a list) ---- */
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list .social-icon {
+  margin-right: 0;
+}
+
+/* ---- Carousel pause control (WCAG 2.2.2) ---- */
+.image-block-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.carousel-pause {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.carousel-pause:hover:not(:disabled) {
+  background: var(--accent-soft);
+  border-color: var(--border-strong);
+}
+
+.carousel-pause:disabled {
+  cursor: default;
+  color: var(--text-muted);
+}
+
+.carousel-pause span {
+  display: inline-flex;
+  font-size: 1rem;
+}
+
+/* ---- Thumbnails are buttons now, not bare images ---- */
+.thumbnail-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* ---- Kata heading toggle ---- */
+.kata-toggle {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.kata-toggle:hover {
+  color: var(--accent-text);
+}
+
+.kata-expand-btn {
+  min-height: 44px;
+}
+
+/* GitHub mark sitting in front of the repository link in the footer. */
+.footer-repo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 24px;
+}
+
+.footer-repo-link svg {
+  font-size: 1.05em;
+  flex-shrink: 0;
 }

@@ -1,0 +1,152 @@
+name: Release
+
+# Adapted from the same workflow in adrianeyre/scumm.
+#
+# Two entry points, deliberately doing different amounts of work:
+#
+#   * `pull_request` — runs `verify` only. This is the trigger that was
+#     commented out in the original and is switched back on here, so every PR
+#     into master is typechecked, tested and built before it can be merged.
+#   * `push` to master — the full run: verify, then semantic-release, then
+#     build and publish the site to GitHub Pages. A merged PR arrives here as
+#     a push, so this is what actually ships.
+#
+# Releasing and deploying are guarded on the event below rather than split
+# into a second file, so the PR run and the release run are provably the same
+# verification steps.
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+# Never cancel a release in flight, and never run two at once: the second half
+# of this workflow publishes the site, and a cancelled deploy would leave it
+# serving a mix of two builds. Pull request runs are only checks, so those are
+# safe to cancel when a branch is pushed again.
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 26
+          cache: npm
+
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run test
+      - run: npm run build
+
+  release:
+    name: Semantic release
+    # Skipped on pull requests: a PR run is a check, not a publication.
+    if: github.event_name != 'pull_request'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # create tags, commits and releases
+      issues: write # comment on released issues
+      pull-requests: write # comment on released PRs
+      id-token: write # provenance, if npm publishing is ever enabled
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          # semantic-release needs the full history and tags to work out the
+          # last release and the commits since.
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 26
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: npx semantic-release
+
+  # The site is built and published here, at the end of the release, rather
+  # than from a workflow of its own. The footer shows the running version, and
+  # semantic-release writes that version into package.json during the job
+  # above — so anything that builds earlier, or from the triggering commit,
+  # publishes a site labelled with the *previous* release's number.
+  build-site:
+    name: Build the site
+    if: github.event_name != 'pull_request'
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the released commit
+        uses: actions/checkout@v7
+        with:
+          # `master`, not the commit that triggered the run: the version bump
+          # semantic-release just pushed is one commit further on, and that
+          # bump is the whole reason this job waits for the release.
+          ref: master
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 26
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Report the version being published
+        run: echo "Publishing version $(node -p "require('./package.json').version")"
+
+      # Pages serves this repository at /portfolio/, not at a domain root, so
+      # the bundle has to be built with that prefix or every asset URL in
+      # index.html resolves one directory too high. The FTP deploy to
+      # adrianeyre.co.uk still builds without it — see vite.config.mts.
+      - name: Build
+        run: npm run build
+        env:
+          GITHUB_PAGES: 'true'
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy-site:
+    name: Deploy to GitHub Pages
+    if: github.event_name != 'pull_request'
+    needs: build-site
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write # publish the artifact
+      id-token: write # the deployment's provenance token
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -10,15 +10,25 @@ import Codewars from './sections/Codewars';
 import Interests from './sections/Interests';
 import Contact from './sections/Contact';
 import CookieConsent from './components/CookieConsent';
+import AccessibilityStatement from './components/AccessibilityStatement';
 
 const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
 
 const App = () => (
   <>
+    {/*
+      First tab stop on the page, visually hidden until focused. Without it a
+      keyboard or screen-reader user has to walk the whole navigation bar on
+      every visit (WCAG 2.4.1 Bypass Blocks).
+    */}
+    <a className="skip-link" href="#main-content">
+      Skip to main content
+    </a>
     <div className="page-shell">
       <Hero />
       <NavBar />
-      <main className="content">
+      {/* `tabIndex={-1}` lets the skip link move focus here, not just scroll. */}
+      <main className="content" id="main-content" tabIndex={-1}>
         <About />
         <Skills />
         <Projects screenWidth={screenWidth} />
@@ -31,6 +41,7 @@ const App = () => (
     </div>
     <Footer />
     <CookieConsent />
+    <AccessibilityStatement />
   </>
 );
 
