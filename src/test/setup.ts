@@ -9,6 +9,7 @@ if (!('IntersectionObserver' in globalThis)) {
   class MockIntersectionObserver implements IntersectionObserver {
     readonly root = null;
     readonly rootMargin = '';
+    readonly scrollMargin = '';
     readonly thresholds = [];
     observe = vi.fn();
     unobserve = vi.fn();
