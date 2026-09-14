@@ -1,5 +1,171 @@
 [
 	{
+		"title": "Portfolio",
+		"body": "A portfolio site with information about my career, education and experiences, written in React, TypeScript, SCSS and PHP.",
+		"image": {
+			"filename": "/images/projects/portfolio.png",
+			"link": "https://github.com/adrianeyre/portfolio"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "CSS"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "GitHub Actions"
+			},
+			{
+				"label": "WCAG 2.2 AA"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/portfolio"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Multi Game Interpreter",
+		"body": "MGI is a browser based interpreter for eight classic adventure game engine families — LucasArts SCUMM, Sierra AGI and SCI, Adventure Soft AGOS, and Revolution’s Sky, Lure and both Broken Swords. Written from scratch in TypeScript against the original file formats, it runs the games’ own bytecode on a canvas with no plugins, no WebAssembly and no server. It ships with no game data: you point it at files from a copy you own, and nothing leaves your machine. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/multi-game-interpreter.png",
+			"link": "https://github.com/adrianeyre/multi-game-interpreter"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "Canvas"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/multi-game-interpreter"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://adrianeyre.github.io/multi-game-interpreter"
+			}
+		]
+	},
+	{
+		"title": "Belvoir Care",
+		"body": "A single page marketing site for BelvoirCare Ltd, who provide bespoke event medical cover across the UK. Built with no build step and no dependencies — plain HTML, CSS and vanilla JavaScript — with light, dark and system themes, and verified against WCAG 2.2 Level AA using axe-core.",
+		"image": {
+			"filename": "/images/projects/belvoir-care.png",
+			"link": "https://github.com/adrianeyre/belvoircare"
+		},
+		"tags": [
+			{
+				"label": "JavaScript"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			},
+			{
+				"label": "WCAG 2.2 AA"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/belvoircare"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://belvoircare.com/"
+			}
+		]
+	},
+	{
+		"title": "A B Electrical & Maintenance",
+		"body": "A site for a local business, written in React, TypeScript, and SCSS.",
+		"image": {
+			"filename": "/images/projects/ab-electrical.png",
+			"link": "https://github.com/adrianeyre/a-b-electrical"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CircleCI"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/a-b-electrical"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://a-belectrical.co.uk"
+			}
+		]
+	},
+	{
 		"title": "Pacman",
 		"body": "Remake of the classic arcade game of Pacman. This windows application is fully tested with NUnit and written in C#. It emulated the original Pacman games where ghosts will chase you around the playing board.",
 		"image": {
@@ -507,80 +673,6 @@
 		]
 	},
 	{
-		"title": "A B Electrical & Maintenance",
-		"body": "A site for a local business, written in React, TypeScript, and SCSS.",
-		"image": {
-			"filename": "/images/projects/ab-electrical.png",
-			"link": "https://github.com/adrianeyre/a-b-electrical"
-		},
-		"tags": [
-			{
-				"label": "TypeScript"
-			},
-			{
-				"label": "React"
-			},
-			{
-				"label": "Jest"
-			},
-			{
-				"label": "SCSS"
-			},
-			{
-				"label": "HTML"
-			},
-			{
-				"label": "CircleCI"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/a-b-electrical"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faKeyboard",
-				"link": "https://a-belectrical.co.uk"
-			}
-		]
-	},
-	{
-		"title": "Belvoir Care",
-		"body": "A single page marketing site for BelvoirCare Ltd, who provide bespoke event medical cover across the UK. Built with no build step and no dependencies — plain HTML, CSS and vanilla JavaScript — with light, dark and system themes, and verified against WCAG 2.2 Level AA using axe-core.",
-		"image": {
-			"filename": "/images/projects/belvoir-care.png",
-			"link": "https://github.com/adrianeyre/belvoircare"
-		},
-		"tags": [
-			{
-				"label": "JavaScript"
-			},
-			{
-				"label": "HTML"
-			},
-			{
-				"label": "CSS"
-			},
-			{
-				"label": "WCAG 2.2 AA"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/belvoircare"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faKeyboard",
-				"link": "https://belvoircare.com/"
-			}
-		]
-	},
-	{
 		"title": "Chitter Challenge",
 		"body": "A Twitter clone that will allow the users to post messages to a public board. You are able to reply and like other peoples comments. This is written in Ruby and uses the Sinatra web framework to host the pages.",
 		"image": {
@@ -805,98 +897,6 @@
 				"text": "Demo",
 				"font": "free.faKeyboard",
 				"link": "https://adrianeyre-battle.herokuapp.com"
-			}
-		]
-	},
-	{
-		"title": "Portfolio",
-		"body": "A portfolio site with information about my career, education and experiences, written in React, TypeScript, SCSS and PHP.",
-		"image": {
-			"filename": "/images/projects/portfolio.png",
-			"link": "https://github.com/adrianeyre/portfolio"
-		},
-		"tags": [
-			{
-				"label": "TypeScript"
-			},
-			{
-				"label": "React"
-			},
-			{
-				"label": "Vite"
-			},
-			{
-				"label": "Vitest"
-			},
-			{
-				"label": "CSS"
-			},
-			{
-				"label": "HTML"
-			},
-			{
-				"label": "GitHub Actions"
-			},
-			{
-				"label": "WCAG 2.2 AA"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/portfolio"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faKeyboard",
-				"link": "https://adrianeyre.co.uk"
-			}
-		]
-	},
-	{
-		"title": "Multi Game Interpreter",
-		"body": "MGI is a browser based interpreter for eight classic adventure game engine families — LucasArts SCUMM, Sierra AGI and SCI, Adventure Soft AGOS, and Revolution’s Sky, Lure and both Broken Swords. Written from scratch in TypeScript against the original file formats, it runs the games’ own bytecode on a canvas with no plugins, no WebAssembly and no server. It ships with no game data: you point it at files from a copy you own, and nothing leaves your machine. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
-		"image": {
-			"filename": "/images/projects/multi-game-interpreter.png",
-			"link": "https://github.com/adrianeyre/multi-game-interpreter"
-		},
-		"tags": [
-			{
-				"label": "TypeScript"
-			},
-			{
-				"label": "Canvas"
-			},
-			{
-				"label": "Vite"
-			},
-			{
-				"label": "Vitest"
-			},
-			{
-				"label": "AI Assisted"
-			},
-			{
-				"label": "AI Full Lifecycle"
-			},
-			{
-				"label": "HTML"
-			},
-			{
-				"label": "CSS"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/multi-game-interpreter"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faGamepad",
-				"link": "https://adrianeyre.github.io/multi-game-interpreter"
 			}
 		]
 	}
