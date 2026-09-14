@@ -936,6 +936,128 @@ a {
 }
 
 /* Music I Like */
+/* ===== Playlists (channels, above the music browser) ===== */
+.playlist-header {
+  margin-top: 40px;
+}
+
+.playlist-header h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 600;
+}
+
+.playlist-header p {
+  margin: 8px 0 0;
+  color: var(--text-muted);
+}
+
+.playlist-grid {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.playlist-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  height: 100%;
+  padding: 20px;
+  min-height: 44px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.playlist-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-action);
+}
+
+.playlist-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.playlist-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.playlist-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.playlist-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.playlist-handle {
+  font-size: 0.85rem;
+  color: var(--accent-text);
+  word-break: break-word;
+}
+
+.playlist-description {
+  margin-top: 4px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.playlist-go {
+  margin-left: auto;
+  flex: 0 0 auto;
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.playlist-card:hover .playlist-go {
+  transform: translate(2px, -2px);
+  color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .playlist-card,
+  .playlist-go {
+    transition: none;
+  }
+
+  .playlist-card:hover {
+    transform: none;
+  }
+
+  .playlist-card:hover .playlist-go {
+    transform: none;
+  }
+}
+
 .music-header {
   margin-top: 40px;
 }
@@ -1428,6 +1550,7 @@ a {
   .split-grid,
   .skill-shelves,
   .music-grid,
+  .playlist-grid,
   .contact-grid {
     grid-template-columns: 1fr;
   }
