@@ -1,51 +1,5 @@
 [
 	{
-		"title": "Portfolio",
-		"body": "A portfolio site with information about my career, education and experiences, written in React, TypeScript, SCSS and PHP.",
-		"image": {
-			"filename": "/images/projects/portfolio.png",
-			"link": "https://github.com/adrianeyre/portfolio"
-		},
-		"tags": [
-			{
-				"label": "TypeScript"
-			},
-			{
-				"label": "React"
-			},
-			{
-				"label": "Vite"
-			},
-			{
-				"label": "Vitest"
-			},
-			{
-				"label": "CSS"
-			},
-			{
-				"label": "HTML"
-			},
-			{
-				"label": "GitHub Actions"
-			},
-			{
-				"label": "WCAG 2.2 AA"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/portfolio"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faKeyboard",
-				"link": "https://adrianeyre.co.uk"
-			}
-		]
-	},
-	{
 		"title": "Multi Game Interpreter",
 		"body": "MGI is a browser based interpreter for eight classic adventure game engine families — LucasArts SCUMM, Sierra AGI and SCI, Adventure Soft AGOS, and Revolution’s Sky, Lure and both Broken Swords. Written from scratch in TypeScript against the original file formats, it runs the games’ own bytecode on a canvas with no plugins, no WebAssembly and no server. It ships with no game data: you point it at files from a copy you own, and nothing leaves your machine. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
 		"image": {
@@ -897,6 +851,52 @@
 				"text": "Demo",
 				"font": "free.faKeyboard",
 				"link": "https://adrianeyre-battle.herokuapp.com"
+			}
+		]
+	},
+	{
+		"title": "Portfolio",
+		"body": "A portfolio site with information about my career, education and experiences, written in React, TypeScript, SCSS and PHP.",
+		"image": {
+			"filename": "/images/projects/portfolio.png",
+			"link": "https://github.com/adrianeyre/portfolio"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "CSS"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "GitHub Actions"
+			},
+			{
+				"label": "WCAG 2.2 AA"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/portfolio"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faKeyboard",
+				"link": "https://adrianeyre.co.uk"
 			}
 		]
 	}
