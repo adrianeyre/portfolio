@@ -1,0 +1,14 @@
+[
+	{
+		"name": "Chase AI",
+		"handle": "@Chase-H-AI",
+		"description": "Practical AI engineering — agents, Claude Code and getting real work out of modern tooling.",
+		"link": "https://www.youtube.com/@Chase-H-AI"
+	},
+	{
+		"name": "Matt Pocock",
+		"handle": "@mattpocockuk",
+		"description": "Deep, no-nonsense TypeScript: types, generics and the patterns behind them.",
+		"link": "https://www.youtube.com/@mattpocockuk"
+	}
+]

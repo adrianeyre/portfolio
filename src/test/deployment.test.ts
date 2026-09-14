@@ -4,6 +4,9 @@ import cname from '../../public/CNAME?raw';
 import releaseWorkflow from '../../.github/workflows/release.yml?raw';
 import viteConfigSource from '../../vite.config.mts?raw';
 import { assetUrl } from '../utils/assetUrl';
+import indexHtml from '../../index.html?raw';
+import manifest from '../../public/manifest.json';
+import robots from '../../public/robots.txt?raw';
 import aboutData from '../data/about.json';
 import codewarsData from '../data/codewars.json';
 import educationData from '../data/education.json';
@@ -13,6 +16,7 @@ import interestsImagesData from '../data/interestsImages.json';
 import languageImagesData from '../data/languageImages.json';
 import linksData from '../data/links.json';
 import musicData from '../data/music.json';
+import projectsData from '../data/projects.json';
 import voluntaryData from '../data/voluntary.json';
 
 /*
@@ -56,9 +60,11 @@ describe('deployment', () => {
 
 /*
  * Every site-absolute image path in the data files that actually gets rendered
- * must exist in `public/`. `projects.json` is deliberately excluded: its
- * `tags[].image` entries are never rendered (Projects shows text-only pills),
- * and a number of them name icons this repo has never held.
+ * must exist in `public/`. `projects.json` used to be excluded because its
+ * `tags[].image` entries named icons this repo has never held; those entries
+ * are gone (Projects renders text-only pills), so it is checked like the rest.
+ * The match is anchored to the opening quote so that remote screenshot URLs,
+ * which also contain `/images/`, are left to the host that serves them.
  */
 describe('rendered image data', () => {
   // Eager-globbed at build time, so this needs no filesystem access.
@@ -78,6 +84,7 @@ describe('rendered image data', () => {
     'languageImages.json': languageImagesData,
     'links.json': linksData,
     'music.json': musicData,
+    'projects.json': projectsData,
     'voluntary.json': voluntaryData,
   };
 
@@ -86,8 +93,66 @@ describe('rendered image data', () => {
   });
 
   it.each(Object.entries(renderedData))('%s references only images that exist', (_name, data) => {
-    const paths = [...new Set(JSON.stringify(data).match(/\/images\/[^"\\]+/g) ?? [])];
+    const paths = [...new Set(JSON.stringify(data).match(/(?<=")\/images\/[^"\\]+/g) ?? [])];
 
     expect(paths.filter((path) => !publicImages.has(path))).toEqual([]);
+  });
+});
+
+/*
+ * The head is the whole of this site's SEO surface: one page, rendered by JS,
+ * so a crawler that ignores the script sees only what is here. These guard the
+ * mistakes that silently cost ranking rather than breaking the build — a
+ * social card pointing at http:// on an https-only domain, a missing
+ * canonical, and an icon served under the wrong type.
+ */
+describe('SEO head', () => {
+  it('keeps the tab title to the bare name', () => {
+    expect(indexHtml).toMatch(/<title>Adrian Eyre<\/title>/);
+  });
+
+  it('has a description long enough to be used as a snippet', () => {
+    const description = indexHtml.match(/name="description"\s+content="([^"]+)"/s)?.[1]
+      ?? indexHtml.match(/name="description"[\s\S]*?content="([^"]+)"/)?.[1];
+
+    expect(description).toBeDefined();
+    expect(description!.length).toBeGreaterThan(70);
+  });
+
+  it('declares a canonical URL on the custom domain', () => {
+    expect(indexHtml).toMatch(/<link rel="canonical" href="https:\/\/adrianeyre\.co\.uk\/" \/>/);
+  });
+
+  it('never points a social card or canonical at http://', () => {
+    expect(indexHtml).not.toMatch(/content="http:\/\/adrianeyre/);
+    expect(indexHtml).not.toMatch(/href="http:\/\/adrianeyre/);
+  });
+
+  it('serves each icon as the type it actually is', () => {
+    // The .ico was once declared as image/svg+xml, which a browser may act on.
+    expect(indexHtml).toMatch(/<link rel="icon" href="\/favicon\.ico" sizes="32x32" \/>/);
+    expect(indexHtml).toMatch(/<link rel="icon" type="image\/svg\+xml" href="\/favicon\.svg" \/>/);
+  });
+
+  it('ships valid Person structured data', () => {
+    const block = indexHtml.match(
+      /<script type="application\/ld\+json">([\s\S]*?)<\/script>/,
+    )?.[1];
+
+    expect(block).toBeDefined();
+
+    const graph = JSON.parse(block!)['@graph'] as { '@type': string; name?: string }[];
+    const person = graph.find((node) => node['@type'] === 'Person');
+
+    expect(person?.name).toBe('Adrian Eyre');
+  });
+
+  it('points robots.txt at the sitemap', () => {
+    expect(robots).toMatch('Sitemap: https://adrianeyre.co.uk/sitemap.xml');
+  });
+
+  it('gives the manifest a scope and icons', () => {
+    expect(manifest.start_url).toBe('/');
+    expect(manifest.icons.length).toBeGreaterThan(0);
   });
 });

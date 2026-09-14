@@ -1,0 +1,13 @@
+The fonts in this directory are redistributed under the SIL Open Font
+License, Version 1.1, which permits bundling and serving them from this
+domain.
+
+  Inter          — Copyright (c) The Inter Project Authors
+                   https://github.com/rsms/inter
+  Space Grotesk  — Copyright (c) The Space Grotesk Project Authors
+                   https://github.com/floriankarsten/space-grotesk
+
+Full licence text: https://openfontlicense.org/open-font-license-official-text/
+
+Both files are the latin-subset variable builds served by Google Fonts, saved
+here so the site makes no third-party request to render its own text.

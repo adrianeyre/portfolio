@@ -27,7 +27,7 @@ const Skills = () => (
           {languageImagesData.map((item) => (
             <span key={item.label}>
               {item.image?.filename && (
-                <img className="title-image" src={assetUrl(item.image.filename)} alt="" />
+                <img className="title-image" src={assetUrl(item.image.filename)} alt="" loading="lazy" decoding="async" />
               )}
               {item.label}
             </span>
@@ -40,7 +40,7 @@ const Skills = () => (
           {frameworksImagesData.map((item) => (
             <span key={item.label}>
               {item.image?.filename && (
-                <img className="title-image" src={assetUrl(item.image.filename)} alt="" />
+                <img className="title-image" src={assetUrl(item.image.filename)} alt="" loading="lazy" decoding="async" />
               )}
               {item.label}
             </span>

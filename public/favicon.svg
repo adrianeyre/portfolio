@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="AE">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5bc0be"/>
+      <stop offset="1" stop-color="#4c90f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#g)"/>
+  <text x="256" y="256" fill="#04070f"
+        font-family="'Space Grotesk','Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif"
+        font-size="248" font-weight="700" letter-spacing="-8"
+        text-anchor="middle" dominant-baseline="central">AE</text>
+</svg>

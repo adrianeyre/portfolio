@@ -1,7 +1,9 @@
 import { FaGithub } from 'react-icons/fa';
 import packageJson from '../../package.json';
-import { OPEN_COOKIE_POLICY_EVENT } from '../components/CookieConsent';
-import { OPEN_ACCESSIBILITY_EVENT } from '../components/AccessibilityStatement';
+import {
+  OPEN_ACCESSIBILITY_EVENT,
+  OPEN_COOKIE_POLICY_EVENT,
+} from '../components/overlayEvents';
 
 const { version, author } = packageJson;
 const thisYear = new Date().getFullYear();

@@ -11,7 +11,9 @@ const CONSENT_KEY = 'cookie-consent';
  * to open the cookie policy modal, mirroring belvoircare's multiple
  * `[data-cookie-open]` triggers.
  */
-export const OPEN_COOKIE_POLICY_EVENT = 'open-cookie-policy';
+import { OPEN_COOKIE_POLICY_EVENT } from './overlayEvents';
+
+export { OPEN_COOKIE_POLICY_EVENT };
 
 const consentStored = (): boolean => {
   try {

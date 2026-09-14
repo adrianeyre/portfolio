@@ -1,3 +1,31 @@
+/*
+ * Self-hosted webfonts. These were two render-blocking requests to
+ * fonts.googleapis.com, which cost about 1.2s of blocked render on a
+ * throttled mobile connection: the stylesheet had to arrive before the
+ * browser could paint, and only then did it learn where the font files were.
+ * Both families ship as a single variable woff2 covering every weight used
+ * here, so this is two cacheable same-origin requests and no blocking CSS.
+ *
+ * Inter and Space Grotesk are both SIL Open Font License 1.1 (see OFL.txt).
+ */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/inter-latin-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('/fonts/space-grotesk-latin-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   /* Type system — modern-minimal: Inter for UI/body, Space Grotesk for display. */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -936,6 +964,161 @@ a {
 }
 
 /* Music I Like */
+/* ===== Scroll reveal (replaces Framer Motion's whileInView) ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-offset, 24px));
+  transition:
+    opacity var(--reveal-duration, 0.5s) ease-out var(--reveal-delay, 0s),
+    transform var(--reveal-duration, 0.5s) ease-out var(--reveal-delay, 0s);
+}
+
+.reveal[data-reveal='shown'] {
+  opacity: 1;
+  transform: none;
+}
+
+/*
+ * Already in the viewport on load: final state, and no transition to sit
+ * through. The delay is dropped too, so a stagger never holds back the
+ * content a visitor is already looking at.
+ */
+.reveal[data-reveal='immediate'] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ===== Playlists (channels, above the music browser) ===== */
+.playlist-header {
+  margin-top: 40px;
+}
+
+.playlist-header h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 600;
+}
+
+.playlist-header p {
+  margin: 8px 0 0;
+  color: var(--text-muted);
+}
+
+.playlist-grid {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.playlist-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  height: 100%;
+  padding: 20px;
+  min-height: 44px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.playlist-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-action);
+}
+
+.playlist-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.playlist-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.playlist-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.playlist-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.playlist-handle {
+  font-size: 0.85rem;
+  color: var(--accent-text);
+  word-break: break-word;
+}
+
+.playlist-description {
+  margin-top: 4px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.playlist-go {
+  margin-left: auto;
+  flex: 0 0 auto;
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.playlist-card:hover .playlist-go {
+  transform: translate(2px, -2px);
+  color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .playlist-card,
+  .playlist-go {
+    transition: none;
+  }
+
+  .playlist-card:hover {
+    transform: none;
+  }
+
+  .playlist-card:hover .playlist-go {
+    transform: none;
+  }
+}
+
 .music-header {
   margin-top: 40px;
 }
@@ -1428,6 +1611,7 @@ a {
   .split-grid,
   .skill-shelves,
   .music-grid,
+  .playlist-grid,
   .contact-grid {
     grid-template-columns: 1fr;
   }
