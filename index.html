@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Adrian Eyre | Modern Portfolio</title>
-    <meta name="description" content="Adrian Eyre" />
-
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      The tab title is the bare name by request. Search engines weight the
+      title heavily, so the role and stack keywords that would normally sit
+      here live in the description, the H1 and the JSON-LD below instead.
+    -->
+    <title>Adrian Eyre</title>
+    <meta
+      name="description"
+      content="Lead Software Developer with 15+ years in TypeScript, React, Node, C# .NET and AWS, embedding AI-assisted development across the delivery lifecycle."
+    />
+    <link rel="canonical" href="https://adrianeyre.co.uk/" />
+    <meta name="author" content="Adrian Eyre" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04070f" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f9fc" />
 
     <!--
       Resolve the theme before first paint to avoid a flash of the wrong theme.
@@ -31,30 +43,122 @@
       })();
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
+
+    <!--
+      Fonts are self-hosted (see the @font-face block in styles.css). Preloaded
+      here so they are in flight alongside the CSS rather than after it.
+    -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="/fonts/inter-latin-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/space-grotesk-latin-var.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
 
-    <meta itemProp="name" content="Adrian Eyre" />
-    <meta itemProp="description" content="Portfolio site of Adrian Eyre" />
-    <meta itemProp="image" content="http://adrianeyre.co.uk/images/meta/banner.png" />
+    <!-- Social cards. These were http://, which the https site never matches. -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Adrian Eyre" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:url" content="https://adrianeyre.co.uk/" />
+    <meta property="og:title" content="Adrian Eyre — Lead Software Developer" />
+    <meta
+      property="og:description"
+      content="15+ years building TypeScript, React, Node, C# .NET and AWS applications, and embedding AI-assisted development across the delivery lifecycle."
+    />
+    <meta property="og:image" content="https://adrianeyre.co.uk/images/meta/banner.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="627" />
+    <meta property="og:image:alt" content="Adrian Eyre — Lead Software Developer" />
+    <meta property="profile:first_name" content="Adrian" />
+    <meta property="profile:last_name" content="Eyre" />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://adrianeyre.co.uk/" />
-    <meta property="og:title" content="Adrian Eyre" />
-    <meta property="og:description" content="Portfolio site of Adrian Eyre" />
-    <meta property="og:image" content="http://adrianeyre.co.uk/images/meta/banner.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Adrian Eyre — Lead Software Developer" />
+    <meta
+      name="twitter:description"
+      content="15+ years building TypeScript, React, Node, C# .NET and AWS applications, and embedding AI-assisted development across the delivery lifecycle."
+    />
+    <meta name="twitter:image" content="https://adrianeyre.co.uk/images/meta/banner.png" />
+    <meta name="twitter:image:alt" content="Adrian Eyre — Lead Software Developer" />
 
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="http://adrianeyre.co.uk/" />
-    <meta property="twitter:title" content="Adrian Eyre" />
-    <meta property="twitter:description" content="Portfolio site of Adrian Eyre" />
-    <meta property="twitter:image" content="http://adrianeyre.co.uk/images/meta/banner.png" />
+    <!--
+      The .ico was previously served as type="image/svg+xml", which is a lie a
+      browser may act on. Each icon is now declared as what it actually is.
+    -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <!--
+      Structured data. This is what lets Google show a name, role and profile
+      links rather than guessing them out of the page copy.
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://adrianeyre.co.uk/#person",
+            "name": "Adrian Eyre",
+            "givenName": "Adrian",
+            "familyName": "Eyre",
+            "url": "https://adrianeyre.co.uk/",
+            "image": "https://adrianeyre.co.uk/images/meta/banner.png",
+            "jobTitle": "Lead Software Developer",
+            "description": "Lead Software Developer with 15+ years building TypeScript, React, Node, C# .NET and AWS applications, and embedding AI-assisted development across the delivery lifecycle.",
+            "address": { "@type": "PostalAddress", "addressCountry": "GB" },
+            "knowsAbout": [
+              "TypeScript",
+              "JavaScript",
+              "React",
+              "Node.js",
+              "C# .NET",
+              "Python",
+              "Ruby",
+              "AWS",
+              "Azure",
+              "Docker",
+              "CI/CD",
+              "Software Architecture",
+              "Technical Leadership",
+              "AI-assisted development"
+            ],
+            "sameAs": [
+              "https://github.com/adrianeyre",
+              "https://www.linkedin.com/in/adrianeyre/",
+              "https://www.codewars.com/users/adrian.eyre"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://adrianeyre.co.uk/#website",
+            "url": "https://adrianeyre.co.uk/",
+            "name": "Adrian Eyre",
+            "inLanguage": "en-GB",
+            "publisher": { "@id": "https://adrianeyre.co.uk/#person" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://adrianeyre.co.uk/#profilepage",
+            "url": "https://adrianeyre.co.uk/",
+            "name": "Adrian Eyre",
+            "isPartOf": { "@id": "https://adrianeyre.co.uk/#website" },
+            "about": { "@id": "https://adrianeyre.co.uk/#person" }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
