@@ -6,7 +6,9 @@ import Modal from './Modal';
  * Custom event the footer dispatches on `window` to open the accessibility
  * statement, matching the pattern the cookie policy already uses.
  */
-export const OPEN_ACCESSIBILITY_EVENT = 'open-accessibility-statement';
+import { OPEN_ACCESSIBILITY_EVENT } from './overlayEvents';
+
+export { OPEN_ACCESSIBILITY_EVENT };
 
 /**
  * The site's accessibility statement, modelled on the belvoircare and

@@ -111,6 +111,8 @@ const ImageBlock = ({ data, screenWidth: screenWidthProp }: IImageBlockProps) =>
                 }
                 className="thumbnail"
                 src={assetUrl(image.filename)}
+                loading="lazy"
+                decoding="async"
               />
             </button>
           </div>

@@ -19,7 +19,7 @@ interface TitleImageProps {
  */
 const TitleImage = ({ filename, link, alt }: TitleImageProps) => {
   if (!filename) return null;
-  const img = <img className="title-image" src={assetUrl(filename)} alt="" />;
+  const img = <img className="title-image" src={assetUrl(filename)} alt="" loading="lazy" decoding="async" />;
   return link ? (
     <a href={link} target="_blank" rel="noreferrer" aria-label={`${alt} (opens in a new tab)`}>
       {img}

@@ -42,7 +42,12 @@ const Projects = ({ screenWidth }: ProjectsProps) => {
             <div key={index} className="project-slide">
               <article className="project-card">
                 <div className="project-image">
-                  <img src={assetUrl(project.image.filename)} alt={`Screenshot of ${project.title}`} />
+                  <img
+                    src={assetUrl(project.image.filename)}
+                    alt={`Screenshot of ${project.title}`}
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </div>
                 <div className="project-tags">
                   <div className="pill-grid">

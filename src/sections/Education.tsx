@@ -21,7 +21,14 @@ const Education = () => (
             {item.subTitle && item.subTitle.map((subTitleItem) => <p key={subTitleItem}>{subTitleItem}</p>)}
             <p>{item.body}</p>
             <p>{item.images?.map((image) => (
-              <img key={image.filename} className="image-item" src={assetUrl(image.filename)} alt={image.title} />
+              <img
+                key={image.filename}
+                className="image-item"
+                src={assetUrl(image.filename)}
+                alt={image.title}
+                loading="lazy"
+                decoding="async"
+              />
             ))}</p>
             <ul>{item.points?.map((point) => <li key={point}>{point}</li>)}</ul>
           </article>

@@ -1,3 +1,31 @@
+/*
+ * Self-hosted webfonts. These were two render-blocking requests to
+ * fonts.googleapis.com, which cost about 1.2s of blocked render on a
+ * throttled mobile connection: the stylesheet had to arrive before the
+ * browser could paint, and only then did it learn where the font files were.
+ * Both families ship as a single variable woff2 covering every weight used
+ * here, so this is two cacheable same-origin requests and no blocking CSS.
+ *
+ * Inter and Space Grotesk are both SIL Open Font License 1.1 (see OFL.txt).
+ */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/inter-latin-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('/fonts/space-grotesk-latin-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   /* Type system — modern-minimal: Inter for UI/body, Space Grotesk for display. */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -936,6 +964,39 @@ a {
 }
 
 /* Music I Like */
+/* ===== Scroll reveal (replaces Framer Motion's whileInView) ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-offset, 24px));
+  transition:
+    opacity var(--reveal-duration, 0.5s) ease-out var(--reveal-delay, 0s),
+    transform var(--reveal-duration, 0.5s) ease-out var(--reveal-delay, 0s);
+}
+
+.reveal[data-reveal='shown'] {
+  opacity: 1;
+  transform: none;
+}
+
+/*
+ * Already in the viewport on load: final state, and no transition to sit
+ * through. The delay is dropped too, so a stagger never holds back the
+ * content a visitor is already looking at.
+ */
+.reveal[data-reveal='immediate'] {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* ===== Playlists (channels, above the music browser) ===== */
 .playlist-header {
   margin-top: 40px;
