@@ -8,10 +8,10 @@
 		},
 		"tags": [
 			{
-				"label": "C#",
-				"image": {
-					"filename": "/images/languages/dotnet.png"
-				}
+				"label": "C#"
+			},
+			{
+				"label": ".NET"
 			},
 			{
 				"label": "NUnit"
@@ -34,19 +34,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "Jest"
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
 			},
 			{
 				"label": "SCSS"
@@ -74,19 +71,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "Jest"
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
 			},
 			{
 				"label": "SCSS"
@@ -114,19 +108,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "Jest"
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
 			},
 			{
 				"label": "SCSS"
@@ -154,19 +145,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "Jest"
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
 			},
 			{
 				"label": "SCSS"
@@ -194,19 +182,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "Jest"
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
 			},
 			{
 				"label": "SCSS"
@@ -234,19 +219,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "Jest"
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
 			},
 			{
 				"label": "SCSS"
@@ -274,19 +256,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "Jest"
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
 			},
 			{
 				"label": "SCSS"
@@ -314,19 +293,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "Jest"
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
 			},
 			{
 				"label": "SCSS"
@@ -354,19 +330,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "Jest"
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
 			},
 			{
 				"label": "SCSS"
@@ -394,28 +367,19 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "Express",
-				"image": {
-					"filename": "/images/frameworks/express.png"
-				}
+				"label": "Node"
 			},
 			{
-				"label": "Socket.io",
-				"image": {
-					"filename": "/images/frameworks/socketio.png"
-				}
+				"label": "Express"
+			},
+			{
+				"label": "Socket.io"
 			},
 			{
 				"label": "Jest"
@@ -446,19 +410,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "Jest"
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
 			},
 			{
 				"label": "SCSS"
@@ -486,28 +447,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "Canvas",
-				"image": {
-					"filename": "/images/frameworks/canvas.png"
-				}
+				"label": "Canvas"
 			},
 			{
-				"label": "Mocha",
-				"image": {
-					"filename": "/images/frameworks/mocha.png"
-				}
+				"label": "Vite"
 			},
 			{
-				"label": "Chai",
-				"image": {
-					"filename": "/images/frameworks/chai.png"
-				}
+				"label": "Vitest"
 			}
 		],
 		"links": [
@@ -532,16 +481,16 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "Canvas",
-				"image": {
-					"filename": "/images/frameworks/canvas.png"
-				}
+				"label": "Canvas"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
 			}
 		],
 		"links": [
@@ -566,34 +515,22 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "JavaScript",
-				"image": {
-					"filename": "/images/languages/javascript.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "Jest"
 			},
 			{
-				"label": "CircleCI",
-				"image": {
-					"filename": "/images/frameworks/circleci.png"
-				}
+				"label": "SCSS"
 			},
 			{
 				"label": "HTML"
 			},
 			{
-				"label": "SCSS"
+				"label": "CircleCI"
 			}
 		],
 		"links": [
@@ -618,22 +555,16 @@
 		},
 		"tags": [
 			{
-				"label": "JavaScript",
-				"image": {
-					"filename": "/images/languages/javascript.png"
-				}
+				"label": "JavaScript"
 			},
 			{
-				"label": "HTML",
-				"image": {
-					"filename": "/images/languages/html.png"
-				}
+				"label": "HTML"
 			},
 			{
-				"label": "CSS",
-				"image": {
-					"filename": "/images/languages/css.png"
-				}
+				"label": "CSS"
+			},
+			{
+				"label": "WCAG 2.2 AA"
 			}
 		],
 		"links": [
@@ -658,49 +589,28 @@
 		},
 		"tags": [
 			{
-				"label": "Ruby",
-				"image": {
-					"filename": "/images/languages/ruby.png"
-				}
+				"label": "Ruby"
+			},
+			{
+				"label": "Sinatra"
 			},
 			{
 				"label": "RSpec"
 			},
 			{
-				"label": "Sinatra",
-				"image": {
-					"filename": "/images/frameworks/sinatra.png"
-				}
+				"label": "PostgreSQL"
 			},
 			{
-				"label": "Heroku",
-				"image": {
-					"filename": "/images/tools/heroku.png"
-				}
+				"label": "DataMapper"
+			},
+			{
+				"label": "Heroku"
 			},
 			{
 				"label": "HTML"
 			},
 			{
-				"label": "CSS",
-				"image": {
-					"filename": "/images/frameworks/css.png"
-				}
-			},
-			{
-				"label": "Postgres",
-				"image": {
-					"filename": "/images/languages/postgres.png"
-				}
-			},
-			{
-				"label": "SQL",
-				"image": {
-					"filename": "/images/languages/sql.png"
-				}
-			},
-			{
-				"label": "DataMapper"
+				"label": "CSS"
 			}
 		],
 		"links": [
@@ -725,70 +635,40 @@
 		},
 		"tags": [
 			{
-				"label": "C#",
-				"image": {
-					"filename": "/images/languages/csharp.png"
-				}
+				"label": "C#"
 			},
 			{
-				"label": "Ruby",
-				"image": {
-					"filename": "/images/languages/ruby.png"
-				}
+				"label": "Ruby"
 			},
 			{
-				"label": "Javascript",
-				"image": {
-					"filename": "/images/languages/javascript.png"
-				}
+				"label": "JavaScript"
 			},
 			{
-				"label": "Swift",
-				"image": {
-					"filename": "/images/languages/swift.png"
-				}
+				"label": "Swift"
 			},
 			{
-				"label": "Node"
+				"label": "Unity"
 			},
 			{
-				"label": "Unity",
-				"image": {
-					"filename": "/images/frameworks/unity.png"
-				}
+				"label": "Vuforia"
+			},
+			{
+				"label": "Sinatra"
 			},
 			{
 				"label": "RSpec"
 			},
 			{
-				"label": "Capybara",
-				"image": {
-					"filename": "/images/languages/capybara.png"
-				}
+				"label": "PostgreSQL"
 			},
 			{
-				"label": "Mocha",
-				"image": {
-					"filename": "/images/languages/mocha.png"
-				}
+				"label": "MongoDB"
 			},
 			{
-				"label": "PostgresSQL",
-				"image": {
-					"filename": "/images/frameworks/postgressql.png"
-				}
+				"label": "Xcode"
 			},
 			{
-				"label": "MongoDB",
-				"image": {
-					"filename": "/images/languages/mongodb.png"
-				}
-			},
-			{
-				"label": "XCode",
-				"image": {
-					"filename": "/images/languages/xcode.png"
-				}
+				"label": "Heroku"
 			}
 		],
 		"links": [
@@ -808,37 +688,22 @@
 		},
 		"tags": [
 			{
-				"label": "Javascript",
-				"image": {
-					"filename": "/images/languages/javascript.png"
-				}
+				"label": "JavaScript"
 			},
 			{
-				"label": "Jasmine",
-				"image": {
-					"filename": "/images/languages/jasmine.png"
-				}
+				"label": "jQuery"
 			},
 			{
-				"label": "Heroku",
-				"image": {
-					"filename": "/images/languages/heroku.png"
-				}
-			},
-			{
-				"label": "XCode",
-				"image": {
-					"filename": "/images/languages/xcode.png"
-				}
+				"label": "Jasmine"
 			},
 			{
 				"label": "HTML"
 			},
 			{
-				"label": "CSS",
-				"image": {
-					"filename": "/images/languages/css.png"
-				}
+				"label": "CSS"
+			},
+			{
+				"label": "Heroku"
 			}
 		],
 		"links": [
@@ -863,55 +728,31 @@
 		},
 		"tags": [
 			{
-				"label": "Ruby",
-				"image": {
-					"filename": "/images/languages/ruby.png"
-				}
+				"label": "Ruby"
 			},
 			{
-				"label": "Javascript",
-				"image": {
-					"filename": "/images/languages/javascript.png"
-				}
+				"label": "Rails"
+			},
+			{
+				"label": "JavaScript"
 			},
 			{
 				"label": "RSpec"
 			},
 			{
-				"label": "Rails",
-				"image": {
-					"filename": "/images/languages/rubyonrails.png"
-				}
+				"label": "PostgreSQL"
 			},
 			{
-				"label": "Postgres SQL",
-				"image": {
-					"filename": "/images/languages/postgressql.png"
-				}
+				"label": "AWS S3"
 			},
 			{
-				"label": "SQL",
-				"image": {
-					"filename": "/images/languages/sql.png"
-				}
+				"label": "Facebook OAuth"
 			},
 			{
-				"label": "Heroku",
-				"image": {
-					"filename": "/images/languages/heroku.png"
-				}
+				"label": "Heroku"
 			},
 			{
-				"label": "Facebook",
-				"image": {
-					"filename": "/images/languages/facebook.png"
-				}
-			},
-			{
-				"label": "AWS",
-				"image": {
-					"filename": "/images/languages/aws.png"
-				}
+				"label": "HTML"
 			}
 		],
 		"links": [
@@ -929,38 +770,26 @@
 	},
 	{
 		"title": "Battle",
-		"body": "A web application for a two player battle style game using Javascript and JQuery.",
+		"body": "A two player battle game built as a Makers Academy pair programming project. Written in Ruby on the Sinatra web framework, and driven out with RSpec, Capybara and Selenium WebDriver.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/battle/master/images/ScreenShot1.png",
 			"link": "https://github.com/adrianeyre/battle"
 		},
 		"tags": [
 			{
-				"label": "Ruby",
-				"image": {
-					"filename": "/images/languages/ruby.png"
-				}
+				"label": "Ruby"
+			},
+			{
+				"label": "Sinatra"
 			},
 			{
 				"label": "RSpec"
 			},
 			{
-				"label": "Sinatra",
-				"image": {
-					"filename": "/images/languages/sinatra.png"
-				}
+				"label": "Capybara"
 			},
 			{
-				"label": "Capybara",
-				"image": {
-					"filename": "/images/languages/capybara.png"
-				}
-			},
-			{
-				"label": "Selenium Webdriver",
-				"image": {
-					"filename": "/images/languages/selenium.png"
-				}
+				"label": "Selenium"
 			},
 			{
 				"label": "HTML"
@@ -988,40 +817,28 @@
 		},
 		"tags": [
 			{
-				"label": "TypeScript",
-				"image": {
-					"filename": "/images/languages/typescript.png"
-				}
+				"label": "TypeScript"
 			},
 			{
-				"label": "JavaScript",
-				"image": {
-					"filename": "/images/languages/javascript.png"
-				}
+				"label": "React"
 			},
 			{
-				"label": "React",
-				"image": {
-					"filename": "/images/frameworks/react.png"
-				}
+				"label": "Vite"
 			},
 			{
-				"label": "CircleCI",
-				"image": {
-					"filename": "/images/frameworks/circleci.png"
-				}
+				"label": "Vitest"
+			},
+			{
+				"label": "CSS"
 			},
 			{
 				"label": "HTML"
 			},
 			{
-				"label": "SCSS"
+				"label": "GitHub Actions"
 			},
 			{
-				"label": "PHP",
-				"image": {
-					"filename": "/images/languages/php.png"
-				}
+				"label": "WCAG 2.2 AA"
 			}
 		],
 		"links": [
@@ -1034,6 +851,52 @@
 				"text": "Demo",
 				"font": "free.faKeyboard",
 				"link": "https://adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Multi Game Interpreter",
+		"body": "MGI is a browser based interpreter for eight classic adventure game engine families — LucasArts SCUMM, Sierra AGI and SCI, Adventure Soft AGOS, and Revolution’s Sky, Lure and both Broken Swords. Written from scratch in TypeScript against the original file formats, it runs the games’ own bytecode on a canvas with no plugins, no WebAssembly and no server. It ships with no game data: you point it at files from a copy you own, and nothing leaves your machine. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/multi-game-interpreter.png",
+			"link": "https://github.com/adrianeyre/multi-game-interpreter"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "Canvas"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/multi-game-interpreter"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://adrianeyre.github.io/multi-game-interpreter"
 			}
 		]
 	}
