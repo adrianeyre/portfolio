@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Multi Game Interpreter",
-		"body": "MGI is a browser based interpreter for eight classic adventure game engine families — LucasArts SCUMM, Sierra AGI and SCI, Adventure Soft AGOS, and Revolution’s Sky, Lure and both Broken Swords. Written from scratch in TypeScript against the original file formats, it runs the games’ own bytecode on a canvas with no plugins, no WebAssembly and no server. It ships with no game data: you point it at files from a copy you own, and nothing leaves your machine. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"body": "A browser based interpreter for eight classic adventure game engine families — LucasArts SCUMM, Sierra AGI and SCI, Adventure Soft AGOS, and Revolution’s Sky, Lure and both Broken Swords. Written from scratch in TypeScript against the original file formats, it runs the games’ own bytecode on a canvas with no plugins, no WebAssembly and no server. It ships with no game data: you point it at files from a copy you own, and nothing leaves your machine. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
 		"image": {
 			"filename": "/images/projects/multi-game-interpreter.png",
 			"link": "https://github.com/adrianeyre/multi-game-interpreter"
@@ -47,7 +47,7 @@
 	},
 	{
 		"title": "Belvoir Care",
-		"body": "A single page marketing site for BelvoirCare Ltd, who provide bespoke event medical cover across the UK. Built with no build step and no dependencies — plain HTML, CSS and vanilla JavaScript — with light, dark and system themes, and verified against WCAG 2.2 Level AA using axe-core.",
+		"body": "A single page marketing site for BelvoirCare Ltd, who have provided bespoke event medical cover across the UK since 2012. Built deliberately with no build step and no dependencies — plain HTML, CSS and vanilla JavaScript — with light, dark and system themes applied before first paint so the page never flashes the wrong one. Verified against WCAG 2.2 Level AA with axe-core at 1440px, 390px and 320px.",
 		"image": {
 			"filename": "/images/projects/belvoir-care.png",
 			"link": "https://github.com/adrianeyre/belvoircare"
@@ -81,7 +81,7 @@
 	},
 	{
 		"title": "A B Electrical & Maintenance",
-		"body": "A site for a local business, written in React, TypeScript, and SCSS.",
+		"body": "A marketing site for a local electrical and maintenance contractor, giving the business somewhere to send customers and be found from. A single responsive page in TypeScript and React with SCSS, built and deployed through CircleCI.",
 		"image": {
 			"filename": "/images/projects/ab-electrical.png",
 			"link": "https://github.com/adrianeyre/a-b-electrical"
@@ -121,7 +121,7 @@
 	},
 	{
 		"title": "Pacman",
-		"body": "Remake of the classic arcade game of Pacman. This windows application is fully tested with NUnit and written in C#. It emulated the original Pacman games where ghosts will chase you around the playing board.",
+		"body": "A desktop remake of the arcade original, written in C# as a Windows application and unit tested throughout with NUnit. The ghosts hunt the player around the maze as they do in the 1980 game.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/pacman/master/images/screenshot1.png",
 			"link": "https://github.com/adrianeyre/pacman"
@@ -147,7 +147,7 @@
 	},
 	{
 		"title": "Fishy",
-		"body": "You are a little fish minding your own business swimming around the sea, but in order to survive you must eat other fish! Be aware, you may only eat fish that are small than yourself. Larger fish will eat you up, so you must avoid them at all costs!",
+		"body": "A browser game about the food chain: eat the fish smaller than you, and avoid everything bigger, because the rule cuts both ways. Written in TypeScript and React with SCSS, built with Vite, and published to GitHub Pages on every release.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/fishy/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/fishy"
@@ -184,7 +184,7 @@
 	},
 	{
 		"title": "Frogger",
-		"body": "A game where you navigate frogger through the traffic and across the river to arrive safely home. This a web based application that is mobile device friendly and adapts its size accordingly",
+		"body": "A remake of the arcade original — get the frog across the traffic and over the river to reach home. Built in TypeScript and React with Vite, and it measures the screen it loads on and scales to fit, so it plays on a phone as readily as a desktop.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/frogger/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/frogger"
@@ -221,7 +221,7 @@
 	},
 	{
 		"title": "Space Invaders",
-		"body": "A remake of the classic game Space Invaders where you navigate your ship to attack the space aliens. This a web based application that is mobile device friendly and adapts its size accordingly",
+		"body": "The fixed shooter remade for the browser: a laser cannon tracking left and right along the bottom, rows of aliens descending and speeding up as their numbers fall, and bunkers that erode from both sides as the shooting goes on. TypeScript, React 19 and Vite, with Vitest over the game logic.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/space-invaders/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/space-invaders"
@@ -258,7 +258,7 @@
 	},
 	{
 		"title": "Mine Sweeper",
-		"body": "The purpose of the game is to open all the cells of the board which do not contain a bomb. You lose if you set off a bomb cell. Every non-bomb cell you open will tell you the total number of bombs in the eight neighboring cells. Once you are sure that a cell contains a bomb, you can right-click to put a flag it on it as a reminder. Once you have flagged all the bombs around an open cell, you can quickly open the remaining non-bomb cells by shift-clicking on the cell.",
+		"body": "The classic logic puzzle rebuilt for the browser: open every cell that is not a mine, working out where they are from the neighbour counts alone. Flagging and shift-click chording both work as they did in the original. TypeScript and React with Vite and SCSS.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/mine-sweeper/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/mine-sweeper"
@@ -295,7 +295,7 @@
 	},
 	{
 		"title": "Tetris",
-		"body": "You have to make full horizontal lines with the different shaped blocks that fall into the game area. Full lines will then disappear and provide points. The more lines you make at the same time, the more points you earn.",
+		"body": "The falling-block puzzle in TypeScript and React — fill a horizontal line to clear it, and clear several at once for considerably more. Built with Vite, and released and deployed to GitHub Pages straight from the commit history by semantic-release.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/tetris/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/tetris"
@@ -332,7 +332,7 @@
 	},
 	{
 		"title": "Connect 4",
-		"body": "To win Connect Four you must be the first player to get four of your colored checkers in a row either horizontally, vertically or diagonally.",
+		"body": "Two-player Connect Four in the browser: drop counters down the grid and be the first to line four up horizontally, vertically or diagonally. Written in TypeScript with React 19, Vite and SCSS.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/connect4/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/connect4"
@@ -369,7 +369,7 @@
 	},
 	{
 		"title": "Ant Run",
-		"body": "You must navigate the ant around the board using the paths. Falling into an empty block will kill your ant. Use the holes around the edges of the board to jump to the opposite block.",
+		"body": "A maze runner where you steer an ant along a network of paths and a single step into empty space kills it. The holes around the edge of the board teleport it to the opposite side, which is as often the way out as the way into trouble. TypeScript, React, Vite and SCSS.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/ant-run/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/ant-run"
@@ -406,7 +406,7 @@
 	},
 	{
 		"title": "Pipeline",
-		"body": "This is a remake of two of my favourite games for the BBC Micro, Repton and Pipeline. You have to navigate Repton around the playing field collecting all of the stars. There are plenty of puzzles to solve including gates, keys, boulders and teleports.",
+		"body": "A remake of two BBC Micro favourites, Pipeline and Repton: guide Repton around the field collecting every star while working through gates, keys, boulders and teleports. Built in TypeScript and React 19, and it ships its own level editor — press `e` in play to edit the map, `m` to see it whole.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/pipeline/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/pipeline"
@@ -443,7 +443,7 @@
 	},
 	{
 		"title": "Racer",
-		"body": "The aim of the game is to navigate your car around the track avoiding the grass and other cars. Beware of the oil spills that will cause you to slip!",
+		"body": "A top-down racing game: hold the car on the track, off the grass and past the other traffic, while oil spills take the grip out from under you. TypeScript and React with Vite and SCSS.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/racer/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/racer"
@@ -480,7 +480,7 @@
 	},
 	{
 		"title": "Battleships",
-		"body": "Each player places the 5 ships somewhere on their board.  The ships can only be placed vertically or horizontally. Diagonal placement is not allowed. No part of a ship may hang off the edge of the board.  Ships may not overlap each other.  No ships may be placed on another ship. Once the guessing begins, the players may not move the ships.",
+		"body": "Two-player Battleships split across a game and a server of its own. Each player places five ships, then the guessing starts and neither can move afterwards. Moves travel between the two browsers over Socket.io on an Express back end, with the front end in TypeScript and React.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/battleships-game/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/battleships-game"
@@ -523,7 +523,7 @@
 	},
 	{
 		"title": "Chuckie Egg",
-		"body": "As Hen-House Harry, the player must collect the twelve eggs positioned in each level, before a countdown timer reaches zero. In addition there are piles of seed which may be collected to increase points and stop the countdown timer for a while, but will otherwise be eaten by hens that patrol the level, causing them to pause. If the player touches a hen or falls through a gap in the bottom of the level, he loses a life. Each level is made of solid platforms, ladders and occasionally lift platforms that constantly move upwards but upon leaving the top of the screen will reappear at the bottom. Hitting the top of the screen while on one of these lifts, however, will also cause the player to lose a life.",
+		"body": "A remake of the 1983 platformer. As Hen-House Harry you collect twelve eggs a level against a countdown, dodging the hens patrolling the platforms and the lifts that will carry you off the top of the screen if you ride them too far. TypeScript, React 19 and Vite.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/chuckie-egg/master/src/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/chuckie-egg"
@@ -560,7 +560,7 @@
 	},
 	{
 		"title": "Free Cell",
-		"body": "A remake of the classic game Free Cell using vanilla TypeScript.",
+		"body": "The solitaire variant where almost every deal can be won, rebuilt in vanilla TypeScript on a canvas with no framework at all. The rules — card, deck, hand and stack — are kept deliberately free of DOM calls so they can be tested in Node without a browser, and ESLint enforces that separation rather than trusting it.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/free-cell/master/images/screenshot1.png",
 			"link": "https://github.com/adrianeyre/free-cell"
@@ -594,7 +594,7 @@
 	},
 	{
 		"title": "Pairs",
-		"body": "A remake of the classic game Pairs using vanilla TypeScript.",
+		"body": "The memory game: turn two cards at a time, keep the pairs that match and put the rest back. Written in vanilla TypeScript on a canvas with no framework, built with Vite and tested with Vitest.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/pairs/master/images/screenshot1.png",
 			"link": "https://github.com/adrianeyre/pairs"
@@ -628,7 +628,7 @@
 	},
 	{
 		"title": "Chitter Challenge",
-		"body": "A Twitter clone that will allow the users to post messages to a public board. You are able to reply and like other peoples comments. This is written in Ruby and uses the Sinatra web framework to host the pages.",
+		"body": "A Twitter clone built as a solo project at Makers Academy: post to a public board, reply to other people and like what they wrote. Ruby on the Sinatra framework, with DataMapper over a Postgres database and RSpec throughout.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/chitter-challenge/master/images/screenshot1.png",
 			"link": "https://github.com/adrianeyre/chitter-challenge"
@@ -674,7 +674,7 @@
 	},
 	{
 		"title": "Treasure Hunt",
-		"body": "A mobile phone application project using augmented reality where the user has to navigate the real world on a treasure hunt. You are given clues on where to find the next point on your treasure map. The application uses GPS to let the user know how far away from each point they are. The mobile application is written in C#, Ruby, JavaScript, Swift and Unity.",
+		"body": "A team-built augmented reality treasure hunt for mobile. Players follow clues to real-world points of interest, with GPS telling them how far they are from the next one and the camera showing what is waiting there. Unity and Vuforia drive the AR, C# and Swift the device, and a Ruby and Sinatra back end sits over Postgres and MongoDB. The final group project of a Makers Academy cohort.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/treasure-hunt/master/images/GameFlow.png",
 			"link": "https://github.com/adrianeyre/treasure-hunt"
@@ -727,7 +727,7 @@
 	},
 	{
 		"title": "Bowling Challenge",
-		"body": "A web page application to display bowling scores. The user can either enter their own score or randomise a result. The web application is written in Javascript and JQuery.",
+		"body": "A ten-pin bowling scorecard for the browser: enter a game frame by frame or randomise one, and it resolves the strikes, spares and running total — which is most of the difficulty, as a strike cannot be scored until the two rolls after it are known. Vanilla JavaScript and jQuery, driven out with Jasmine.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/bowling-challenge/master/images/screenshot2.png",
 			"link": "https://github.com/adrianeyre/bowling-challenge"
@@ -767,7 +767,7 @@
 	},
 	{
 		"title": "Instagram Challenge",
-		"body": "A remake of Instagram where the user can sign up via FaceBook and post their favourite images that will get stored on AWS. Other users can like and comment on your images. This web application is written in Ruby and JavaScript.",
+		"body": "An Instagram clone built as a solo project at Makers Academy: sign up through Facebook, post pictures stored on AWS, and like and comment on everyone else’s. Ruby on Rails over a Postgres database, driven out with RSpec.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/instagram-challenge/master/images/screenshot1.png",
 			"link": "https://github.com/adrianeyre/instagram-challenge"
@@ -816,7 +816,7 @@
 	},
 	{
 		"title": "Battle",
-		"body": "A two player battle game built as a Makers Academy pair programming project. Written in Ruby on the Sinatra web framework, and driven out with RSpec, Capybara and Selenium WebDriver.",
+		"body": "A two player battle game built as a pair programming project at Makers Academy. Written in Ruby on the Sinatra web framework, and driven out with RSpec, Capybara and Selenium WebDriver.",
 		"image": {
 			"filename": "https://raw.githubusercontent.com/adrianeyre/battle/master/images/ScreenShot1.png",
 			"link": "https://github.com/adrianeyre/battle"
@@ -856,7 +856,7 @@
 	},
 	{
 		"title": "Portfolio",
-		"body": "A portfolio site with information about my career, education and experiences, written in React, TypeScript, SCSS and PHP.",
+		"body": "This site. A single page portfolio in TypeScript and React 19 covering my career, education, projects and interests, built with Vite and tested with Vitest. Themed light, dark or by system preference, and held to WCAG 2.2 Level AA by an axe-core sweep that runs on every commit.",
 		"image": {
 			"filename": "/images/projects/portfolio.png",
 			"link": "https://github.com/adrianeyre/portfolio"
