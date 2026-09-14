@@ -81,36 +81,33 @@
 	},
 	{
 		"title": "A B Electrical & Maintenance",
-		"body": "A marketing site for a local electrical and maintenance contractor, giving the business somewhere to send customers and be found from. A single responsive page in TypeScript and React with SCSS, built and deployed through CircleCI.",
+		"body": "A single page marketing site for A. B. Electrical & Maintenance, a NAPIT-registered and TrustMark-approved electrician working across Nottinghamshire, Derbyshire and the wider East Midlands for over 25 years. Built with no build step and no dependencies — plain HTML, CSS and vanilla JavaScript — with light, dark and system themes applied before first paint, an installable web manifest, and an in-page accessibility panel that can switch the motion off. Built to WCAG 2.2 Level AA.",
 		"image": {
 			"filename": "/images/projects/ab-electrical.png",
-			"link": "https://github.com/adrianeyre/a-b-electrical"
+			"link": "https://github.com/adrianeyre/ab-electrical"
 		},
 		"tags": [
 			{
-				"label": "TypeScript"
-			},
-			{
-				"label": "React"
-			},
-			{
-				"label": "Jest"
-			},
-			{
-				"label": "SCSS"
+				"label": "JavaScript"
 			},
 			{
 				"label": "HTML"
 			},
 			{
-				"label": "CircleCI"
+				"label": "CSS"
+			},
+			{
+				"label": "PWA"
+			},
+			{
+				"label": "WCAG 2.2 AA"
 			}
 		],
 		"links": [
 			{
 				"text": "Repo",
 				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/a-b-electrical"
+				"link": "https://github.com/adrianeyre/ab-electrical"
 			},
 			{
 				"text": "Demo",
