@@ -15,7 +15,8 @@ interface MusicProps {
 /**
  * A two-pane music browser: on the left, genres are collapsible accordions
  * (all closed by default) listing each track's artist and title; selecting a
- * track loads its YouTube video in the player on the right.
+ * track loads its YouTube video in the player on the right and starts it
+ * playing: the click is the user gesture browsers require for autoplay.
  */
 const Music = ({ tracks }: MusicProps) => {
   const genres = useMemo(() => {
@@ -36,6 +37,18 @@ const Music = ({ tracks }: MusicProps) => {
 
   const [openGenre, setOpenGenre] = useState<string | null>(null);
   const [selected, setSelected] = useState<(Track & { uid: string }) | null>(null);
+  /*
+   * Bumped on every track click, and folded into the iframe key, so clicking
+   * the track already showing restarts it. Without it React bails out on the
+   * unchanged `selected` value, the iframe is never remounted, and a finished
+   * video just sits there.
+   */
+  const [playCount, setPlayCount] = useState(0);
+
+  const playTrack = (track: Track & { uid: string }) => {
+    setSelected(track);
+    setPlayCount((count) => count + 1);
+  };
 
   const toggleGenre = (genre: string) => {
     setOpenGenre((current) => (current === genre ? null : genre));
@@ -94,7 +107,7 @@ const Music = ({ tracks }: MusicProps) => {
                           type="button"
                           className={`music-track${isActive ? ' active' : ''}`}
                           aria-pressed={isActive}
-                          onClick={() => setSelected(track)}
+                          onClick={() => playTrack(track)}
                         >
                           <span className="music-artist">{track.artist}</span>
                           <span className="music-title">{track.title}</span>
@@ -114,10 +127,9 @@ const Music = ({ tracks }: MusicProps) => {
           <>
             <div className="music-player-frame">
               <iframe
-                key={selected.id}
-                src={`https://www.youtube-nocookie.com/embed/${selected.id}`}
+                key={`${selected.uid}-${playCount}`}
+                src={`https://www.youtube-nocookie.com/embed/${selected.id}?autoplay=1`}
                 title={`${selected.artist} — ${selected.title}`}
-                loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
               />
