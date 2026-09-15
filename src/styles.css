@@ -31,6 +31,13 @@
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-display: 'Space Grotesk', var(--font-sans);
 
+  /*
+   * Clearance under the sticky nav bar: its 70px logo plus 2x20px of padding
+   * and its 16px top margin. Anything else that sticks to the top of the
+   * viewport has to start below this line or the bar covers it.
+   */
+  --sticky-offset: 130px;
+
   font-family: var(--font-sans);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
@@ -141,12 +148,13 @@ html {
    * a programmatic focus move lands *underneath* it unless the scroll stops
    * short. WCAG 2.2 added 2.4.11 Focus Not Obscured for exactly this.
    */
-  scroll-padding-top: 130px;
+  scroll-padding-top: var(--sticky-offset);
 }
 
 @media (max-width: 900px) {
   html {
-    scroll-padding-top: 180px;
+    /* The nav links wrap to a second row at this width, so the bar is taller. */
+    --sticky-offset: 180px;
   }
 }
 
@@ -1277,12 +1285,25 @@ a {
 
 .music-player {
   position: sticky;
-  top: 24px;
+  /*
+   * The nav bar is sticky at the top of the viewport, so pinning the player
+   * near 0 hid the top of the video behind the bar once the open accordions
+   * were long enough to scroll. Start below the bar instead.
+   */
+  top: var(--sticky-offset);
 }
 
 .music-player-frame {
   position: relative;
   width: 100%;
+  /*
+   * Bound the frame by the height left under the nav (the 112px covers the
+   * now-playing caption below it plus a little breathing room), so a short
+   * viewport shrinks the video rather than pushing its bottom off-screen.
+   * Capping the width keeps 16:9 intact instead of letterboxing.
+   */
+  max-width: calc((100vh - var(--sticky-offset) - 112px) * 16 / 9);
+  margin: 0 auto;
   aspect-ratio: 16 / 9;
   border-radius: 16px;
   overflow: hidden;
@@ -1322,6 +1343,8 @@ a {
   align-items: center;
   justify-content: center;
   gap: 14px;
+  max-width: calc((100vh - var(--sticky-offset) - 112px) * 16 / 9);
+  margin: 0 auto;
   aspect-ratio: 16 / 9;
   padding: 24px;
   border-radius: 16px;
@@ -1618,6 +1641,11 @@ a {
 
   .music-player {
     position: static;
+  }
+
+  .music-player-frame,
+  .music-player-empty {
+    max-width: none;
   }
 
   .nav-links {
@@ -2007,7 +2035,7 @@ a {
 #main-content,
 #experience,
 #education {
-  scroll-margin-top: 130px;
+  scroll-margin-top: var(--sticky-offset);
 }
 
 @media (max-width: 900px) {
@@ -2015,7 +2043,7 @@ a {
   #main-content,
   #experience,
   #education {
-    scroll-margin-top: 180px;
+    scroll-margin-top: var(--sticky-offset);
   }
 }
 
