@@ -60,18 +60,6 @@
 		"id": "3YTbfkdMO4M"
 	},
 	{
-		"artist": "Revox",
-		"title": "Sysex",
-		"genre": "Dance",
-		"id": "UHqwNKIJH-o"
-	},
-	{
-		"artist": "Steve Baltes",
-		"title": "3 D Girl (Remix)",
-		"genre": "Dance",
-		"id": "2NWgJX_XkZo"
-	},
-	{
 		"artist": "Striking Man",
 		"title": "Da Lower You Go",
 		"genre": "Dance",
@@ -454,5 +442,17 @@
 		"title": "Ganjaman",
 		"genre": "Techno",
 		"id": "s-lUKTpkP28"
+	},
+	{
+		"artist": "Revox",
+		"title": "Sysex",
+		"genre": "Trance",
+		"id": "UHqwNKIJH-o"
+	},
+	{
+		"artist": "Steve Baltes",
+		"title": "3 D Girl (Remix)",
+		"genre": "Trance",
+		"id": "2NWgJX_XkZo"
 	}
 ]
