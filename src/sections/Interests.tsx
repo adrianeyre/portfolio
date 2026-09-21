@@ -3,7 +3,7 @@ import Reveal from '../components/Reveal';
 import SectionHeader from '../components/SectionHeader';
 import ImageBlock from '../components/ImageBlock';
 import Music from '../components/Music';
-import Playlists from '../components/Playlists';
+import Playlists, { type Playlist } from '../components/Playlists';
 import interestsData from '../data/interests.json';
 import interestsImagesData from '../data/interestsImages.json';
 import musicData from '../data/music.json';
@@ -32,12 +32,12 @@ const Interests = ({ screenWidth }: InterestsProps) => (
     </Reveal>
     <Reveal delay={0.2}>
       <div className="playlist-header">
-        <h3>Playlists</h3>
-        <p>Channels I keep coming back to — each one opens on YouTube.</p>
+        <h3>Worth Following</h3>
+        <p>Channels, sites and newsletters I keep coming back to — each one opens in a new tab.</p>
       </div>
     </Reveal>
     <Reveal delay={0.25}>
-      <Playlists playlists={playlistsData} />
+      <Playlists playlists={playlistsData as Playlist[]} />
     </Reveal>
     <Reveal delay={0.3}>
       <div className="music-header">
