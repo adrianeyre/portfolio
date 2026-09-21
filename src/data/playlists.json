@@ -3,12 +3,28 @@
 		"name": "Chase AI",
 		"handle": "@Chase-H-AI",
 		"description": "Practical AI engineering — agents, Claude Code and getting real work out of modern tooling.",
-		"link": "https://www.youtube.com/@Chase-H-AI"
+		"link": "https://www.youtube.com/@Chase-H-AI",
+		"icon": "youtube"
 	},
 	{
 		"name": "Matt Pocock",
 		"handle": "@mattpocockuk",
 		"description": "Deep, no-nonsense TypeScript: types, generics and the patterns behind them.",
-		"link": "https://www.youtube.com/@mattpocockuk"
+		"link": "https://www.youtube.com/@mattpocockuk",
+		"icon": "youtube"
+	},
+	{
+		"name": "The Faction Group",
+		"handle": "gofactiongroup.com",
+		"description": "AI product design lab shipping MVPs and platforms with AI-directed engineering.",
+		"link": "https://gofactiongroup.com",
+		"icon": "web"
+	},
+	{
+		"name": "TLDR",
+		"handle": "tldr.tech",
+		"description": "Daily newsletter summarising startups, tech and programming in a five minute read.",
+		"link": "https://tldr.tech",
+		"icon": "newsletter"
 	}
 ]
