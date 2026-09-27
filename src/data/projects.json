@@ -46,6 +46,64 @@
 		]
 	},
 	{
+		"title": "Soundcheck",
+		"body": "A music creation app — a DAW — whose Assistant, an LLM co-producer, can both edit and listen to your song. The Audio Engine is written in Rust and the UI in React: the desktop app runs the engine natively on the audio device through Tauri, and the lighter Browser Version runs the same engine as WebAssembly in an AudioWorklet, with nothing to install. Tracks, a Timeline, a Step Sequencer, Instruments, recording, a Mixer and WAV or MP3 export, with every edit undoable. Built to WCAG 2.2 AA across its dark and light themes and six colour palettes. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/soundcheck.png",
+			"link": "https://github.com/adrianeyre/soundcheck"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Rust"
+			},
+			{
+				"label": "WebAssembly"
+			},
+			{
+				"label": "Web Audio"
+			},
+			{
+				"label": "Tauri"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/soundcheck"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faMusic",
+				"link": "https://adrianeyre.github.io/soundcheck"
+			}
+		]
+	},
+	{
 		"title": "Belvoir Care",
 		"body": "A single page marketing site for BelvoirCare Ltd, who have provided bespoke event medical cover across the UK since 2012. Built deliberately with no build step and no dependencies — plain HTML, CSS and vanilla JavaScript — with light, dark and system themes applied before first paint so the page never flashes the wrong one. Verified against WCAG 2.2 Level AA with axe-core at 1440px, 390px and 320px.",
 		"image": {
