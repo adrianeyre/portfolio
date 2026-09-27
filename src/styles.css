@@ -659,6 +659,29 @@ a {
   outline: none;
 }
 
+/* Stretch every project slide to the tallest one, so cards stay equal height
+   without a fixed height that clips a long card's Repo and Demo buttons. */
+#projects .slick-track {
+  display: flex;
+}
+
+#projects .slick-slide {
+  height: auto;
+}
+
+#projects .slick-slide > div,
+#projects .project-slide {
+  height: 100%;
+}
+
+/* One slide at a time at this width (Projects.tsx), so there is nothing to
+   match heights with, and stretching would pad every card to the tallest. */
+@media (max-width: 700px) {
+  #projects .slick-track {
+    display: block;
+  }
+}
+
 .card,
 .project-card,
 .timeline-card {
@@ -679,8 +702,11 @@ a {
   padding: 24px;
 }
 
-.project-card {
-  height: 800px;
+#projects .project-card {
+  min-height: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .kata-card {
@@ -768,6 +794,16 @@ a {
 
 .project-body {
   padding: 20px;
+}
+
+#projects .project-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#projects .project-actions {
+  margin-top: auto;
 }
 
 .project-body p {
