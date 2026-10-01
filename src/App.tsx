@@ -23,11 +23,13 @@ const Interests = lazy(() => import('./sections/Interests'));
 const Contact = lazy(() => import('./sections/Contact'));
 
 /*
- * Neither of these is needed to paint, and both pull in Framer Motion for
+ * None of these is needed to paint, and all pull in Framer Motion for
  * their enter/exit animation — the last thing keeping a 40KB animation
  * library on the critical path once Reveal stopped using it.
  */
 const CookieConsent = lazy(() => import('./components/CookieConsent'));
+const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'));
+const TermsAndConditions = lazy(() => import('./components/TermsAndConditions'));
 const AccessibilityStatement = lazy(() => import('./components/AccessibilityStatement'));
 
 const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
@@ -62,6 +64,8 @@ const App = () => (
     <Footer />
     <Suspense fallback={null}>
       <CookieConsent />
+      <PrivacyPolicy />
+      <TermsAndConditions />
       <AccessibilityStatement />
     </Suspense>
   </>
