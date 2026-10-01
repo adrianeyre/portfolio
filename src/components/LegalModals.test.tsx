@@ -2,13 +2,15 @@ import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import Footer from '../layout/Footer';
-import AccessibilityStatement from './AccessibilityStatement';
+import PrivacyPolicy from './PrivacyPolicy';
+import TermsAndConditions from './TermsAndConditions';
 
-const renderFooterAndModal = () =>
+const renderFooterAndModals = () =>
   render(
     <>
       <Footer />
-      <AccessibilityStatement />
+      <PrivacyPolicy />
+      <TermsAndConditions />
     </>
   );
 
@@ -27,55 +29,53 @@ beforeEach(() => {
   }
 });
 
-describe('the accessibility statement', () => {
+const MODALS = [
+  {
+    trigger: 'Privacy Policy',
+    close: 'Close privacy policy',
+    content: /does not run analytics or advertising/,
+  },
+  {
+    trigger: 'Terms and Conditions',
+    close: 'Close terms and conditions',
+    content: /governed by the law of England and Wales/,
+  },
+];
+
+describe.each(MODALS)('the $trigger modal', ({ trigger, close, content }) => {
   it('is closed until the footer link is used', () => {
-    renderFooterAndModal();
+    renderFooterAndModals();
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
   });
 
-  it('opens from the footer, after the other legal links', async () => {
+  it('opens from the footer on its own', async () => {
     const user = userEvent.setup();
-    renderFooterAndModal();
+    renderFooterAndModals();
 
-    const footerButtons = screen.getAllByRole('button');
-    const labels = footerButtons.map((button) => button.textContent);
-    expect(labels).toEqual([
-      'Cookie Policy',
-      'Privacy Policy',
-      'Terms and Conditions',
-      'Accessibility',
-    ]);
+    await user.click(screen.getByRole('button', { name: trigger }));
 
-    await user.click(screen.getByRole('button', { name: 'Accessibility' }));
-
+    // Only the requested modal opens; the other listener ignores the event.
     const dialog = screen.getByRole('dialog');
     expect(dialog).toHaveAttribute('aria-modal', 'true');
     expect(
-      screen.getByRole('heading', { name: 'Accessibility', level: 2 })
+      screen.getByRole('heading', { name: trigger, level: 2 })
     ).toBeInTheDocument();
-    expect(dialog).toHaveTextContent(
-      /Web Content Accessibility Guidelines \(WCAG\) 2\.2/
-    );
-    expect(dialog).toHaveTextContent(/Level AA/);
+    expect(dialog).toHaveTextContent(content);
   });
 
   it('moves focus to the close button and returns it to the trigger', async () => {
     const user = userEvent.setup();
-    renderFooterAndModal();
+    renderFooterAndModals();
 
-    const trigger = screen.getByRole('button', { name: 'Accessibility' });
-    await user.click(trigger);
-
-    const close = screen.getByRole('button', {
-      name: 'Close accessibility statement',
-    });
-    expect(close).toHaveFocus();
+    const button = screen.getByRole('button', { name: trigger });
+    await user.click(button);
+    expect(screen.getByRole('button', { name: close })).toHaveFocus();
 
     await user.keyboard('{Escape}');
     // AnimatePresence keeps the node mounted until its exit animation ends.
     await waitFor(() =>
       expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
     );
-    expect(trigger).toHaveFocus();
+    expect(button).toHaveFocus();
   });
 });

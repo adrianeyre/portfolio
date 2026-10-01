@@ -3,6 +3,8 @@ import packageJson from '../../package.json';
 import {
   OPEN_ACCESSIBILITY_EVENT,
   OPEN_COOKIE_POLICY_EVENT,
+  OPEN_PRIVACY_POLICY_EVENT,
+  OPEN_TERMS_EVENT,
 } from '../components/overlayEvents';
 
 const { version, author } = packageJson;
@@ -10,6 +12,12 @@ const thisYear = new Date().getFullYear();
 
 const openCookiePolicy = () =>
   window.dispatchEvent(new CustomEvent(OPEN_COOKIE_POLICY_EVENT));
+
+const openPrivacyPolicy = () =>
+  window.dispatchEvent(new CustomEvent(OPEN_PRIVACY_POLICY_EVENT));
+
+const openTerms = () =>
+  window.dispatchEvent(new CustomEvent(OPEN_TERMS_EVENT));
 
 const openAccessibility = () =>
   window.dispatchEvent(new CustomEvent(OPEN_ACCESSIBILITY_EVENT));
@@ -34,6 +42,14 @@ const Footer = () => (
       <span className="footer-sep" aria-hidden="true">·</span>
       <button type="button" className="footer-legal-link" onClick={openCookiePolicy}>
         Cookie Policy
+      </button>
+      <span className="footer-sep" aria-hidden="true">·</span>
+      <button type="button" className="footer-legal-link" onClick={openPrivacyPolicy}>
+        Privacy Policy
+      </button>
+      <span className="footer-sep" aria-hidden="true">·</span>
+      <button type="button" className="footer-legal-link" onClick={openTerms}>
+        Terms and Conditions
       </button>
       <span className="footer-sep" aria-hidden="true">·</span>
       <button type="button" className="footer-legal-link" onClick={openAccessibility}>
