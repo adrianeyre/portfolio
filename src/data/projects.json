@@ -104,6 +104,61 @@
 		]
 	},
 	{
+		"title": "Lanewise",
+		"body": "A free, open source desktop Git client for Windows and macOS, laid out as GitKraken is. A Commit graph draws the whole history in coloured lanes, with branches, tags, stashes and open Pull Requests beside it, and merge conflicts are resolved in a three way view of Base, Ours and Theirs, one Conflict Hunk at a time, with AI Suggestions from your own Model Provider that are never applied for you. The core is written in Rust and the UI in React, running natively through Tauri, with sign in to GitHub, GitLab, Bitbucket and Azure DevOps, Issues from Jira Cloud and Trello, no telemetry and WCAG 2.2 AA throughout. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/lanewise.png",
+			"link": "https://github.com/adrianeyre/lanewise"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Rust"
+			},
+			{
+				"label": "Tauri"
+			},
+			{
+				"label": "Git"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/lanewise"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faCodeBranch",
+				"link": "https://lanewise.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
 		"title": "Belvoir Care",
 		"body": "A single page marketing site for BelvoirCare Ltd, who have provided bespoke event medical cover across the UK since 2012. Built deliberately with no build step and no dependencies — plain HTML, CSS and vanilla JavaScript — with light, dark and system themes applied before first paint so the page never flashes the wrong one. Verified against WCAG 2.2 Level AA with axe-core at 1440px, 390px and 320px.",
 		"image": {
