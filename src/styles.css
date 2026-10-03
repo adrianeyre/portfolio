@@ -2083,6 +2083,34 @@ a {
   }
 }
 
+/* ---- Changelog modal ---- */
+.changelog h3 {
+  margin: 1.6rem 0 0.4rem;
+}
+
+.changelog h3:first-of-type {
+  margin-top: 0.4rem;
+}
+
+.changelog h4 {
+  margin: 0.8rem 0 0.3rem;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.changelog-list {
+  margin: 0 0 0.8rem;
+  padding-left: 1.2rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.changelog-list a {
+  overflow-wrap: anywhere;
+}
+
 /* ---- Accessibility statement modal ---- */
 .a11y-status {
   display: flex;

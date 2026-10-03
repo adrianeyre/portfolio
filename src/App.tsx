@@ -31,6 +31,7 @@ const CookieConsent = lazy(() => import('./components/CookieConsent'));
 const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'));
 const TermsAndConditions = lazy(() => import('./components/TermsAndConditions'));
 const AccessibilityStatement = lazy(() => import('./components/AccessibilityStatement'));
+const Changelog = lazy(() => import('./components/Changelog'));
 
 const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
 
@@ -67,6 +68,7 @@ const App = () => (
       <PrivacyPolicy />
       <TermsAndConditions />
       <AccessibilityStatement />
+      <Changelog />
     </Suspense>
   </>
 );
