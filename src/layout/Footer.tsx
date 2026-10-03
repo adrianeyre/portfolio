@@ -2,6 +2,7 @@ import { FaGithub } from 'react-icons/fa';
 import packageJson from '../../package.json';
 import {
   OPEN_ACCESSIBILITY_EVENT,
+  OPEN_CHANGELOG_EVENT,
   OPEN_COOKIE_POLICY_EVENT,
   OPEN_PRIVACY_POLICY_EVENT,
   OPEN_TERMS_EVENT,
@@ -22,12 +23,21 @@ const openTerms = () =>
 const openAccessibility = () =>
   window.dispatchEvent(new CustomEvent(OPEN_ACCESSIBILITY_EVENT));
 
+const openChangelog = () =>
+  window.dispatchEvent(new CustomEvent(OPEN_CHANGELOG_EVENT));
+
 const Footer = () => (
   <footer className="footer-panel">
     <div className="footer-inner">
       <span className="footer-credit">&#169; {thisYear} {author}</span>
       <span className="footer-sep" aria-hidden="true">·</span>
-      <span className="footer-version">Version {version}</span>
+      <button
+        type="button"
+        className="footer-legal-link footer-version"
+        onClick={openChangelog}
+      >
+        Version: {version}
+      </button>
       <span className="footer-sep" aria-hidden="true">·</span>
       <a
         className="footer-repo-link"

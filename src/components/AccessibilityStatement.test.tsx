@@ -40,6 +40,7 @@ describe('the accessibility statement', () => {
     const footerButtons = screen.getAllByRole('button');
     const labels = footerButtons.map((button) => button.textContent);
     expect(labels).toEqual([
+      expect.stringMatching(/^Version: \d+\.\d+\.\d+$/),
       'Cookie Policy',
       'Privacy Policy',
       'Terms and Conditions',
