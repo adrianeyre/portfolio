@@ -159,6 +159,183 @@
 		]
 	},
 	{
+		"title": "AI Office",
+		"body": "A 3D office where AI agents work your GitHub issues. Each repository is a Floor with a Manager and a team of Agents — coder, reviewer, QA, docs and designer — and you can click a monitor to watch an Agent's sandbox as it works, read the plan on the whiteboard, or simply ask the Manager for a change: it files the issues and brings in contractors for the work. A built in AI Gateway load balances the Agents' requests across your own AI accounts, Claude, ChatGPT/Codex, Grok and more, with token caps per office, Floor and Agent, and every request's tokens, cost and timings in Analytics. A TypeScript monorepo with a React and Three.js front end, a Node server, Postgres and Docker sandboxes. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/ai-office.png",
+			"link": "https://github.com/adrianeyre/ai-office"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Three.js"
+			},
+			{
+				"label": "Node.js"
+			},
+			{
+				"label": "PostgreSQL"
+			},
+			{
+				"label": "Docker"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "Playwright"
+			},
+			{
+				"label": "AI Agents"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/ai-office"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faBuilding",
+				"link": "https://ai-office.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Location Scout",
+		"body": "Pick any location in England — a postcode, an address or a click on the map — and see everything around it on one screen. An interactive map layers crime with its year on year trend, planning constraints and applications, amenities, schools with Ofsted ratings, transport, green space, property sales and EPCs, land and demographics, beside a Location Overview of Good, Watch and Concern Highlights and transparent 0–100 scores, each with its breakdown. Scout Modes reweight the scores for homebuyers, landlords, investors, developers and businesses, and a Land Opportunity Finder surfaces open land with its indicative ownership. React and MapLibre GL in front of a Hono backend, with DuckDB over GeoParquet for land data, optional AI Explanations of the scores and WCAG 2.2 AA throughout. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/location-scout.png",
+			"link": "https://github.com/adrianeyre/location-scout"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "MapLibre GL"
+			},
+			{
+				"label": "Hono"
+			},
+			{
+				"label": "Node.js"
+			},
+			{
+				"label": "DuckDB"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "Playwright"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/location-scout"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faMapLocationDot",
+				"link": "https://location-scout.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Xray",
+		"body": "Turns compiled .NET applications back into buildable, runnable C# solutions. Point it at a .exe, a .dll or a folder of them and Xray decompiles the code, resolves each dependency to the framework, a NuGet package, a sibling project or a copied binary, generates an SDK style Visual Studio solution and verifies it with dotnet build — recovering WPF XAML from BAML and Windows Forms designers along the way. A local web UI shows each stage as it runs, lets you browse the recovered C# and XAML and download it as a zip, and every Reconstruction reports honestly whether it is Full or Partial, and why. A TypeScript CLI and web UI over a C# engine, running only on your machine. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/xray.png",
+			"link": "https://github.com/adrianeyre/xray"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "C#"
+			},
+			{
+				"label": ".NET"
+			},
+			{
+				"label": "Node.js"
+			},
+			{
+				"label": "CLI"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/xray"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faMagnifyingGlass",
+				"link": "https://xray.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
 		"title": "Belvoir Care",
 		"body": "A single page marketing site for BelvoirCare Ltd, who have provided bespoke event medical cover across the UK since 2012. Built deliberately with no build step and no dependencies — plain HTML, CSS and vanilla JavaScript — with light, dark and system themes applied before first paint so the page never flashes the wrong one. Verified against WCAG 2.2 Level AA with axe-core at 1440px, 390px and 320px.",
 		"image": {
@@ -737,52 +914,6 @@
 		]
 	},
 	{
-		"title": "Chitter Challenge",
-		"body": "A Twitter clone built as a solo project at Makers Academy: post to a public board, reply to other people and like what they wrote. Ruby on the Sinatra framework, with DataMapper over a Postgres database and RSpec throughout.",
-		"image": {
-			"filename": "https://raw.githubusercontent.com/adrianeyre/chitter-challenge/master/images/screenshot1.png",
-			"link": "https://github.com/adrianeyre/chitter-challenge"
-		},
-		"tags": [
-			{
-				"label": "Ruby"
-			},
-			{
-				"label": "Sinatra"
-			},
-			{
-				"label": "RSpec"
-			},
-			{
-				"label": "PostgreSQL"
-			},
-			{
-				"label": "DataMapper"
-			},
-			{
-				"label": "Heroku"
-			},
-			{
-				"label": "HTML"
-			},
-			{
-				"label": "CSS"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/chitter-challenge"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faKeyboard",
-				"link": "https://adrianeyre-chitter.herokuapp.com"
-			}
-		]
-	},
-	{
 		"title": "Treasure Hunt",
 		"body": "A team-built augmented reality treasure hunt for mobile. Players follow clues to real-world points of interest, with GPS telling them how far they are from the next one and the camera showing what is waiting there. Unity and Vuforia drive the AR, C# and Swift the device, and a Ruby and Sinatra back end sits over Postgres and MongoDB. The final group project of a Makers Academy cohort.",
 		"image": {
@@ -832,135 +963,6 @@
 				"text": "Repo",
 				"font": "brand.faGithub",
 				"link": "https://github.com/adrianeyre/treasure-hunt"
-			}
-		]
-	},
-	{
-		"title": "Bowling Challenge",
-		"body": "A ten-pin bowling scorecard for the browser: enter a game frame by frame or randomise one, and it resolves the strikes, spares and running total — which is most of the difficulty, as a strike cannot be scored until the two rolls after it are known. Vanilla JavaScript and jQuery, driven out with Jasmine.",
-		"image": {
-			"filename": "https://raw.githubusercontent.com/adrianeyre/bowling-challenge/master/images/screenshot2.png",
-			"link": "https://github.com/adrianeyre/bowling-challenge"
-		},
-		"tags": [
-			{
-				"label": "JavaScript"
-			},
-			{
-				"label": "jQuery"
-			},
-			{
-				"label": "Jasmine"
-			},
-			{
-				"label": "HTML"
-			},
-			{
-				"label": "CSS"
-			},
-			{
-				"label": "Heroku"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/bowling-challenge"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faKeyboard",
-				"link": "https://adrianeyre-bowling.herokuapp.com"
-			}
-		]
-	},
-	{
-		"title": "Instagram Challenge",
-		"body": "An Instagram clone built as a solo project at Makers Academy: sign up through Facebook, post pictures stored on AWS, and like and comment on everyone else’s. Ruby on Rails over a Postgres database, driven out with RSpec.",
-		"image": {
-			"filename": "https://raw.githubusercontent.com/adrianeyre/instagram-challenge/master/images/screenshot1.png",
-			"link": "https://github.com/adrianeyre/instagram-challenge"
-		},
-		"tags": [
-			{
-				"label": "Ruby"
-			},
-			{
-				"label": "Rails"
-			},
-			{
-				"label": "JavaScript"
-			},
-			{
-				"label": "RSpec"
-			},
-			{
-				"label": "PostgreSQL"
-			},
-			{
-				"label": "AWS S3"
-			},
-			{
-				"label": "Facebook OAuth"
-			},
-			{
-				"label": "Heroku"
-			},
-			{
-				"label": "HTML"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/instagram-challenge"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faKeyboard",
-				"link": "https://adrianeyre-instagram.herokuapp.com"
-			}
-		]
-	},
-	{
-		"title": "Battle",
-		"body": "A two player battle game built as a pair programming project at Makers Academy. Written in Ruby on the Sinatra web framework, and driven out with RSpec, Capybara and Selenium WebDriver.",
-		"image": {
-			"filename": "https://raw.githubusercontent.com/adrianeyre/battle/master/images/ScreenShot1.png",
-			"link": "https://github.com/adrianeyre/battle"
-		},
-		"tags": [
-			{
-				"label": "Ruby"
-			},
-			{
-				"label": "Sinatra"
-			},
-			{
-				"label": "RSpec"
-			},
-			{
-				"label": "Capybara"
-			},
-			{
-				"label": "Selenium"
-			},
-			{
-				"label": "HTML"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/battle"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faKeyboard",
-				"link": "https://adrianeyre-battle.herokuapp.com"
 			}
 		]
 	},
