@@ -18,5 +18,3 @@ $ npm install
 ```shell
 $ npm run dev
 ```
-
-[![Portfolio](https://adrianeyre.co.uk/images/projects/portfolio.png)](https://adrianeyre.co.uk/images/projects/portfolio.png "Portfolio")
