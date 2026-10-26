@@ -336,6 +336,73 @@
 		]
 	},
 	{
+		"title": "Media Centre",
+		"body": "One remote for your whole home. Control your TVs, air conditioners, lights, heating, Amazon Echos and Ring doorbells room by room, and play the films, shows and music on your PC or NAS on any TV, from any phone, tablet or computer on your home network. An always on Hub, on a PC or in Docker on a NAS, serves the Remote, controls every Appliance locally where it can and streams Media Files to a Player it installs on each Samsung TV, converting with ffmpeg whatever the TV cannot play. The Remote adds a floor plan of your Rooms, Light Scenes, Resume Positions and a scan of every device on the network, installs to a home screen and meets WCAG 2.2 AA in light and dark — all on your own Hub, with no account. A TypeScript monorepo with a Preact Remote, a Node Hub and a Tizen Player. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/media-centre.png",
+			"link": "https://github.com/adrianeyre/media-centre"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "Preact"
+			},
+			{
+				"label": "Node.js"
+			},
+			{
+				"label": "Docker"
+			},
+			{
+				"label": "Samsung Tizen"
+			},
+			{
+				"label": "ffmpeg"
+			},
+			{
+				"label": "Smart Home"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "Playwright"
+			},
+			{
+				"label": "WCAG 2.2 AA"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/media-centre"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faTv",
+				"link": "https://media-centre.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
 		"title": "Belvoir Care",
 		"body": "A single page marketing site for BelvoirCare Ltd, who have provided bespoke event medical cover across the UK since 2012. Built deliberately with no build step and no dependencies — plain HTML, CSS and vanilla JavaScript — with light, dark and system themes applied before first paint so the page never flashes the wrong one. Verified against WCAG 2.2 Level AA with axe-core at 1440px, 390px and 320px.",
 		"image": {
