@@ -8,9 +8,27 @@
 [![Version](https://img.shields.io/github/package-json/v/adrianeyre/portfolio)](CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-React 19 · TypeScript · Vite · Vitest · Framer Motion · GitHub Pages
+React 19 · TypeScript · Vite · Vitest · Stageshow · GitHub Pages
 
 </div>
+
+![The hero in the light theme: Adrian Eyre, Lead Software Developer, beside an illustration of a pull request being merged by an AI coding agent](docs/screenshots/hero-light.png)
+
+## Screenshots
+
+The design is built with the [Stageshow](https://github.com/benjitaylor/skills) skill: a quiet page with a single accent colour, and product illustrations made with its React kit rather than decorative cards.
+
+| Dark theme | Phone |
+| --- | --- |
+| ![The hero in the dark theme](docs/screenshots/hero-dark.png) | ![The hero at phone width, in the dark theme](docs/screenshots/mobile.png) |
+
+| Skills | Projects |
+| --- | --- |
+| ![The Skills bento: a release pipeline, 15+ years, languages and frameworks](docs/screenshots/skills.png) | ![The Projects section: each screenshot shown in a browser window](docs/screenshots/projects.png) |
+
+![The Experience timeline](docs/screenshots/experience.png)
+
+To retake them, start the dev server and run `npm run screenshots` (it uses the Chrome already installed on your machine; set `CHROME_PATH` if it is somewhere unusual, or `SITE_URL` for another address). They are taken with reduced motion on, so each illustration shows its finished frame.
 
 ---
 
@@ -38,20 +56,28 @@ The site will be at **http://localhost:5173**, and changes reload as you save.
 | `npm test`           | Runs the test suite once with Vitest                  |
 | `npm run test:watch` | Runs the tests in watch mode                          |
 | `npm run typecheck`  | Type-checks the code without emitting files           |
+| `npm run screenshots` | Retakes the README screenshots from a running dev server |
 
 ## Project structure
 
 ```
 src/
 ├── data/        # JSON content: projects, experience, skills, education…
-├── sections/    # Page sections (About, Skills, Projects, Contact…)
-├── layout/      # Hero, navigation bar and footer
-├── components/  # Shared UI: modals, carousels, theme toggle, cookie consent
-├── hooks/       # Scroll spy, reduced-motion and focus helpers
+├── sections/    # Page sections (About, Skills, Projects, Experience, Contact…)
+├── layout/      # Header, hero and footer
+├── demos/       # The Stageshow illustrations: hero, release pipeline, project shots
+├── stageshow/   # The Stageshow React kit, copied from benjitaylor/skills (MIT)
+├── components/  # Shared UI: modals, photo grid, theme toggle, cookie consent
+├── hooks/       # Scroll spy and reduced-motion helpers
 ├── theme/       # Light/dark theme provider
 └── test/        # Smoke, accessibility (axe-core) and deployment tests
 public/          # Static assets, images, fonts and the CNAME for the custom domain
+docs/screenshots # The README screenshots (see `npm run screenshots`)
 ```
+
+## Illustrations
+
+The animated hero, the release pipeline in Skills and the framed project screenshots are built with the [Stageshow](https://github.com/benjitaylor/skills) kit in `src/stageshow`. [`src/stageshow/README.md`](src/stageshow/README.md) explains where it came from and how to preview and film a scene on its own. Each illustration plays once as it scrolls into view and shows its finished frame to visitors who prefer reduced motion.
 
 ## Editing content
 

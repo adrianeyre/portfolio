@@ -12,15 +12,15 @@
 		"link": "projects"
 	},
 	{
-		"title": "Education",
-		"link": "education"
-	},
-	{
 		"title": "Experience",
 		"link": "experience"
 	},
 	{
-		"title": "Voluntary Work",
+		"title": "Education",
+		"link": "education"
+	},
+	{
+		"title": "Voluntary",
 		"link": "voluntary"
 	},
 	{
@@ -32,7 +32,7 @@
 		"link": "interests"
 	},
 	{
-		"title": "Contact me",
+		"title": "Contact",
 		"link": "contact"
 	}
 ]

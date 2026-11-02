@@ -12,15 +12,15 @@
     "test:watch": "vitest",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "screenshots": "node scripts/screenshots.mjs"
   },
   "dependencies": {
     "framer-motion": "^13.3.0",
+    "lucide-react": "^0.468.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
-    "react-icons": "^5.7.0",
-    "react-slick": "^0.31.0",
-    "slick-carousel": "^2.0.0"
+    "react-icons": "^5.7.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^7.0.0",
@@ -34,11 +34,11 @@
     "@testing-library/user-event": "^14.6.7",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@types/react-slick": "^0.23.13",
     "@vitejs/plugin-react": "^6.1.1",
     "axe-core": "^4.13.0",
     "conventional-changelog-conventionalcommits": "^9.3.1",
     "jsdom": "^30.0.1",
+    "playwright-core": "^1.48.2",
     "semantic-release": "^25.0.9",
     "typescript": "^7.0.2",
     "vite": "^8.3.0",
