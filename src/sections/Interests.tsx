@@ -1,7 +1,6 @@
-import { Fragment } from 'react';
 import Reveal from '../components/Reveal';
 import SectionHeader from '../components/SectionHeader';
-import ImageBlock from '../components/ImageBlock';
+import PhotoGrid from '../components/PhotoGrid';
 import Music from '../components/Music';
 import Playlists, { type Playlist } from '../components/Playlists';
 import interestsData from '../data/interests.json';
@@ -9,43 +8,42 @@ import interestsImagesData from '../data/interestsImages.json';
 import musicData from '../data/music.json';
 import playlistsData from '../data/playlists.json';
 
-interface InterestsProps {
-  screenWidth: number;
-}
+/** The passions are one list in the data; flattened, they read as chips. */
+const passions = interestsData.flatMap((item) => item.points);
 
-const Interests = ({ screenWidth }: InterestsProps) => (
-  <section id="interests" className="section panel">
+const Interests = () => (
+  <section id="interests" className="section">
     <Reveal>
-      <SectionHeader tag="Interests" title="Personal Passions" />
+      <SectionHeader
+        tag="Interests"
+        title="Personal Passions"
+        intro="Away from the keyboard, mostly outdoors, often in or on the water."
+      />
     </Reveal>
-    <Reveal className="about-copy" delay={0.1}>
-      {interestsData.map((item, index) => (
-        <Fragment key={index}>
-          <ul className="passions-list">
-            {item.points.map((point) => <li key={point}>{point}</li>)}
-          </ul>
-        </Fragment>
-      ))}
+    <Reveal delay={0.05}>
+      <ul className="chip-list" aria-label="My interests">
+        {passions.map((point) => (
+          <li key={point}>{point}</li>
+        ))}
+      </ul>
     </Reveal>
-    <Reveal delay={0.15}>
-      <ImageBlock data={interestsImagesData} screenWidth={screenWidth} />
+    <Reveal delay={0.1}>
+      <PhotoGrid data={interestsImagesData} />
     </Reveal>
-    <Reveal delay={0.2}>
-      <div className="playlist-header">
-        <h3>Worth Following</h3>
-        <p>Channels, sites and newsletters I keep coming back to — each one opens in a new tab.</p>
-      </div>
-    </Reveal>
-    <Reveal delay={0.25}>
-      <Playlists playlists={playlistsData as Playlist[]} />
-    </Reveal>
-    <Reveal delay={0.3}>
-      <div className="music-header">
+    <div className="interests-split">
+      <Reveal delay={0.1}>
+        <div className="subsection-header">
+          <h3>Worth Following</h3>
+          <p>Channels, sites and newsletters I keep coming back to. Each one opens in a new tab.</p>
+        </div>
+        <Playlists playlists={playlistsData as Playlist[]} />
+      </Reveal>
+    </div>
+    <Reveal delay={0.1}>
+      <div className="subsection-header">
         <h3>Music I Like</h3>
-        <p>Tunes on rotation — browse by genre and hit play.</p>
+        <p>Tunes on rotation. Browse by genre and hit play.</p>
       </div>
-    </Reveal>
-    <Reveal delay={0.35}>
       <Music tracks={musicData} />
     </Reveal>
   </section>

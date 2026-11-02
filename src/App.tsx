@@ -6,8 +6,7 @@ import Footer from './layout/Footer';
 /*
  * Only the hero and the navigation are needed to paint. Everything below the
  * fold is split into its own chunk so first paint waits on a fraction of the
- * JavaScript: the carousel sections in particular drag in react-slick, which
- * nothing above the fold uses.
+ * JavaScript. The hero's own illustration is lazy as well (see Hero.tsx).
  *
  * These are not gated on scrolling — React starts each import as soon as it
  * renders — so every section still reaches the DOM on load, for a crawler as
@@ -16,6 +15,7 @@ import Footer from './layout/Footer';
 const About = lazy(() => import('./sections/About'));
 const Skills = lazy(() => import('./sections/Skills'));
 const Projects = lazy(() => import('./sections/Projects'));
+const Experience = lazy(() => import('./sections/Experience'));
 const Education = lazy(() => import('./sections/Education'));
 const Voluntary = lazy(() => import('./sections/Voluntary'));
 const Codewars = lazy(() => import('./sections/Codewars'));
@@ -33,8 +33,6 @@ const TermsAndConditions = lazy(() => import('./components/TermsAndConditions'))
 const AccessibilityStatement = lazy(() => import('./components/AccessibilityStatement'));
 const Changelog = lazy(() => import('./components/Changelog'));
 
-const screenWidth = typeof window !== 'undefined' ? window.innerWidth : 1200;
-
 const App = () => (
   <>
     {/*
@@ -45,19 +43,20 @@ const App = () => (
     <a className="skip-link" href="#main-content">
       Skip to main content
     </a>
+    <NavBar />
     <div className="page-shell">
       <Hero />
-      <NavBar />
       {/* `tabIndex={-1}` lets the skip link move focus here, not just scroll. */}
       <main className="content" id="main-content" tabIndex={-1}>
         <Suspense fallback={null}>
           <About />
           <Skills />
-          <Projects screenWidth={screenWidth} />
+          <Projects />
+          <Experience />
           <Education />
           <Voluntary />
           <Codewars />
-          <Interests screenWidth={screenWidth} />
+          <Interests />
           <Contact />
         </Suspense>
       </main>

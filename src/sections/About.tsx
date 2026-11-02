@@ -33,6 +33,19 @@ const LINK_NAMES: Record<string, string> = {
 
 const scrollToContact = () => scrollToSection('contact');
 
+const STRENGTHS = [
+  'Architecture and systems design',
+  'Cloud-native and distributed systems',
+  'Mentoring and team enablement',
+  'Technical decision-making and trade-offs',
+  'Delivery ownership and execution',
+  'Cross-functional collaboration',
+  'Code quality and review leadership',
+  'Continuous improvement and automation',
+  'Product empathy and stakeholder communication',
+  'Incident response and resilience planning',
+];
+
 const About = () => {
   const contactLinks = useMemo(
     () =>
@@ -51,33 +64,26 @@ const About = () => {
   );
 
   return (
-    <section id="about" className="section panel">
+    <section id="about" className="section">
       <Reveal>
         <SectionHeader tag="About" title="Who I Am" />
       </Reveal>
       <div className="about-grid">
-        <Reveal className="about-copy">
+        <Reveal className="about-copy prose">
           {aboutData.map((block, index) => (
             <div key={index} dangerouslySetInnerHTML={{ __html: block.body }} />
           ))}
         </Reveal>
-        <Reveal className="about-details" delay={0.1}>
-          <div className="info-card">
-            <h3>Core Strengths</h3>
-            <ul>
-              <li>Architecture and systems design</li>
-              <li>Cloud-native and distributed systems expertise</li>
-              <li>Mentoring and team enablement</li>
-              <li>Technical decision-making and tradeoff assessment</li>
-              <li>Delivery ownership and execution</li>
-              <li>Cross-functional collaboration</li>
-              <li>Code quality and review leadership</li>
-              <li>Continuous improvement and automation</li>
-              <li>Product empathy and stakeholder communication</li>
-              <li>Incident response and resilience planning</li>
+        <Reveal className="about-aside" delay={0.1}>
+          <div className="card">
+            <h3>Core strengths</h3>
+            <ul className="check-list">
+              {STRENGTHS.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ul>
           </div>
-          <div className="info-card accent">
+          <div className="card">
             <h3>Connect with me</h3>
             {/* A list, because that is what a row of sibling links is. */}
             <ul className="social-list">
@@ -89,6 +95,7 @@ const About = () => {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={`${contact.title} (opens in a new tab)`}
+                    title={contact.title}
                   >
                     <span aria-hidden="true">{contact.icon}</span>
                   </a>
@@ -97,9 +104,10 @@ const About = () => {
               <li>
                 <button
                   type="button"
-                  className="social-icon social-icon-button"
+                  className="social-icon"
                   onClick={scrollToContact}
                   aria-label="Jump to the contact form"
+                  title="Email"
                 >
                   <span aria-hidden="true">
                     <FaEnvelope />

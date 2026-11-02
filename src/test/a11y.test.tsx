@@ -30,7 +30,9 @@ const renderWholePage = async () => {
     </ThemeProvider>
   );
 
-  await screen.findByRole('heading', { name: 'Get in Touch' }, { timeout: 10_000 });
+  // The first render also transforms the Stageshow kit, which takes jsdom
+  // several seconds on a cold run, so this waits well past the default.
+  await screen.findByRole('heading', { name: 'Get in Touch' }, { timeout: 45_000 });
   await waitFor(() => {
     expect(screen.getByRole('heading', { name: 'Recent Work' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Personal Passions' })).toBeInTheDocument();
@@ -78,18 +80,19 @@ describe('WCAG 2.2 AA', () => {
     expect(
       results.violations.map(describeViolation).join('\n\n')
     ).toBe('');
-  }, 30_000);
+  }, 90_000);
 
   /*
    * axe reports this one as "incomplete" under jsdom because it cannot see
-   * layout, so it is asserted directly. react-slick hides off-screen and
-   * cloned slides with `aria-hidden` but leaves their links tabbable; without
-   * useHiddenSlideFocusGuard this finds ~75 of them.
+   * layout, so it is asserted directly. The Stageshow illustrations hide
+   * their drawn cursor and chrome with `aria-hidden`; nothing inside them may
+   * be reachable by keyboard. (This guarded the react-slick carousels, which
+   * left their hidden slides tabbable, until they were replaced by grids.)
    */
-  it('puts nothing focusable inside an aria-hidden carousel slide', async () => {
+  it('puts nothing focusable inside an aria-hidden region', async () => {
     const { container } = await renderWholePage();
 
-    // Guards the guard: if the carousels ever stop rendering, the assertion
+    // Guards the guard: if the illustrations ever stop rendering, the assertion
     // below would pass against an empty list and prove nothing.
     expect(
       container.querySelectorAll('[aria-hidden="true"]').length
@@ -106,7 +109,7 @@ describe('WCAG 2.2 AA', () => {
     );
 
     expect(reachable.map((element) => element.outerHTML)).toEqual([]);
-  });
+  }, 60_000);
 
   it('offers a skip link as the first focusable element', async () => {
     const { container } = await renderWholePage();
@@ -114,5 +117,5 @@ describe('WCAG 2.2 AA', () => {
     const firstFocusable = container.querySelector('a[href], button');
     expect(firstFocusable).toHaveAttribute('href', '#main-content');
     expect(container.querySelector('#main-content')).toBeInTheDocument();
-  });
+  }, 60_000);
 });

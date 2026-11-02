@@ -1,60 +1,55 @@
+import { FiArrowUpRight } from 'react-icons/fi';
 import Reveal from '../components/Reveal';
 import SectionHeader from '../components/SectionHeader';
 import TitleImage from '../components/TitleImage';
 import educationData from '../data/education.json';
-import { assetUrl } from '../utils/assetUrl';
-import experienceData from '../data/experience.json';
+import { parseMeta } from '../utils/meta';
 
+/** Qualifications and certifications as a grid of small, even cards. */
 const Education = () => (
-  <section className="section panel split-grid">
-    <div id="experience">
-      <Reveal>
-        <SectionHeader tag="Experience" title="Work History" />
-      </Reveal>
-      {experienceData.map((item, index) => (
-        <Reveal key={index} delay={index * 0.08}>
-          <article className="timeline-card">
-            <h3>
-              <TitleImage filename={item.image?.filename} link={item.image?.link} alt={item.title} />
-              {item.title}
-            </h3>
-            {item.subTitle && item.subTitle.map((subTitleItem) => <p key={subTitleItem}>{subTitleItem}</p>)}
-            <p>{item.body}</p>
-            <p>{item.images?.map((image) => (
-              <img
-                key={image.filename}
-                className="image-item"
-                src={assetUrl(image.filename)}
-                alt={image.title}
-                loading="lazy"
-                decoding="async"
-              />
-            ))}</p>
-            <ul>{item.points?.map((point) => <li key={point}>{point}</li>)}</ul>
-          </article>
-        </Reveal>
-      ))}
-    </div>
-    <div id="education">
-      <Reveal>
-        <SectionHeader tag="Education" title="Formal Learning" />
-      </Reveal>
-      {educationData.map((item, index) => (
-        <Reveal key={index} delay={index * 0.08}>
-          <article className="timeline-card">
-            <h3>
-              <TitleImage filename={item.image?.filename} link={item.image?.link} alt={item.title} />
-              {item.title}
-            </h3>
-            {item.subTitle && item.subTitle.map((subTitleItem) => <p key={subTitleItem}>{subTitleItem}</p>)}
-            {item.points?.length ? <ul>{item.points.map((point) => <li key={point}>{point}</li>)}</ul> : null}
-            {item.image?.link ? (
-              <a href={item.image.link} target="_blank" rel="noreferrer">View credential</a>
-            ) : null}
-          </article>
-        </Reveal>
-      ))}
-    </div>
+  <section id="education" className="section">
+    <Reveal>
+      <SectionHeader tag="Education" title="Formal Learning" />
+    </Reveal>
+    <ul className="cred-grid">
+      {educationData.map((item, index) => {
+        const meta = parseMeta(item.subTitle);
+        return (
+          <li key={item.title}>
+            <Reveal className="cred-card" delay={(index % 3) * 0.06}>
+              <div className="cred-head">
+                <TitleImage filename={item.image?.filename} link={item.image?.link} alt={item.title} />
+                <h3>{item.title}</h3>
+              </div>
+              {meta.length ? (
+                <ul className="cred-meta">
+                  {meta.map((line) => (
+                    <li key={line.value}>
+                      {line.label ? <span className="meta-label">{line.label}</span> : null}
+                      {line.value}
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+              {item.points?.length ? (
+                <ul className="cred-points">
+                  {item.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              ) : null}
+              {item.image?.link ? (
+                <a className="cred-link" href={item.image.link} target="_blank" rel="noreferrer">
+                  View credential
+                  <FiArrowUpRight aria-hidden="true" />
+                  <span className="visually-hidden"> for {item.title} (opens in a new tab)</span>
+                </a>
+              ) : null}
+            </Reveal>
+          </li>
+        );
+      })}
+    </ul>
   </section>
 );
 

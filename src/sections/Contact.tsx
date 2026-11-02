@@ -62,7 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section panel">
+    <section id="contact" className="section section-contact">
       <div className="contact-grid">
         <Reveal className="contact-intro">
           <SectionHeader tag="Contact" title="Get in Touch" />

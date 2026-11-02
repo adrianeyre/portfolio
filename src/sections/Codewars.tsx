@@ -13,29 +13,33 @@ const Codewars = () => {
   const visibleKatas = showAll ? codewarsData : codewarsData.slice(0, INITIAL_VISIBLE);
 
   return (
-    <section id="codewars" className="section panel">
+    <section id="codewars" className="section">
       <Reveal>
-        <SectionHeader tag="Codewars" title="Authored Katas" />
+        <SectionHeader
+          tag="Codewars"
+          title="Authored Katas"
+          intro="Coding challenges I have written and published for the Codewars community."
+        />
       </Reveal>
       {showAll && (
         <button
           type="button"
-          className="kata-expand-btn kata-expand-btn--up"
+          className="button button-ghost kata-expand-btn"
           onClick={() => setShowAll(false)}
         >
           <span aria-hidden="true">▲</span> Show fewer katas
         </button>
       )}
-      <div className="grid project-grid">
+      <div className="kata-grid">
         {visibleKatas.map((item, index) => {
           const isExpanded = expanded === index;
           const bodyId = `kata-body-${index}`;
           return (
             <Reveal key={index} delay={(index % 3) * 0.08}>
               <article
-                className={`project-card kata-card${isExpanded ? ' expanded' : ''}`}
+                className={`kata-card${isExpanded ? ' expanded' : ''}`}
               >
-                <div className="project-body">
+                <div className="kata-body">
                   <div className="kata-content">
                     {/*
                       The whole card used to be click-to-expand via `onClick` on
@@ -55,7 +59,7 @@ const Codewars = () => {
                         {item.title}
                       </button>
                     </h3>
-                    <div className="tag-list">
+                    <div className="kata-tags">
                       {item.tags?.map((tag) => <span key={tag}>{tag}</span>)}
                     </div>
                     <p id={bodyId}>{item.body}</p>
@@ -70,7 +74,7 @@ const Codewars = () => {
       {!showAll && (
         <button
           type="button"
-          className="kata-expand-btn kata-expand-btn--down"
+          className="button button-ghost kata-expand-btn"
           onClick={() => setShowAll(true)}
         >
           <span aria-hidden="true">▼</span> Show all {codewarsData.length} katas

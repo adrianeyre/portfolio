@@ -1,0 +1,32 @@
+.project-shot {
+  & .ss-stage {
+    overflow: hidden;
+    background: var(--ss-well);
+  }
+
+  /* Inset 9% from the top and sides, about a fifth past the bottom. */
+  .ps-window {
+    position: absolute;
+    top: 36px;
+    left: 48px;
+    width: 464px;
+    height: 420px;
+    box-shadow: var(--ss-shadow-hero);
+  }
+
+  .ps-window .ss-window__body {
+    overflow: hidden;
+    background: var(--ss-surface);
+  }
+
+  .ps-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: var(--ss-surface);
+  }
+}
+
+.project-shot .ss-stage[data-theme='dark'] {
+  --ss-well: #151518;
+}
