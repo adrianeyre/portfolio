@@ -14,7 +14,10 @@ interface ProjectShotProps {
   /** The address shown in the window's URL pill. */
   url?: string;
   theme: Theme;
-  /** A taller design, for the featured card, whose frame is taller than wide cards'. */
+  /**
+   * A taller design, for the featured card, whose frame is taller than wide
+   * cards'. Its window sits whole in the middle of the well, not bleeding off.
+   */
   tall?: boolean;
 }
 
@@ -31,7 +34,7 @@ export const hostOf = (link?: string): string | undefined => {
 };
 
 const ProjectShot = ({ src, url, theme, tall = false }: ProjectShotProps) => (
-  <Stage width={560} height={tall ? 390 : 330} fill theme={theme} className="project-shot">
+  <Stage width={560} height={tall ? 390 : 330} fill theme={theme} className={`project-shot${tall ? ' ps-centred' : ''}`}>
     {() => (
       <Window url={url ?? 'localhost'} urlShape="pill" className="ps-window">
         <img className="ps-image" src={assetUrl(src)} alt="" loading="lazy" decoding="async" />

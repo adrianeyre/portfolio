@@ -6,6 +6,7 @@ import languageImagesData from '../data/languageImages.json';
 import frameworksImagesData from '../data/frameworksImages.json';
 import { useTheme } from '../theme/ThemeProvider';
 import { assetUrl } from '../utils/assetUrl';
+import { experienceLabel } from '../utils/yearsSince';
 
 const PipelineTile = lazy(() => import('../demos/PipelineTile'));
 
@@ -67,8 +68,8 @@ const Skills = () => {
         </Reveal>
 
         <Reveal className="tile tile-stat" delay={0.1}>
-          <p className="stat-lead">Building software for</p>
-          <p className="stat-number">15+ years</p>
+          <p className="stat-lead">Building software and infrastructure for</p>
+          <p className="stat-number">{experienceLabel()}</p>
           <p className="stat-label">Across education, retail, finance and automotive.</p>
         </Reveal>
 

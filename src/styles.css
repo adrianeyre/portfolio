@@ -46,9 +46,11 @@
   /* Clearance under the sticky header, for anchors and focus moves. */
   --header-height: 64px;
   --sticky-offset: calc(var(--header-height) + 16px);
+  /* Height of the sticky footer, so fixed bottom UI can sit above it. */
+  --footer-height: 41px;
 
-  --page-width: 1200px;
-  --gutter: clamp(16px, 4vw, 32px);
+  --page-width: 1320px;
+  --gutter: clamp(16px, 3.5vw, 48px);
   --radius-sm: 8px;
   --radius: 14px;
   --radius-lg: 20px;
@@ -889,6 +891,7 @@ ol {
 }
 
 .project-card.featured .project-shot-frame {
+  align-items: center;
   border-bottom: 0;
   border-right: 1px solid var(--border-subtle);
 }
@@ -1449,10 +1452,17 @@ ol {
 
 /* ---- Footer ---- */
 
+/* Sticky to the bottom of the viewport, kept to one slim line. */
 .footer-panel {
+  position: sticky;
+  bottom: 0;
+  z-index: 50;
   border-top: 1px solid var(--border);
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px);
+  backdrop-filter: saturate(1.4) blur(10px);
   color: var(--text-muted);
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 .footer-inner {
@@ -1463,7 +1473,23 @@ ol {
   gap: 6px 10px;
   max-width: calc(var(--page-width) + 2 * var(--gutter));
   margin: 0 auto;
-  padding: 28px var(--gutter) 40px;
+  padding: 8px var(--gutter);
+}
+
+/* On a phone the links stay on one line and scroll sideways, so the sticky
+   footer never grows to several rows over the page. */
+@media (max-width: 900px) {
+  .footer-inner {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .footer-inner::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .footer-sep {
@@ -2047,7 +2073,7 @@ ol {
 .cookie-banner {
   position: fixed;
   left: 50%;
-  bottom: clamp(0.8rem, 3vw, 1.4rem);
+  bottom: calc(var(--footer-height) + clamp(0.8rem, 3vw, 1.4rem));
   transform: translateX(-50%);
   width: min(100% - 1.6rem, 720px);
   z-index: 300;
