@@ -19,6 +19,13 @@
     background: var(--ss-surface);
   }
 
+  /* The featured card: the whole window, centred in the well both ways. */
+  &.ps-centred .ps-window {
+    top: 50%;
+    height: auto;
+    transform: translateY(-50%);
+  }
+
   .ps-image {
     display: block;
     width: 100%;

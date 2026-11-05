@@ -2,6 +2,7 @@ import { lazy, Suspense, useState } from 'react';
 import { FiArrowRight, FiRotateCcw } from 'react-icons/fi';
 import { useTheme } from '../theme/ThemeProvider';
 import { scrollToSection } from '../utils/scrollToSection';
+import { experienceLabel } from '../utils/yearsSince';
 
 /*
  * The illustration is split out so the hero's words paint first; the frame
@@ -11,7 +12,7 @@ import { scrollToSection } from '../utils/scrollToSection';
 const HeroDemo = lazy(() => import('../demos/HeroDemo'));
 
 const FACTS = [
-  { label: 'Experience', value: '15+ years' },
+  { label: 'Experience', value: experienceLabel() },
   { label: 'Stack', value: 'TypeScript · Python · AWS' },
   { label: 'Focus', value: 'Leadership · Architecture · AI tooling' },
 ];
