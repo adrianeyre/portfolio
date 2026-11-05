@@ -9,8 +9,8 @@ import { useTheme } from '../theme/ThemeProvider';
 
 type Project = (typeof projectsData)[number];
 
-/** How many projects show before "Show all"; the rest are older games. */
-const INITIAL_VISIBLE = 7;
+/** How many grid cards show under the featured one before "Show all": three rows of three. */
+const INITIAL_GRID = 9;
 
 const demoOf = (project: Project) => project.links?.find((link) => link.text !== 'Repo');
 const repoOf = (project: Project) => project.links?.find((link) => link.text === 'Repo');
@@ -74,7 +74,7 @@ const ProjectCard = ({ project, featured = false }: { project: Project; featured
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
   const [featured, ...rest] = projectsData;
-  const visible = showAll ? rest : rest.slice(0, INITIAL_VISIBLE - 1);
+  const visible = showAll ? rest : rest.slice(0, INITIAL_GRID);
 
   return (
     <section id="projects" className="section">

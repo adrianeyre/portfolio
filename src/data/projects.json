@@ -1,5 +1,191 @@
 [
 	{
+		"title": "AI Office",
+		"body": "A 3D office where AI agents work your GitHub issues. Each repository is a Floor with a Manager and a team of Agents — coder, reviewer, QA, docs and designer — and you can click a monitor to watch an Agent's sandbox as it works, read the plan on the whiteboard, or simply ask the Manager for a change: it files the issues and brings in contractors for the work. A built in AI Gateway load balances the Agents' requests across your own AI accounts, Claude, ChatGPT/Codex, Grok and more, with token caps per office, Floor and Agent, and every request's tokens, cost and timings in Analytics. A TypeScript monorepo with a React and Three.js front end, a Node server, Postgres and Docker sandboxes. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/ai-office.png",
+			"link": "https://github.com/adrianeyre/ai-office"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Three.js"
+			},
+			{
+				"label": "Node.js"
+			},
+			{
+				"label": "PostgreSQL"
+			},
+			{
+				"label": "Docker"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "Playwright"
+			},
+			{
+				"label": "AI Agents"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/ai-office"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faBuilding",
+				"link": "https://ai-office.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Gantry",
+		"body": "A self-hosted dashboard for monitoring and controlling a fleet of 3D printers from one screen. A single Rust binary runs on an always-on machine on the home or workshop network, such as a Raspberry Pi, and talks to each printer over the LAN — Bambu Lab, Klipper, OctoPrint, PrusaLink, Duet and Elegoo — with no vendor cloud. Its login-protected website shows live status, cameras and a wall display, controls every printer, and runs a print queue that never starts a job on an occupied bed, with alerts, analytics, timelapses, a REST API, webhooks and desktop apps for Windows, macOS and Linux. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/gantry.png",
+			"link": "https://github.com/adrianeyre/gantry"
+		},
+		"tags": [
+			{
+				"label": "Rust"
+			},
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Three.js"
+			},
+			{
+				"label": "SQLite"
+			},
+			{
+				"label": "Tauri"
+			},
+			{
+				"label": "Docker"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "Playwright"
+			},
+			{
+				"label": "WCAG 2.2 AA"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/gantry"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faPrint",
+				"link": "https://gantry.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Agent Usage Widget",
+		"body": "A macOS desktop widget and menu-bar app that shows AI subscription usage limits for any number of named Claude, ChatGPT/Codex and GitHub Copilot accounts. A pace marker on each bar shows whether the allowance is being used faster than its window allows, in green, amber or red with a symbol and words too. The widget only renders: it never touches credentials or the network, and the app never changes your everyday Claude Code or Codex login. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/agent-usage-widget.png",
+			"link": "https://github.com/adrianeyre/agent-usage-widget"
+		},
+		"tags": [
+			{
+				"label": "Swift"
+			},
+			{
+				"label": "SwiftUI"
+			},
+			{
+				"label": "WidgetKit"
+			},
+			{
+				"label": "macOS"
+			},
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/agent-usage-widget"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGauge",
+				"link": "https://agent-usage-widget.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
 		"title": "Multi Game Interpreter",
 		"body": "A browser based interpreter for eight classic adventure game engine families — LucasArts SCUMM, Sierra AGI and SCI, Adventure Soft AGOS, and Revolution’s Sky, Lure and both Broken Swords. Written from scratch in TypeScript against the original file formats, it runs the games’ own bytecode on a canvas with no plugins, no WebAssembly and no server. It ships with no game data: you point it at files from a copy you own, and nothing leaves your machine. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
 		"image": {
@@ -155,70 +341,6 @@
 				"text": "Demo",
 				"font": "free.faCodeBranch",
 				"link": "https://lanewise.adrianeyre.co.uk"
-			}
-		]
-	},
-	{
-		"title": "AI Office",
-		"body": "A 3D office where AI agents work your GitHub issues. Each repository is a Floor with a Manager and a team of Agents — coder, reviewer, QA, docs and designer — and you can click a monitor to watch an Agent's sandbox as it works, read the plan on the whiteboard, or simply ask the Manager for a change: it files the issues and brings in contractors for the work. A built in AI Gateway load balances the Agents' requests across your own AI accounts, Claude, ChatGPT/Codex, Grok and more, with token caps per office, Floor and Agent, and every request's tokens, cost and timings in Analytics. A TypeScript monorepo with a React and Three.js front end, a Node server, Postgres and Docker sandboxes. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
-		"image": {
-			"filename": "/images/projects/ai-office.png",
-			"link": "https://github.com/adrianeyre/ai-office"
-		},
-		"tags": [
-			{
-				"label": "TypeScript"
-			},
-			{
-				"label": "React"
-			},
-			{
-				"label": "Three.js"
-			},
-			{
-				"label": "Node.js"
-			},
-			{
-				"label": "PostgreSQL"
-			},
-			{
-				"label": "Docker"
-			},
-			{
-				"label": "Vite"
-			},
-			{
-				"label": "Vitest"
-			},
-			{
-				"label": "Playwright"
-			},
-			{
-				"label": "AI Agents"
-			},
-			{
-				"label": "AI Assisted"
-			},
-			{
-				"label": "AI Full Lifecycle"
-			},
-			{
-				"label": "HTML"
-			},
-			{
-				"label": "CSS"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/ai-office"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faBuilding",
-				"link": "https://ai-office.adrianeyre.co.uk"
 			}
 		]
 	},
