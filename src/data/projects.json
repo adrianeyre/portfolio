@@ -64,6 +64,73 @@
 		]
 	},
 	{
+		"title": "Wizzaroo",
+		"body": "A 3D learning game for primary school children that covers the UK National Curriculum for Years 1–6, where children earn Items for their own Character by learning. Six Islands, one per Year Group, each have a Region for every Subject — Maths, Phonics, English, Science, Music, Geography, History, Computing, Art and design, Design and technology, and French — with Missions played alongside a Companion in a pixel-shaded 3D world. Mastering Skills opens new Regions, Stars buy Items, Pets, Mounts and a Room to furnish, and each Island can be explored on foot with 120 Attractions and a Quest that wins a 3D Trophy. Parents set daily time and Subjects, follow Mastery on a progress dashboard and turn a tablet into a Family Device where children sign in with a Picture Password. An offline-first PWA that records Sessions on the device and syncs them later, with React and React Three Fiber in front of a Fastify server and Postgres with row-level security and nightly encrypted backups. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/wizzaroo.png",
+			"link": "https://github.com/adrianeyre/wizzaroo"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "React Three Fiber"
+			},
+			{
+				"label": "Three.js"
+			},
+			{
+				"label": "Fastify"
+			},
+			{
+				"label": "PostgreSQL"
+			},
+			{
+				"label": "Drizzle ORM"
+			},
+			{
+				"label": "PWA"
+			},
+			{
+				"label": "Docker"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/wizzaroo"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://wizzaroo.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
 		"title": "Gantry",
 		"body": "A self-hosted dashboard for monitoring and controlling a fleet of 3D printers from one screen. A single Rust binary runs on an always-on machine on the home or workshop network, such as a Raspberry Pi, and talks to each printer over the LAN — Bambu Lab, Klipper, OctoPrint, PrusaLink, Duet and Elegoo — with no vendor cloud. Its login-protected website shows live status, cameras and a wall display, controls every printer, and runs a print queue that never starts a job on an occupied bed, with alerts, analytics, timelapses, a REST API, webhooks and desktop apps for Windows, macOS and Linux. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
 		"image": {
