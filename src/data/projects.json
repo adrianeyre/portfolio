@@ -412,6 +412,85 @@
 		]
 	},
 	{
+		"title": "Email Platform",
+		"body": "A small self-hosted app that keeps your email templates and sends your emails. Each template is built in a visual designer of text, buttons, images, columns, socials and HTML blocks, or written in HTML by hand, with Handlebars variables, shared headers and footers, and previews at desktop and phone widths in light or dark. Applications send a template by its slug with a single REST call, or through a typed Node client, and the app renders the email, queues it with retries and idempotency keys, sends it through the SMTP provider you already use — Amazon SES, Postmark, Gmail or any other — and logs every email with a searchable send log. Users, hashed API keys, templates, Delivery settings and logs all live in its own Postgres, running in Docker, behind a Fastify API with OpenAPI docs and a React interface built to WCAG 2.2 AA. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/email-platform.png",
+			"link": "https://github.com/adrianeyre/email-platform"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Node.js"
+			},
+			{
+				"label": "Fastify"
+			},
+			{
+				"label": "PostgreSQL"
+			},
+			{
+				"label": "Drizzle ORM"
+			},
+			{
+				"label": "Handlebars"
+			},
+			{
+				"label": "Nodemailer"
+			},
+			{
+				"label": "TipTap"
+			},
+			{
+				"label": "REST API"
+			},
+			{
+				"label": "OpenAPI"
+			},
+			{
+				"label": "Docker"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "WCAG 2.2 AA"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/email-platform"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faEnvelope",
+				"link": "https://email-platform.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
 		"title": "Location Scout",
 		"body": "Pick any location in England — a postcode, an address or a click on the map — and see everything around it on one screen. An interactive map layers crime with its year on year trend, planning constraints and applications, amenities, schools with Ofsted ratings, transport, green space, property sales and EPCs, land and demographics, beside a Location Overview of Good, Watch and Concern Highlights and transparent 0–100 scores, each with its breakdown. Scout Modes reweight the scores for homebuyers, landlords, investors, developers and businesses, and a Land Opportunity Finder surfaces open land with its indicative ownership. React and MapLibre GL in front of a Hono backend, with DuckDB over GeoParquet for land data, optional AI Explanations of the scores and WCAG 2.2 AA throughout. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
 		"image": {
