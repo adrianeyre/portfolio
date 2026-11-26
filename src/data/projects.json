@@ -131,6 +131,229 @@
 		]
 	},
 	{
+		"title": "Lanewise",
+		"body": "A free, open source desktop Git client for Windows and macOS, laid out as GitKraken is. A Commit graph draws the whole history in coloured lanes, with branches, tags, stashes and open Pull Requests beside it, and merge conflicts are resolved in a three way view of Base, Ours and Theirs, one Conflict Hunk at a time, with AI Suggestions from your own Model Provider that are never applied for you. The core is written in Rust and the UI in React, running natively through Tauri, with sign in to GitHub, GitLab, Bitbucket and Azure DevOps, Issues from Jira Cloud and Trello, no telemetry and WCAG 2.2 AA throughout. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/lanewise.png",
+			"link": "https://github.com/adrianeyre/lanewise"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Rust"
+			},
+			{
+				"label": "Tauri"
+			},
+			{
+				"label": "Git"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/lanewise"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faCodeBranch",
+				"link": "https://lanewise.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Multi Game Interpreter",
+		"body": "A browser based interpreter for eight classic adventure game engine families — LucasArts SCUMM, Sierra AGI and SCI, Adventure Soft AGOS, and Revolution’s Sky, Lure and both Broken Swords. Written from scratch in TypeScript against the original file formats, it runs the games’ own bytecode on a canvas with no plugins, no WebAssembly and no server. It ships with no game data: you point it at files from a copy you own, and nothing leaves your machine. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/multi-game-interpreter.png",
+			"link": "https://github.com/adrianeyre/multi-game-interpreter"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "Canvas"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/multi-game-interpreter"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://multi-game-interpreter.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Soundcheck",
+		"body": "A music creation app — a DAW — whose Assistant, an LLM co-producer, can both edit and listen to your song. The Audio Engine is written in Rust and the UI in React: the desktop app runs the engine natively on the audio device through Tauri, and the lighter Browser Version runs the same engine as WebAssembly in an AudioWorklet, with nothing to install. Tracks, a Timeline, a Step Sequencer, Instruments, recording, a Mixer and WAV or MP3 export, with every edit undoable. Built to WCAG 2.2 AA across its dark and light themes and six colour palettes. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/soundcheck.png",
+			"link": "https://github.com/adrianeyre/soundcheck"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Rust"
+			},
+			{
+				"label": "WebAssembly"
+			},
+			{
+				"label": "Web Audio"
+			},
+			{
+				"label": "Tauri"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/soundcheck"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faMusic",
+				"link": "https://adrianeyre.github.io/soundcheck"
+			}
+		]
+	},
+	{
+		"title": "Lookout",
+		"body": "A lightweight, self-hosted dashboard for a Linux server and the Docker containers running on it. Live host metrics — CPU per core, memory and swap, disk space and I/O, network and uptime — with sparklines and amber and red thresholds; every container grouped by Compose project, with health, logs you can follow and search, and secrets masked until revealed; uptime, response time and TLS expiry checks for every website the server hosts; and start, stop and restart with guard-rails but deliberately no shell. Widgets you can drag, resize, pin or hide, six themes in light and dark, all meeting WCAG 2.2 AA. A TypeScript monorepo with a React front end and a Fastify server streaming live data over Server-Sent Events, shipped as one small container with no database. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
+		"image": {
+			"filename": "/images/projects/lookout.png",
+			"link": "https://github.com/adrianeyre/lookout"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Node.js"
+			},
+			{
+				"label": "Fastify"
+			},
+			{
+				"label": "Docker"
+			},
+			{
+				"label": "Server-Sent Events"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "Playwright"
+			},
+			{
+				"label": "WCAG 2.2 AA"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/lookout"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGlobe",
+				"link": "https://lookout.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
 		"title": "Gantry",
 		"body": "A self-hosted dashboard for monitoring and controlling a fleet of 3D printers from one screen. A single Rust binary runs on an always-on machine on the home or workshop network, such as a Raspberry Pi, and talks to each printer over the LAN — Bambu Lab, Klipper, OctoPrint, PrusaLink, Duet and Elegoo — with no vendor cloud. Its login-protected website shows live status, cameras and a wall display, controls every printer, and runs a print queue that never starts a job on an occupied bed, with alerts, analytics, timelapses, a REST API, webhooks and desktop apps for Windows, macOS and Linux. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
 		"image": {
@@ -249,165 +472,6 @@
 				"text": "Demo",
 				"font": "free.faGauge",
 				"link": "https://agent-usage-widget.adrianeyre.co.uk"
-			}
-		]
-	},
-	{
-		"title": "Multi Game Interpreter",
-		"body": "A browser based interpreter for eight classic adventure game engine families — LucasArts SCUMM, Sierra AGI and SCI, Adventure Soft AGOS, and Revolution’s Sky, Lure and both Broken Swords. Written from scratch in TypeScript against the original file formats, it runs the games’ own bytecode on a canvas with no plugins, no WebAssembly and no server. It ships with no game data: you point it at files from a copy you own, and nothing leaves your machine. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
-		"image": {
-			"filename": "/images/projects/multi-game-interpreter.png",
-			"link": "https://github.com/adrianeyre/multi-game-interpreter"
-		},
-		"tags": [
-			{
-				"label": "TypeScript"
-			},
-			{
-				"label": "Canvas"
-			},
-			{
-				"label": "Vite"
-			},
-			{
-				"label": "Vitest"
-			},
-			{
-				"label": "AI Assisted"
-			},
-			{
-				"label": "AI Full Lifecycle"
-			},
-			{
-				"label": "HTML"
-			},
-			{
-				"label": "CSS"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/multi-game-interpreter"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faGamepad",
-				"link": "https://multi-game-interpreter.adrianeyre.co.uk"
-			}
-		]
-	},
-	{
-		"title": "Soundcheck",
-		"body": "A music creation app — a DAW — whose Assistant, an LLM co-producer, can both edit and listen to your song. The Audio Engine is written in Rust and the UI in React: the desktop app runs the engine natively on the audio device through Tauri, and the lighter Browser Version runs the same engine as WebAssembly in an AudioWorklet, with nothing to install. Tracks, a Timeline, a Step Sequencer, Instruments, recording, a Mixer and WAV or MP3 export, with every edit undoable. Built to WCAG 2.2 AA across its dark and light themes and six colour palettes. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
-		"image": {
-			"filename": "/images/projects/soundcheck.png",
-			"link": "https://github.com/adrianeyre/soundcheck"
-		},
-		"tags": [
-			{
-				"label": "TypeScript"
-			},
-			{
-				"label": "React"
-			},
-			{
-				"label": "Rust"
-			},
-			{
-				"label": "WebAssembly"
-			},
-			{
-				"label": "Web Audio"
-			},
-			{
-				"label": "Tauri"
-			},
-			{
-				"label": "Vite"
-			},
-			{
-				"label": "Vitest"
-			},
-			{
-				"label": "AI Assisted"
-			},
-			{
-				"label": "AI Full Lifecycle"
-			},
-			{
-				"label": "HTML"
-			},
-			{
-				"label": "CSS"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/soundcheck"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faMusic",
-				"link": "https://adrianeyre.github.io/soundcheck"
-			}
-		]
-	},
-	{
-		"title": "Lanewise",
-		"body": "A free, open source desktop Git client for Windows and macOS, laid out as GitKraken is. A Commit graph draws the whole history in coloured lanes, with branches, tags, stashes and open Pull Requests beside it, and merge conflicts are resolved in a three way view of Base, Ours and Theirs, one Conflict Hunk at a time, with AI Suggestions from your own Model Provider that are never applied for you. The core is written in Rust and the UI in React, running natively through Tauri, with sign in to GitHub, GitLab, Bitbucket and Azure DevOps, Issues from Jira Cloud and Trello, no telemetry and WCAG 2.2 AA throughout. Built end to end with AI assistance across the full software lifecycle — design, implementation, test and documentation.",
-		"image": {
-			"filename": "/images/projects/lanewise.png",
-			"link": "https://github.com/adrianeyre/lanewise"
-		},
-		"tags": [
-			{
-				"label": "TypeScript"
-			},
-			{
-				"label": "React"
-			},
-			{
-				"label": "Rust"
-			},
-			{
-				"label": "Tauri"
-			},
-			{
-				"label": "Git"
-			},
-			{
-				"label": "Vite"
-			},
-			{
-				"label": "Vitest"
-			},
-			{
-				"label": "AI Assisted"
-			},
-			{
-				"label": "AI Full Lifecycle"
-			},
-			{
-				"label": "HTML"
-			},
-			{
-				"label": "CSS"
-			}
-		],
-		"links": [
-			{
-				"text": "Repo",
-				"font": "brand.faGithub",
-				"link": "https://github.com/adrianeyre/lanewise"
-			},
-			{
-				"text": "Demo",
-				"font": "free.faCodeBranch",
-				"link": "https://lanewise.adrianeyre.co.uk"
 			}
 		]
 	},
