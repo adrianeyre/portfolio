@@ -19,11 +19,14 @@
     background: var(--ss-surface);
   }
 
-  /* The featured card: the whole window, centred in the well both ways. */
+  /* The featured card: the whole window, centred in the well both ways.
+     ProjectShot narrows the window for a screenshot taller than 16:10, so
+     every shot keeps the same margin above and below. */
   &.ps-centred .ps-window {
     top: 50%;
+    left: 50%;
     height: auto;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
   }
 
   .ps-image {
