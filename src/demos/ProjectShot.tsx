@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Stage, Window, type Theme } from '../stageshow/kit';
 import { assetUrl } from '../utils/assetUrl';
 import './project-shot.css';
@@ -33,14 +34,36 @@ export const hostOf = (link?: string): string | undefined => {
   }
 };
 
-const ProjectShot = ({ src, url, theme, tall = false }: ProjectShotProps) => (
-  <Stage width={560} height={tall ? 390 : 330} fill theme={theme} className={`project-shot${tall ? ' ps-centred' : ''}`}>
-    {() => (
-      <Window url={url ?? 'localhost'} urlShape="pill" className="ps-window">
-        <img className="ps-image" src={assetUrl(src)} alt="" loading="lazy" decoding="async" />
-      </Window>
-    )}
-  </Stage>
-);
+/** The window's widest, and the screenshot's height in it at that width for a 16:10 shot. */
+const WINDOW_WIDTH = 464;
+const CENTRED_IMAGE_HEIGHT = 290;
+
+const ProjectShot = ({ src, url, theme, tall = false }: ProjectShotProps) => {
+  // Width over height of the screenshot, once it has loaded.
+  const [ratio, setRatio] = useState<number>();
+  // The featured window narrows for a taller shot (a 4:3 game), so its
+  // screenshot is no taller than a 16:10 one and the margins around it match.
+  const width = tall && ratio ? Math.min(WINDOW_WIDTH, Math.round(CENTRED_IMAGE_HEIGHT * ratio)) : undefined;
+
+  return (
+    <Stage width={560} height={tall ? 390 : 330} fill theme={theme} className={`project-shot${tall ? ' ps-centred' : ''}`}>
+      {() => (
+        <Window url={url ?? 'localhost'} urlShape="pill" className="ps-window" style={width ? { width } : undefined}>
+          <img
+            className="ps-image"
+            src={assetUrl(src)}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            onLoad={(event) => {
+              const { naturalWidth, naturalHeight } = event.currentTarget;
+              if (naturalWidth && naturalHeight) setRatio(naturalWidth / naturalHeight);
+            }}
+          />
+        </Window>
+      )}
+    </Stage>
+  );
+};
 
 export default ProjectShot;
