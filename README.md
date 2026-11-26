@@ -99,8 +99,8 @@ All site content lives in **`src/data/*.json`**, so you can update most of it wi
 
 Releases and deployment are automated with [GitHub Actions](.github/workflows/release.yml):
 
-- **Every pull request** to `master` is type-checked, tested and built.
-- **Every merge** to `master` runs [semantic-release](https://github.com/semantic-release/semantic-release). It uses the [Conventional Commit](https://www.conventionalcommits.org/) messages to bump the version and update the [CHANGELOG](CHANGELOG.md), then publishes the site to **GitHub Pages**.
+- **Every pull request** to `main` is type-checked, tested and built.
+- **Every merge** to `main` runs [semantic-release](https://github.com/semantic-release/semantic-release). It uses the [Conventional Commit](https://www.conventionalcommits.org/) messages to bump the version and update the [CHANGELOG](CHANGELOG.md), then publishes the site to **GitHub Pages**.
 
 Write commit messages as `feat: …`, `fix: …`, `docs: …` and so on, so that each release gets the right version bump.
 
