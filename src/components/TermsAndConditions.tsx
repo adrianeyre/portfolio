@@ -50,7 +50,7 @@ const TermsAndConditions = () => {
           <strong>Source code</strong> — the code behind this site is open
           source under the{' '}
           <a
-            href="https://github.com/adrianeyre/portfolio/blob/master/LICENSE"
+            href="https://github.com/adrianeyre/portfolio/blob/main/LICENSE"
             target="_blank"
             rel="noreferrer"
           >

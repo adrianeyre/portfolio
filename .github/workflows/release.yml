@@ -6,8 +6,8 @@ name: Release
 #
 #   * `pull_request` — runs `verify` only. This is the trigger that was
 #     commented out in the original and is switched back on here, so every PR
-#     into master is typechecked, tested and built before it can be merged.
-#   * `push` to master — the full run: verify, then semantic-release, then
+#     into main is typechecked, tested and built before it can be merged.
+#   * `push` to main — the full run: verify, then semantic-release, then
 #     build and publish the site to GitHub Pages. A merged PR arrives here as
 #     a push, so this is what actually ships.
 #
@@ -16,9 +16,9 @@ name: Release
 # verification steps.
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
   push:
-    branches: [master]
+    branches: [main]
   workflow_dispatch:
 
 # Never cancel a release in flight, and never run two at once: the second half
@@ -101,10 +101,10 @@ jobs:
       - name: Checkout the released commit
         uses: actions/checkout@v7
         with:
-          # `master`, not the commit that triggered the run: the version bump
+          # `main`, not the commit that triggered the run: the version bump
           # semantic-release just pushed is one commit further on, and that
           # bump is the whole reason this job waits for the release.
-          ref: master
+          ref: main
 
       - name: Set up Node
         uses: actions/setup-node@v7

@@ -1,0 +1,611 @@
+[
+	{
+		"title": "Hexathlon",
+		"body": "An arcade-style athletics game for the browser. Mash two keys in turn to build speed, then time your jumps and throws across six Events — 100m Dash, Long Jump, Javelin Throw, 110m Hurdles, Hammer Throw and High Jump — and reach the Standard in each to start a tougher Cycle. Arcade Sessions with Points and a High Score table, two players on one keyboard, Practice and Attract Mode, with keyboard, touch and gamepad controls that can all be remapped. Written in TypeScript and drawn on a Canvas, built into one minified script with no back end, and installable to play offline. Every sprite and sound is original work.",
+		"image": {
+			"filename": "/images/projects/hexathlon.png",
+			"link": "https://github.com/adrianeyre/hexathlon"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "Canvas"
+			},
+			{
+				"label": "esbuild"
+			},
+			{
+				"label": "Node Test Runner"
+			},
+			{
+				"label": "PWA"
+			},
+			{
+				"label": "AI Assisted"
+			},
+			{
+				"label": "AI Full Lifecycle"
+			},
+			{
+				"label": "HTML"
+			},
+			{
+				"label": "CSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/hexathlon"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://hexathlon.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Pacman",
+		"body": "A desktop remake of the arcade original, written in C# as a Windows application and unit tested throughout with NUnit. The ghosts hunt the player around the maze as they do in the 1980 game.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/pacman/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/pacman"
+		},
+		"tags": [
+			{
+				"label": "C#"
+			},
+			{
+				"label": ".NET"
+			},
+			{
+				"label": "NUnit"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/pacman"
+			}
+		]
+	},
+	{
+		"title": "Fishy",
+		"body": "A browser game about the food chain: eat the fish smaller than you, and avoid everything bigger, because the rule cuts both ways. Written in TypeScript and React with SCSS, built with Vite, and published to GitHub Pages on every release.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/fishy/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/fishy"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/fishy"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://fishy.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Frogger",
+		"body": "A remake of the arcade original — get the frog across the traffic and over the river to reach home. Built in TypeScript and React with Vite, and it measures the screen it loads on and scales to fit, so it plays on a phone as readily as a desktop.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/frogger/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/frogger"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/frogger"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://frogger.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Space Invaders",
+		"body": "The fixed shooter remade for the browser: a laser cannon tracking left and right along the bottom, rows of aliens descending and speeding up as their numbers fall, and bunkers that erode from both sides as the shooting goes on. TypeScript, React 19 and Vite, with Vitest over the game logic.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/space-invaders/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/space-invaders"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/space-invaders"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://space-invaders.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Mine Sweeper",
+		"body": "The classic logic puzzle rebuilt for the browser: open every cell that is not a mine, working out where they are from the neighbour counts alone. Flagging and shift-click chording both work as they did in the original. TypeScript and React with Vite and SCSS.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/mine-sweeper/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/mine-sweeper"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/mine-sweeper"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://mine-sweeper.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Tetris",
+		"body": "The falling-block puzzle in TypeScript and React — fill a horizontal line to clear it, and clear several at once for considerably more. Built with Vite, and released and deployed to GitHub Pages straight from the commit history by semantic-release.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/tetris/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/tetris"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/tetris"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://tetris.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Connect 4",
+		"body": "Two-player Connect Four in the browser: drop counters down the grid and be the first to line four up horizontally, vertically or diagonally. Written in TypeScript with React 19, Vite and SCSS.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/connect4/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/connect4"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/connect4"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://connect4.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Ant Run",
+		"body": "A maze runner where you steer an ant along a network of paths and a single step into empty space kills it. The holes around the edge of the board teleport it to the opposite side, which is as often the way out as the way into trouble. TypeScript, React, Vite and SCSS.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/ant-run/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/ant-run"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/ant-run"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://ant-run.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Pipeline",
+		"body": "A remake of two BBC Micro favourites, Pipeline and Repton: guide Repton around the field collecting every star while working through gates, keys, boulders and teleports. Built in TypeScript and React 19, and it ships its own level editor — press `e` in play to edit the map, `m` to see it whole.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/pipeline/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/pipeline"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/pipeline"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://pipeline.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Racer",
+		"body": "A top-down racing game: hold the car on the track, off the grass and past the other traffic, while oil spills take the grip out from under you. TypeScript and React with Vite and SCSS.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/racer/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/racer"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/racer"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://racer.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Battleships",
+		"body": "Two-player Battleships split across a game and a server of its own. Each player places five ships, then the guessing starts and neither can move afterwards. Moves travel between the two browsers over Socket.io on an Express back end, with the front end in TypeScript and React.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/battleships-game/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/battleships-game"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Node"
+			},
+			{
+				"label": "Express"
+			},
+			{
+				"label": "Socket.io"
+			},
+			{
+				"label": "Jest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Game",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/battleships-game"
+			},
+			{
+				"text": "Server",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/battleships-server"
+			}
+		]
+	},
+	{
+		"title": "Chuckie Egg",
+		"body": "A remake of the 1983 platformer. As Hen-House Harry you collect twelve eggs a level against a countdown, dodging the hens patrolling the platforms and the lifts that will carry you off the top of the screen if you ride them too far. TypeScript, React 19 and Vite.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/chuckie-egg/master/src/images/screenshot2.png",
+			"link": "https://github.com/adrianeyre/chuckie-egg"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "React"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			},
+			{
+				"label": "SCSS"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/chuckie-egg"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://chuckie-egg.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Free Cell",
+		"body": "The solitaire variant where almost every deal can be won, rebuilt in vanilla TypeScript on a canvas with no framework at all. The rules — card, deck, hand and stack — are kept deliberately free of DOM calls so they can be tested in Node without a browser, and ESLint enforces that separation rather than trusting it.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/free-cell/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/free-cell"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "Canvas"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/free-cell"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://free-cell.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Pairs",
+		"body": "The memory game: turn two cards at a time, keep the pairs that match and put the rest back. Written in vanilla TypeScript on a canvas with no framework, built with Vite and tested with Vitest.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/pairs/master/images/screenshot1.png",
+			"link": "https://github.com/adrianeyre/pairs"
+		},
+		"tags": [
+			{
+				"label": "TypeScript"
+			},
+			{
+				"label": "Canvas"
+			},
+			{
+				"label": "Vite"
+			},
+			{
+				"label": "Vitest"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/pairs"
+			},
+			{
+				"text": "Demo",
+				"font": "free.faGamepad",
+				"link": "https://pairs.adrianeyre.co.uk"
+			}
+		]
+	},
+	{
+		"title": "Treasure Hunt",
+		"body": "A team-built augmented reality treasure hunt for mobile. Players follow clues to real-world points of interest, with GPS telling them how far they are from the next one and the camera showing what is waiting there. Unity and Vuforia drive the AR, C# and Swift the device, and a Ruby and Sinatra back end sits over Postgres and MongoDB. The final group project of a Makers Academy cohort.",
+		"image": {
+			"filename": "https://raw.githubusercontent.com/adrianeyre/treasure-hunt/master/images/GameFlow.png",
+			"link": "https://github.com/adrianeyre/treasure-hunt"
+		},
+		"tags": [
+			{
+				"label": "C#"
+			},
+			{
+				"label": "Ruby"
+			},
+			{
+				"label": "JavaScript"
+			},
+			{
+				"label": "Swift"
+			},
+			{
+				"label": "Unity"
+			},
+			{
+				"label": "Vuforia"
+			},
+			{
+				"label": "Sinatra"
+			},
+			{
+				"label": "RSpec"
+			},
+			{
+				"label": "PostgreSQL"
+			},
+			{
+				"label": "MongoDB"
+			},
+			{
+				"label": "Xcode"
+			},
+			{
+				"label": "Heroku"
+			}
+		],
+		"links": [
+			{
+				"text": "Repo",
+				"font": "brand.faGithub",
+				"link": "https://github.com/adrianeyre/treasure-hunt"
+			}
+		]
+	}
+]

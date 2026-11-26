@@ -15,6 +15,7 @@ import Footer from './layout/Footer';
 const About = lazy(() => import('./sections/About'));
 const Skills = lazy(() => import('./sections/Skills'));
 const Projects = lazy(() => import('./sections/Projects'));
+const Games = lazy(() => import('./sections/Games'));
 const Experience = lazy(() => import('./sections/Experience'));
 const Education = lazy(() => import('./sections/Education'));
 const Voluntary = lazy(() => import('./sections/Voluntary'));
@@ -52,6 +53,7 @@ const App = () => (
           <About />
           <Skills />
           <Projects />
+          <Games />
           <Experience />
           <Education />
           <Voluntary />

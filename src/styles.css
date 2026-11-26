@@ -163,9 +163,9 @@ html {
   scroll-padding-top: var(--sticky-offset);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1120px) {
   html {
-    /* The section links drop to a second row in the header at this width. */
+    /* The section links drop to a second row in the header at this width (see .site-header-inner). */
     --header-height: 104px;
   }
 }
@@ -416,7 +416,11 @@ ol {
   border-color: var(--border-strong);
 }
 
-@media (max-width: 900px) {
+/*
+ * Ten links need about 1100px on one row beside the brand; any narrower and
+ * they slide under it, so they move to their own row a little before that.
+ */
+@media (max-width: 1120px) {
   .site-header-inner {
     flex-wrap: wrap;
     gap: 0 12px;
