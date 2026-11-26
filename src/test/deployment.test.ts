@@ -11,6 +11,7 @@ import aboutData from '../data/about.json';
 import codewarsData from '../data/codewars.json';
 import educationData from '../data/education.json';
 import experienceData from '../data/experience.json';
+import gamesData from '../data/games.json';
 import frameworksImagesData from '../data/frameworksImages.json';
 import interestsImagesData from '../data/interestsImages.json';
 import languageImagesData from '../data/languageImages.json';
@@ -80,6 +81,7 @@ describe('rendered image data', () => {
     'education.json': educationData,
     'experience.json': experienceData,
     'frameworksImages.json': frameworksImagesData,
+    'games.json': gamesData,
     'interestsImages.json': interestsImagesData,
     'languageImages.json': languageImagesData,
     'links.json': linksData,

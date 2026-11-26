@@ -63,7 +63,7 @@ The site will be at **http://localhost:5173**, and changes reload as you save.
 ```
 src/
 ├── data/        # JSON content: projects, experience, skills, education…
-├── sections/    # Page sections (About, Skills, Projects, Experience, Contact…)
+├── sections/    # Page sections (About, Skills, Projects, Games, Experience, Contact…)
 ├── layout/      # Header, hero and footer
 ├── demos/       # The Stageshow illustrations: hero, release pipeline, project shots
 ├── stageshow/   # The Stageshow React kit, copied from benjitaylor/skills (MIT)
@@ -81,7 +81,7 @@ The animated hero, the release pipeline in Skills and the framed project screens
 
 ## Editing content
 
-All site content lives in **`src/data/*.json`**, so you can update most of it without touching a component. For example, to add a project, add an entry to `src/data/projects.json` and put its screenshot in `public/images/projects/`:
+All site content lives in **`src/data/*.json`**, so you can update most of it without touching a component. For example, to add a project, add an entry to `src/data/projects.json` (or `src/data/games.json` for a game) and put its screenshot in `public/images/projects/`:
 
 ```json
 {
